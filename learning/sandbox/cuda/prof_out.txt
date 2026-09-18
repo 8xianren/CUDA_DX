@@ -1,0 +1,27 @@
+==PROF== Connected to process 47488 (C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\prof_target.exe)
+==PROF== Profiling "transposeConflict" - 0 (1/2): 0%....50%....100% - 8 passes
+==PROF== Profiling "transposePadded" - 1 (2/2): 0%....50%....100% - 8 passes
+==PROF== Disconnected from process 47488
+[47488] prof_target.exe@127.0.0.1
+  transposeConflict(float *, const float *, int, int) (64, 64, 1)x(32, 32, 1), Context 1, Stream 7, Device 0, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------- ----------- ------------
+    Metric Name                                              Metric Unit Metric Value
+    -------------------------------------------------------- ----------- ------------
+    gpu__time_duration.sum                                            us       112.16
+    l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum                4,072,878
+    l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum                   20,304
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                   %        15.30
+    -------------------------------------------------------- ----------- ------------
+
+  transposePadded(float *, const float *, int, int) (64, 64, 1)x(32, 32, 1), Context 1, Stream 7, Device 0, CC 12.0
+    Section: Command line profiler metrics
+    -------------------------------------------------------- ----------- ------------
+    Metric Name                                              Metric Unit Metric Value
+    -------------------------------------------------------- ----------- ------------
+    gpu__time_duration.sum                                            us        67.07
+    l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_ld.sum                    1,797
+    l1tex__data_bank_conflicts_pipe_lsu_mem_shared_op_st.sum                   20,775
+    sm__throughput.avg.pct_of_peak_sustained_elapsed                   %        25.67
+    -------------------------------------------------------- ----------- ------------
+

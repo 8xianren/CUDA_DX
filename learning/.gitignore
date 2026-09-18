@@ -1,0 +1,17 @@
+# 编译产物、性能报告和运行输出，不进 CUDA_DX
+*.exe
+*.pdb
+*.obj
+*.ilk
+*.exp
+*.lib
+*.dll
+*.cubin
+*.ptx
+*.nsys-rep
+*.sqlite
+*.ncu-rep
+*.ppm
+*.png
+*.jpg
+*.bmp

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CUDA 私人导师"
+  short_description: "结合本仓库与官方资料，循序渐进讲解 CUDA"
+  default_prompt: "使用 $cuda-tutor 继续我的 CUDA 课程。"
