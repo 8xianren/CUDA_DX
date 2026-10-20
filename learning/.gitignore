@@ -8,10 +8,12 @@
 *.dll
 *.cubin
 *.ptx
+*.dxil
 *.nsys-rep
 *.sqlite
 *.ncu-rep
 *.ppm
+*.pfm
 *.png
 *.jpg
 *.bmp

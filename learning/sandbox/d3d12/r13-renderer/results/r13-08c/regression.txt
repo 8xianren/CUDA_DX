@@ -1,0 +1,39 @@
+R.13 chapter regression
+frame=8 base-again      miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+View payload=128 stride=256 slots=2 reused=6 verified=8 fence target=9 completed=9
+InfoQueue: errors=0 warnings=0
+R.13.4 surface attributes / normals: PASS
+light=8 nee64-again     invalid=0 visibilityMismatch=0 partial=2414 maxRGB=2.60781e-07 maxOpen=2.60781e-07 relation=0 peak=0.421964 PASS
+View payload=128 stride=256 slots=2 reused=6 verified=8 fence target=9 completed=9
+InfoQueue: errors=0 warnings=0
+R.13.5 Lambert / rectangular NEE: PASS
+8-seed mean MSE spp=256 : 2.88980542e-06 ; RMSE=0.00169994277
+replay MSE=0 frozen 1/16 MSE=0 fence=4641/4641
+InfoQueue: errors=0 warnings=0
+R.13.6 pixel sampling / linear accumulation: PASS
+clean new camera frames=32 checked=16508 invalid=0 geometry=0 shadow=0 mean=1.16e-07 dir=1.07e-06 pos=1.34e-05 sample=2.67e-07 PASS
+wrong-vs-clean MSE=0.00206292885 mixed-formula maxError=1.74e-07 fence=385/385
+InfoQueue: errors=0 warnings=0
+R.13.7 history validity / reset: PASS
+display presents=96 verified=96 bufferUse=48/48 occluded=0 maxByteError=1 badRGB=0 badAlpha=0
+window resets=1 frames=96 fence=97/97
+InfoQueue: errors=0 warnings=0
+R.13.8b GPU display / Present: PASS
+View: max_basis_error=3.71e-07 max_roundtrip=4e-07 PASS
+Known world=(7,0,2) view=(2.000000,1.000000,4.000000)
+clip=(1.000000,1.000000,0.100000,4.000000) ndc=(0.250000,0.250000,0.025000) screen=(599.999994,200.000003)
+ray D=(0.87287116,0.43643641,0.21821821) tNear=0.11456444 line_error=3.72e-06
+view_z=0.1 -> depth=1.00000000
+view_z=1 -> depth=0.10000000
+view_z=10 -> depth=0.01000000
+view_z=1000 -> depth=0.00010000
+zN=0 -> homogeneous w=0.00000000 (direction, not finite point) PASS
+60deg: plane near=0.100 tNear=0.200; fixed t=near gives forward_z=0.050
+123649 pixel rays: max_direction=2.29e-06 max_near_plane=1.91e-07 near_change_direction=2.35e-06 PASS
+All 20 grouped checks PASS (CPU DirectXMath; no GPU dispatch).
+CPU display probe (no GPU dispatch)
+linear 0.5: missing=128 correct=188 double=223
+roundtrip_max=0.000000 (bound 3e-9; precise values below)
+100001-point sweep + threshold anchors PASS; invalid inputs rejected=3
+Top: missing / correct / double sRGB. Bottom: EV -1 / 0 / +1, correct sRGB.
+R.13.8a PASS

@@ -1,0 +1,3 @@
+exit=0
+slots=5 sharedImages=1 encodedBytes=131 normalScale=0.5 occlusionStrength=0.4
+PASS OPAQUE: owned CPU materials; no pixel decode or GPU sampling

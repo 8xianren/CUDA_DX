@@ -257,8 +257,8 @@ index 3..5：近处、透明、偏暖色三角形
 
 ```powershell
 cd C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 应看到先由不透明 PSO 写入的偏蓝三角形，以及叠在其上的偏暖透明三角形；程序

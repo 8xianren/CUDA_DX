@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "asset": {
+    "generator": "CUDA_DX C.3 fixed fixture",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "byteOffset": 16,
+      "byteLength": 120,
+      "buffer": 0,
+      "target": 34962,
+      "byteStride": 40
+    },
+    {
+      "byteOffset": 136,
+      "byteLength": 10,
+      "buffer": 0,
+      "target": 34963
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "COLOR_0": 3,
+            "TEXCOORD_0": 2,
+            "NORMAL": 1
+          },
+          "indices": 4,
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 146,
+      "uri": "u16.bin"
+    }
+  ],
+  "accessors": [
+    {
+      "type": "VEC3",
+      "bufferView": 0,
+      "count": 3,
+      "componentType": 5126,
+      "max": [
+        1,
+        1,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0
+      ],
+      "byteOffset": 0
+    },
+    {
+      "byteOffset": 12,
+      "count": 3,
+      "type": "VEC3",
+      "componentType": 5126,
+      "bufferView": 0
+    },
+    {
+      "byteOffset": 24,
+      "count": 3,
+      "type": "VEC2",
+      "componentType": 5126,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC4",
+      "bufferView": 0,
+      "count": 3,
+      "componentType": 5121,
+      "normalized": true,
+      "byteOffset": 32
+    },
+    {
+      "byteOffset": 4,
+      "count": 3,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "bufferView": 1
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.3,
+        "metallicFactor": 0.7,
+        "baseColorFactor": [
+          0.8,
+          0.4,
+          0.2,
+          0.6
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 0
+        }
+      },
+      "alphaCutoff": 0.45,
+      "occlusionTexture": {
+        "strength": 0.4,
+        "index": 0
+      },
+      "name": "CorePBR",
+      "emissiveTexture": {
+        "index": 0
+      },
+      "emissiveFactor": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "normalTexture": {
+        "scale": 0.5,
+        "index": 0
+      },
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "images": [
+    {
+      "uri": "intentionally-missing.png"
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 33071,
+      "magFilter": 9729,
+      "wrapT": 33648,
+      "minFilter": 9987
+    }
+  ]
+}

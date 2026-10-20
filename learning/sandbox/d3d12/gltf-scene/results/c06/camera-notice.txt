@@ -1,0 +1,6 @@
+exit=0
+meshes=2 instances=4
+NOTICE camera projection not imported; node transforms retained; use renderer camera
+NOTICE CPU import only: encoded images not decoded; PBR/alpha/normal-map GPU behavior not validated
+NOTICE decoded-scene checks are not full glTF validation; original extensions/alignment may not survive import
+ACCEPTED_CPU

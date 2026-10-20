@@ -1,0 +1,5 @@
+validator=2.0.0-dev.3.10 errors=0 warnings=0
+meshes=1 instances=1
+NOTICE CPU import only: encoded images not decoded; PBR/alpha/normal-map GPU behavior not validated
+NOTICE decoded-scene checks are not full glTF validation; original extensions/alignment may not survive import
+ACCEPTED_CPU

@@ -19,8 +19,8 @@ Windows + PowerShell。GPU：RTX 5070（Blackwell，`sm_120`）。
 ```powershell
 cd learning/sandbox
 .\build.ps1 cuda\hello.cu
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\build.ps1 path_tracing\pt2_ray_geometry.cu
+.\build.ps1 d3d12\r02-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\build.ps1 path_tracing\pt02-ray-geometry\pt2_ray_geometry.cu
 ```
 
 HLSL 必须和对应 exe 同目录。细节见 `learning/sandbox/README.md`。

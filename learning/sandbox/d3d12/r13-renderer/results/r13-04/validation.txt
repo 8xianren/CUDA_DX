@@ -1,0 +1,22 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 11
+submit frame=1 slot=0 cbOffset=0 fence=2
+submit frame=2 slot=1 cbOffset=256 fence=3
+frame=1 base            miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+submit frame=3 slot=0 cbOffset=0 fence=4
+frame=2 translation     miss/id1/id2/id3=36119/5300/1766/14415 mismatch=0 invalid=0 dir=2.43e-07 near=3.51e-08 t=4.43e-06 pos=4.76e-06 normal=4.09e-08 inverse=6.14e-08 bary=1.92e-06 depth=4.42e-06 wrong_angle=72.43 PASS
+submit frame=4 slot=1 cbOffset=256 fence=5
+frame=3 rotation        miss/id1/id2/id3=38107/6026/1800/11667 mismatch=0 invalid=0 dir=2.01e-07 near=4.59e-08 t=2.92e-06 pos=2.81e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.33e-06 depth=2.82e-06 wrong_angle=72.43 PASS
+submit frame=5 slot=0 cbOffset=0 fence=6
+frame=4 fov             miss/id1/id2/id3=31653/8129/2949/14869 mismatch=0 invalid=0 dir=1.7e-07 near=3.43e-08 t=3.16e-06 pos=3.12e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.14e-06 depth=2.84e-06 wrong_angle=72.43 PASS
+submit frame=6 slot=1 cbOffset=256 fence=7
+frame=5 aspect          miss/id1/id2/id3=36496/6560/2368/18576 mismatch=0 invalid=0 dir=2.03e-07 near=4.05e-08 t=2.63e-06 pos=2.78e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.32e-06 depth=2.78e-06 wrong_angle=72.43 PASS
+submit frame=7 slot=0 cbOffset=0 fence=8
+frame=6 viewrect-offset miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+submit frame=8 slot=1 cbOffset=256 fence=9
+frame=7 near-5          miss/id1/id2/id3=54387/0/723/2490 mismatch=0 invalid=0 dir=1.73e-07 near=1.53e-06 t=3.48e-06 pos=3.4e-06 normal=2.83e-08 inverse=5.97e-08 bary=1.94e-06 depth=3.19e-06 wrong_angle=72.43 PASS
+frame=8 base-again      miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+View payload=128 stride=256 slots=2 reused=6 verified=8 fence target=9 completed=9
+InfoQueue: errors=0 warnings=0
+R.13.4 surface attributes / normals: PASS

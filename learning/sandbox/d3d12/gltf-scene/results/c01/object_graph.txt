@@ -1,0 +1,24 @@
+asset.version=2.0 defaultScene=0
+ node[0] name=Group
+   node[1] name=Left
+     -> mesh[0] primitives=2
+       primitive[0] -> material[0] Red
+         POSITION -> accessor[0] VEC3 count=4 -> bufferView[0] -> buffer[0] c01-shared-mesh.bin
+         indices -> accessor[1] SCALAR count=3 -> bufferView[1] -> buffer[0] c01-shared-mesh.bin
+       primitive[1] -> material[1] Blue
+         POSITION -> accessor[0] VEC3 count=4 -> bufferView[0] -> buffer[0] c01-shared-mesh.bin
+         indices -> accessor[2] SCALAR count=3 -> bufferView[1] -> buffer[0] c01-shared-mesh.bin
+   node[2] name=Right
+     -> mesh[0] primitives=2
+       primitive[0] -> material[0] Red
+         POSITION -> accessor[0] VEC3 count=4 -> bufferView[0] -> buffer[0] c01-shared-mesh.bin
+         indices -> accessor[1] SCALAR count=3 -> bufferView[1] -> buffer[0] c01-shared-mesh.bin
+       primitive[1] -> material[1] Blue
+         POSITION -> accessor[0] VEC3 count=4 -> bufferView[0] -> buffer[0] c01-shared-mesh.bin
+         indices -> accessor[2] SCALAR count=3 -> bufferView[1] -> buffer[0] c01-shared-mesh.bin
+ node[3] name=View
+   -> camera[0] perspective
+definitions: mesh=1 primitive=2 material=2 accessor=3 bufferView=2 buffer=1
+selected scene: nodes=4 meshInstances=2 primitiveInstances=4 cameras=1
+binary bytes=60; GPU allocations=0; vertex decoding=not performed
+C.1 object graph PASS

@@ -60,6 +60,8 @@ cd learning\sandbox
 
 ## 四、本仓库材料地图
 
+后续所有课程采用“线路 → 课节或共享主线 → 结果目录”的组织方式，详见 [sandbox目录约定](sandbox/README.md#后续课程目录约定)。源码、shader和验证脚本归入所属课程目录，结果写入`results/`，目录README说明各文件职责、运行命令并链接对应讲义。讲义继续统一保存在`learning/笔记/<线路>/`。每节结束同步更新目录索引与进度。
+
 | 路径 | 内容 |
 |------|------|
 | `tutorials/cuda-cpp/notebooks/` | **核心**：现代 CUDA C++ 教程（01 算法 / 02 异步流 / 03 内核），每节含 `Sources/` 示例与 `Solutions/` 答案 |

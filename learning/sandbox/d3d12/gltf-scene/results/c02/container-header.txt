@@ -1,0 +1,8 @@
+bytes=1920
+magic=glTF
+version=2
+declaredLength=1920
+jsonChunkLength=1796
+jsonChunkType=JSON
+binChunkHeaderOffset=1816
+binChunkLength=96

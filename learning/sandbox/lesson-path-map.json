@@ -1,0 +1,526 @@
+[
+  {
+    "old": "d3d12/d3d12_mesh_input_layout.cu",
+    "new": "d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu"
+  },
+  {
+    "old": "d3d12/d3d12_mesh_input_layout.exe",
+    "new": "d3d12/r01-r08-mesh/d3d12_mesh_input_layout.exe"
+  },
+  {
+    "old": "d3d12/d3d12_mesh_input_layout.hlsl",
+    "new": "d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl"
+  },
+  {
+    "old": "d3d12/d3d12_window_clear.cu",
+    "new": "d3d12/window-basics/d3d12_window_clear.cu"
+  },
+  {
+    "old": "d3d12/d3d12_window_clear.exe",
+    "new": "d3d12/window-basics/d3d12_window_clear.exe"
+  },
+  {
+    "old": "d3d12/dxr_area_pipeline.cu",
+    "new": "d3d12/r12-02-area/dxr_area_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_area_pipeline.exe",
+    "new": "d3d12/r12-02-area/dxr_area_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_area_reference.h",
+    "new": "d3d12/r12-02-area/dxr_area_reference.h"
+  },
+  {
+    "old": "d3d12/dxr_area.dxil",
+    "new": "d3d12/r12-02-area/dxr_area.dxil"
+  },
+  {
+    "old": "d3d12/dxr_area.hlsl",
+    "new": "d3d12/r12-02-area/dxr_area.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_blas_build.cu",
+    "new": "d3d12/r09-blas/dxr_blas_build.cu"
+  },
+  {
+    "old": "d3d12/dxr_blas_build.exe",
+    "new": "d3d12/r09-blas/dxr_blas_build.exe"
+  },
+  {
+    "old": "d3d12/dxr_camera_diagnostics.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_diagnostics.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_pipeline.cu",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_camera_pipeline.exe",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_camera_preview.py",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_preview.py"
+  },
+  {
+    "old": "d3d12/dxr_camera_reference.h",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_reference.h"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_distance.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_distance.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_distance.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_ids.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_ids.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_ids.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_normals.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_square_normals.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_square_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_distance.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_distance.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_distance.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_ids.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_ids.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_ids.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_normals.png",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_camera_wide_normals.ppm",
+    "new": "d3d12/r13-legacy-camera/dxr_camera_wide_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_camera.dxil",
+    "new": "d3d12/r13-legacy-camera/dxr_camera.dxil"
+  },
+  {
+    "old": "d3d12/dxr_camera.hlsl",
+    "new": "d3d12/r13-legacy-camera/dxr_camera.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_capability_probe.cu",
+    "new": "d3d12/r08a-capability/dxr_capability_probe.cu"
+  },
+  {
+    "old": "d3d12/dxr_capability_probe.exe",
+    "new": "d3d12/r08a-capability/dxr_capability_probe.exe"
+  },
+  {
+    "old": "d3d12/dxr_direct_light.hlsli",
+    "new": "d3d12/r13-renderer/dxr_direct_light.hlsli"
+  },
+  {
+    "old": "d3d12/dxr_geometry_raytype_pipeline.cu",
+    "new": "d3d12/r11-04-geometry-raytype/dxr_geometry_raytype_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_geometry_raytype_pipeline.exe",
+    "new": "d3d12/r11-04-geometry-raytype/dxr_geometry_raytype_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_geometry_raytype.dxil",
+    "new": "d3d12/r11-04-geometry-raytype/dxr_geometry_raytype.dxil"
+  },
+  {
+    "old": "d3d12/dxr_geometry_raytype.hlsl",
+    "new": "d3d12/r11-04-geometry-raytype/dxr_geometry_raytype.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_lighting_comparison.png",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_comparison.png"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_barycentric.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_barycentric.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_depth.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_depth.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_distance.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_ids.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1_wrong_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1_wrong_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_1.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_1.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_2.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_2.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_barycentric.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_barycentric.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_depth.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_depth.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_distance.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_ids.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3_wrong_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3_wrong_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_3.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_3.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_4.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_4.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_5.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_5.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_6.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_6.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_7.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_7.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_direct_8.pfm",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_direct_8.pfm"
+  },
+  {
+    "old": "d3d12/dxr_lighting_preview.py",
+    "new": "d3d12/r13-renderer/dxr_lighting_preview.py"
+  },
+  {
+    "old": "d3d12/dxr_lighting_reference.h",
+    "new": "d3d12/r13-renderer/dxr_lighting_reference.h"
+  },
+  {
+    "old": "d3d12/dxr_lighting_validation.txt",
+    "new": "d3d12/r13-renderer/results/r13-05/dxr_lighting_validation.txt"
+  },
+  {
+    "old": "d3d12/dxr_lighting.dxil",
+    "new": "d3d12/r13-renderer/dxr_lighting.dxil"
+  },
+  {
+    "old": "d3d12/dxr_local_root_pipeline.cu",
+    "new": "d3d12/r11-02-local-root/dxr_local_root_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_local_root_pipeline.exe",
+    "new": "d3d12/r11-02-local-root/dxr_local_root_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_local_root.dxil",
+    "new": "d3d12/r11-02-local-root/dxr_local_root.dxil"
+  },
+  {
+    "old": "d3d12/dxr_local_root.hlsl",
+    "new": "d3d12/r11-02-local-root/dxr_local_root.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_minimal_pipeline.cu",
+    "new": "d3d12/r11-01-minimal/dxr_minimal_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_minimal_pipeline.exe",
+    "new": "d3d12/r11-01-minimal/dxr_minimal_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_minimal.dxil",
+    "new": "d3d12/r11-01-minimal/dxr_minimal.dxil"
+  },
+  {
+    "old": "d3d12/dxr_minimal.hlsl",
+    "new": "d3d12/r11-01-minimal/dxr_minimal.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_shadow_pipeline.cu",
+    "new": "d3d12/r12-01-shadow/dxr_shadow_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_shadow_pipeline.exe",
+    "new": "d3d12/r12-01-shadow/dxr_shadow_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_shadow.dxil",
+    "new": "d3d12/r12-01-shadow/dxr_shadow.dxil"
+  },
+  {
+    "old": "d3d12/dxr_shadow.hlsl",
+    "new": "d3d12/r12-01-shadow/dxr_shadow.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_surface_diagnostics_1.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_surface_diagnostics_1.png"
+  },
+  {
+    "old": "d3d12/dxr_surface_diagnostics_3.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_surface_diagnostics_3.png"
+  },
+  {
+    "old": "d3d12/dxr_surface_preview.py",
+    "new": "d3d12/r13-renderer/dxr_surface_preview.py"
+  },
+  {
+    "old": "d3d12/dxr_surface_reference.h",
+    "new": "d3d12/r13-renderer/dxr_surface_reference.h"
+  },
+  {
+    "old": "d3d12/dxr_tlas_build.cu",
+    "new": "d3d12/r10-tlas/dxr_tlas_build.cu"
+  },
+  {
+    "old": "d3d12/dxr_tlas_build.exe",
+    "new": "d3d12/r10-tlas/dxr_tlas_build.exe"
+  },
+  {
+    "old": "d3d12/dxr_view_pipeline.cu",
+    "new": "d3d12/r13-renderer/dxr_view_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_view_pipeline.exe",
+    "new": "d3d12/r13-renderer/dxr_view_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_view_reference.h",
+    "new": "d3d12/r13-renderer/dxr_view_reference.h"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_barycentric.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_barycentric.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_barycentric.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_barycentric.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_depth.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_depth.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_depth.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_depth.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_distance.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_distance.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_distance.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_ids.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_ids.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_ids.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_normals.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_wrong_normals.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_wrong_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_1_wrong_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_1_wrong_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_barycentric.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_barycentric.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_barycentric.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_barycentric.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_depth.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_depth.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_depth.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_depth.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_distance.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_distance.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_distance.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_distance.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_ids.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_ids.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_ids.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_ids.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_normals.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_wrong_normals.png",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_wrong_normals.png"
+  },
+  {
+    "old": "d3d12/dxr_view_surface_3_wrong_normals.ppm",
+    "new": "d3d12/r13-renderer/results/r13-04/dxr_view_surface_3_wrong_normals.ppm"
+  },
+  {
+    "old": "d3d12/dxr_view.dxil",
+    "new": "d3d12/r13-renderer/dxr_view.dxil"
+  },
+  {
+    "old": "d3d12/dxr_view.hlsl",
+    "new": "d3d12/r13-renderer/dxr_view.hlsl"
+  },
+  {
+    "old": "d3d12/dxr_window_output.ppm",
+    "new": "d3d12/r11-03-window/dxr_window_output.ppm"
+  },
+  {
+    "old": "d3d12/dxr_window_pipeline.cu",
+    "new": "d3d12/r11-03-window/dxr_window_pipeline.cu"
+  },
+  {
+    "old": "d3d12/dxr_window_pipeline.exe",
+    "new": "d3d12/r11-03-window/dxr_window_pipeline.exe"
+  },
+  {
+    "old": "d3d12/dxr_window_screenshot.png",
+    "new": "d3d12/r11-03-window/dxr_window_screenshot.png"
+  },
+  {
+    "old": "d3d12/dxr_window.dxil",
+    "new": "d3d12/r11-03-window/dxr_window.dxil"
+  },
+  {
+    "old": "d3d12/dxr_window.hlsl",
+    "new": "d3d12/r11-03-window/dxr_window.hlsl"
+  },
+  {
+    "old": "d3d12/r13_camera_math.cu",
+    "new": "d3d12/r13-01-02-camera-math/r13_camera_math.cu"
+  },
+  {
+    "old": "d3d12/r13_camera_math.exe",
+    "new": "d3d12/r13-01-02-camera-math/r13_camera_math.exe"
+  },
+  {
+    "old": "path_tracing/pt1_radiometry.cu",
+    "new": "path_tracing/pt01-radiometry/pt1_radiometry.cu"
+  },
+  {
+    "old": "path_tracing/pt1_radiometry.exe",
+    "new": "path_tracing/pt01-radiometry/pt1_radiometry.exe"
+  },
+  {
+    "old": "path_tracing/pt2_depth.ppm",
+    "new": "path_tracing/pt02-ray-geometry/pt2_depth.ppm"
+  },
+  {
+    "old": "path_tracing/pt2_normals.ppm",
+    "new": "path_tracing/pt02-ray-geometry/pt2_normals.ppm"
+  },
+  {
+    "old": "path_tracing/pt2_primid.ppm",
+    "new": "path_tracing/pt02-ray-geometry/pt2_primid.ppm"
+  },
+  {
+    "old": "path_tracing/pt2_ray_geometry.cu",
+    "new": "path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu"
+  },
+  {
+    "old": "path_tracing/pt2_ray_geometry.exe",
+    "new": "path_tracing/pt02-ray-geometry/pt2_ray_geometry.exe"
+  },
+  {
+    "old": "path_tracing/pt3_monte_carlo.cu",
+    "new": "path_tracing/pt03-monte-carlo/pt3_monte_carlo.cu"
+  },
+  {
+    "old": "path_tracing/pt3_monte_carlo.exe",
+    "new": "path_tracing/pt03-monte-carlo/pt3_monte_carlo.exe"
+  },
+  {
+    "old": "path_tracing/pt4_lambert_sampling.cu",
+    "new": "path_tracing/pt04-lambert/pt4_lambert_sampling.cu"
+  },
+  {
+    "old": "path_tracing/pt4_lambert_sampling.exe",
+    "new": "path_tracing/pt04-lambert/pt4_lambert_sampling.exe"
+  },
+  {
+    "old": "path_tracing/pt5_direct_lighting.cu",
+    "new": "path_tracing/pt05-direct-lighting/pt5_direct_lighting.cu"
+  },
+  {
+    "old": "path_tracing/pt5_direct_lighting.exe",
+    "new": "path_tracing/pt05-direct-lighting/pt5_direct_lighting.exe"
+  }
+]

@@ -1,0 +1,35 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 11
+begin reference       seed=9000 flags=0 frames=2048
+reference       spp=2048 checked=154115 invalid=0 geometry=0 shadow=0 mean=1.1e-06 dir=2.08e-07 pos=2.82e-06 sample=3.34e-07 nonlinearGap=0.0317224 PASS
+begin seed0           seed=0 flags=0 frames=256
+seed0           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.58e-07 dir=1.92e-07 pos=2.73e-06 sample=2.71e-07 nonlinearGap=0.030669 PASS
+begin seed1           seed=1 flags=0 frames=256
+seed1           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.77e-07 dir=1.76e-07 pos=2.78e-06 sample=2.8e-07 nonlinearGap=0.0302543 PASS
+begin seed2           seed=2 flags=0 frames=256
+seed2           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.63e-07 dir=1.9e-07 pos=3.14e-06 sample=2.86e-07 nonlinearGap=0.0293005 PASS
+begin seed3           seed=3 flags=0 frames=256
+seed3           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.67e-07 dir=1.86e-07 pos=2.66e-06 sample=3.21e-07 nonlinearGap=0.0262159 PASS
+begin seed4           seed=4 flags=0 frames=256
+seed4           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.77e-07 dir=1.87e-07 pos=2.71e-06 sample=2.73e-07 nonlinearGap=0.0294766 PASS
+begin seed5           seed=5 flags=0 frames=256
+seed5           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=4.07e-07 dir=1.98e-07 pos=2.57e-06 sample=2.82e-07 nonlinearGap=0.0313924 PASS
+begin seed6           seed=6 flags=0 frames=256
+seed6           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.4e-07 dir=1.93e-07 pos=2.81e-06 sample=3.06e-07 nonlinearGap=0.0286859 PASS
+begin seed7           seed=7 flags=0 frames=256
+seed7           spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.3e-07 dir=1.92e-07 pos=2.24e-06 sample=3.05e-07 nonlinearGap=0.0298362 PASS
+begin center          seed=0 flags=2 frames=256
+center          spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.39e-07 dir=1.54e-07 pos=2.83e-06 sample=2.85e-07 nonlinearGap=0.0278907 PASS
+begin frozen          seed=0 flags=1 frames=16
+frozen          spp=16 checked=15435 invalid=0 geometry=0 shadow=0 mean=0 dir=1.92e-07 pos=2.24e-06 sample=2.68e-07 nonlinearGap=1.92296e-16 PASS
+begin hdr-zero        seed=0 flags=4 frames=16
+hdr-zero        spp=16 checked=0 invalid=0 geometry=0 shadow=0 mean=9.1e-08 dir=0 pos=0 sample=0 nonlinearGap=0.362532 PASS
+begin replay          seed=0 flags=0 frames=256
+replay          spp=256 checked=31836 invalid=0 geometry=0 shadow=0 mean=3.58e-07 dir=1.92e-07 pos=2.73e-06 sample=2.71e-07 nonlinearGap=0.030669 PASS
+8-seed mean MSE spp=1 : 0.000667845553 ; RMSE=0.0258427079
+8-seed mean MSE spp=16 : 4.23043997e-05 ; RMSE=0.00650418325
+8-seed mean MSE spp=256 : 2.88980542e-06 ; RMSE=0.00169994277
+replay MSE=0 frozen 1/16 MSE=0 fence=4641/4641
+InfoQueue: errors=0 warnings=0
+R.13.6 pixel sampling / linear accumulation: PASS

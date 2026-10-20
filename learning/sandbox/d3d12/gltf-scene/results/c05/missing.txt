@@ -1,0 +1,2 @@
+exit=1
+FAIL [adapt] C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c05/missing.gltf: missing referenced image: C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c05\intentionally-missing.png

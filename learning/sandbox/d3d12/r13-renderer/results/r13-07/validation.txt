@@ -1,0 +1,28 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 11
+stage=initial            epoch=1 finalCount=16 rng=15 exposure=1.0 tone=0
+stage=jitter-continues   epoch=1 finalCount=24 rng=23 exposure=1.0 tone=0
+stage=exposure-only      epoch=1 finalCount=32 rng=31 exposure=2.0 tone=0
+stage=tone-only          epoch=1 finalCount=40 rng=39 exposure=2.0 tone=1
+stage=seed-only          epoch=1 finalCount=48 rng=47 exposure=2.0 tone=1
+stage=camera-translate   epoch=2 finalCount=16 rng=63 exposure=2.0 tone=1
+stage=camera-rotate      epoch=3 finalCount=16 rng=79 exposure=2.0 tone=1
+stage=fov                epoch=4 finalCount=16 rng=95 exposure=2.0 tone=1
+stage=near-plane         epoch=5 finalCount=16 rng=111 exposure=2.0 tone=1
+stage=viewrect           epoch=6 finalCount=16 rng=127 exposure=2.0 tone=1
+stage=light-double       epoch=7 finalCount=16 rng=143 exposure=2.0 tone=1
+stage=material-black     epoch=8 finalCount=16 rng=159 exposure=2.0 tone=1
+stage=material-restore   epoch=9 finalCount=16 rng=175 exposure=2.0 tone=1
+stage=scene-floor-only   epoch=10 finalCount=16 rng=191 exposure=2.0 tone=1
+stage=scene-restore      epoch=11 finalCount=16 rng=207 exposure=2.0 tone=1
+stage=pixel-center       epoch=12 finalCount=16 rng=223 exposure=2.0 tone=1
+stage=pixel-area         epoch=13 finalCount=16 rng=239 exposure=2.0 tone=1
+stage=manual-reset       epoch=14 finalCount=16 rng=255 exposure=2.0 tone=1
+automatic history frames=256 checked=249044 invalid=0 geometry=0 shadow=0 mean=1.86e-07 dir=5.7e-07 pos=5.01e-06 sample=5.06e-07 PASS
+policy stages=18 resets=14 errors=0
+intentional mixed average frames=96 checked=35243 invalid=0 geometry=0 shadow=0 mean=2.33e-07 dir=1.07e-06 pos=1.34e-05 sample=2.67e-07 PASS
+clean new camera frames=32 checked=16508 invalid=0 geometry=0 shadow=0 mean=1.16e-07 dir=1.07e-06 pos=1.34e-05 sample=2.67e-07 PASS
+wrong-vs-clean MSE=0.00206292885 mixed-formula maxError=1.74e-07 fence=385/385
+InfoQueue: errors=0 warnings=0
+R.13.7 history validity / reset: PASS

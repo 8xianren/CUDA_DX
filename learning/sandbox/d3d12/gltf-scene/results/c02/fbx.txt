@@ -1,0 +1,57 @@
+exit=0
+Assimp 6.0.2
+node RootNode meshes local 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+node root_$AssimpFbx$_GeometricTranslation meshes local 1 0 0 0.0291829426 0 1 0 0.0412420705 0 0 1 0.200006887 0 0 0 1
+node root_$AssimpFbx$_GeometricRotation meshes local 0.862528384 -0.169147536 -0.47690025 0 0 0.942474544 -0.334277958 0 0.506008625 0.288324237 0.812911034 0 0 0 0 1
+node root_$AssimpFbx$_GeometricScaling meshes local 0.00176811742 0 0 0 0 0.00159080408 0 0 0 0 0.00159080396 0 0 0 0 1
+node root meshes 0 local 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+mesh 0 material 0 vertices 36 faces 12
+v 100 100 -100
+v -100 -100 -100
+v -100 100 -100
+v 100 100 -100
+v 100 -100 -100
+v -100 -100 -100
+v -100 100 100
+v 100 -100 100
+v 100 100 100
+v -100 100 100
+v -100 -100 100
+v 100 -100 100
+v 100 100 100
+v 100 -100 -100
+v 100 100 -100
+v 100 100 100
+v 100 -100 100
+v 100 -100 -100
+v -100 100 -100
+v -100 -100 100
+v -100 100 100
+v -100 100 -100
+v -100 -100 -100
+v -100 -100 100
+v -100 100 -100
+v 100 100 100
+v 100 100 -100
+v -100 100 -100
+v -100 100 100
+v 100 100 100
+v -100 -100 100
+v 100 -100 -100
+v 100 -100 100
+v -100 -100 100
+v -100 -100 -100
+v 100 -100 -100
+triangle 0 1 2
+triangle 3 4 5
+triangle 6 7 8
+triangle 9 10 11
+triangle 12 13 14
+triangle 15 16 17
+triangle 18 19 20
+triangle 21 22 23
+triangle 24 25 26
+triangle 27 28 29
+triangle 30 31 32
+triangle 33 34 35
+SUMMARY meshes=1 instances=1 triangles=12 cameras=0

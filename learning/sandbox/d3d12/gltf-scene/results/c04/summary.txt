@@ -1,0 +1,1 @@
+PASS: TRS and equivalent matrix; shared definitions; parent update; unchanged local vertices; strip/fan triangle area and winding.

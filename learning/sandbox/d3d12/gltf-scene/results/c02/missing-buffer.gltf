@@ -1,0 +1,32 @@
+{
+  "asset": { "version": "2.0", "generator": "CUDA_DX C.1 teaching fixture" },
+  "scene": 0,
+  "scenes": [ { "name": "Two copies of one mesh", "nodes": [0, 3] } ],
+  "nodes": [
+    { "name": "Group", "children": [1, 2] },
+    { "name": "Left", "mesh": 0, "translation": [-2, 0, 0] },
+    { "name": "Right", "mesh": 0, "translation": [2, 0, 0] },
+    { "name": "View", "camera": 0, "translation": [0, 0, 5] }
+  ],
+  "meshes": [
+    { "name": "TwoMaterialQuad", "primitives": [
+      { "attributes": { "POSITION": 0 }, "indices": 1, "material": 0, "mode": 4 },
+      { "attributes": { "POSITION": 0 }, "indices": 2, "material": 1, "mode": 4 }
+    ] }
+  ],
+  "accessors": [
+    { "bufferView": 0, "componentType": 5126, "count": 4, "type": "VEC3", "min": [-0.5, -0.5, 0], "max": [0.5, 0.5, 0] },
+    { "bufferView": 1, "byteOffset": 0, "componentType": 5123, "count": 3, "type": "SCALAR" },
+    { "bufferView": 1, "byteOffset": 6, "componentType": 5123, "count": 3, "type": "SCALAR" }
+  ],
+  "bufferViews": [
+    { "buffer": 0, "byteOffset": 0, "byteLength": 48, "target": 34962 },
+    { "buffer": 0, "byteOffset": 48, "byteLength": 12, "target": 34963 }
+  ],
+  "buffers": [ { "uri": "intentionally-missing.bin", "byteLength": 60 } ],
+  "materials": [
+    { "name": "Red", "pbrMetallicRoughness": { "baseColorFactor": [0.8, 0.1, 0.1, 1], "metallicFactor": 0, "roughnessFactor": 1 } },
+    { "name": "Blue", "pbrMetallicRoughness": { "baseColorFactor": [0.1, 0.1, 0.8, 1], "metallicFactor": 0, "roughnessFactor": 1 } }
+  ],
+  "cameras": [ { "type": "perspective", "perspective": { "yfov": 0.7853981634, "znear": 0.1, "zfar": 100 } } ]
+}

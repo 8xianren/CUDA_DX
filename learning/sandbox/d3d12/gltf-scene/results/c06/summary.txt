@@ -1,0 +1,11 @@
+valid : exit=0 expectation=accept
+bounds : exit=1 expectation=\[read\]
+component : exit=1 expectation=\[read\]
+misaligned : exit=0 expectation=observe
+unknown-required : exit=0 expectation=observe
+morph : exit=1 expectation=unsupported morph
+animation : exit=1 expectation=unsupported animation
+factor : exit=1 expectation=outside
+depth : exit=1 expectation=depth exceeds
+broken : exit=1 expectation=\[read\]
+camera-notice : exit=0 expectation=accept

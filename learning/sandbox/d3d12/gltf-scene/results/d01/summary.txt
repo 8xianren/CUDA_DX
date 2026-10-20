@@ -1,0 +1,1 @@
+PASS 3 GPU cases; buffer/texture exact readback; BLAS builds; 2-primitive local indices and material/sRGB pixel anchors <=1 code; Debug/GPU validation clean.

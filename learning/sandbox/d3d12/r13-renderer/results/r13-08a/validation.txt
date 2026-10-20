@@ -1,0 +1,7 @@
+CPU display probe (no GPU dispatch)
+linear 0.5: missing=128 correct=188 double=223
+roundtrip_max=0.000000 (bound 3e-9; precise values below)
+roundtrip_precise=2.2240118908827e-09 quantization_code_error=0.00196078266261746
+100001-point sweep + threshold anchors PASS; invalid inputs rejected=3
+Top: missing / correct / double sRGB. Bottom: EV -1 / 0 / +1, correct sRGB.
+R.13.8a PASS

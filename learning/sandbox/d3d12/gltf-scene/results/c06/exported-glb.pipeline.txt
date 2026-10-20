@@ -1,0 +1,3 @@
+exit=1
+validator=2.0.0-dev.3.10 errors=1 warnings=0
+REJECTED [validate] C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c02\equivalent.glb

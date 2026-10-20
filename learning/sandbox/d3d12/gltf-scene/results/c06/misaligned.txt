@@ -1,0 +1,5 @@
+exit=0
+meshes=1 instances=1
+NOTICE CPU import only: encoded images not decoded; PBR/alpha/normal-map GPU behavior not validated
+NOTICE decoded-scene checks are not full glTF validation; original extensions/alignment may not survive import
+ACCEPTED_CPU

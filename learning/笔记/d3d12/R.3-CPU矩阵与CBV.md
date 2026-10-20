@@ -6,8 +6,8 @@
 
 代码：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu`
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl`
 
 这仍是累积式 demo：R.1 的 Input Layout 和 R.2 的 Index Buffer 保留；本节把原先“顶点已经在 Clip/NDC”替换为真实的 CPU 矩阵路径。
 
@@ -283,8 +283,8 @@ Fence 完成            才允许复用受该 Fence 保护的帧资源
 
 ```powershell
 Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 本机 RTX 5070 / `sm_120` 输出：

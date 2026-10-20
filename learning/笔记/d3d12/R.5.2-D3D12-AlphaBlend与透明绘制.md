@@ -195,8 +195,8 @@ Alpha Blend 不改变 Texture Resource、SRV 或 Sampler 的职责；它是 PSO 
 运行：
 
 ```powershell
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 RTX 5070 / `sm_120` 输出：

@@ -1,0 +1,13 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 12
+display 480x270 RGBA8_UNORM buffers=2 rowPitch=2048 bytes=552832
+window frame=32 history=32 EV=+0 epoch=1
+window frame=64 history=64 EV=+1 epoch=1
+window frame=96 history=96 EV=-1 epoch=1
+window HDR frames=96 checked=20911 invalid=0 geometry=0 shadow=0 mean=2.05e-07 dir=1.92e-07 pos=2.24e-06 sample=2.45e-07 PASS
+display presents=96 verified=96 bufferUse=48/48 occluded=0 maxByteError=1 badRGB=0 badAlpha=0
+window resets=1 frames=96 fence=97/97
+InfoQueue: errors=0 warnings=0
+R.13.8b GPU display / Present: PASS
+Regression: R.13.4 / R.13.5 / R.13.6 / R.13.7 all PASS, Debug errors=0 warnings=0.

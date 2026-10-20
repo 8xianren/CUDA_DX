@@ -10,7 +10,7 @@
 
 本节对应的真实代码是：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu` 的 `render_mesh_frame`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu` 的 `render_mesh_frame`
 - 同文件的 `wait_until_frame_is_reusable`、`wait_for_fence_value`、`flush_gpu`
 
 它是 R.1/R.2/R.3 的累积 demo：有 Vertex Buffer、Index Buffer、CPU WVP、每 Back Buffer 一个 CBV，暂时没有深度缓冲和纹理。
@@ -810,8 +810,8 @@ Fence 完成后才允许复用受保护的帧资源。
 
 ```powershell
 Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 验收重点：
@@ -824,7 +824,7 @@ Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
 再运行：
 
 ```powershell
-.\d3d12\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
 ```
 
 这会让你把两套 `FrameResources` 各提交一次；第三次复用的逻辑不会发生，因为程序在 2 帧后退出，但退出时 `flush_gpu` 仍会等待队列尾部的工作。将 `--frames` 设为 0 表示持续运行，按 ESC 触发消息泵退出，不要在自动化测试中忘记终止窗口。

@@ -6,8 +6,8 @@
 
 代码沿用 R.1 的窗口、设备、PSO 和 Input Layout：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu`
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl`
 
 当前源文件是累积式 demo：R.1 的真实 Vertex Buffer 和 Input Layout 保留，绘制路径增加 Index Buffer 后变为 R.2。
 
@@ -193,8 +193,8 @@ Index Buffer 不知道 `POSITION` 在 offset 0 还是 offset 12；Input Layout �
 
 ```powershell
 Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 预期关键输出：

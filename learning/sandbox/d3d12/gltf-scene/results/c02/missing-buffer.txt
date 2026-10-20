@@ -1,0 +1,2 @@
+exit=1
+IMPORT_ERROR C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c02/missing-buffer.gltf: GLTF: could not open referenced file "intentionally-missing.bin"

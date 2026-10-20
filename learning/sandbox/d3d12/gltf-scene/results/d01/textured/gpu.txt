@@ -1,0 +1,8 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+PASS buffer_readback texture_readback BLAS_build=1 upload_retired_after_fence
+PASS raster_preview nonblack_pixels=20706 size=256x256
+primitive_meshes=1 vertices=3 indices=3 source_images=1 gpu_images_with_fallback=2 materials=2 BLAS_geometry=1
+debug_warning_error=0 fence=2/2
+PASS D.1 GPU upload and local-space preview (no TLAS/no ray dispatch)

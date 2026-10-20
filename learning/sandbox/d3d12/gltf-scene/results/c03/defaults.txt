@@ -1,0 +1,2 @@
+Vertex stride=48 meshes=2
+PASS: owned arrays checked after Importer destruction

@@ -1,7 +1,7 @@
 # 一键编译并运行 CUDA 程序（Windows + RTX 5070 / Blackwell / sm_120）
 # 用法： .\build.ps1 cuda\hello.cu
-#        .\build.ps1 path_tracing\pt1_radiometry.cu
-#        .\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
+#        .\build.ps1 path_tracing\pt01-radiometry\pt1_radiometry.cu
+#        .\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
 param(
     [Parameter(Mandatory = $true)] [string]$Source,
     [string]$Arch = "sm_120",

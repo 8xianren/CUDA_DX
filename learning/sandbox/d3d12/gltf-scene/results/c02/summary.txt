@@ -1,0 +1,3 @@
+PASS: glTF/GLB geometry, node transforms and baseColor equality; shared mesh references; OBJ triangulation; FBX box; bad magic; truncated GLB; invalid chunk length; missing buffer.
+KNOWN LIMIT: Assimp 6.0.2 GLB export drops camera object (1 -> 0); View node remains.
+CPU only; no GPU upload or full material/animation compatibility claim.

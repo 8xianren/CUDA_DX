@@ -330,8 +330,8 @@ RTV 自身只是描述符堆中的一条描述记录，不拥有任何颜色像�
 
 代码入口：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu`
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl`
 
 启动阶段创建 typeless 颜色 Resource、sRGB SRV、sRGB RTV 和匹配 PSO；它们在整个
 渲染循环中保持存活。逐帧只绑定已有描述符并绘制，不发生颜色空间相关 CPU/GPU
@@ -353,8 +353,8 @@ RTV 自身只是描述符堆中的一条描述记录，不拥有任何颜色像�
 
 ```powershell
 cd C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 程序首先打印标准曲线数值：

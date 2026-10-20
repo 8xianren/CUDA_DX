@@ -6,8 +6,8 @@
 
 示例代码：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu`
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl`
 
 ## 1. 和粒子 demo 的区别
 
@@ -241,8 +241,8 @@ Local vertex --CPU 上传的 Model/View/Projection--> Clip position
 
 ```powershell
 Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu --NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu --NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 180 --no-vsync
 ```
 
 预期输出包括：

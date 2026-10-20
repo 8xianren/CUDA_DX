@@ -1,0 +1,2 @@
+exit=1
+IMPORT_ERROR C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c02/bad-magic.glb: No suitable reader found for the file format of file "C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c02/bad-magic.glb".

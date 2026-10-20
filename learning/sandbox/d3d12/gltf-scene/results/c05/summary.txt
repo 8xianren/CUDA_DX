@@ -1,0 +1,1 @@
+PASS: defaults, OPAQUE/MASK/BLEND metadata, shared external PNG, embedded PNG bytes, sampler and missing image rejection. CPU only; encoded bytes not pixel data.

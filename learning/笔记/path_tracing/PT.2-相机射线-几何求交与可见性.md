@@ -15,13 +15,13 @@ PT.1 已经证明半球立体角是 `2π`、投影立体角是 `π`、Lambert �
 
 可运行代码：
 
-- `learning/sandbox/path_tracing/pt2_ray_geometry.cu`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu`
 
 诊断图（程序运行后写在源文件旁边）：
 
-- `learning/sandbox/path_tracing/pt2_normals.ppm`
-- `learning/sandbox/path_tracing/pt2_depth.ppm`
-- `learning/sandbox/path_tracing/pt2_primid.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_normals.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_depth.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_primid.ppm`
 
 本节不采样路径、不乘 BRDF、不建 BVH。PT.3 才引入蒙特卡洛；PT.9 才用加速结构
 替换本节的暴力最近命中。
@@ -860,11 +860,11 @@ epsilon 为 0：表面长痤疮，阴影斑点。本课 `1e-4` 对单位尺度�
 
 ## 11. 代码在测什么
 
-文件：`learning/sandbox/path_tracing/pt2_ray_geometry.cu`
+文件：`learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu`
 
 相机基向量：
 
-```179:191:learning/sandbox/path_tracing/pt2_ray_geometry.cu
+```179:191:learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu
   const Vec3 w = normalize(origin - look_at);
   const Vec3 u = normalize(cross(world_up, w));
   const Vec3 v = cross(w, u);
@@ -874,7 +874,7 @@ epsilon 为 0：表面长痤疮，阴影斑点。本课 `1e-4` 对单位尺度�
 
 球体近/远根：
 
-```227:242:learning/sandbox/path_tracing/pt2_ray_geometry.cu
+```227:242:learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu
   float t = -b - sqrt_disc;  // 较近根
   if (t < ray.tmin || t > ray.tmax) {
     t = -b + sqrt_disc;
@@ -885,7 +885,7 @@ epsilon 为 0：表面长痤疮，阴影斑点。本课 `1e-4` 对单位尺度�
 
 三角形重心：
 
-```261:286:learning/sandbox/path_tracing/pt2_ray_geometry.cu
+```261:286:learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu
   const float det = dot(e1, pvec);
   if (absf(det) < 1.0e-8f) {
     return false;  // 平行或共面
@@ -896,7 +896,7 @@ epsilon 为 0：表面长痤疮，阴影斑点。本课 `1e-4` 对单位尺度�
 
 最近命中收缩 `tmax`：
 
-```363:381:learning/sandbox/path_tracing/pt2_ray_geometry.cu
+```363:381:learning/sandbox/path_tracing/pt02-ray-geometry/pt2_ray_geometry.cu
   if (intersect_sphere(shrinking, scene.sphere, &candidate)) {
     shrinking.tmax = candidate.t;
     *hit = candidate;
@@ -917,7 +917,7 @@ pixel (32,32) hits sphere
 ## 12. 本机实测
 
 ```text
-.\build.ps1 path_tracing\pt2_ray_geometry.cu
+.\build.ps1 path_tracing\pt02-ray-geometry\pt2_ray_geometry.cu
 
 camera u/v/w, 1x1 中心 -Z, 2x2 像素 (0,0)     PASS
 sphere t=1 / tmin 裁近根 t=3 / miss / graze   PASS

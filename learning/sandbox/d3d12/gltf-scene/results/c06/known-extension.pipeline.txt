@@ -1,0 +1,3 @@
+exit=1
+validator=2.0.0-dev.3.10 errors=0 warnings=0
+REJECTED [scope] extensions deferred: KHR_materials_unlit

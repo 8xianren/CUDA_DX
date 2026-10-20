@@ -1,0 +1,2 @@
+exit=1
+REJECTED [adapt] C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c06/animation.gltf: unsupported animation playback

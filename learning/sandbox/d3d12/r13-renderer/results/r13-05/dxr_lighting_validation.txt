@@ -1,0 +1,30 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 11
+submit frame=1 slot=0 cbOffset=0 fence=2
+submit frame=2 slot=1 cbOffset=256 fence=3
+frame=1 nee64           miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=1 nee64           invalid=0 visibilityMismatch=0 partial=2414 maxRGB=2.60781e-07 maxOpen=2.60781e-07 relation=0 peak=0.421964 PASS
+submit frame=3 slot=0 cbOffset=0 fence=4
+frame=2 no-shadow       miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=2 no-shadow       invalid=0 visibilityMismatch=0 partial=0 maxRGB=2.59113e-07 maxOpen=2.59113e-07 relation=0 peak=0.421964 PASS
+submit frame=4 slot=1 cbOffset=256 fence=5
+frame=3 back-emitter    miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=3 back-emitter    invalid=0 visibilityMismatch=0 partial=0 maxRGB=0 maxOpen=0 relation=0 peak=0 PASS
+submit frame=5 slot=0 cbOffset=0 fence=6
+frame=4 white-furnace   miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=4 white-furnace   invalid=0 visibilityMismatch=0 partial=0 maxRGB=4.12953e-08 maxOpen=4.12953e-08 relation=0 peak=1 PASS
+submit frame=6 slot=1 cbOffset=256 fence=7
+frame=5 black-rho       miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=5 black-rho       invalid=0 visibilityMismatch=0 partial=2414 maxRGB=0 maxOpen=0 relation=0 peak=0 PASS
+submit frame=7 slot=0 cbOffset=0 fence=8
+frame=6 double-Le       miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=6 double-Le       invalid=0 visibilityMismatch=0 partial=2414 maxRGB=5.21562e-07 maxOpen=5.21562e-07 relation=0 peak=0.843927 PASS
+submit frame=8 slot=1 cbOffset=256 fence=9
+frame=7 nee1            miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=7 nee1            invalid=0 visibilityMismatch=0 partial=0 maxRGB=3.01505e-07 maxOpen=3.01505e-07 relation=0 peak=0.489509 PASS
+frame=8 nee64-again     miss/id1/id2/id3=34625/5294/1917/15764 mismatch=0 invalid=0 dir=1.72e-07 near=3.1e-08 t=2.57e-06 pos=2.51e-06 normal=4.09e-08 inverse=6.14e-08 bary=2.16e-06 depth=2.42e-06 wrong_angle=72.43 PASS
+light=8 nee64-again     invalid=0 visibilityMismatch=0 partial=2414 maxRGB=2.60781e-07 maxOpen=2.60781e-07 relation=0 peak=0.421964 PASS
+View payload=128 stride=256 slots=2 reused=6 verified=8 fence target=9 completed=9
+InfoQueue: errors=0 warnings=0
+R.13.5 Lambert / rectangular NEE: PASS

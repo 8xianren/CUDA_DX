@@ -11,8 +11,8 @@
 
 可运行代码：
 
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.cu`
-- `learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu`
+- `learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl`
 
 官方资料：
 
@@ -279,8 +279,8 @@ PowerShell：
 
 ```powershell
 cd C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
 ```
 
 本机 RTX 5070 / `sm_120` 实测：

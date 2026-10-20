@@ -1,0 +1,6 @@
+PASS 5 cases: uint8/uint16/uint32/nonindexed + missing attributes.
+Known answers: positions, normals, UV (Assimp v=1-sourceV), UNORM8 RGBA, uint32 indices.
+Source: viewOffset=16 stride=40 count=3; positionOffset=0 normalOffset=12 uvOffset=24 colorOffset=32.
+Index source: viewOffset=136 accessorOffset=4, widths=1/2/4; nonindexed case has no index accessor.
+Owned output: Vertex stride=48 offsets=0/12/24/32, uint32 indices; Importer already destroyed.
+No GPU resources or node/material adaptation in this lesson.

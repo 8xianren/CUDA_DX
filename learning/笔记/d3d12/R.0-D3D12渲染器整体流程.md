@@ -12,8 +12,8 @@
 
 真实代码：
 
-- learning/sandbox/d3d12/d3d12_mesh_input_layout.cu
-- learning/sandbox/d3d12/d3d12_mesh_input_layout.hlsl
+- learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu
+- learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.hlsl
 
 本节只建立系统地图。帧内 API 的逐个参数解释见 R.3-完整逐步帧流程.md。
 
@@ -528,8 +528,8 @@ main
 
 ```powershell
 Set-Location C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 d3d12\d3d12_mesh_input_layout.cu -NoRun
-.\d3d12\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\d3d12\r01-r08-mesh\d3d12_mesh_input_layout.exe --frames 2 --no-vsync
 ```
 
 对照终端输出：

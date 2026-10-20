@@ -1,0 +1,2 @@
+exit=0
+PASS defaults: owned CPU materials; no pixel decode or GPU sampling

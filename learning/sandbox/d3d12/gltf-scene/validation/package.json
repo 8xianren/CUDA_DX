@@ -1,0 +1,7 @@
+{
+  "name": "cuda-dx-gltf-validation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "C.6 official glTF validation before CPU import",
+  "dependencies": { "gltf-validator": "2.0.0-dev.3.10" }
+}

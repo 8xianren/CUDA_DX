@@ -15,7 +15,7 @@ R.1–R.7 已经能用光栅化画出网格、材质和实例。从本节开始�
 
 可运行代码：
 
-- `learning/sandbox/path_tracing/pt1_radiometry.cu`
+- `learning/sandbox/path_tracing/pt01-radiometry/pt1_radiometry.cu`
 
 本节不画图、不求交、不采样路径。PT.2 才生成相机射线，PT.3 才引入蒙特卡洛。
 
@@ -293,7 +293,7 @@ Lambert 的 `1/π` 不是“除个经验系数让图好看”，是让
 
 ## 9. 代码：黎曼和在量什么
 
-文件：`learning/sandbox/path_tracing/pt1_radiometry.cu`
+文件：`learning/sandbox/path_tracing/pt01-radiometry/pt1_radiometry.cu`
 
 积分核（中点矩形，双精度）：
 
@@ -358,7 +358,7 @@ Lambert f_r = ρ/π，均匀 Li 时 Lo = ρ Li；忘掉余弦会得到 2ρ Li
 Lumen ≠ Path Tracer ≠ DXR
 ```
 
-本机验收（`learning/sandbox/build.ps1 path_tracing\pt1_radiometry.cu`）：
+本机验收（`learning/sandbox/build.ps1 path_tracing\pt01-radiometry\pt1_radiometry.cu`）：
 
 ```text
 ∫ dω            rel_err=2.452e-08  PASS

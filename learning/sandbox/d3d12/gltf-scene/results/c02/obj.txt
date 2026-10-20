@@ -1,0 +1,12 @@
+exit=0
+Assimp 6.0.2
+node quad.obj meshes local 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+node Quad meshes 0 local 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+mesh 0 material 0 vertices 4 faces 2
+v -0.5 -0.5 0
+v 0.5 -0.5 0
+v 0.5 0.5 0
+v -0.5 0.5 0
+triangle 0 1 2
+triangle 0 2 3
+SUMMARY meshes=1 instances=1 triangles=2 cameras=0
