@@ -1,0 +1,15 @@
+CPU_only=1
+independent_runs=4096
+paths_per_receiver=64
+training_samples_per_node=64
+max_reference_delta=5.2793890443353e-06
+coarse_expected_bias_rms=0.0064239834206283
+fine_expected_bias_rms=0.00044557818282879
+coarse_detected_pixels=5
+full_tail_light_samples=1310720
+cache_training_light_samples=23592960
+cache_queries_all_four_modes=5242880
+coarse_coefficient_bytes=144
+fine_coefficient_bytes=1296
+directional_right=0.27965628924945
+directional_left=0.18529639934126

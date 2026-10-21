@@ -1,0 +1,32 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+samples=32/256
+samples=64/256
+samples=96/256
+samples=128/256
+samples=160/256
+samples=192/256
+samples=224/256
+samples=256/256
+debug_warning_error=0 fence=9/9
+PATH PASS rays=58726597 mean=0.445568,0.405792,0.395978 SE_Y=0.00011498 delta=2186003 transmission=1405889 invalid=0 nonfinite=0

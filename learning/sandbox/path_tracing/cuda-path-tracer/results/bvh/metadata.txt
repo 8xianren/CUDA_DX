@@ -1,0 +1,7 @@
+build_cpu_ms=437.232
+node_bytes=1048544
+order_bytes=253984
+triangle_bytes=4063744
+registers=48
+local_bytes_per_thread=512
+rejected=4

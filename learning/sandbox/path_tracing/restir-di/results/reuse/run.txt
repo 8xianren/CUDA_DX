@@ -1,0 +1,9 @@
+open fresh final mean=0.483445 variance=0.0177781 failures=0
+open temporal final mean=0.485065 variance=0.00107983 failures=0
+open spatial final mean=0.483387 variance=0.00416397 failures=0
+open both final mean=0.485027 variance=0.000457428 failures=0
+blocked fresh final mean=0.355706 variance=0.0613896 failures=0
+blocked temporal final mean=0.354007 variance=0.0478839 failures=0
+blocked spatial final mean=0.354368 variance=0.0500626 failures=0
+blocked both final mean=0.35364 variance=0.047648 failures=0
+STATIC REUSE VERIFY PASS

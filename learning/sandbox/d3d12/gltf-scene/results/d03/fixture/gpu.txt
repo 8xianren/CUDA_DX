@@ -1,0 +1,43 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=340082688 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=340090880 mask=255
+10497-9728 samples=992 max_error=0.000228643 errors=0 wrong_v_detected=992 wrong_srgb_detected=528
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=344154112 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=344162304 mask=255
+10497-9729 samples=992 max_error=0.00553486 errors=0 wrong_v_detected=864 wrong_srgb_detected=883
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=344154112 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=344162304 mask=255
+33071-9728 samples=992 max_error=0.000228643 errors=0 wrong_v_detected=992 wrong_srgb_detected=686
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=344154112 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=344162304 mask=255
+33071-9729 samples=992 max_error=0.00395191 errors=0 wrong_v_detected=972 wrong_srgb_detected=726
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=344154112 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=344162304 mask=255
+33648-9728 samples=992 max_error=0.000228643 errors=0 wrong_v_detected=992 wrong_srgb_detected=562
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=344154112 mask=255
+instance=1 node=0 mesh=1 material=1 origin=0,0,0 BLAS=344162304 mask=255
+33648-9729 samples=992 max_error=0.00562435 errors=0 wrong_v_detected=916 wrong_srgb_detected=760
+debug_warning_error=0 fence=2/2
+PASS D.3 six sampler variants, linear RGBA, UV and sRGB negative controls

@@ -1,0 +1,10 @@
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+round=0 slots=1 wall_ms=35.848 cuda_sum_ms=0.652736 d3d_sum_ms=23.0761
+round=1 slots=1 wall_ms=35.9951 cuda_sum_ms=0.638976 d3d_sum_ms=23.0869
+round=2 slots=1 wall_ms=37.8528 cuda_sum_ms=0.64688 d3d_sum_ms=23.1598
+round=3 slots=1 wall_ms=35.0239 cuda_sum_ms=0.668256 d3d_sum_ms=22.9751
+round=4 slots=1 wall_ms=34.7542 cuda_sum_ms=0.653568 d3d_sum_ms=22.8641
+debug_disabled_performance_mode
+PASS slots=1 mode=perf bytes=592 pixel_checks=0 simulation_checks=16384 image_hash=4602265566613426980

@@ -8,10 +8,12 @@
 void Check(HRESULT hr,const char* operation) {
     if(FAILED(hr)) throw std::runtime_error(std::string(operation)+" HRESULT="+std::to_string(uint32_t(hr)));
 }
-UploadContext::UploadContext() {
-    ComPtr<ID3D12Debug> debug;Check(D3D12GetDebugInterface(IID_PPV_ARGS(&debug)),"debug layer");debug->EnableDebugLayer();
-    ComPtr<ID3D12Debug1> debug1;Check(debug.As(&debug1),"debug1");debug1->SetEnableGPUBasedValidation(TRUE);
-    ComPtr<IDXGIFactory6> factory;Check(CreateDXGIFactory2(DXGI_CREATE_FACTORY_DEBUG,IID_PPV_ARGS(&factory)),"factory");
+UploadContext::UploadContext(bool validation):validationEnabled(validation) {
+    if(validation){
+        ComPtr<ID3D12Debug> debug;Check(D3D12GetDebugInterface(IID_PPV_ARGS(&debug)),"debug layer");debug->EnableDebugLayer();
+        ComPtr<ID3D12Debug1> debug1;Check(debug.As(&debug1),"debug1");debug1->SetEnableGPUBasedValidation(TRUE);
+    }
+    ComPtr<IDXGIFactory6> factory;Check(CreateDXGIFactory2(validation?DXGI_CREATE_FACTORY_DEBUG:0,IID_PPV_ARGS(&factory)),"factory");
     for(UINT i=0;;++i) {
         ComPtr<IDXGIAdapter1> adapter;
         if(factory->EnumAdapterByGpuPreference(i,DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE,IID_PPV_ARGS(&adapter))==DXGI_ERROR_NOT_FOUND) break;
@@ -24,16 +26,17 @@ UploadContext::UploadContext() {
     if(!device) throw std::runtime_error("hardware D3D12 device unavailable");
     D3D12_FEATURE_DATA_D3D12_OPTIONS5 options{};Check(device->CheckFeatureSupport(D3D12_FEATURE_D3D12_OPTIONS5,&options,sizeof(options)),"DXR feature");
     if(options.RaytracingTier==D3D12_RAYTRACING_TIER_NOT_SUPPORTED) throw std::runtime_error("DXR unavailable");
-    Check(device.As(&info),"info queue");
+    if(validation)Check(device.As(&info),"info queue");
     D3D12_COMMAND_QUEUE_DESC q{};q.Type=D3D12_COMMAND_LIST_TYPE_DIRECT;
     Check(device->CreateCommandQueue(&q,IID_PPV_ARGS(&queue)),"queue");
     Check(device->CreateCommandAllocator(q.Type,IID_PPV_ARGS(&allocator)),"allocator");
     Check(device->CreateCommandList(0,q.Type,allocator.Get(),nullptr,IID_PPV_ARGS(&list)),"list");
     Check(device->CreateFence(0,D3D12_FENCE_FLAG_NONE,IID_PPV_ARGS(&fence)),"fence");
 }
-void UploadContext::SubmitWait() {
+void UploadContext::SubmitWait(const std::function<void()>& beforeSignal) {
     Check(list->Close(),"close list");
     ID3D12CommandList* lists[]={list.Get()};queue->ExecuteCommandLists(1,lists);
+    if(beforeSignal)beforeSignal(); // Present或外部消费者回接排入同一队列后，再Signal覆盖整组操作。
     Check(queue->Signal(fence.Get(),++submitted),"queue signal");
     HANDLE event=CreateEventW(nullptr,FALSE,FALSE,nullptr);
     if(!event) throw std::runtime_error("CreateEvent failed");
@@ -46,6 +49,7 @@ void UploadContext::SubmitWait() {
     Check(allocator->Reset(),"reset allocator");Check(list->Reset(allocator.Get(),nullptr),"reset list");
 }
 unsigned UploadContext::CheckDebug() {
+    if(!validationEnabled){std::cout<<"debug_disabled_performance_mode\n";return 0;}
     unsigned bad=0;
     for(UINT64 i=0;i<info->GetNumStoredMessages();++i) {
         SIZE_T n=0;Check(info->GetMessage(i,nullptr,&n),"debug size");std::vector<uint8_t> bytes(n);
@@ -64,7 +68,10 @@ ComPtr<ID3D12Resource> MakeResource(UploadContext& c,const D3D12_RESOURCE_DESC& 
     // 当前运行时普通Default Buffer以COMMON创建，再显式转换；AS保持专用初始状态。
     const bool commonBuffer=type==D3D12_HEAP_TYPE_DEFAULT && d.Dimension==D3D12_RESOURCE_DIMENSION_BUFFER
         && state!=D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE;
-    D3D12_CLEAR_VALUE clear{};clear.Format=DXGI_FORMAT_R8G8B8A8_UNORM_SRGB;clear.Color[3]=1;
+    D3D12_CLEAR_VALUE clear{};
+    clear.Format=d.Format==DXGI_FORMAT_R8G8B8A8_TYPELESS?DXGI_FORMAT_R8G8B8A8_UNORM_SRGB:d.Format;
+    // RGBA8预览清alpha=1；整数ID目标清全零（表示miss）。
+    clear.Color[3]=d.Format==DXGI_FORMAT_R8G8B8A8_TYPELESS?1.f:0.f;
     const auto* clearPtr=(d.Flags&D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET)?&clear:nullptr;
     Check(c.device->CreateCommittedResource(&h,D3D12_HEAP_FLAG_NONE,&d,commonBuffer?D3D12_RESOURCE_STATE_COMMON:state,clearPtr,IID_PPV_ARGS(&r)),"CreateCommittedResource");
     if(commonBuffer && state!=D3D12_RESOURCE_STATE_COMMON) Transition(c,r.Get(),D3D12_RESOURCE_STATE_COMMON,state);
@@ -170,6 +177,20 @@ GpuScene UploadScene(UploadContext& c,const CpuScene& source) {
     }
     return out;
 }
+AccelerationBuffers BuildAcceleration(UploadContext& c,const D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS& input) {
+    D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO sizes{};c.device->GetRaytracingAccelerationStructurePrebuildInfo(&input,&sizes);
+    if(!sizes.ResultDataMaxSizeInBytes||!sizes.ScratchDataSizeInBytes) throw std::runtime_error("AS size zero");
+    auto d=BufferDesc(sizes.ResultDataMaxSizeInBytes);d.Flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS;
+    AccelerationBuffers out;
+    out.result=MakeResource(c,d,D3D12_HEAP_TYPE_DEFAULT,D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE);
+    d.Width=sizes.ScratchDataSizeInBytes;out.scratch=MakeResource(c,d,D3D12_HEAP_TYPE_DEFAULT,D3D12_RESOURCE_STATE_UNORDERED_ACCESS);
+    D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC build{};build.Inputs=input;
+    build.DestAccelerationStructureData=out.result->GetGPUVirtualAddress();build.ScratchAccelerationStructureData=out.scratch->GetGPUVirtualAddress();
+    c.list->BuildRaytracingAccelerationStructure(&build,0,nullptr);
+    // BLAS写→TLAS读以及TLAS写→TraceRay读都需要建立依赖；AS不通过切到SRV状态实现。
+    D3D12_RESOURCE_BARRIER barrier{};barrier.Type=D3D12_RESOURCE_BARRIER_TYPE_UAV;barrier.UAV.pResource=out.result.Get();c.list->ResourceBarrier(1,&barrier);
+    return out;
+}
 void VerifyCopiesAndBuildBlas(UploadContext& c,GpuScene& scene) {
     // 与上传在同一命令列表录制，barrier定义复制写→读回/AS读取依赖。
     std::vector<ComPtr<ID3D12Resource>> reads,asResources;
@@ -195,17 +216,7 @@ void VerifyCopiesAndBuildBlas(UploadContext& c,GpuScene& scene) {
         D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS input{};input.Type=D3D12_RAYTRACING_ACCELERATION_STRUCTURE_TYPE_BOTTOM_LEVEL;
         input.Flags=D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_FLAG_PREFER_FAST_TRACE;
         input.DescsLayout=D3D12_ELEMENTS_LAYOUT_ARRAY;input.NumDescs=1;input.pGeometryDescs=&geometry;
-        D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO sizes{};c.device->GetRaytracingAccelerationStructurePrebuildInfo(&input,&sizes);
-        if(!sizes.ResultDataMaxSizeInBytes||!sizes.ScratchDataSizeInBytes) throw std::runtime_error("BLAS size zero");
-        auto d=BufferDesc(sizes.ResultDataMaxSizeInBytes);d.Flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS;
-        auto result=MakeResource(c,d,D3D12_HEAP_TYPE_DEFAULT,D3D12_RESOURCE_STATE_RAYTRACING_ACCELERATION_STRUCTURE);
-        d.Width=sizes.ScratchDataSizeInBytes;
-        auto scratch=MakeResource(c,d,D3D12_HEAP_TYPE_DEFAULT,D3D12_RESOURCE_STATE_UNORDERED_ACCESS);
-        D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_DESC build{};build.Inputs=input;
-        build.DestAccelerationStructureData=result->GetGPUVirtualAddress();build.ScratchAccelerationStructureData=scratch->GetGPUVirtualAddress();
-        c.list->BuildRaytracingAccelerationStructure(&build,0,nullptr);
-        D3D12_RESOURCE_BARRIER barrier{};barrier.Type=D3D12_RESOURCE_BARRIER_TYPE_UAV;barrier.UAV.pResource=result.Get();c.list->ResourceBarrier(1,&barrier);
-        asResources.push_back(result);asResources.push_back(scratch);
+        auto built=BuildAcceleration(c,input);asResources.push_back(built.result);asResources.push_back(built.scratch);
     }
     c.SubmitWait(); // 所有staging、scratch、AS和readback保持存活到这里。
     const void* refs[]={scene.referenceVertices.data(),scene.referenceIndices.data()};

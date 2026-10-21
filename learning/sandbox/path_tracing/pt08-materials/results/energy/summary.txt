@@ -1,0 +1,5 @@
+ENERGY CPU PASS samples=7864320 rows=5 nodes_per_row=257 offgrid=320 reciprocity_pairs=10000
+max_quadrature_change=1.83791628389e-07 max_order=2048 max_interpolation_error=9.78188470616e-06
+max_white_error=1.154033762e-06 max_independent_integral_error=1.16248233262e-09 max_reciprocity_error=3.8369307731e-13
+negative_baseline_80=1.26865688684 negative_one_sided_reciprocity=0.289752337378 rejected=4
+CPU_ONLY; tested roughness={0,.25,.5,.75,1}; no roughness interpolation, GPU LUT or full integrator yet.

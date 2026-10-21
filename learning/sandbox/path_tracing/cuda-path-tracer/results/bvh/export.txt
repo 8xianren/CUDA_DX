@@ -1,0 +1,1 @@
+EXPORTED world triangles=63496 materials=20 triangle_stride=64

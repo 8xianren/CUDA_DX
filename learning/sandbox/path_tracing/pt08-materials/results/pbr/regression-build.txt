@@ -1,0 +1,7 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  scene_boundary_test.cpp
+  scene_boundary_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_boundary_test.exe

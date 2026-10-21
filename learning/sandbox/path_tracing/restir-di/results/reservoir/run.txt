@@ -1,0 +1,6 @@
+NEE-1 mean=11.0039 variance=69.1149 SE=0.0131449
+NEE-8 mean=11.0006 variance=8.61598 SE=0.00464111
+RIS-8 mean=11.0054 variance=47.0932 SE=0.0108505
+wrong-original-q mean=12.4387 variance=72.9712 SE=0.0135066
+wrong-no-visibility mean=14.9991 variance=2.2841 SE=0.00238961
+RESERVOIR CPU VERIFY PASS

@@ -1,0 +1,33 @@
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:18: error: expected unqualified-id
+        for(uint technique=0;technique<4;++technique){
+                 ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:30: error: expected ';' in 'for' statement specifier
+        for(uint technique=0;technique<4;++technique){
+                             ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:30: error: expected expression
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:44: error: expected expression
+        for(uint technique=0;technique<4;++technique){
+                                           ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:44: error: expected ')'
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:44:12: note: to match this '('
+        for(uint technique=0;technique<4;++technique){
+           ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:46:16: error: expected expression
+            if(technique<2){float3 q=float3((2*u-1)*c.halfLight,(2*v-1)*c.halfLight,2);direction=normalize(q-position);}
+               ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:53:16: error: expected expression
+            if(technique<2)outValue.diagnostics.y+=visible?1:0;else outValue.diagnostics.z+=visible?1:0;
+               ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:55:23: error: expected expression
+            float own=technique<2?pL:pB,other=technique<2?pB:pL;
+                      ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:55:47: error: expected expression
+            float own=technique<2?pL:pB,other=technique<2?pB:pL;
+                                              ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:57:16: error: expected expression
+            if(technique<2)outValue.estimates.y+=contribution;else outValue.estimates.x+=contribution;
+               ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt06-mis/gpu_integrator.hlsl:58:16: error: expected expression
+            if(technique==0||technique==2){outValue.estimates.z+=Weight(own,other,1)*contribution;outValue.estimates.w+=Weight(own,other,2)*contribution;}
+               ^
+

@@ -1,0 +1,9 @@
+CPU_only=1
+exact_correct=5
+exact_missing_M=3.33333333333
+exact_naive_q=4.85
+geometry_trials_per_point=100000
+naive_failed_points=5
+wrong_count_failed_points=5
+duplicate_per_trial_equal=1
+invalid_rejected=2

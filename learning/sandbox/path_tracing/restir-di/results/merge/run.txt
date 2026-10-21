@@ -1,0 +1,6 @@
+point=0 reference=0.298982 merged=0.299475 naive=0.493126 duplicate variance=0.0324058
+point=1 reference=0.323891 merged=0.322773 naive=0.546591 duplicate variance=0.0757992
+point=2 reference=0.316767 merged=0.317365 naive=0.458711 duplicate variance=0.0982593
+point=3 reference=0.365151 merged=0.364848 naive=0.538756 duplicate variance=0.165831
+point=4 reference=0.43905 merged=0.438473 naive=0.738083 duplicate variance=0.179298
+RESERVOIR MERGE VERIFY PASS

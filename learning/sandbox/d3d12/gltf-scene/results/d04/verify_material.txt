@@ -1,0 +1,16 @@
+defaults : exit=0 PASS defaults: owned CPU materials; no pixel decode or GPU sampling
+
+OPAQUE : exit=0 slots=5 sharedImages=1 encodedBytes=131 normalScale=0.5 occlusionStrength=0.4
+PASS OPAQUE: owned CPU materials; no pixel decode or GPU sampling
+
+MASK : exit=0 slots=5 sharedImages=1 encodedBytes=131 normalScale=0.5 occlusionStrength=0.4
+PASS MASK: owned CPU materials; no pixel decode or GPU sampling
+
+BLEND : exit=0 slots=5 sharedImages=1 encodedBytes=131 normalScale=0.5 occlusionStrength=0.4
+PASS BLEND: owned CPU materials; no pixel decode or GPU sampling
+
+embedded : exit=0 slots=5 sharedImages=1 encodedBytes=131 normalScale=0.5 occlusionStrength=0.4
+PASS OPAQUE: owned CPU materials; no pixel decode or GPU sampling
+
+missing : exit=1 FAIL [adapt] C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c05/missing.gltf: missing referenced image: C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\results\c05\intentionally-missing.png
+

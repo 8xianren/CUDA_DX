@@ -1,0 +1,27 @@
+{
+  "full-tail": {
+    "mean_variance": 4.8881823551451035e-05,
+    "empirical_mse": 4.8885948116585815e-05,
+    "expected_bias_rms": 0.0
+  },
+  "cache3-trained": {
+    "mean_variance": 3.0048941923644816e-05,
+    "empirical_mse": 7.048633325415755e-05,
+    "expected_bias_rms": 0.006423983420628444
+  },
+  "cache9-trained": {
+    "mean_variance": 4.149688555815826e-05,
+    "empirical_mse": 4.162918968326899e-05,
+    "expected_bias_rms": 0.00044557818282879574
+  },
+  "cache3-exact-nodes": {
+    "mean_variance": 2.909337521069074e-05,
+    "empirical_mse": 6.968327252236507e-05,
+    "expected_bias_rms": 0.006423983420628444
+  },
+  "cache9-exact-nodes": {
+    "mean_variance": 4.1363261862911404e-05,
+    "empirical_mse": 4.149848244314571e-05,
+    "expected_bias_rms": 0.00044557818282879574
+  }
+}

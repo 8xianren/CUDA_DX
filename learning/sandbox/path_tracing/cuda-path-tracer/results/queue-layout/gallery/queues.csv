@@ -1,0 +1,15 @@
+kind,depth,count,capacity,aos_stride,field_offset,file
+ray,0,589824,589824,88,0,ray-0.u32
+shadow,0,371712,589824,48,0,shadow-0.u32
+ray,1,439815,589824,88,0,ray-1.u32
+shadow,1,100946,589824,48,0,shadow-1.u32
+ray,2,138387,589824,88,0,ray-2.u32
+shadow,2,55590,589824,48,0,shadow-2.u32
+ray,3,14074,589824,88,0,ray-3.u32
+shadow,3,5625,589824,48,0,shadow-3.u32
+ray,4,4456,589824,88,0,ray-4.u32
+shadow,4,2002,589824,48,0,shadow-4.u32
+ray,5,1499,589824,88,0,ray-5.u32
+shadow,5,635,589824,48,0,shadow-5.u32
+ray,6,533,589824,88,0,ray-6.u32
+shadow,6,0,589824,48,0,shadow-6.u32

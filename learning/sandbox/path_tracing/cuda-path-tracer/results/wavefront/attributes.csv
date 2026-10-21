@@ -1,0 +1,7 @@
+kernel,registers,local_bytes,static_shared
+Megakernel,86,624,0
+WaveGenerate,32,0,0
+WaveIntersect,48,512,0
+WaveShade,98,0,0
+WaveShadow,48,512,0
+WaveResolve,60,0,0

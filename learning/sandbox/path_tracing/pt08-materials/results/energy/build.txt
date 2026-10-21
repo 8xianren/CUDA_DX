@@ -1,0 +1,4 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  energy_test.cpp
+  energy_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials\build\Release\energy_test.exe

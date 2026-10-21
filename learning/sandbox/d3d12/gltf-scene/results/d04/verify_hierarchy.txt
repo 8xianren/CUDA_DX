@@ -1,0 +1,22 @@
+Left mesh=0 origin=10,-3,0
+Left mesh=1 origin=10,-3,0
+Right mesh=0 origin=10,5,0
+Right mesh=1 origin=10,5,0
+Left mesh=0 origin=20,-3,0
+Left mesh=1 origin=20,-3,0
+Right mesh=0 origin=20,5,0
+Right mesh=1 origin=20,5,0
+PASS nodes=5 meshes=2 instances=4 maxError=4.76837e-07
+Left mesh=0 origin=10,-3,0
+Left mesh=1 origin=10,-3,0
+Right mesh=0 origin=10,5,0
+Right mesh=1 origin=10,5,0
+Left mesh=0 origin=20,-3,0
+Left mesh=1 origin=20,-3,0
+Right mesh=0 origin=20,5,0
+Right mesh=1 origin=20,5,0
+PASS nodes=5 meshes=2 instances=4 maxError=0
+triangles=2 positive winding area=1
+PASS nodes=5 meshes=1 instances=2 maxError=0
+triangles=2 positive winding area=1
+PASS nodes=5 meshes=1 instances=2 maxError=0

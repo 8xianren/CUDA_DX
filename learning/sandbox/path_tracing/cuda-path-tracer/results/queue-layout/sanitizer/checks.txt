@@ -1,0 +1,5 @@
+max_mega_difference=0
+max_cpu_difference=7.42492517611e-08
+path_rays=1023
+shadow_rays=489
+base_alignment_mod32=0

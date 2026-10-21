@@ -1,0 +1,18 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating 'C:\Users\TU\AppData\Local\Temp\nsys-TU\nsys-report-861f.qdstrm'
+
+[1/1] [0%                          ] nsys-wave.nsys-repProcessing events...
+
+[1/1] [0%                          ] nsys-wave.nsys-rep
+[1/1] [5%                          ] nsys-wave.nsys-rep
+[1/1] [==19%                       ] nsys-wave.nsys-rep
+[1/1] [==20%                       ] nsys-wave.nsys-rep
+[1/1] [=====32%                    ] nsys-wave.nsys-rep
+[1/1] [=======================96%  ] nsys-wave.nsys-rep
+[1/1] [========================98% ] nsys-wave.nsys-rep
+[1/1] [========================100%] nsys-wave.nsys-rep
+[1/1] [========================100%] nsys-wave.nsys-rep
+[1/1] [========================100%] nsys-wave.nsys-rep
+Generated:
+	C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\cuda-path-tracer\results\execution/nsys-wave.nsys-rep

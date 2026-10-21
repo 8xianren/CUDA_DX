@@ -1,0 +1,22 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CC38DA65F7CCC7A30D81E324864626E35B8C26FA45AEF2E5ECC8C5AC36044F51",
+    "Path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\d3d12\\gltf-scene\\results\\c04\\trs.gltf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "376CECFFF61027EA2328DD7E3D418A63EA07AF8520F5E8CDA60840B05D6F4713",
+    "Path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\d3d12\\gltf-scene\\results\\c04\\c01-shared-mesh.bin"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1B1344365E0075EA9BEFBAB80EF85F9642B5691AB13182A90B02834BC27D4EE8",
+    "Path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\d3d12\\cuda-interop\\shaders\\instances.hlsl"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "03262E4F0EFF24ED7EECF77B356DEE9ED064AA7F0C75202C21F22545F424DC9E",
+    "Path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\d3d12\\cuda-interop\\build\\Release\\buffer_bench.exe"
+  }
+]

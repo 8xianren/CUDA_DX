@@ -1,0 +1,1 @@
+PASS D.4: importer-free link closure; procedural scene; destroyed source CpuScene; invalid sampler rejection; C.3-C.6 and D.1-D.3 regression. Original per-lesson outputs remain in their own result folders; this folder contains D.4 run logs.

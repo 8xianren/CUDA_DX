@@ -1,0 +1,11 @@
+CPU_only=1
+trials=400000
+reservoir_bytes=40
+exact_RIS_M2=11
+wrong_original_q_M2=11.7514285714286
+wrong_omit_M=22
+wrong_no_visibility=15
+missing_support=3
+wrong_positive_M=3
+rejected_invalid=6
+occluded_winners=109062

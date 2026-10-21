@@ -1,0 +1,4 @@
+========= COMPUTE-SANITIZER
+QUEUE LAYOUT AUDIT PASS scene=gallery mode=quick rays=1023 shadows=489 CPU=7.42493e-08
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors

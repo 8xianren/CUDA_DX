@@ -1,0 +1,4 @@
+backend,max_rgb_difference,path_rays,shadow_rays
+pixel,0,105,0
+sample,0,105,0
+wave,0,105,0

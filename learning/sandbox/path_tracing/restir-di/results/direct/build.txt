@@ -1,0 +1,2 @@
+verify_direct.cu
+tmpxft_00011574_00000000-7_verify_direct.cudafe1.cpp

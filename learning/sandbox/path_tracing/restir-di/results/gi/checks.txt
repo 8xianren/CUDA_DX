@@ -1,0 +1,6 @@
+CPU_only=1
+trials_per_destination=100000
+finite_difference_points=486
+max_relative_J_error=9.4526202662958e-11
+max_pathwise_area_difference=2.7755575615629e-16
+negative_controls=5

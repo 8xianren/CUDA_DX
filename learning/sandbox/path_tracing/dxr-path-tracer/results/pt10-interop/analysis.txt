@@ -1,0 +1,41 @@
+{
+  "metrics": [
+    {
+      "case": "oidn-guides-color",
+      "linear_rgb_mse": 0.00919808648293511,
+      "reference_max_rgb_le2_mse": 0.006470213490220181,
+      "reference_max_rgb_gt2_mse": 0.115537794838857,
+      "bright_pixel_fraction": 0.025010850694444444,
+      "bright_squared_error_fraction": 0.31416301006096903
+    },
+    {
+      "case": "oidn-color-only-output",
+      "linear_rgb_mse": 0.013456457733148297,
+      "reference_max_rgb_le2_mse": 0.0016686256354006283,
+      "reference_max_rgb_gt2_mse": 0.47297734846768924,
+      "bright_pixel_fraction": 0.025010850694444444,
+      "bright_squared_error_fraction": 0.87909954305723
+    },
+    {
+      "case": "oidn-guides-output",
+      "linear_rgb_mse": 0.018611400458140265,
+      "reference_max_rgb_le2_mse": 0.0015700253184688924,
+      "reference_max_rgb_gt2_mse": 0.6829293020525745,
+      "bright_pixel_fraction": 0.025010850694444444,
+      "bright_squared_error_fraction": 0.9177516139591394
+    },
+    {
+      "case": "reference1024-color",
+      "linear_rgb_mse": 0.0,
+      "reference_max_rgb_le2_mse": 0.0,
+      "reference_max_rgb_gt2_mse": 0.0,
+      "bright_pixel_fraction": 0.025010850694444444,
+      "bright_squared_error_fraction": 0
+    }
+  ],
+  "oidn": "2.5.0 CUDA",
+  "reference": "independent seed 73, 1024 spp",
+  "guide_normal_length_min": 0.0,
+  "partial_coverage_pixels": 488,
+  "notes": "MSE against finite noisy reference; CUDA times include validation and debug environment, not production benchmark."
+}

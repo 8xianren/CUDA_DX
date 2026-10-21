@@ -1,0 +1,48 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Shared libraries disabled
+-- compiling zlib from sources
+-- VRML disabled
+-- tinyusdz disabled
+-- Enabled importer formats: COLLADA OBJ PLY FBX STL GLTF
+-- Disabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH DXF CSM HMP IRRMESH IQM IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OGRE OPENGEX MS3D COB BLEND IFC XGL Q3D Q3BSP RAW SIB SMD TERRAGEN 3D USD X X3D 3MF MMD
+-- Enabled exporter formats: GLTF
+-- Disabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML COLLADA FBX STL X X3D 3MF PBRT ASSJSON STEP
+-- Treating all warnings as errors (for assimp library only)
+-- Configuring done (0.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  gpu_path_test.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/gpu_path_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/gpu_path_test.exp
+  gpu_path_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt07-throughput\build\Release\gpu_path_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  import_scope_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\import_scope_test.exe
+validator=2.0.0-dev.3.10 errors=0 warnings=0
+meshes=6 instances=6
+NOTICE CPU import only: encoded images not decoded; PBR/alpha/normal-map GPU behavior not validated
+NOTICE decoded-scene checks are not full glTF validation; original extensions/alignment may not survive import
+ACCEPTED_CPU
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=0 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=0 origin=0,0,0 BLAS=332689408 mask=255
+instance=3 node=4 mesh=3 material=0 origin=0,0,0 BLAS=332697600 mask=255
+instance=4 node=5 mesh=4 material=0 origin=0,0,0 BLAS=332705792 mask=255
+instance=5 node=6 mesh=5 material=0 origin=0,0,0 BLAS=332713984 mask=255
+bsdf channel=0 mean=0.247480586171 SE=0 expected=0.247480593538
+bsdf channel=1 mean=0.333245962858 SE=0 expected=0.333245960265
+bsdf channel=2 mean=0.374999821186 SE=0 expected=0.374999824298
+GPU diagnostic path=858 depth=7 hit=0 error=1 prev=1.000000,-1.000000,0.505016 x=0.000000,0.000000,0.000000 q=0.000000,0.000000,0.000000

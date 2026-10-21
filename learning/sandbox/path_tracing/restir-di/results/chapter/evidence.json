@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-21",
+  "scope": "PT.11 teaching CPU reference plus local UE source inspection; UE not compiled or executed",
+  "ue_version": {
+    "MajorVersion": 5,
+    "MinorVersion": 7,
+    "PatchVersion": 2,
+    "Changelist": 0,
+    "CompatibleChangelist": 47537391,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 0,
+    "BranchName": "UE5"
+  },
+  "ue_files": [
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Build\\Build.version",
+      "sha256": "e0fa9562a2b80e414627beffb558a224a6fec509cf57b18dce56e93cd523a668"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Source\\Runtime\\Renderer\\Private\\Lumen\\LumenReSTIRGather.cpp",
+      "sha256": "20d039de1897f9c16913cdbd8cf1af48069a1e6255683b47d2a8eca1f56ea63b"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Shaders\\Private\\Lumen\\LumenReSTIRGather.usf",
+      "sha256": "6757e0ba2a92d8426c1b7ffa97dae41c3f00cab661e72ae42f5478a821a52b10"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Source\\Runtime\\Renderer\\Private\\Lumen\\LumenScreenProbeGather.cpp",
+      "sha256": "8bafabb7945bd225fd03142e7b5912633cbcd35ce3a71015b399967fffac8d68"
+    }
+  ],
+  "results": {
+    "reservoir": {
+      "checks": "CPU_only=1\ntrials=400000\nreservoir_bytes=40\nexact_RIS_M2=11\nwrong_original_q_M2=11.7514285714286\nwrong_omit_M=22\nwrong_no_visibility=15\nmissing_support=3\nwrong_positive_M=3\nrejected_invalid=6\noccluded_winners=109062\n",
+      "last_log_line": "RESERVOIR CPU VERIFY PASS"
+    },
+    "direct": {
+      "checks": "CPU_only=1\nwidth=24\nheight=16\ntrials_per_pixel=4096\nchecked_method_pixels=4608\nmax_grid_reference_delta=2.06105883822e-05\nmax_point_reference_delta=3.06643215874e-07\nlight_sample_bytes=24\nreservoir_bytes=56\n",
+      "last_log_line": "DIRECT LIGHTING CPU VERIFY PASS"
+    },
+    "merge": {
+      "checks": "CPU_only=1\nexact_correct=5\nexact_missing_M=3.33333333333\nexact_naive_q=4.85\ngeometry_trials_per_point=100000\nnaive_failed_points=5\nwrong_count_failed_points=5\nduplicate_per_trial_equal=1\ninvalid_rejected=2\n",
+      "last_log_line": "RESERVOIR MERGE VERIFY PASS"
+    },
+    "reuse": {
+      "checks": "CPU_only=1\nwidth=12\nheight=8\nframes=16\nindependent_runs=256\nfailed_method_frame_pixels=0\nmax_temporal_M=128\nmax_spatial_M=640\nreverse_traversal_bit_exact=1\n",
+      "last_log_line": "STATIC REUSE VERIFY PASS"
+    },
+    "dynamic": {
+      "checks": "CPU_only=1\nindependent_runs=256\nframes=12\nfailed_pixels=0\nreset_pixel_matches=55296\nvisibility_changes=10367\nstale_failed_pixels=40\nstale_mean=0.37098416149\ncurrent_reference=0.433170876393\n",
+      "last_log_line": "DYNAMIC REUSE VERIFY PASS stale=0.370984 current=0.433171 staleBad=40"
+    },
+    "gi": {
+      "checks": "CPU_only=1\ntrials_per_destination=100000\nfinite_difference_points=486\nmax_relative_J_error=9.4526202662958e-11\nmax_pathwise_area_difference=2.7755575615629e-16\nnegative_controls=5\n",
+      "last_log_line": "GI RECONNECTION PASS Jerror=9.45262e-11 areaDifference=2.77556e-16"
+    },
+    "chapter": {
+      "checks": "CPU_only=1\nindependent_runs=256\nwidth=12\nheight=8\ncomparison_failed_pixels=0\n",
+      "last_log_line": "CHAPTER COMPARISON PASS"
+    }
+  }
+}

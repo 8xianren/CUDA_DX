@@ -1,8 +1,119 @@
 {
-  "scenes": [
+  "buffers": [
     {
-      "nodes": [
+      "uri": "animation.bin",
+      "byteLength": 180
+    }
+  ],
+  "scene": 0,
+  "bufferViews": [
+    {
+      "target": 34962,
+      "byteOffset": 16,
+      "byteLength": 120,
+      "byteStride": 40,
+      "buffer": 0
+    },
+    {
+      "byteOffset": 136,
+      "byteLength": 10,
+      "target": 34963,
+      "buffer": 0
+    },
+    {
+      "byteOffset": 148,
+      "byteLength": 8,
+      "buffer": 0
+    },
+    {
+      "byteOffset": 156,
+      "byteLength": 24,
+      "buffer": 0
+    }
+  ],
+  "accessors": [
+    {
+      "type": "VEC3",
+      "count": 3,
+      "min": [
+        0,
+        0,
         0
+      ],
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "max": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "VEC3",
+      "byteOffset": 12,
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3
+    },
+    {
+      "type": "VEC2",
+      "byteOffset": 24,
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3
+    },
+    {
+      "type": "VEC4",
+      "count": 3,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 32,
+      "componentType": 5121
+    },
+    {
+      "type": "SCALAR",
+      "byteOffset": 4,
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 3
+    },
+    {
+      "type": "SCALAR",
+      "count": 2,
+      "min": [
+        0
+      ],
+      "bufferView": 2,
+      "componentType": 5126,
+      "max": [
+        1
+      ]
+    },
+    {
+      "count": 2,
+      "type": "VEC3",
+      "bufferView": 3,
+      "componentType": 5126
+    }
+  ],
+  "asset": {
+    "generator": "CUDA_DX C.3 fixed fixture",
+    "version": "2.0"
+  },
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "COLOR_0": 3,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "mode": 4
+        }
       ]
     }
   ],
@@ -11,130 +122,19 @@
       "mesh": 0
     }
   ],
-  "asset": {
-    "version": "2.0",
-    "generator": "CUDA_DX C.3 fixed fixture"
-  },
-  "accessors": [
+  "scenes": [
     {
-      "max": [
-        1,
-        1,
-        0
-      ],
-      "bufferView": 0,
-      "byteOffset": 0,
-      "type": "VEC3",
-      "count": 3,
-      "componentType": 5126,
-      "min": [
-        0,
-        0,
+      "nodes": [
         0
       ]
-    },
-    {
-      "componentType": 5126,
-      "type": "VEC3",
-      "count": 3,
-      "byteOffset": 12,
-      "bufferView": 0
-    },
-    {
-      "componentType": 5126,
-      "type": "VEC2",
-      "count": 3,
-      "byteOffset": 24,
-      "bufferView": 0
-    },
-    {
-      "bufferView": 0,
-      "byteOffset": 32,
-      "type": "VEC4",
-      "count": 3,
-      "componentType": 5121,
-      "normalized": true
-    },
-    {
-      "componentType": 5123,
-      "type": "SCALAR",
-      "count": 3,
-      "byteOffset": 4,
-      "bufferView": 1
-    },
-    {
-      "type": "SCALAR",
-      "min": [
-        0
-      ],
-      "componentType": 5126,
-      "bufferView": 2,
-      "max": [
-        1
-      ],
-      "count": 2
-    },
-    {
-      "count": 2,
-      "bufferView": 3,
-      "componentType": 5126,
-      "type": "VEC3"
     }
   ],
-  "bufferViews": [
-    {
-      "byteLength": 120,
-      "byteStride": 40,
-      "buffer": 0,
-      "target": 34962,
-      "byteOffset": 16
-    },
-    {
-      "byteLength": 10,
-      "target": 34963,
-      "buffer": 0,
-      "byteOffset": 136
-    },
-    {
-      "byteLength": 8,
-      "buffer": 0,
-      "byteOffset": 148
-    },
-    {
-      "byteLength": 24,
-      "buffer": 0,
-      "byteOffset": 156
-    }
-  ],
-  "meshes": [
-    {
-      "primitives": [
-        {
-          "indices": 4,
-          "attributes": {
-            "NORMAL": 1,
-            "TEXCOORD_0": 2,
-            "POSITION": 0,
-            "COLOR_0": 3
-          },
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 180,
-      "uri": "animation.bin"
-    }
-  ],
-  "scene": 0,
   "animations": [
     {
       "samplers": [
         {
-          "interpolation": "LINEAR",
           "input": 5,
+          "interpolation": "LINEAR",
           "output": 6
         }
       ],
@@ -142,8 +142,8 @@
         {
           "sampler": 0,
           "target": {
-            "node": 0,
-            "path": "translation"
+            "path": "translation",
+            "node": 0
           }
         }
       ]

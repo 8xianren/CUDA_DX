@@ -1,0 +1,14 @@
+GPU=NVIDIA GeForce RTX 5070 registers=86 local=624 shared=0
+RR current-NEE anchor PASS contribution=0.0472905
+K0-emission PASS rays=4216 shadows=0 RRkills=0 maxError=0 GPU_ms=0.126752 mean=0.123656
+K1-direct PASS rays=8003 shadows=3103 RRkills=0 maxError=1.58146e-07 GPU_ms=0.36128 mean=0.204185
+K4-MIS PASS rays=14899 shadows=7882 RRkills=0 maxError=3.63667e-07 GPU_ms=1.23507 mean=0.261263
+K4-RR PASS rays=11874 shadows=6977 RRkills=1763 maxError=3.65607e-07 GPU_ms=1.1801 mean=0.26142
+K4-BSDF-only PASS rays=14899 shadows=0 RRkills=0 maxError=6.66803e-08 GPU_ms=0.651232 mean=0.263946
+BLOCK determinism 64/128/256 PASS (identical RGB and discrete path hashes)
+split-samples PASS rays=11874 shadows=6977 RRkills=1763 maxError=7.87501e-08 GPU_ms=1.03187 mean=0.26142
+emission-analytic PASS rays=4216 shadows=0 RRkills=0 maxError=0 GPU_ms=0.02208 mean=2
+black PASS rays=4216 shadows=0 RRkills=0 maxError=0 GPU_ms=0.02192 mean=0
+cornell-view PASS rays=5517221 shadows=3457325 RRkills=965307 maxError=-1 GPU_ms=27.3022 mean=0.322991
+gallery-lambert PASS rays=1188588 shadows=536510 RRkills=63254 maxError=-1 GPU_ms=40.2489 mean=0.0346939
+MEGAKERNEL VERIFY PASS

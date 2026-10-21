@@ -1,0 +1,1 @@
+BALANCED GPU PASS paths=1966080 TraceRay=3648139 probes=40960 max_LUT_error=1.8275917868e-07 max_probe_relative_error=4.81346626305e-05 max_sample_probe_relative_error=4.17281044123e-07 max_reciprocity_relative_error=2.78493880614e-05 max_relative_weight_error=7.18172771035e-07 max_white_output=1.0000696488 negative_reconstructed_pdf_relative=2413.77192715

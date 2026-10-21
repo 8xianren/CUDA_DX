@@ -1,0 +1,3 @@
+{
+"width":384,"height":192,"spp":16,"max_scatters":0,"mode":1,"seed":0,"rr":0,"light_triangles":4,"light_area":27,"triangles":63496,"mean_rgb":[0.163868953132,0.162340456644,0.16324588554],"mean_luminance_se":0.000272862441537,"max_radiance":12,"rays":1179648,"shadow_rays":0,"scatters":0,"nulls":0,"invalid":0,"nonfinite":0,"delta":0,"transmissions":0,"rr_killed":0,"depth_caps":898999,"backfaces":0,"emissive_hits":19502,"primary_audits":64,"max_primary_position_error":2.77847037611e-06,"max_primary_normal_error":7.04684728056e-08,"max_K0_radiance_error":2.6375055473e-09
+}

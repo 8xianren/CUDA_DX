@@ -1,0 +1,11 @@
+GPU=NVIDIA GeForce RTX 5070
+SMs=48
+width=192
+height=96
+spp=32
+K=6
+paths=589824
+sample_workspace_bytes=61341696
+wave_workspace_bytes=150995088
+path_rays=1188588
+shadow_rays=536510

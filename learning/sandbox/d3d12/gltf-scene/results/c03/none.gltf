@@ -1,21 +1,83 @@
 {
-  "nodes": [
+  "buffers": [
     {
-      "mesh": 0
+      "uri": "none.bin",
+      "byteLength": 136
     }
   ],
   "scene": 0,
+  "bufferViews": [
+    {
+      "target": 34962,
+      "byteOffset": 16,
+      "byteLength": 120,
+      "byteStride": 40,
+      "buffer": 0
+    }
+  ],
+  "accessors": [
+    {
+      "type": "VEC3",
+      "count": 3,
+      "min": [
+        0,
+        0,
+        0
+      ],
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "max": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "VEC3",
+      "byteOffset": 12,
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3
+    },
+    {
+      "type": "VEC2",
+      "byteOffset": 24,
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3
+    },
+    {
+      "type": "VEC4",
+      "count": 3,
+      "normalized": true,
+      "bufferView": 0,
+      "byteOffset": 32,
+      "componentType": 5121
+    }
+  ],
   "asset": {
     "generator": "CUDA_DX C.3 fixed fixture",
     "version": "2.0"
   },
-  "bufferViews": [
+  "meshes": [
     {
-      "byteOffset": 16,
-      "byteLength": 120,
-      "buffer": 0,
-      "target": 34962,
-      "byteStride": 40
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "COLOR_0": 3,
+            "TEXCOORD_0": 2
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
     }
   ],
   "scenes": [
@@ -23,68 +85,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "meshes": [
-    {
-      "primitives": [
-        {
-          "attributes": {
-            "POSITION": 0,
-            "COLOR_0": 3,
-            "TEXCOORD_0": 2,
-            "NORMAL": 1
-          },
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 136,
-      "uri": "none.bin"
-    }
-  ],
-  "accessors": [
-    {
-      "type": "VEC3",
-      "bufferView": 0,
-      "count": 3,
-      "componentType": 5126,
-      "max": [
-        1,
-        1,
-        0
-      ],
-      "min": [
-        0,
-        0,
-        0
-      ],
-      "byteOffset": 0
-    },
-    {
-      "byteOffset": 12,
-      "count": 3,
-      "type": "VEC3",
-      "componentType": 5126,
-      "bufferView": 0
-    },
-    {
-      "byteOffset": 24,
-      "count": 3,
-      "type": "VEC2",
-      "componentType": 5126,
-      "bufferView": 0
-    },
-    {
-      "type": "VEC4",
-      "bufferView": 0,
-      "count": 3,
-      "componentType": 5121,
-      "normalized": true,
-      "byteOffset": 32
     }
   ]
 }

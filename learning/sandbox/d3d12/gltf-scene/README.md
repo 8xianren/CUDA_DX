@@ -1,4 +1,6 @@
-# glTF 场景输入共享主线（C.1–C.6、D.1 完成）
+# glTF 场景输入共享主线（C.1–C.6、D.1–D.4 完成）
+
+2026-10-21 PT.8复用更新：`material_sampling.cpp`提取通用同步`DispatchMaterialBuffer`，原`SampleHitMaterials`保留为兼容封装；`MakeTextureSamplerDesc`供D.3与PBR共享。[PBR材质表](../../path_tracing/dxr-path-tracer/README.md)独立定义，不替换D.3的32B布局。D.3十二组与D.4程序化边界回归通过，[相关日志](../../path_tracing/pt08-materials/results/pbr/)保存在PT.8课程结果目录。
 
 按C.1–C.6、D.1–D.4原有小节推进，不合并或另拆子课。本目录为后续解析/渲染接入保留共享资产；C.1仅对象关系探针，尚无通用解析器、GPU上传或渲染接入。
 
@@ -130,3 +132,64 @@ node learning/sandbox/d3d12/gltf-scene/validation/validate_import.cjs <输入.gl
 首次需按C.6安装validation目录的npm依赖，VS2022/Windows SDK包含WIC与D3D12；本节没有CUDA kernel。结果全部在 `results/d01/`。2026-10-20 RTX5070三项通过：buffer/texture逐字节读回、1/1/2个BLAS构建、光栅预览；multi颜色锚点≤1码，每项Fence2/2，Debug/GPU Validation warning/error0。textured输入Validator有2项已有warning，见报告。
 
 当前只有mip0和point/clamp基础色诊断；无节点world/TLAS/射线发射/完整PBR。图像没有曝光和色调映射，不能冒充PT显示。两次CPU Fence等待服务验收，尚无异步退役池。BLAS为临时构建检查，D.2接入持久实例资源。[D.1讲义](../../../笔记/d3d12/D.1-CPU数据到GPU资源与上传生命周期.md)。
+
+## D.2 节点世界变换与共享BLAS实例
+
+`src/gpu_instances.h/.cpp`负责持久BLAS、对象表、TLAS与相机；`src/instance_render.cpp`负责光栅/DXR双路径；`src/instance_test.cpp`负责CPU已知变换与重心参考；`shaders/instance_shared.hlsli`统一80B对象表和相机布局，`instance_raster.hlsl`/`instance_rays.hlsl`输出身份；`verify_instances.ps1`负责源校验、DXC与验收。复用D.1上传和抽取的BuildAcceleration。
+
+仓库根执行：
+
+```powershell
+& learning/sandbox/d3d12/gltf-scene/build_importer.ps1 -Lesson d02
+& learning/sandbox/d3d12/gltf-scene/verify_instances.ps1
+```
+
+需要PATH中的DXC，lib_6_3；VS2022编译C++。结果在`results/d02/`。2026-10-20 RTX5070：2个共享BLAS/4个实例，初始/父移动/mask/相机平移共229376像素，CPU/光栅/DXR身份mismatch0、边界排除0；零缩放拒绝；Fence5/5，Debug/GPU Validation0。D.1三组回归通过。
+
+本课固定正交相机、互不重叠的平面诊断、无光栅深度/真实材质；每阶段全量重建TLAS并同步等待，未实现动态refit、多帧异步或骨骼动画。图像仅ID可视化，没有曝光或色调映射。[D.2讲义](../../../笔记/d3d12/D.2-节点世界变换与共享BLAS实例.md)，下一节D.3。
+
+## D.3 命中材质、纹理方向与采样
+
+`src/material_sampling.h/.cpp`负责GPU材质表、动态sampler heap与DXR采样提交；`shaders/material_rays.hlsl`负责命中索引、重心UV/顶点色和基础色读取；`src/material_sampling_test.cpp`提供独立CPU参考和负对照；`verify_sampling.ps1`生成固定fixture并获取带license的官方BoxTextured；`preview_sampling.py`转换真实读回，`verify_official_orientation.py`按固定官方样本原始布局独立验收整张正面图。D.2管线装配提取为CreateLessonRayPipeline共用，不复制一套SBT逻辑。
+
+仓库根依次执行：
+
+```powershell
+& learning/sandbox/d3d12/gltf-scene/build_importer.ps1 -Lesson d03
+& learning/sandbox/d3d12/gltf-scene/verify_sampling.ps1
+python learning/sandbox/d3d12/gltf-scene/preview_sampling.py
+python learning/sandbox/d3d12/gltf-scene/verify_official_orientation.py
+```
+
+前两步需要已有C.6 Node依赖、DXC、VS2022，预览/方向脚本需Pillow。官方资产固定commit和hash/license随结果保存；首次需网络。新结果全在`results/d03/`，子目录fixture/official保存CSV、日志和读回图。
+
+2026-10-21 RTX5070实测：2输入×3寻址×2过滤=12组，41664样本，CPU线性RGBA最大绝对差0.00562435（阈值0.006）；V与sRGB错误参考都被区分。官方正面另16384像素，原始glTF独立参考RGB码值最大差1；该面UV u=4→3，水平镜像是资产本身约定。每组Fence2/2，附正面图一组3/3，Debug/GPU Validation0。D.2四阶段回归PASS。
+
+当前仅mip0/基础色与alpha数值、无MASK/BLEND可见性、无其它PBR槽着色、无ray footprint或异步资源池；完整材质后续PT.8补齐。原有C.2/C.5已验收Data URI/内嵌资源，本次新增外部图片GPU采样，不冒充重新验收所有容器变体。[D.3讲义](../../../笔记/d3d12/D.3-命中材质与纹理采样验证.md)。下一节D.4。
+
+## D.4 解析器、资源与提交边界
+
+`src/scene_model.cpp`隔离纯CPU节点运算；`src/material_bindings.cpp`提供PrepareMaterialBindings，返回拥有GPU表/sampler的MaterialBindings；`src/material_sampling.cpp`只接受准备好的绑定对象，保留同步Dispatch/读回封装。CMake拆为scene_model、scene_import、scene_gpu、scene_render静态库。`src/scene_boundary_test.cpp`程序化创建场景且不链接Assimp；销毁源CpuScene后仍通过真实DXR读取基础色，另测非法sampler拒绝。
+
+仓库根执行（沿用VS2022/CMake/DXC、C.6 Node与Pillow）：
+
+```powershell
+& learning/sandbox/d3d12/gltf-scene/build_importer.ps1 -Lesson d04
+& learning/sandbox/d3d12/gltf-scene/verify_boundaries.ps1
+```
+
+本节新日志、依赖检查和回归控制台输出位于results/d04；原课验证脚本仍把图像/CSV写入各课results。2026-10-21 RTX5070：源CpuScene销毁后RGBA(.2,.4,.6,1)，误差0，Fence2/2，Debug0；新目标实际链接依赖无Assimp/scene_import。C.3–C.6与D.1–D.3受影响回归通过，官方正面码值≤1。
+
+这是职责/所有权整理，不是新GPU后端或异步框架。GpuScene仍保留验收用CPU参考，MaterialBindings必须匹配原GpuScene；没有设备恢复、自动事务回滚、完整PBR或生产级管线缓存。[D.4讲义](../../../笔记/d3d12/D.4-解析器资源与命令提交边界.md)。下一节PT.6。
+
+
+## PT.6/PT.7共用buffer调度
+
+2026-10-21将PT.6的根签名/DispatchRays/读回抽为`src/ray_buffer_dispatch.{h,cpp}`并编入scene_render。契约t0 TLAS、t1对象表、t2调用者配置、u0调用者输出，16B payload/递归1；同步Fence后返回字节vector。PT.6薄封装仍保留参数校验与像素布局；PT.7原112B记录已在RR课扩展为128B逐顶点记录。不得据此假设支持任意payload/纹理布局。PT.6小/大灯回归PASS，PT.7盒腔PASS；[PT.7代码入口](../../path_tracing/pt07-throughput/README.md)。
+
+## PT.8能量表根SRV扩展
+
+2026-10-21给另一条材质调度`src/material_sampling.cpp`的DispatchMaterialBuffer新增根参数10→t7/space0，读取MaterialBindings::energy。旧shader不读取t7，绑定有效备用buffer地址；PBR_ENERGY_BALANCED shader必须由调用者提供经检查的能量表。原t0..t6、u0、texture/sampler table和同步Fence读回契约保持。D.3十二组与D.4边界已用新根签名实际回归，日志在`../../path_tracing/pt08-materials/results/energy-gpu/`；[复现命令与课程边界](../../path_tracing/pt08-materials/README.md)。
+
+
+PT.10共享后端演进：`MaterialRayPipeline`从同步Dispatch中提取可复用根签名/State Object/SBT与Record方法。Record只录制，资源所有权和状态由调用者保持；`DispatchMaterialBuffer`仍是原同步兼容封装。新GPU历史、验证与日志见[DXR路径追踪共享主线](../../path_tracing/dxr-path-tracer/README.md)，D.4源场景销毁回归通过。

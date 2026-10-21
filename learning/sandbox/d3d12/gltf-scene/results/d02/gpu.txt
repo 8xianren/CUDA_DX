@@ -1,0 +1,24 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=2 mesh=0 material=0 origin=10,-3,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=10,-3,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=0 material=0 origin=10,5,0 BLAS=332673024 mask=255
+instance=3 node=3 mesh=1 material=1 origin=10,5,0 BLAS=332681216 mask=255
+stage=base rays=57344 checked=57344 edge_excluded=0 mismatch=0 hits=3072 changed=0
+instance=0 node=2 mesh=0 material=0 origin=13,-3,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=13,-3,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=0 material=0 origin=13,5,0 BLAS=332673024 mask=255
+instance=3 node=3 mesh=1 material=1 origin=13,5,0 BLAS=332681216 mask=255
+stage=parent-moved rays=57344 checked=57344 edge_excluded=0 mismatch=0 hits=3072 changed=6144
+instance=0 node=2 mesh=0 material=0 origin=13,-3,0 BLAS=332673024 mask=0
+instance=1 node=2 mesh=1 material=1 origin=13,-3,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=0 material=0 origin=13,5,0 BLAS=332673024 mask=255
+instance=3 node=3 mesh=1 material=1 origin=13,5,0 BLAS=332681216 mask=255
+stage=masked rays=57344 checked=57344 edge_excluded=0 mismatch=0 hits=2304 changed=768
+instance=0 node=2 mesh=0 material=0 origin=13,-3,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=13,-3,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=0 material=0 origin=13,5,0 BLAS=332673024 mask=255
+instance=3 node=3 mesh=1 material=1 origin=13,5,0 BLAS=332681216 mask=255
+stage=camera-pan rays=57344 checked=57344 edge_excluded=0 mismatch=0 hits=3072 changed=1104
+debug_warning_error=0 fence=5/5
+PASS D.2 mesh_definitions=2 BLAS_builds=2 TLAS_instances=4 stages=4 singular_rejected=true shared_geometry_unchanged=true

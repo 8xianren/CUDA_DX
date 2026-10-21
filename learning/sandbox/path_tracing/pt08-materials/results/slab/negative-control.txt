@@ -1,0 +1,1 @@
+disableOffset=1 paths=4096 medium_rejections=2724 TraceRay=12293

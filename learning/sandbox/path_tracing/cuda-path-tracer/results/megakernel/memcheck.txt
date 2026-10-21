@@ -1,0 +1,15 @@
+========= COMPUTE-SANITIZER
+GPU=NVIDIA GeForce RTX 5070 registers=83 local=624 shared=0
+RR current-NEE anchor PASS contribution=0.0472905
+K0-emission PASS rays=468 shadows=0 RRkills=0 maxError=0 GPU_ms=2.92198 mean=0.131054
+K1-direct PASS rays=928 shadows=358 RRkills=0 maxError=9.15152e-08 GPU_ms=8.0303 mean=0.221481
+K4-MIS PASS rays=1823 shadows=989 RRkills=0 maxError=2.44272e-07 GPU_ms=23.115 mean=0.293485
+K4-RR PASS rays=1438 shadows=868 RRkills=225 maxError=3.39992e-07 GPU_ms=21.7306 mean=0.296466
+K4-BSDF-only PASS rays=1823 shadows=0 RRkills=0 maxError=2.11124e-08 GPU_ms=13.6489 mean=0.294204
+BLOCK determinism 64/128/256 PASS (identical RGB and discrete path hashes)
+split-samples PASS rays=1438 shadows=868 RRkills=225 maxError=5.91549e-08 GPU_ms=21.7435 mean=0.296466
+emission-analytic PASS rays=468 shadows=0 RRkills=0 maxError=0 GPU_ms=0.693408 mean=2
+black PASS rays=468 shadows=0 RRkills=0 maxError=0 GPU_ms=0.60368 mean=0
+MEGAKERNEL VERIFY PASS
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors

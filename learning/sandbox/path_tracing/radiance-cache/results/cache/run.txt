@@ -1,0 +1,1 @@
+CACHE VERIFY PASS coarseBias=0.00642398 fineBias=0.000445578 coarseDetected=5 refDelta=5.27939e-06

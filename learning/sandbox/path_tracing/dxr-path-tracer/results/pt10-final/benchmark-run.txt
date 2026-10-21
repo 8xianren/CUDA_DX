@@ -1,0 +1,40 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=124256256 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=124583936 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=124911616 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=125239296 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=125566976 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=125894656 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=126222336 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=126550016 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=126877696 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=127205376 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=127533056 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=127860736 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=128188416 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=128516096 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=128843776 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=129171456 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=124579840 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=125235200 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=125890560 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=126545920 mask=255
+CUDA/D3D LUID match: NVIDIA GeForce RTX 5070 sm_120
+timing 192 raw 3 warm + 9 measured PASS
+timing 192 color 3 warm + 9 measured PASS
+timing 192 guides 3 warm + 9 measured PASS
+quality 192 seed=0 4/16/64/256 PASS
+quality 192 seed=19 4/16/64/256 PASS
+quality 192 seed=41 4/16/64/256 PASS
+reference 192 1024spp rays=56208525
+CUDA/D3D LUID match: NVIDIA GeForce RTX 5070 sm_120
+timing 384 raw 3 warm + 9 measured PASS
+timing 384 color 3 warm + 9 measured PASS
+timing 384 guides 3 warm + 9 measured PASS
+quality 384 seed=0 4/16/64/256 PASS
+quality 384 seed=19 4/16/64/256 PASS
+quality 384 seed=41 4/16/64/256 PASS
+reference 384 1024spp rays=224828065
+debug_disabled_performance_mode
+PT10 FINAL benchmark PASS validation=0 fence=222/222

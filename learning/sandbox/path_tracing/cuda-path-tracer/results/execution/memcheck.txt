@@ -1,0 +1,5 @@
+========= COMPUTE-SANITIZER
+CPU max error=3.39992e-07
+EXECUTION cornell quick all PASS queries=2306
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors

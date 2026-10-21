@@ -1,0 +1,10 @@
+name,incident_deg,entering,status,eta_i,eta_t,k,tx,ty,tz,transmitted_deg
+air_to_glass_normal,0,1,transmitted,1,1.5,1,0,0,-1,0
+air_to_glass_30,30,1,transmitted,1,1.5,0.888888895512,0.333333343267,0,-0.942809045315,19.4712210998
+air_to_glass_60,60,1,transmitted,1,1.5,0.66666662693,0.577350258827,0,-0.816496551037,35.2643901868
+glass_to_air_30,30,0,transmitted,1.5,1,0.4375,0.75,0,0.661437809467,48.5903786771
+glass_to_air_45,45,0,no_transmission,1.5,1,-0.124999880791,0,0,0,-1
+equal_IOR,60,1,transmitted,1,1,0.25,0.866025388241,0,-0.5,59.9999995547
+critical_minus_0.001,41.8093148958,0,transmitted,1.5,1,3.91006469727e-05,0.999980449677,0,0.0062530040741,89.6417269225
+critical_float_boundary,41.8103148958,0,no_transmission,1.5,1,-1.19209289551e-07,0,0,0,-1
+critical_plus_0.001,41.8113148958,0,no_transmission,1.5,1,-3.91006469727e-05,0,0,0,-1

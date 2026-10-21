@@ -1,0 +1,17 @@
+{
+  "mean_display_codes": {
+    "ev-minus2": 57.10954861111111,
+    "ev-zero": 100.13059027777778,
+    "ev-plus2": 151.26392939814815,
+    "omit-srgb": 44.952329282407405,
+    "double-srgb": 161.34022569444446,
+    "hard-clip": 113.74397569444444
+  },
+  "hdr_one_anchors": {
+    "probe-normal": 188,
+    "probe-omit": 127,
+    "probe-double": 223,
+    "probe-clip": 255
+  },
+  "verified_frames": 16
+}

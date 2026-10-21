@@ -1,0 +1,9 @@
+CPU_only=1
+independent_runs=256
+frames=12
+failed_pixels=0
+reset_pixel_matches=55296
+visibility_changes=10367
+stale_failed_pixels=40
+stale_mean=0.37098416149
+current_reference=0.433170876393

@@ -1,0 +1,39 @@
+{
+  "uri": "mirror.gltf",
+  "mimeType": "model/gltf+json",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-21T03:10:43.496Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "PT.8 ideal mirror fixture",
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "external",
+        "uri": "mirror.bin",
+        "byteLength": 120
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 2,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": false,
+    "hasDefaultScene": true,
+    "drawCallCount": 2,
+    "totalVertexCount": 8,
+    "totalTriangleCount": 4,
+    "maxUVs": 0,
+    "maxInfluences": 0,
+    "maxAttributes": 1
+  }
+}

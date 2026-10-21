@@ -1,0 +1,23 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=2 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=3 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=340221952 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=340230144 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=340238336 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=340246528 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=340254720 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=340590592 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=340598784 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=340606976 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=340615168 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=340623360 mask=255
+angle=0 mode=0 materials/textures/mixture PASS
+angle=0 mode=1 materials/textures/mixture PASS
+angle=60 mode=0 materials/textures/mixture PASS
+angle=60 mode=1 materials/textures/mixture PASS
+angle=80 mode=0 materials/textures/mixture PASS
+angle=80 mode=1 materials/textures/mixture PASS
+debug_warning_error=0 fence=50/50
+BALANCED GPU sampling PASS paths=1966080 TraceRay=3648139 max white=1.00007

@@ -1,0 +1,2 @@
+verify_gi.cu
+tmpxft_000110fc_00000000-7_verify_gi.cudafe1.cpp

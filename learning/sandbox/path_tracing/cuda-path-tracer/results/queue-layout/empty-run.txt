@@ -1,0 +1,1 @@
+QUEUE LAYOUT AUDIT PASS scene=empty mode=full rays=468 shadows=0 CPU=-1

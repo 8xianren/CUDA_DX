@@ -14,7 +14,7 @@
 
 取裁剪空间w=1，顶点(-1,-1)、(-1,3)、(3,-1)。三角形约束为x>=-1、y>=-1、x+y<=2，所有[-1,1]^2内点均满足，所以覆盖整个视口；多余部分裁剪。VS用SV_VertexID生成顶点，不需要顶点缓冲。PS使用SV_Position目标像素中心，floor后整除3得到源坐标：sx=floor(x/3)，sy=floor(y/3)，buffer index=sy*160+sx。窗口位置不需要反投影：它只是展示已有图像，不生成新主射线。
 
-`dxr_display.hlsl`中VSMain/PSMain分别编译vs_6_0/ps_6_0。t0=StructuredBuffer<float4>；b0当前为12个DWORD：uint4源矩形、uint4目标矩形、uint源行步长、float曝光补偿、uint2保留。CPU Constants精确48B，static_assert确认；.8b初版16B协议已被.8c扩展替代。Root constants复制值，无需256B CBV分配；根SRV传GPU VA，不复制buffer数据也不持有生命周期。
+`dxr_display.hlsl`中VSMain/PSMain分别编译vs_6_0/ps_6_0。2026-10-21共享更新后t0=ByteAddressBuffer，R.13显式16B步长；b0为12个DWORD：uint4源矩形、uint4目标矩形、uint源行步长、float曝光补偿、uint像素字节步长、uint显示模式。实际实现提取到`d3d12/common`并与PT.10共用，原文件为include入口。CPU Constants精确48B，static_assert确认；.8b初版16B协议已被.8c扩展替代。Root constants复制值，无需256B CBV分配；根SRV传GPU VA，不复制buffer数据也不持有生命周期。
 
 ## 3. 资源、视图和PSO的职责
 

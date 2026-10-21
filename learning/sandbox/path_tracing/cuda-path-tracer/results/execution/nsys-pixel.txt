@@ -1,0 +1,18 @@
+Capture range started in the application.
+Capture range ended in the application.
+Generating 'C:\Users\TU\AppData\Local\Temp\nsys-TU\nsys-report-27a2.qdstrm'
+
+[1/1] [0%                          ] nsys-pixel.nsys-repProcessing events...
+
+[1/1] [0%                          ] nsys-pixel.nsys-rep
+[1/1] [5%                          ] nsys-pixel.nsys-rep
+[1/1] [==19%                       ] nsys-pixel.nsys-rep
+[1/1] [==20%                       ] nsys-pixel.nsys-rep
+[1/1] [====26%                     ] nsys-pixel.nsys-rep
+[1/1] [=======================96%  ] nsys-pixel.nsys-rep
+[1/1] [========================98% ] nsys-pixel.nsys-rep
+[1/1] [========================100%] nsys-pixel.nsys-rep
+[1/1] [========================100%] nsys-pixel.nsys-rep
+[1/1] [========================100%] nsys-pixel.nsys-rep
+Generated:
+	C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\cuda-path-tracer\results\execution/nsys-pixel.nsys-rep

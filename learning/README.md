@@ -14,7 +14,7 @@
 | 系统 | Windows，PowerShell |
 | CPU | Intel Core Ultra 7 265K |
 | 显卡 | NVIDIA GeForce RTX 5070（**Blackwell，计算能力 `sm_120`**，12GB） |
-| 驱动 | 591.86，`nvidia-smi` 报 CUDA 13.1 |
+| 驱动 | 2026-10-21实查610.88，`nvidia-smi --version` 报CUDA UMD13.3；PT.10最终报告保存本机环境输出 |
 | 编译器 `nvcc` | CUDA Toolkit 13.3；日常用 `learning/sandbox/build.ps1` |
 | Tile 教程 | `tutorials/cuda-tile/` 本机可跑（Blackwell） |
 

@@ -1,0 +1,19 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=332689408 mask=255
+air_normal mode=0 reflected=1313 miss=0 red=0.117383 expected=0.117333 max_error=3.31137e-08
+air_normal mode=1 reflected=16487 miss=0 red=0.116998 expected=0.117333 max_error=1.19209e-07
+air_60 mode=0 reflected=2986 miss=0 red=0.153689 expected=0.152311 max_error=4.64916e-06
+air_60 mode=1 reflected=16487 miss=0 red=0.15225 expected=0.152311 max_error=4.64916e-06
+air_80_reflection_miss mode=0 reflected=12820 miss=12820 red=0.0541124 expected=0.0544263 max_error=1.91968e-06
+air_80_reflection_miss mode=1 reflected=16487 miss=16487 red=0.0540841 expected=0.0544263 max_error=1.91968e-06
+glass_30 mode=0 reflected=1824 miss=0 red=1.71094 expected=1.7117 max_error=1.66619e-06
+glass_30 mode=1 reflected=16487 miss=0 red=1.70107 expected=1.7117 max_error=1.66619e-06
+glass_TIR45 mode=0 reflected=32768 miss=0 red=0.2 expected=0.2 max_error=2.47919e-06
+glass_TIR45 mode=1 reflected=32768 miss=0 red=0.2 expected=0.2 max_error=2.47919e-06
+equal_IOR mode=0 reflected=0 miss=0 red=0.2 expected=0.2 max_error=4.64916e-06
+equal_IOR mode=1 reflected=0 miss=0 red=0.2 expected=0.2 max_error=4.64916e-06
+debug_warning_error=0 fence=97/97
+Glass PASS paths=393216 TraceRay=786432 max_error=4.64916229248e-06

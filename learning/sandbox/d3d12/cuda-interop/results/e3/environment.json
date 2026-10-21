@@ -1,0 +1,18 @@
+{
+  "workload": "16384 independent scalar recurrences plus four real glTF instance updates and mesh0 deformation; synthetic pixel ALU loop",
+  "presentation": "1024x1024 offscreen, no swapchain, no Present, VSync not applicable",
+  "measurement": "48 fixed frames; 2 warmup batches and 5 measured batches per process; 3 rotated slot-order passes; no profiler",
+  "os": {
+    "Caption": "Microsoft Windows 11 专业版",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200"
+  },
+  "build": "VS2022 MSVC 14.44; Release /O2; C++17; CUDA 13.3 sm_120; HLSL vs_5_1/ps_5_1 D3DCompile strict",
+  "ram_bytes": 68044062720,
+  "limitations": "No clock lock, no hardware counters, finite pre-recorded batches; CUDA events include intervening scheduling delays.",
+  "cpu": {
+    "Name": "Intel(R) Core(TM) Ultra 7 265K",
+    "NumberOfCores": 20,
+    "NumberOfLogicalProcessors": 20
+  }
+}

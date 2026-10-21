@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-21",
+  "status": "audit passed for teaching scope",
+  "statistics_rows": 25,
+  "methods": [
+    "cache3-exact-nodes",
+    "cache3-trained",
+    "cache9-exact-nodes",
+    "cache9-trained",
+    "full-tail"
+  ],
+  "checks": "CPU_only=1\nindependent_runs=4096\npaths_per_receiver=64\ntraining_samples_per_node=64\nmax_reference_delta=5.2793890443353e-06\ncoarse_expected_bias_rms=0.0064239834206283\nfine_expected_bias_rms=0.00044557818282879\ncoarse_detected_pixels=5\nfull_tail_light_samples=1310720\ncache_training_light_samples=23592960\ncache_queries_all_four_modes=5242880\ncoarse_coefficient_bytes=144\nfine_coefficient_bytes=1296\ndirectional_right=0.27965628924945\ndirectional_left=0.18529639934126\n",
+  "ue_source_hashes_revalidated": true,
+  "pt11_seven_result_groups_present": true,
+  "scope_exclusions": [
+    "No GPU ReSTIR/cache performance claims",
+    "No full production GI pipeline",
+    "No NRC network training or SDK integration",
+    "No UE runtime validation",
+    "PT9 remaining Nsight Compute counters explicitly waived by user"
+  ],
+  "files": [
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\cache_scene.h",
+      "sha256": "d133fb100c93e7ef531a866f63dab314aef1f98bff0b33b646ada331d03d1a90"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\directional_cache.h",
+      "sha256": "a9f7ca149781a72c3630b2c6c14c255eb3c0c7671528cd627b20a37739afd471"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\plot_cache.py",
+      "sha256": "8fa9dd259416a1a79f498585b40c1558dbf433fe74aee00388d4897f6bdff647"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\plot_overview.py",
+      "sha256": "5ae27b6bfee269b2025b911201134d128a1324ceea241c46e9664a0764cb2574"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\verify_cache.cu",
+      "sha256": "dd494c63eec656ca6c91228d6017f1205a8c668551e74670d3381c2cfe6aa99a"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\verify_cache.ps1",
+      "sha256": "8d19c267cd5edbea159b34cc4a9ef6b47b0cdb6842f2438017cc0066612bbc8c"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\results\\cache\\checks.txt",
+      "sha256": "e5841a28c6e8281cc17d41e5a903392b3b417aad782693d181920a1d7a4e1181"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\results\\cache\\statistics.csv",
+      "sha256": "a79e939e01f2396327c4557e56b85f262b470acc37014f65d74faa5ea431a324"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\results\\cache\\summary.json",
+      "sha256": "12bf30d309626929be53afc73ff4ae00f2486fdd0042124230bba5949ac59883"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\results\\overview\\path-cache-probes.png",
+      "sha256": "209020d4a5bf2eb11a57eaa43b60414ffaca1b99983b40798faaf070ec6ad743"
+    },
+    {
+      "path": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\path_tracing\\radiance-cache\\results\\cache\\bias-variance.png",
+      "sha256": "6477b08864c403fb6bfc91156ad5fa1f3d4f6e3779cd7975b588b5aea65147fa"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+CPU_only=1
+width=12
+height=8
+frames=16
+independent_runs=256
+failed_method_frame_pixels=0
+max_temporal_M=128
+max_spatial_M=640
+reverse_traversal_bit_exact=1

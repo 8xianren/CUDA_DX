@@ -1,0 +1,25 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=332689408 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=332697600 mask=255
+self-intersection negative control rejected=2724 / 4096
+normal_K1 mode=0 red=0.0320557 expected=0.032 capped=31455 depth=1 max_error=3.31137e-08
+normal_K1 mode=1 red=0.0322012 expected=0.032 capped=16281 depth=1 max_error=3.97364e-08
+normal_K2 mode=0 red=0.216296 expected=0.21632 capped=1269 depth=2 max_error=2.38419e-07
+normal_K2 mode=1 red=0.214924 expected=0.21632 capped=8160 depth=2 max_error=2.08616e-07
+normal_K8 mode=0 red=0.246161 expected=0.246154 capped=0 depth=5 max_error=2.38419e-07
+normal_K8 mode=1 red=0.244921 expected=0.246154 capped=128 depth=8 max_error=2.08616e-07
+air60_K8 mode=0 red=0.299719 expected=0.29826 capped=0 depth=7 max_error=5.08101e-05
+air60_K8 mode=1 red=0.297613 expected=0.29826 capped=128 depth=8 max_error=5.08101e-05
+air80_K16 mode=0 red=0.538672 expected=0.535262 capped=0 depth=16 max_error=2.62384e-05
+air80_K16 mode=1 red=0.537189 expected=0.535262 capped=1 depth=16 max_error=2.81618e-05
+inside30_K8 mode=0 red=0.520903 expected=0.52061 capped=0 depth=5 max_error=2.38419e-07
+inside30_K8 mode=1 red=0.518921 expected=0.52061 capped=131 depth=8 max_error=2.4715e-07
+inside_TIR45 mode=0 red=0 expected=0 capped=32768 depth=16 max_error=0.000302315
+inside_TIR45 mode=1 red=0 expected=0 capped=32768 depth=16 max_error=0.000302315
+equal_IOR mode=0 red=0.2 expected=0.2 capped=0 depth=2 max_error=7.71236e-05
+equal_IOR mode=1 red=0.2 expected=0.2 capped=0 depth=2 max_error=7.71236e-05
+debug_warning_error=0 fence=130/130
+Slab PASS paths=524288 TraceRay=2374279 max_error=0.000302314758301

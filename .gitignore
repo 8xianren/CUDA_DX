@@ -1,0 +1,12 @@
+# Generated build/dependency trees and large runtime artifacts
+build/
+node_modules/
+plot_packages/
+__pycache__/
+*.pyc
+*.u32
+*.f32
+*.meshbin
+*.qdstrm
+.env
+.env.*

@@ -1,0 +1,211 @@
+{
+  "timing": {
+    "cornell": {
+      "pixel": {
+        "scene": "cornell",
+        "backend": "pixel",
+        "n": 9,
+        "min_ms": 26.6758403778,
+        "median_ms": 27.265663147,
+        "max_ms": 27.4450569153
+      },
+      "sample": {
+        "scene": "cornell",
+        "backend": "sample",
+        "n": 9,
+        "min_ms": 12.3299198151,
+        "median_ms": 12.7561283112,
+        "max_ms": 13.0454082489
+      },
+      "wave": {
+        "scene": "cornell",
+        "backend": "wave",
+        "n": 9,
+        "min_ms": 16.1254081726,
+        "median_ms": 16.5424003601,
+        "max_ms": 16.6579837799
+      }
+    },
+    "gallery": {
+      "pixel": {
+        "scene": "gallery",
+        "backend": "pixel",
+        "n": 9,
+        "min_ms": 40.1184959412,
+        "median_ms": 40.7518730164,
+        "max_ms": 41.15184021
+      },
+      "sample": {
+        "scene": "gallery",
+        "backend": "sample",
+        "n": 9,
+        "min_ms": 10.2023363113,
+        "median_ms": 10.5465602875,
+        "max_ms": 10.8394556046
+      },
+      "wave": {
+        "scene": "gallery",
+        "backend": "wave",
+        "n": 9,
+        "min_ms": 9.32940769196,
+        "median_ms": 9.59564781189,
+        "max_ms": 9.85964775085
+      }
+    },
+    "empty": {
+      "pixel": {
+        "scene": "empty",
+        "backend": "pixel",
+        "n": 9,
+        "min_ms": 0.00713599985465,
+        "median_ms": 0.0118399998173,
+        "max_ms": 0.0407040007412
+      },
+      "sample": {
+        "scene": "empty",
+        "backend": "sample",
+        "n": 9,
+        "min_ms": 0.0127680003643,
+        "median_ms": 0.0150079997256,
+        "max_ms": 0.0472319982946
+      },
+      "wave": {
+        "scene": "empty",
+        "backend": "wave",
+        "n": 9,
+        "min_ms": 0.0871360003948,
+        "median_ms": 0.104192003608,
+        "max_ms": 0.135616004467
+      }
+    }
+  },
+  "nsight": {
+    "pixel": {
+      "kernel_count": 1,
+      "kernel_sum_ms": 40.686877,
+      "first_to_last_kernel_ms": 40.686877,
+      "between_kernel_ms": 0.0,
+      "diagnostics": [
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ]
+      ],
+      "runtime_api": [
+        [
+          "cuKernelGetName",
+          1,
+          0.000897
+        ],
+        [
+          "cudaLaunchKernel_v7000",
+          1,
+          0.068468
+        ],
+        [
+          "cudaProfilerStart_v4000",
+          1,
+          776.671024
+        ],
+        [
+          "cudaStreamSynchronize_v3020",
+          1,
+          40.7872
+        ]
+      ],
+      "recorded_memcpy_count": 0,
+      "recorded_memset": [
+        0,
+        0
+      ]
+    },
+    "sample": {
+      "kernel_count": 2,
+      "kernel_sum_ms": 10.597771,
+      "first_to_last_kernel_ms": 10.599851,
+      "between_kernel_ms": 0.0020799999999994156,
+      "diagnostics": [
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ]
+      ],
+      "runtime_api": [
+        [
+          "cuKernelGetName",
+          2,
+          0.00135
+        ],
+        [
+          "cudaLaunchKernel_v7000",
+          2,
+          0.083933
+        ],
+        [
+          "cudaProfilerStart_v4000",
+          1,
+          926.598243
+        ],
+        [
+          "cudaStreamSynchronize_v3020",
+          1,
+          10.665489
+        ]
+      ],
+      "recorded_memcpy_count": 0,
+      "recorded_memset": [
+        0,
+        0
+      ]
+    },
+    "wave": {
+      "kernel_count": 23,
+      "kernel_sum_ms": 9.761737,
+      "first_to_last_kernel_ms": 9.819625,
+      "between_kernel_ms": 0.05788800000000016,
+      "diagnostics": [
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ]
+      ],
+      "runtime_api": [
+        [
+          "cuKernelGetName",
+          23,
+          0.003173
+        ],
+        [
+          "cudaLaunchKernel_v7000",
+          23,
+          0.165364
+        ],
+        [
+          "cudaMemsetAsync_v3020",
+          1,
+          0.042523
+        ],
+        [
+          "cudaProfilerStart_v4000",
+          1,
+          767.923973
+        ],
+        [
+          "cudaStreamSynchronize_v3020",
+          1,
+          9.742581
+        ]
+      ],
+      "recorded_memcpy_count": 0,
+      "recorded_memset": [
+        1,
+        0.000288
+      ]
+    }
+  },
+  "limitations": [
+    "Nsight Systems diagnostics warn: Not all CUDA events might have been collected.",
+    "Expected kernel counts/names/order are checked; this does not prove complete CUDA API capture.",
+    "Nsight Compute hardware counters unavailable: ERR_NVGPUCTRPERM."
+  ]
+}

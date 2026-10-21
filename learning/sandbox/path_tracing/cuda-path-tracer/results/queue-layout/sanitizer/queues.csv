@@ -1,0 +1,11 @@
+kind,depth,count,capacity,aos_stride,field_offset,file
+ray,0,468,468,88,0,ray-0.u32
+shadow,0,319,468,48,0,shadow-0.u32
+ray,1,385,468,88,0,ray-1.u32
+shadow,1,106,468,48,0,shadow-1.u32
+ray,2,146,468,88,0,ray-2.u32
+shadow,2,56,468,48,0,shadow-2.u32
+ray,3,17,468,88,0,ray-3.u32
+shadow,3,8,468,48,0,shadow-3.u32
+ray,4,7,468,88,0,ray-4.u32
+shadow,4,0,468,48,0,shadow-4.u32

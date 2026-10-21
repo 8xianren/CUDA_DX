@@ -1,0 +1,13 @@
+frame,name,accepted,no-history,outside,invalid,identity,normal,depth,reset,spatial_rejected
+0,initial,0,96,0,0,0,0,0,0,0
+1,stationary,96,0,0,0,0,0,0,0,0
+2,camera-one-pixel,88,0,8,0,0,0,0,0,0
+3,moving-blocker-camera-z,96,0,0,0,0,0,0,0,0
+4,surface-depth,0,0,0,0,0,0,96,0,0
+5,surface-normal,0,0,0,0,0,96,0,0,0
+6,surface-identity,0,0,0,0,96,0,0,0,0
+7,camera-cut,0,0,0,0,0,0,0,96,0
+8,resize,0,0,0,0,0,0,0,60,0
+9,light-revision,0,0,0,0,0,0,0,60,0
+10,surface-hole,24,0,0,0,0,0,0,0,6
+11,surface-reappears,24,0,0,36,0,0,0,0,0

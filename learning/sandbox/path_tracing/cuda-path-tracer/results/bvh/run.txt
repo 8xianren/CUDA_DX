@@ -1,0 +1,11 @@
+GPU=NVIDIA GeForce RTX 5070 sm=120 BVH registers=48 localBytes/thread=512 staticSharedBytes=0
+SLAB 12 CPU/GPU analytic cases PASS
+single-analytic PASS rays=7 triangles=1 nodes=1 depth=0 hits=3 triangleTests=4 boxes=7 stack=1 CPU=7 error=0 GPU ms brute/BVH=0.009632/0.008416
+coincident-100 PASS rays=7 triangles=100 nodes=63 depth=5 hits=3 triangleTests=400 boxes=255 stack=6 CPU=7 error=0 GPU ms brute/BVH=0.0424/0.066272
+empty PASS rays=7 triangles=0 nodes=0 depth=0 hits=0 triangleTests=0 boxes=0 stack=0 CPU=7 error=0 GPU ms brute/BVH=0.009056/0.009152
+degenerate PASS rays=7 triangles=1 nodes=1 depth=0 hits=0 triangleTests=1 boxes=7 stack=1 CPU=7 error=0 GPU ms brute/BVH=0.007968/0.008768
+small-scale PASS rays=7 triangles=1 nodes=1 depth=0 hits=3 triangleTests=4 boxes=7 stack=1 CPU=7 error=0 GPU ms brute/BVH=0.010336/0.009312
+large-scale PASS rays=7 triangles=1 nodes=1 depth=0 hits=3 triangleTests=4 boxes=7 stack=1 CPU=7 error=0 GPU ms brute/BVH=0.008736/0.009024
+nearest-not-first PASS rays=1 triangles=2 nodes=1 depth=0 hits=1 triangleTests=2 boxes=1 stack=1 CPU=1 error=0 GPU ms brute/BVH=0.009152/0.009152
+gallery-random PASS rays=8197 triangles=63496 nodes=32767 depth=14 hits=4182 triangleTests=56725 boxes=446771 stack=12 CPU=512 error=3.1231e-07 GPU ms brute/BVH=29.0545/0.16912
+BVH VERIFY PASS CPU_build_ms=437.232 invalid_rejected=4

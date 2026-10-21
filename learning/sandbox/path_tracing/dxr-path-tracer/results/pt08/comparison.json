@@ -1,0 +1,32 @@
+{
+  "direct": {
+    "linear_rgb_mse": 0.013247682101196225,
+    "mean_luminance": 0.372400921382504,
+    "mean_luminance_se": 9.93452640855e-05,
+    "rays": 42488054
+  },
+  "mis": {
+    "linear_rgb_mse": 0.0014422274842581045,
+    "mean_luminance": 0.41353976693406336,
+    "mean_luminance_se": 0.00011498033473,
+    "rays": 58726597
+  },
+  "bsdf": {
+    "linear_rgb_mse": 0.00694283161695199,
+    "mean_luminance": 0.41351210005718714,
+    "mean_luminance_se": 0.000280663365796,
+    "rays": 40469474
+  },
+  "double": {
+    "linear_rgb_mse": 0.601985846840815,
+    "mean_luminance": 0.6414238722813271,
+    "mean_luminance_se": 0.00222343591252,
+    "rays": 58726597
+  },
+  "rr": {
+    "linear_rgb_mse": 0.001459417076483573,
+    "mean_luminance": 0.4135297961078534,
+    "mean_luminance_se": 0.000115590883766,
+    "rays": 56211632
+  }
+}

@@ -1,0 +1,7 @@
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+debug_warning_error=0 fence=3/3
+frames=24 fields=1920 pixels=1375616 edges=640 covered=68453 mismatches=0 max_error=0 stale_rejected=23 ready=24 consumed=24 cpu_middle_wait_calls=0
+mode=e2-stale vertex_bytes=6528 vertex_bad=0 static_bytes=424 static_unchanged=1 injected_vertex_bad=6 injected_pixel_bad=96
+PASS

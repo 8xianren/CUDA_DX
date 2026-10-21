@@ -1,0 +1,5 @@
+CPU ONLY / no GPU dispatch
+cases=12969 transmitted=10869 no_transmission=2100 boundary_diagnostic=1 reverse_checks=10869 invalid_rejected=6
+max_direction_error=1.64926936394e-06 max_unit_error=3.91236785191e-07 max_Snell_residual=2.5125828218e-07 max_reverse_error=1.93334307114e-05
+critical_degrees=41.8103148958 Fermat_crossing_x=0.362650205535 Fermat_direction_error=2.88605970266e-08
+Refraction PASS

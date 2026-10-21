@@ -1,0 +1,23 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 12
+display 480x270 RGBA8_UNORM buffers=2 rowPitch=2048 bytes=552832
+resize stage=initial history=8 epoch=1 generation=0
+resize generation=1 size=641x359 pitch=2816 bytes=1010692
+resize stage=odd-size history=16 epoch=1 generation=1
+resize generation=2 size=321x481 pitch=1536 bytes=738564
+resize stage=portrait history=24 epoch=1 generation=2
+minimize skipped=3 unchangedFence=25
+resize stage=restore-same-size history=32 epoch=1 generation=2
+resize generation=3 size=800x200 pitch=3328 bytes=665472
+resize stage=wide-new-view history=8 epoch=2 generation=3
+resize stage=same-size-old-view history=8 epoch=3 generation=3
+resize generation=4 size=480x270 pitch=2048 bytes=552832
+resize stage=original-size history=16 epoch=3 generation=4
+resize generation=5 size=120x1 pitch=512 bytes=480
+resize stage=one-row history=24 epoch=3 generation=5
+resize HDR frames=64 checked=43671 invalid=0 geometry=0 shadow=0 mean=1.14e-07 dir=1.99e-07 pos=2.94e-06 sample=2.96e-07 PASS
+display presents=64 verified=64 bufferUse=32/32 occluded=0 maxByteError=1 badRGB=0 badAlpha=0
+resize summary frames=64 resets=3 rebuilds=5 skipped=3 fence=65/65
+InfoQueue: errors=0 warnings=0
+R.13.8c resize / minimize / history: PASS

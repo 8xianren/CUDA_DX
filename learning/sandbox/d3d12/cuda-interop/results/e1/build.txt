@@ -1,0 +1,21 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  Compiling CUDA source file ..\..\cuda-interop\src\vertex_update.cu...
+  
+  C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin\nvcc.exe"  --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include\cccl" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include"     --keep-dir instance_cuda\x64\Release  -maxrregcount=0     --machine 64 --compile -cudart shared -std=c++17 --generate-code=arch=compute_120,code=[compute_120,sm_120] -Xcompiler="/EHsc -Ob2 /utf-8"   -D_WINDOWS -DNDEBUG -D"CMAKE_INTDIR=\"Release\"" -D_MBCS -D"CMAKE_INTDIR=\"Release\"" -Xcompiler "/EHsc /W1 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\instance_cuda.pdb" -o instance_cuda.dir\Release\vertex_update.obj "C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\cuda-interop\src\vertex_update.cu" 
+CUDACOMPILE : nvcc warning : 'shared' is a deprecated value for option '--cudart (-cudart)'. Use 'hybrid' instead. [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\instance_cuda.vcxproj]
+  vertex_update.cu
+  tmpxft_00004b0c_00000000-7_vertex_update.cudafe1.cpp
+  instance_cuda.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\instance_cuda.lib
+  interop_test.cpp
+  raster.cpp
+  validate.cpp
+  static_audit.cpp
+  正在生成代码...
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/interop_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/interop_test.exp
+  interop_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\cuda-interop\build\Release\interop_test.exe

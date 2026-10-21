@@ -1,0 +1,15 @@
+========= COMPUTE-SANITIZER
+COMPACTION 20 exact set cases + guarded overflow PASS
+K0 PASS mega/wave ms=0.261216/0.877184 error=0 CPU=0 queries=468 launches=5 workspace=119952
+K1 PASS mega/wave ms=0.48864/1.32512 error=0 CPU=9.15152e-08 queries=1286 launches=8 workspace=119952
+K4-MIS PASS mega/wave ms=0.728352/2.78317 error=0 CPU=2.44272e-07 queries=2812 launches=17 workspace=119952
+K4-RR PASS mega/wave ms=0.775904/2.73872 error=0 CPU=3.39992e-07 queries=2306 launches=17 workspace=119952
+K4-BSDF PASS mega/wave ms=0.552576/2.83485 error=0 CPU=2.11124e-08 queries=1823 launches=17 workspace=119952
+REORDER initial reverse + blocks64/128/256 bit-exact RGB PASS
+single-K16 PASS mega/wave ms=0.263872/9.12064 error=0 CPU=0 queries=7 launches=53 workspace=400
+odd-offset PASS mega/wave ms=0.720416/2.76349 error=0 CPU=2.58148e-07 queries=509 launches=17 workspace=27024
+empty-scene PASS mega/wave ms=0.190912/2.78698 error=0 CPU=0 queries=105 launches=17 workspace=27024
+emission PASS mega/wave ms=0.272768/2.73526 error=0 CPU=0 queries=105 launches=17 workspace=27024
+SPLIT samples PASS error=5.91549e-08
+WAVEFRONT VERIFY PASS
+========= ERROR SUMMARY: 0 errors

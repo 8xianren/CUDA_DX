@@ -30,8 +30,8 @@
 |dxr_display_probe.cu|R.13.8a数值扫描、PFM读取与BMP对照；没有GPU dispatch|
 |dxr_display_preview.ps1|仅加标题、BMP转PNG，无光照计算|
 |results/r13-08a/|显示数值CSV、验收日志、编码/曝光对照图|
-|dxr_display.hlsl|R.13.8b全屏三角形VS与曝光/Reinhard/sRGB PS|
-|dxr_window_display.h|窗口、交换链/RTV、graphics PSO、显示录制与像素读回验证|
+|dxr_display.hlsl|兼容入口，实际VS/PS在../common/hdr_display.hlsl，与PT.10共享|
+|dxr_window_display.h|兼容入口，实际窗口/交换链/PSO/读回在../common/window_display.h|
 |dxr_window_runner.h|复用DXR提交层，96帧窗口/曝光/历史验收|
 |dxr_window_preview.ps1|实际Back Buffer的PPM转PNG和标题，无颜色计算|
 |results/r13-08b/|窗口验收日志、32/64/96帧PPM和PNG|
@@ -132,3 +132,6 @@ New-Item -ItemType Directory -Force "$lesson/results/r13-08c" | Out-Null
 - [R.13.8a SDR显示变换与sRGB编码契约](../../../笔记/d3d12/R.13.8a-SDR显示变换与sRGB编码契约.md)
 - [R.13.8b GPU显示通道与窗口Present](../../../笔记/d3d12/R.13.8b-GPU显示通道与窗口Present.md)
 - [R.13.8c 窗口Resize与历史生命周期](../../../笔记/d3d12/R.13.8c-窗口Resize与历史生命周期.md)
+
+
+2026-10-21 PT.10共享显示更新：t0改为ByteAddressBuffer，48B常量原保留字段明确为pixelByteStride和mode；R.13默认16B/正常显示保持原行为。宿主和shader需同步重编译。共享代码及PT.10回归命令见[common](../common/README.md)。window96帧与resize64帧回归均通过，RGB≤1码、Debug0/0；新结果直接归PT.10的results/pt10-display/r13-regression，未覆盖本目录历史结果。

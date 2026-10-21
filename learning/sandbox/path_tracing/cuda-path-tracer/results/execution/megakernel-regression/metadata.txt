@@ -1,0 +1,8 @@
+registers=86
+local_bytes=624
+shared_bytes=0
+pixel_stride=104
+float_path_state_bytes=88
+scene_triangles=22
+light_triangles=2
+rejected=2

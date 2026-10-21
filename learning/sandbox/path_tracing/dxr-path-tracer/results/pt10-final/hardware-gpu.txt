@@ -1,0 +1,2 @@
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 5070, 610.88, 12227 MiB

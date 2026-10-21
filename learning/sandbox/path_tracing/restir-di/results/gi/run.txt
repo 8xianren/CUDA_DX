@@ -1,0 +1,16 @@
+0 direct-area-16 ref=0.0734451 mean=0.0734424
+0 reconnect-J ref=0.0734451 mean=0.0734703
+0 reconnect-area ref=0.0734451 mean=0.0734703
+0 omit-J ref=0.0734451 mean=0.0732468
+0 inverse-J ref=0.0734451 mean=0.0770051
+1 direct-area-16 ref=0.107173 mean=0.10715
+1 reconnect-J ref=0.107173 mean=0.107097
+1 reconnect-area ref=0.107173 mean=0.107097
+1 omit-J ref=0.107173 mean=0.069216
+1 inverse-J ref=0.107173 mean=0.0492356
+2 direct-area-16 ref=0.164018 mean=0.16402
+2 reconnect-J ref=0.164018 mean=0.164036
+2 reconnect-area ref=0.164018 mean=0.164036
+2 omit-J ref=0.164018 mean=0.0613718
+2 inverse-J ref=0.164018 mean=0.0293725
+GI RECONNECTION PASS Jerror=9.45262e-11 areaDifference=2.77556e-16

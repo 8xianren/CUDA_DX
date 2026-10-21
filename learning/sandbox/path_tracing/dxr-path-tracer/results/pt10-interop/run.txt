@@ -1,0 +1,38 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+CUDA/D3D LUID match: NVIDIA GeForce RTX 5070 sm_120
+partition PASS samples=13 fence=1->2 CUDA ms=0.24768
+CPU 64x13 primary guides PASS normalized_error=1.346e-07
+guide partition normalized_error=3.06463e-07
+repeat PASS samples=13 fence=3->4 CUDA ms=0.008032
+camera-reset PASS samples=3 fence=5->6 CUDA ms=0.005728
+CUDA/D3D LUID match: NVIDIA GeForce RTX 5070 sm_120
+odd-resize PASS samples=7 fence=1->2 CUDA ms=0.007744
+CUDA/D3D LUID match: NVIDIA GeForce RTX 5070 sm_120
+oidn-guides PASS samples=32 fence=1->2 CUDA ms=0.976032
+oidn-color-only PASS samples=32 fence=3->4 CUDA ms=0.536896
+oidn-repeat PASS samples=32 fence=5->6 CUDA ms=0.486208
+OIDN repeat normalized_error=0
+reference1024 PASS samples=1024 fence=7->8 CUDA ms=0.007904
+debug_warning_error=0 fence=19/19
+Debug=0 final Fence=19/19 PASS

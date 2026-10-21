@@ -1,0 +1,13 @@
+initial reference=0.354545 mean=0.353158 failed=0
+stationary reference=0.354545 mean=0.352846 failed=0
+camera-one-pixel reference=0.371051 mean=0.36877 failed=0
+moving-blocker-camera-z reference=0.433171 mean=0.432623 failed=0
+surface-depth reference=0.516099 mean=0.516879 failed=0
+surface-normal reference=0.556579 mean=0.558065 failed=0
+surface-identity reference=0.556579 mean=0.5581 failed=0
+camera-cut reference=0.556579 mean=0.557728 failed=0
+resize reference=0.556993 mean=0.555156 failed=0
+light-revision reference=0.41422 mean=0.412665 failed=0
+surface-hole reference=0.0638307 mean=0.0650979 failed=0
+surface-reappears reference=0.41422 mean=0.41373 failed=0
+DYNAMIC REUSE VERIFY PASS stale=0.370984 current=0.433171 staleBad=40

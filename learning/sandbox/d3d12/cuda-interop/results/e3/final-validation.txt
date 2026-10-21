@@ -1,0 +1,49 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Shared libraries disabled
+-- compiling zlib from sources
+-- VRML disabled
+-- tinyusdz disabled
+-- Enabled importer formats: COLLADA OBJ PLY FBX STL GLTF
+-- Disabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH DXF CSM HMP IRRMESH IQM IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OGRE OPENGEX MS3D COB BLEND IFC XGL Q3D Q3BSP RAW SIB SMD TERRAGEN 3D USD X X3D 3MF MMD
+-- Enabled exporter formats: GLTF
+-- Disabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML COLLADA FBX STL X X3D 3MF PBRT ASSJSON STEP
+-- Treating all warnings as errors (for assimp library only)
+-- Configuring done (6.4s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  instance_cuda.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\instance_cuda.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  buffer_bench.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\cuda-interop\build\Release\buffer_bench.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  instance_cuda.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\instance_cuda.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  interop_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\cuda-interop\build\Release\interop_test.exe
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+round=0 slots=1 wall_ms=8.9873 cuda_sum_ms=0.866176 d3d_sum_ms=1.14525
+debug_warning_error=0 fence=2/2
+PASS slots=1 mode=validate bytes=14208 pixel_checks=1375616 simulation_checks=16384 image_hash=5049189473969035845
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+round=0 slots=2 wall_ms=7.8877 cuda_sum_ms=1.11837 d3d_sum_ms=1.1441
+debug_warning_error=0 fence=2/2
+PASS slots=2 mode=validate bytes=14208 pixel_checks=1375616 simulation_checks=16384 image_hash=5049189473969035845
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+round=0 slots=3 wall_ms=7.2025 cuda_sum_ms=1.23229 d3d_sum_ms=1.14701
+debug_warning_error=0 fence=2/2
+PASS slots=3 mode=validate bytes=14208 pixel_checks=1375616 simulation_checks=16384 image_hash=5049189473969035845

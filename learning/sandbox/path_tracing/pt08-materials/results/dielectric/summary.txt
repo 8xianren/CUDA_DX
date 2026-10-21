@@ -1,0 +1,6 @@
+CPU ONLY / no GPU dispatch
+Fresnel_angle_cases=1800 samples=3145728
+max_boundary_residual=2.48689957516e-14 max_power_residual=5.55111512313e-16 max_Jacobian_relative_error=2.79716483661e-12
+normal_F=0.04 Brewster_degrees=56.309932474 Brewster_rp=0
+slab_eta_product=1 RR_eta_scale_product=1
+Dielectric PASS

@@ -1,0 +1,20 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=0 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=0 origin=0,0,0 BLAS=332689408 mask=255
+instance=3 node=4 mesh=3 material=0 origin=0,0,0 BLAS=332697600 mask=255
+instance=4 node=5 mesh=4 material=0 origin=0,0,0 BLAS=332705792 mask=255
+instance=5 node=6 mesh=5 material=0 origin=0,0,0 BLAS=332713984 mask=255
+bsdf channel=0 mean=0.247480586171 SE=0 expected=0.247480593538
+bsdf channel=1 mean=0.333245962858 SE=0 expected=0.333245960265
+bsdf channel=2 mean=0.374999821186 SE=0 expected=0.374999824298
+mis channel=0 mean=0.247478297451 SE=0.00011511707108 expected=0.247480593538
+mis channel=1 mean=0.333248362364 SE=0.000136885561916 expected=0.333245960265
+mis channel=2 mean=0.375025799835 SE=9.76323949483e-05 expected=0.374999824298
+wrong_add channel=0 mean=0.393168166705 SE=0.000581876171774 expected=0.394961185585
+wrong_add channel=1 mean=0.465217821862 SE=0.000370117327535 expected=0.466491917549
+wrong_add channel=2 mean=0.449575995467 SE=0.000182779575608 expected=0.449999636675
+vertices=890112 TraceRay_calls=1330943 max_equation_error=2.55761468537e-06 max_t_error=6.05036851731e-07 K0_K1_rho0_Le0=PASS
+debug_warning_error=0 fence=29/29
+GPU PATH PASS

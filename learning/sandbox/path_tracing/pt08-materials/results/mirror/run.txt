@@ -1,0 +1,11 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=332681216 mask=255
+normal paths=4096 hits=1600 rays=8192 max_error=7.15256e-08
+oblique paths=4096 hits=1600 rays=8192 max_error=1.16229e-07
+miss paths=4096 hits=0 rays=8192 max_error=1.95465e-06
+black paths=4096 hits=1600 rays=8192 max_error=7.15256e-08
+white paths=4096 hits=1600 rays=8192 max_error=7.15256e-08
+debug_warning_error=0 fence=6/6
+Mirror PASS TraceRay=40960 max_error=1.95464789909e-06

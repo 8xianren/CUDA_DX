@@ -1,0 +1,8 @@
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\restir-di\verify_merge.cu(21): warning #177-D: variable "counts" was declared but never referenced
+              double wA=2,wB=sumB/(2*tb[y]);unsigned ids[]{a,y};double norms[]{wA,wB},counts[]{1,2};
+                                                                                      ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+verify_merge.cu
+tmpxft_000070d4_00000000-7_verify_merge.cudafe1.cpp

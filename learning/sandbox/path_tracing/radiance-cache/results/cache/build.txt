@@ -1,0 +1,2 @@
+verify_cache.cu
+tmpxft_000037fc_00000000-7_verify_cache.cudafe1.cpp

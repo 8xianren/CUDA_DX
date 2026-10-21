@@ -1,0 +1,5 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=0 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+debug_warning_error=0 fence=2/2
+PASS D.4 procedural_scene source_cpu_destroyed=true invalid_sampler_rejected=true rgba=0.2 0.4 0.6 1 max_error=0

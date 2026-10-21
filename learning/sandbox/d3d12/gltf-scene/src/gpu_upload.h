@@ -6,6 +6,7 @@
 #include <dxgi1_6.h>
 #include <vector>
 #include <cstdint>
+#include <functional>
 #include "cpu_scene.h"
 using Microsoft::WRL::ComPtr;
 void Check(HRESULT hr, const char* operation);
@@ -18,8 +19,13 @@ struct UploadContext {
     ComPtr<ID3D12Fence> fence;
     ComPtr<ID3D12InfoQueue> info;
     uint64_t submitted=0;
-    UploadContext();
-    void SubmitWait(); // 只用于课节验收；真实流式上传应通过Fence延迟回收，不逐批阻塞CPU。
+    // 默认仍开启Debug+GPU Validation；仅显式性能模式关闭，不能把关闭验证层记为“Debug通过”。
+    bool validationEnabled=true;
+    explicit UploadContext(bool validation=true);
+    // 可选回调在Execute之后、本地Fence Signal之前执行，可Present或排队外部消费者交接。
+    // 不得释放提交资源或重置当前命令列表；新增队列依赖必须最终回到本queue，才能由末尾Fence覆盖。
+    // 仍是同步验收接口；真实多帧调度应通过Fence延迟回收，不逐批阻塞CPU。
+    void SubmitWait(const std::function<void()>& beforeSignal = {});
     unsigned CheckDebug();
 };
 ComPtr<ID3D12Resource> MakeResource(UploadContext&,const D3D12_RESOURCE_DESC&,
@@ -58,3 +64,6 @@ struct GpuScene {
 };
 GpuScene UploadScene(UploadContext&,const CpuScene&);
 void VerifyCopiesAndBuildBlas(UploadContext&,GpuScene&);
+// result供后续TLAS/TraceRay持有；scratch只需活到构建Fence完成。调用者管理两者寿命。
+struct AccelerationBuffers {ComPtr<ID3D12Resource> result,scratch;};
+AccelerationBuffers BuildAcceleration(UploadContext&,const D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS&);

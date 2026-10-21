@@ -1,0 +1,9 @@
+CPU_only=1
+width=24
+height=16
+trials_per_pixel=4096
+checked_method_pixels=4608
+max_grid_reference_delta=2.06105883822e-05
+max_point_reference_delta=3.06643215874e-07
+light_sample_bytes=24
+reservoir_bytes=56

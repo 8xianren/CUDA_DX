@@ -1,0 +1,2 @@
+verify_dynamic.cu
+tmpxft_0001059c_00000000-7_verify_dynamic.cudafe1.cpp

@@ -1,0 +1,1 @@
+Saved GPU readback PNG previews under results/d03

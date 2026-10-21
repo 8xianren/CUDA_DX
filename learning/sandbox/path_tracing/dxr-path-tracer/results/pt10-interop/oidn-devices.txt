@@ -1,0 +1,19 @@
+Device 0
+  Name: NVIDIA GeForce RTX 5070
+  Type: CUDA
+  UUID: 44915ad12495c225f685c24029fd8132
+  LUID: b257010000000000
+  Node: 1
+  PCI : 0000:01:00.0
+
+Device 1
+  Name: Intel(R) Graphics
+  Type: SYCL
+  UUID: 8680677d060000000002000000000000
+  LUID: 7b6d010000000000
+  Node: 2
+  PCI : 0000:00:02.0
+
+Device 2
+  Name: Intel(R) Core(TM) Ultra 7 265K
+  Type: CPU

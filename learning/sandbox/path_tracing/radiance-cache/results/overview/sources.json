@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "scope": "source inspection only; no UE or NRC execution",
+  "ue_version": {
+    "MajorVersion": 5,
+    "MinorVersion": 7,
+    "PatchVersion": 2,
+    "Changelist": 0,
+    "CompatibleChangelist": 47537391,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 0,
+    "BranchName": "UE5"
+  },
+  "files": [
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Source\\Runtime\\Renderer\\Private\\Lumen\\LumenRadianceCache.h",
+      "sha256": "40fbae1b2ec5aa2f55a6dfaec4a1b8967cb5f17b6e5befaf386196828ba36dbe"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Source\\Runtime\\Renderer\\Private\\Lumen\\LumenRadianceCache.cpp",
+      "sha256": "e9344e516dca1285fa741e60de0ea0d414ed73d3a3fd677830ca5e9f751e0bab"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Source\\Runtime\\Renderer\\Private\\Lumen\\LumenRadianceCacheInterpolation.h",
+      "sha256": "c8a9b915c77e357d07c97209c433bf03b152b028af606ff7818b34e5a1ab4e51"
+    },
+    {
+      "path": "C:\\xf\\engine\\unreal\\UnrealEngine\\Engine\\Shaders\\Private\\Lumen\\LumenRadianceCacheInterpolation.ush",
+      "sha256": "b0fa192cee742923cf7ee4ed2bbcfeb46786b64c01e5fda276fb46abc628438c"
+    }
+  ],
+  "nvidia_sources": [
+    "https://research.nvidia.com/labs/rtr/publication/muller2021nrc/",
+    "https://github.com/NVIDIA-RTX/RTXGI/blob/main/Docs/NrcGuide.md"
+  ]
+}

@@ -1,0 +1,2 @@
+path_verify.cu
+tmpxft_000109f8_00000000-7_path_verify.cudafe1.cpp

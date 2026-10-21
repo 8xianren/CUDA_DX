@@ -1,0 +1,2 @@
+verify_reuse.cu
+tmpxft_0000d810_00000000-7_verify_reuse.cudafe1.cpp

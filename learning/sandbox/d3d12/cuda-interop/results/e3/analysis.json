@@ -1,0 +1,572 @@
+{
+  "timing": [
+    {
+      "workload": "cuda-heavy",
+      "slots": 1,
+      "samples": 15,
+      "allocation_bytes": 131072,
+      "cuda_substeps": 4096,
+      "pixel_iterations": 64,
+      "image_hash": "10915463374666532600",
+      "simulation_hash": "5802941159231355013",
+      "wall_ms": {
+        "median": 13.6182,
+        "min": 12.9014,
+        "max": 14.9895
+      },
+      "cpu_submit_ms": {
+        "median": 4.202,
+        "min": 3.1766,
+        "max": 6.1799
+      },
+      "cpu_final_wait_ms": {
+        "median": 9.5943,
+        "min": 7.8037,
+        "max": 10.7951
+      },
+      "cuda_sum_ms": {
+        "median": 2.68685,
+        "min": 2.65718,
+        "max": 2.94909
+      },
+      "d3d_sum_ms": {
+        "median": 0.533504,
+        "min": 0.529376,
+        "max": 0.535424
+      },
+      "d3d_span_ms": {
+        "median": 13.3273,
+        "min": 12.6268,
+        "max": 14.6892
+      }
+    },
+    {
+      "workload": "cuda-heavy",
+      "slots": 2,
+      "samples": 15,
+      "allocation_bytes": 262144,
+      "cuda_substeps": 4096,
+      "pixel_iterations": 64,
+      "image_hash": "10915463374666532600",
+      "simulation_hash": "5802941159231355013",
+      "wall_ms": {
+        "median": 7.2957,
+        "min": 7.1202,
+        "max": 8.0707
+      },
+      "cpu_submit_ms": {
+        "median": 3.9269,
+        "min": 3.5271,
+        "max": 5.5251
+      },
+      "cpu_final_wait_ms": {
+        "median": 3.3849,
+        "min": 2.2177,
+        "max": 4.0374
+      },
+      "cuda_sum_ms": {
+        "median": 2.65194,
+        "min": 2.59302,
+        "max": 2.84003
+      },
+      "d3d_sum_ms": {
+        "median": 0.540672,
+        "min": 0.53792,
+        "max": 0.546272
+      },
+      "d3d_span_ms": {
+        "median": 7.01565,
+        "min": 6.85712,
+        "max": 7.74531
+      }
+    },
+    {
+      "workload": "cuda-heavy",
+      "slots": 3,
+      "samples": 15,
+      "allocation_bytes": 393216,
+      "cuda_substeps": 4096,
+      "pixel_iterations": 64,
+      "image_hash": "10915463374666532600",
+      "simulation_hash": "5802941159231355013",
+      "wall_ms": {
+        "median": 6.32,
+        "min": 6.0594,
+        "max": 7.1154
+      },
+      "cpu_submit_ms": {
+        "median": 4.551,
+        "min": 3.4722,
+        "max": 5.3162
+      },
+      "cpu_final_wait_ms": {
+        "median": 2.0458,
+        "min": 1.1752,
+        "max": 2.7285
+      },
+      "cuda_sum_ms": {
+        "median": 2.86333,
+        "min": 2.61046,
+        "max": 3.29898
+      },
+      "d3d_sum_ms": {
+        "median": 0.542304,
+        "min": 0.539808,
+        "max": 0.548224
+      },
+      "d3d_span_ms": {
+        "median": 5.95302,
+        "min": 5.71107,
+        "max": 6.76374
+      }
+    },
+    {
+      "workload": "graphics-heavy",
+      "slots": 1,
+      "samples": 15,
+      "allocation_bytes": 131072,
+      "cuda_substeps": 64,
+      "pixel_iterations": 4096,
+      "image_hash": "4602265566613426980",
+      "simulation_hash": "11401189160920056741",
+      "wall_ms": {
+        "median": 35.3764,
+        "min": 34.7542,
+        "max": 37.8528
+      },
+      "cpu_submit_ms": {
+        "median": 3.8679,
+        "min": 2.5468,
+        "max": 5.6225
+      },
+      "cpu_final_wait_ms": {
+        "median": 32.0273,
+        "min": 30.3178,
+        "max": 33.5196
+      },
+      "cuda_sum_ms": {
+        "median": 0.651936,
+        "min": 0.63792,
+        "max": 0.67056
+      },
+      "d3d_sum_ms": {
+        "median": 23.0869,
+        "min": 22.8641,
+        "max": 23.2716
+      },
+      "d3d_span_ms": {
+        "median": 35.0575,
+        "min": 34.4498,
+        "max": 37.5151
+      }
+    },
+    {
+      "workload": "graphics-heavy",
+      "slots": 2,
+      "samples": 15,
+      "allocation_bytes": 262144,
+      "cuda_substeps": 64,
+      "pixel_iterations": 4096,
+      "image_hash": "4602265566613426980",
+      "simulation_hash": "11401189160920056741",
+      "wall_ms": {
+        "median": 31.7358,
+        "min": 30.816,
+        "max": 32.2914
+      },
+      "cpu_submit_ms": {
+        "median": 3.6164,
+        "min": 2.7156,
+        "max": 5.7438
+      },
+      "cpu_final_wait_ms": {
+        "median": 28.08,
+        "min": 26.1909,
+        "max": 29.0574
+      },
+      "cuda_sum_ms": {
+        "median": 2.20579,
+        "min": 1.49174,
+        "max": 3.27005
+      },
+      "d3d_sum_ms": {
+        "median": 23.6597,
+        "min": 23.4637,
+        "max": 23.7935
+      },
+      "d3d_span_ms": {
+        "median": 31.2887,
+        "min": 30.4665,
+        "max": 31.9051
+      }
+    },
+    {
+      "workload": "graphics-heavy",
+      "slots": 3,
+      "samples": 15,
+      "allocation_bytes": 393216,
+      "cuda_substeps": 64,
+      "pixel_iterations": 4096,
+      "image_hash": "4602265566613426980",
+      "simulation_hash": "11401189160920056741",
+      "wall_ms": {
+        "median": 30.6746,
+        "min": 29.6457,
+        "max": 31.2325
+      },
+      "cpu_submit_ms": {
+        "median": 3.8163,
+        "min": 2.5501,
+        "max": 5.955
+      },
+      "cpu_final_wait_ms": {
+        "median": 27.0956,
+        "min": 24.933,
+        "max": 27.7634
+      },
+      "cuda_sum_ms": {
+        "median": 2.76899,
+        "min": 1.29379,
+        "max": 5.30413
+      },
+      "d3d_sum_ms": {
+        "median": 23.8018,
+        "min": 23.601,
+        "max": 23.9691
+      },
+      "d3d_span_ms": {
+        "median": 30.1495,
+        "min": 29.2982,
+        "max": 30.8327
+      }
+    },
+    {
+      "workload": "balanced",
+      "slots": 1,
+      "samples": 15,
+      "allocation_bytes": 131072,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 1024,
+      "image_hash": "6085746147478209210",
+      "simulation_hash": "639609742405439813",
+      "wall_ms": {
+        "median": 18.2778,
+        "min": 17.4244,
+        "max": 18.7888
+      },
+      "cpu_submit_ms": {
+        "median": 4.3256,
+        "min": 2.7332,
+        "max": 6.5877
+      },
+      "cpu_final_wait_ms": {
+        "median": 14.2738,
+        "min": 11.773,
+        "max": 14.9764
+      },
+      "cuda_sum_ms": {
+        "median": 1.11411,
+        "min": 1.08954,
+        "max": 1.13069
+      },
+      "d3d_sum_ms": {
+        "median": 5.9087,
+        "min": 5.86749,
+        "max": 6.07933
+      },
+      "d3d_span_ms": {
+        "median": 17.9931,
+        "min": 17.1554,
+        "max": 18.4308
+      }
+    },
+    {
+      "workload": "balanced",
+      "slots": 2,
+      "samples": 15,
+      "allocation_bytes": 262144,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 1024,
+      "image_hash": "6085746147478209210",
+      "simulation_hash": "639609742405439813",
+      "wall_ms": {
+        "median": 13.6977,
+        "min": 13.089,
+        "max": 14.1899
+      },
+      "cpu_submit_ms": {
+        "median": 4.7452,
+        "min": 3.3724,
+        "max": 6.8533
+      },
+      "cpu_final_wait_ms": {
+        "median": 8.7009,
+        "min": 7.0463,
+        "max": 10.2031
+      },
+      "cuda_sum_ms": {
+        "median": 2.29238,
+        "min": 1.93696,
+        "max": 2.7105
+      },
+      "d3d_sum_ms": {
+        "median": 6.04973,
+        "min": 6.00173,
+        "max": 6.16909
+      },
+      "d3d_span_ms": {
+        "median": 13.3468,
+        "min": 12.8418,
+        "max": 13.8853
+      }
+    },
+    {
+      "workload": "balanced",
+      "slots": 3,
+      "samples": 15,
+      "allocation_bytes": 393216,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 1024,
+      "image_hash": "6085746147478209210",
+      "simulation_hash": "639609742405439813",
+      "wall_ms": {
+        "median": 12.3204,
+        "min": 11.7746,
+        "max": 12.7511
+      },
+      "cpu_submit_ms": {
+        "median": 4.5838,
+        "min": 3.7249,
+        "max": 6.6745
+      },
+      "cpu_final_wait_ms": {
+        "median": 7.7591,
+        "min": 5.7211,
+        "max": 8.3776
+      },
+      "cuda_sum_ms": {
+        "median": 3.47136,
+        "min": 2.50912,
+        "max": 6.11046
+      },
+      "d3d_sum_ms": {
+        "median": 6.10765,
+        "min": 6.0272,
+        "max": 6.17267
+      },
+      "d3d_span_ms": {
+        "median": 12.0204,
+        "min": 11.5262,
+        "max": 12.4195
+      }
+    }
+  ],
+  "traces": {
+    "1": {
+      "kernels": 144,
+      "graphics_batches": 48,
+      "nvtx": {
+        "E3 enqueue frame": 48,
+        "E3 final CPU drain": 1,
+        "E3 measured batch": 1
+      },
+      "kernel_ms": 0.609468,
+      "graphics_ms": 6.028303,
+      "cross_api_interval_overlap_ms": 0.0,
+      "first_to_last_ms": 19.315398,
+      "outside_recorded_intervals_ms": 12.677627,
+      "dependency_violations": 0,
+      "warnings": [
+        [
+          2,
+          "Scheduling information is absent. The thread activity is deduced based on OS runtime libraries traces. This is inaccurate and does not take into account asynchronous interrupts and exception faults."
+        ],
+        [
+          2,
+          "Not all NVTX events might have been collected."
+        ],
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ],
+        [
+          2,
+          "Not all OS runtime libraries events might have been collected."
+        ],
+        [
+          2,
+          "Not all DX12 events might have been collected."
+        ]
+      ]
+    },
+    "2": {
+      "kernels": 144,
+      "graphics_batches": 48,
+      "nvtx": {
+        "E3 enqueue frame": 48,
+        "E3 final CPU drain": 1,
+        "E3 measured batch": 1
+      },
+      "kernel_ms": 0.606427,
+      "graphics_ms": 6.095218,
+      "cross_api_interval_overlap_ms": 0.0,
+      "first_to_last_ms": 14.606127,
+      "outside_recorded_intervals_ms": 7.904482,
+      "dependency_violations": 0,
+      "warnings": [
+        [
+          2,
+          "Scheduling information is absent. The thread activity is deduced based on OS runtime libraries traces. This is inaccurate and does not take into account asynchronous interrupts and exception faults."
+        ],
+        [
+          2,
+          "Not all NVTX events might have been collected."
+        ],
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ],
+        [
+          2,
+          "Not all OS runtime libraries events might have been collected."
+        ],
+        [
+          2,
+          "Not all DX12 events might have been collected."
+        ]
+      ]
+    },
+    "3": {
+      "kernels": 144,
+      "graphics_batches": 48,
+      "nvtx": {
+        "E3 enqueue frame": 48,
+        "E3 final CPU drain": 1,
+        "E3 measured batch": 1
+      },
+      "kernel_ms": 0.606492,
+      "graphics_ms": 6.204452,
+      "cross_api_interval_overlap_ms": 0.0,
+      "first_to_last_ms": 12.915582,
+      "outside_recorded_intervals_ms": 6.104638,
+      "dependency_violations": 0,
+      "warnings": [
+        [
+          2,
+          "Scheduling information is absent. The thread activity is deduced based on OS runtime libraries traces. This is inaccurate and does not take into account asynchronous interrupts and exception faults."
+        ],
+        [
+          2,
+          "Not all NVTX events might have been collected."
+        ],
+        [
+          2,
+          "Not all CUDA events might have been collected."
+        ],
+        [
+          2,
+          "Not all OS runtime libraries events might have been collected."
+        ],
+        [
+          2,
+          "Not all DX12 events might have been collected."
+        ]
+      ]
+    }
+  },
+  "validation": [
+    {
+      "pass": true,
+      "mode": "validate",
+      "workload": "balanced",
+      "slots": 1,
+      "frames": 24,
+      "warmups": 0,
+      "rounds": 1,
+      "simulation_states": 16384,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 0,
+      "width": 224,
+      "height": 256,
+      "shared_allocation_bytes": 131072,
+      "timestamp_frequency": 1000000000,
+      "cpu_middle_wait_calls": 0,
+      "present_calls": 0,
+      "vsync": "headless-no-swapchain",
+      "debug_enabled": true,
+      "bytes_checked": 14208,
+      "pixels_checked": 1375616,
+      "edges_excluded": 640,
+      "simulation_values_checked": 16384,
+      "mismatches": 0,
+      "ready": 24,
+      "consumed": 24,
+      "image_hash": "5049189473969035845",
+      "simulation_hash": "15568688926564264133"
+    },
+    {
+      "pass": true,
+      "mode": "validate",
+      "workload": "balanced",
+      "slots": 2,
+      "frames": 24,
+      "warmups": 0,
+      "rounds": 1,
+      "simulation_states": 16384,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 0,
+      "width": 224,
+      "height": 256,
+      "shared_allocation_bytes": 262144,
+      "timestamp_frequency": 1000000000,
+      "cpu_middle_wait_calls": 0,
+      "present_calls": 0,
+      "vsync": "headless-no-swapchain",
+      "debug_enabled": true,
+      "bytes_checked": 14208,
+      "pixels_checked": 1375616,
+      "edges_excluded": 640,
+      "simulation_values_checked": 16384,
+      "mismatches": 0,
+      "ready": 24,
+      "consumed": 24,
+      "image_hash": "5049189473969035845",
+      "simulation_hash": "15568688926564264133"
+    },
+    {
+      "pass": true,
+      "mode": "validate",
+      "workload": "balanced",
+      "slots": 3,
+      "frames": 24,
+      "warmups": 0,
+      "rounds": 1,
+      "simulation_states": 16384,
+      "cuda_substeps": 1024,
+      "pixel_iterations": 0,
+      "width": 224,
+      "height": 256,
+      "shared_allocation_bytes": 393216,
+      "timestamp_frequency": 1000000000,
+      "cpu_middle_wait_calls": 0,
+      "present_calls": 0,
+      "vsync": "headless-no-swapchain",
+      "debug_enabled": true,
+      "bytes_checked": 14208,
+      "pixels_checked": 1375616,
+      "edges_excluded": 640,
+      "simulation_values_checked": 16384,
+      "mismatches": 0,
+      "ready": 24,
+      "consumed": 24,
+      "image_hash": "5049189473969035845",
+      "simulation_hash": "15568688926564264133"
+    }
+  ],
+  "limitations": [
+    "Finite pre-recorded batches, not a window frame pacing benchmark.",
+    "CUDA event elapsed intervals may contain scheduling delays, not just kernel execution.",
+    "Trace interval gaps do not prove whole-GPU idle; other applications may run.",
+    "Nsight incomplete-event warnings retained; no hardware-counter causal attribution."
+  ]
+}

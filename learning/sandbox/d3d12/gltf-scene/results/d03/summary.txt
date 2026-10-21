@@ -1,0 +1,1 @@
+PASS D.3: fixture and official BoxTextured, each 3 address modes x 2 filters; ClosestHit RGBA vs independent CPU reference. See per-case GPU logs.

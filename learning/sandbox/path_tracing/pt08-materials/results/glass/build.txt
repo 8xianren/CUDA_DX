@@ -1,0 +1,19 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  glass_test.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/glass_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/glass_test.exp
+  glass_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials\build\Release\glass_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  import_scope_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\import_scope_test.exe

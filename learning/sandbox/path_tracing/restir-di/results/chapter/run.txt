@@ -1,0 +1,9 @@
+open NEE1 mean=0.485441 variance=0.14232 failed=0
+open MIS2 mean=0.485543 variance=0.135207 failed=0
+open RIS8 mean=0.485032 variance=0.0177982 failed=0
+open ReSTIR-DI-frame16 mean=0.484996 variance=0.000454244 failed=0
+blocked NEE1 mean=0.355807 variance=0.166791 failed=0
+blocked MIS2 mean=0.356182 variance=0.15884 failed=0
+blocked RIS8 mean=0.35441 variance=0.0622487 failed=0
+blocked ReSTIR-DI-frame16 mean=0.355189 variance=0.0472494 failed=0
+CHAPTER COMPARISON PASS

@@ -1,0 +1,3 @@
+stage,width,height,local_usage_bytes,local_budget_bytes,nonlocal_usage_bytes,frame_logical_bytes,packet_allocation_bytes
+scene-before-frame,192,96,89235456,11717836800,79503360,6193152,0
+window-two-filters,127,65,291426304,11717836800,160940032,2773680,851968

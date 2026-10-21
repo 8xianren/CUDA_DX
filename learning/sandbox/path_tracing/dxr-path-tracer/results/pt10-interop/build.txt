@@ -1,0 +1,51 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  1>Checking Build System
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  Compiling CUDA source file ..\..\..\path_tracing\dxr-path-tracer\path_cuda.cu...
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  gpu_upload.cpp
+  
+  C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\bin\nvcc.exe"  --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include\cccl" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.3\include"     --keep-dir path_cuda\x64\Release  -maxrregcount=0     --machine 64 --compile -cudart shared -std=c++17 --generate-code=arch=compute_120,code=[compute_120,sm_120] -Xcompiler="/EHsc -Ob2 /utf-8"   -D_WINDOWS -DNDEBUG -D"CMAKE_INTDIR=\"Release\"" -D_MBCS -D"CMAKE_INTDIR=\"Release\"" -Xcompiler "/EHsc /W1 /nologo /O2 /FS   /MD " -Xcompiler "/FdC:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\path_cuda.pdb" -o path_cuda.dir\Release\path_cuda.obj "C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\path_cuda.cu" 
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+CUDACOMPILE : nvcc warning : 'shared' is a deprecated value for option '--cudart (-cudart)'. Use 'hybrid' instead. [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_cuda.vcxproj]
+  path_cuda.cu
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  tmpxft_00004db0_00000000-7_path_cuda.cudafe1.cpp
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  path_cuda.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\path_cuda.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_interop_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_interop_test.exp
+  path_interop_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_interop_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_history_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_history_test.exp
+  path_history_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_history_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_render.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_render.exp
+  path_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_render.exe

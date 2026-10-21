@@ -1,0 +1,4 @@
+sample,expected_probability,observed_probability
+0,0.1,0.0997875
+1,0.2,0.201095
+2,0.7,0.6991175

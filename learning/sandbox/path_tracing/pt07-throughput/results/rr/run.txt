@@ -1,0 +1,38 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=0 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=0 origin=0,0,0 BLAS=332689408 mask=255
+instance=3 node=4 mesh=3 material=0 origin=0,0,0 BLAS=332697600 mask=255
+instance=4 node=5 mesh=4 material=0 origin=0,0,0 BLAS=332705792 mask=255
+instance=5 node=6 mesh=5 material=0 origin=0,0,0 BLAS=332713984 mask=255
+off depth=0 reached=65536 beta_all_r=1 beta_alive_r=1
+off depth=3 reached=65536 beta_all_r=0.216 beta_alive_r=0.216
+off depth=8 reached=65536 beta_all_r=0.0167962 beta_alive_r=0.0167962
+off depth=16 reached=65536 beta_all_r=0.000282111 beta_alive_r=0.000282111
+off channel=0 mean=0.249839129947 SE=7.43040518226e-05 finite_reference=0.249957701946
+off channel=1 mean=0.333222934185 SE=8.49169244414e-05 finite_reference=0.333333284346
+off channel=2 mean=0.374951254062 SE=6.01526104319e-05 finite_reference=0.375000016298
+off mean_scatters=16 mean_TraceRay=30.335144043
+compensated depth=0 reached=65536 beta_all_r=1 beta_alive_r=1
+compensated depth=3 reached=14222 beta_all_r=0.217010498047 beta_alive_r=1
+compensated depth=8 reached=1145 beta_all_r=0.0174713134766 beta_alive_r=1
+compensated depth=16 reached=14 beta_all_r=0.000213623046875 beta_alive_r=1
+compensated channel=0 mean=0.250244200751 SE=0.000442060163047 finite_reference=0.249957701946
+compensated channel=1 mean=0.333313353596 SE=0.000155088716368 finite_reference=0.333333284346
+compensated channel=2 mean=0.374960743975 SE=6.10768594677e-05 finite_reference=0.375000016298
+compensated mean_scatters=2.54414367676 mean_TraceRay=6.50003051758
+wrong_no_compensation depth=0 reached=65536 beta_all_r=1 beta_alive_r=1
+wrong_no_compensation depth=3 reached=14222 beta_all_r=0.0468742720277 beta_alive_r=0.216000020504
+wrong_no_compensation depth=8 reached=0 beta_all_r=0 beta_alive_r=0
+wrong_no_compensation depth=16 reached=0 beta_all_r=0 beta_alive_r=0
+wrong_no_compensation channel=0 mean=0.207263374576 SE=7.44770720973e-05 finite_reference=0.249957701946
+wrong_no_compensation channel=1 mean=0.318379429818 SE=8.51325472498e-05 finite_reference=0.333333284346
+wrong_no_compensation channel=2 mean=0.37312226367 SE=6.00719714417e-05 finite_reference=0.375000016298
+wrong_no_compensation mean_scatters=2.24713134766 mean_TraceRay=5.95500183105
+paired channel=0 compensated_minus_off=0.000405070803254 paired_SE=0.000439754035104
+paired channel=1 compensated_minus_off=9.04194112081e-05 paired_SE=0.000144695603816
+paired channel=2 compensated_minus_off=9.48991373662e-06 paired_SE=1.84163349245e-05
+audit_vertices=1563459 TraceRay_calls=2811451 max_equation_error=3.81496400026e-07 max_t_error=5.83153773714e-07 s1_floor_cap_zero=PASS
+debug_warning_error=0 fence=54/54
+GPU RR PASS

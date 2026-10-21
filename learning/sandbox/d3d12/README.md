@@ -4,7 +4,9 @@
 
 |目录|课程内容|
 |---|---|
+|[cuda-interop](cuda-interop/README.md)|E.1–E.3完成：实例/动态顶点External Memory/Fence、1/2/3槽正确性与固定负载性能、NVTX+Systems时间线；多缓冲缩短间隙，未观察到跨API区间重叠|
 |[window-basics](window-basics/)|窗口与清屏基础|
+|[common](common/README.md)|R.13/PT.10共用窗口、交换链、HDR显示与Back Buffer读回|
 |[r01-r08-mesh](r01-r08-mesh/)|R.1–8共用的网格渲染器|
 |[r08a-capability](r08a-capability/)|DXR能力查询|
 |[r09-blas](r09-blas/)|BLAS|
@@ -18,7 +20,7 @@
 |[r13-legacy-camera](r13-legacy-camera/)|旧版相机实验，保留对照|
 |[r13-01-02-camera-math](r13-01-02-camera-math/)|新版View/Projection数学|
 |[r13-renderer](r13-renderer/README.md)|已验收主线：矩阵相机、命中属性、直接光、累积/历史、GPU SDR窗口、输出resize与最小化恢复|
-|[gltf-scene](gltf-scene/README.md)|C/D共享资产主线；C.1–C.6、D.1完成；Assimp/Validator CPU入口、GPU上传与读回、WIC解码、基础色光栅预览及BLAS构建，下一节D.2节点实例|
+|[gltf-scene](gltf-scene/README.md)|C/D共享资产主线；C.1–C.6、D.1–D.4完成；CPU导入/GPU资源/材质与提交边界，官方资产采样及无导入库GPU测试通过，下一节PT.6|
 
 下面的编译与运行命令已同步到新路径。
 

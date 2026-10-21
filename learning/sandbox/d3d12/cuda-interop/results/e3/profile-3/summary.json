@@ -1,0 +1,3 @@
+{
+"pass":true,"mode":"profile","workload":"balanced","slots":3,"frames":48,"warmups":2,"rounds":1,"simulation_states":16384,"cuda_substeps":1024,"pixel_iterations":1024,"width":1024,"height":1024,"shared_allocation_bytes":393216,"timestamp_frequency":1000000000,"cpu_middle_wait_calls":0,"present_calls":0,"vsync":"headless-no-swapchain","debug_enabled":false,"bytes_checked":592,"pixels_checked":0,"edges_excluded":0,"simulation_values_checked":16384,"mismatches":0,"ready":144,"consumed":144,"image_hash":"6085746147478209210","simulation_hash":"639609742405439813"
+}

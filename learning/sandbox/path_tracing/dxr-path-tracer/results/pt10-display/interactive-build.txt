@@ -1,0 +1,34 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  path_viewer.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244: “初始化”: 从“_Ty”转换到“_Ty2”，可能丢失数据 [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         with [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         [ [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:             _Ty=int [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         ] [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         and [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         [ [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:             _Ty2=float [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         ] [C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\path_viewer.vcxproj]
+  (编译源文件“../../../path_tracing/dxr-path-tracer/path_viewer.cpp”)
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\utility(274,54):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\path_viewer.cpp(74,57):
+          查看对正在编译的函数 模板 实例化“std::pair<const char *,float>::pair<const char(&)[10],int,0>(_Other1,_Other2 &&) noexcept”的引用
+          with
+          [
+              _Other1=const char (&)[10],
+              _Other2=int
+          ]
+              C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\path_viewer.cpp(74,28):
+              请参阅 "main" 中对 "std::pair<const char *,float>::pair" 的第一个引用
+  
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_viewer.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_viewer.exp
+  path_viewer.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_viewer.exe

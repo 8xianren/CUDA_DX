@@ -1,0 +1,2 @@
+round,slots,frames,cuda_steps,pixel_steps,cpu_submit_ms,cpu_final_wait_ms,wall_ms,cuda_sum_ms,d3d_sum_ms,d3d_span_ms
+0,1,48,1024,1024,7.3242,12.1977,19.5219,1.0809,5.85914,19.0756

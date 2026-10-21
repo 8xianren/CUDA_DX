@@ -1,0 +1,1 @@
+PASS official front 16384 pixels: max RGB code error=1; source UV left=4 right=3, top v=0 bottom v=1; horizontal mirror is authored in asset, not a loader flip.

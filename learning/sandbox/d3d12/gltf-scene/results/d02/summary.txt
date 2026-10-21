@@ -1,0 +1,1 @@
+PASS: four stages CPU/raster/DXR identity comparison, shared BLAS/VB/IB, parent movement, mask, camera pan, singular rejection; see gpu.txt for edge exclusions and exact counts.

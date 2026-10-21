@@ -1,0 +1,2 @@
+Source: https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/BoxTextured
+Commit: 15cd02d304e54cb42a4db4eefe719f76190f4b68

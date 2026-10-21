@@ -1,0 +1,13 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=332673024 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=332681216 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=332689408 mask=255
+reference_mean=0.00477125129 quadrature_256_512_max_change=4.651024517e-05
+bsdf mean=0.004818725662 mean_SE=4.067357117e-05 MSE=2.996031356e-05
+nee mean=0.004767767669 mean_SE=1.456397021e-06 MSE=7.167546016e-08
+balance mean=0.004766300266 mean_SE=2.754970512e-06 MSE=1.584494098e-07
+power mean=0.004763823236 mean_SE=2.443437321e-06 MSE=1.498546286e-07
+rays=3321088 diagnostics_mismatch=0 max_CPU_GPU_error=1.490116119e-08 camera_coverage_changes=205 scaling_black=PASS
+debug_warning_error=0 fence=20/20
+GPU MIS PASS

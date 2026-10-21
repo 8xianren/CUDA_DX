@@ -1,0 +1,1 @@
+QUEUE LAYOUT AUDIT PASS scene=gallery mode=full rays=1188588 shadows=536510 CPU=-1

@@ -1,0 +1,90 @@
+{
+  "convergence": [
+    {
+      "spp": 1,
+      "linear_rgb_mse": 0.48423756550086267
+    },
+    {
+      "spp": 4,
+      "linear_rgb_mse": 0.12476312688204533
+    },
+    {
+      "spp": 16,
+      "linear_rgb_mse": 0.03174892609779636
+    },
+    {
+      "spp": 64,
+      "linear_rgb_mse": 0.0077482796411917415
+    },
+    {
+      "spp": 256,
+      "linear_rgb_mse": 0.002729326699417295
+    }
+  ],
+  "reset_cases": [
+    {
+      "case": "partition_2_5_6",
+      "count": "13",
+      "generation": "1",
+      "normalized_error": "3.06462622491e-07",
+      "old_vs_new_mse": "0",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "camera",
+      "count": "13",
+      "generation": "2",
+      "normalized_error": "2.04875399392e-07",
+      "old_vs_new_mse": "0.897545289641",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "resize",
+      "count": "13",
+      "generation": "3",
+      "normalized_error": "3.06421929514e-07",
+      "old_vs_new_mse": "0",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "material",
+      "count": "13",
+      "generation": "4",
+      "normalized_error": "2.55004310848e-07",
+      "old_vs_new_mse": "0.0534355254034",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "scene",
+      "count": "13",
+      "generation": "5",
+      "normalized_error": "2.71619534189e-07",
+      "old_vs_new_mse": "0.0547781188961",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "light",
+      "count": "13",
+      "generation": "6",
+      "normalized_error": "1.34179487069e-07",
+      "old_vs_new_mse": "0.792165835272",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "seed",
+      "count": "13",
+      "generation": "7",
+      "normalized_error": "1.7225339945e-07",
+      "old_vs_new_mse": "0.00592692145908",
+      "fence_submissions": "1"
+    },
+    {
+      "case": "poison_reset",
+      "count": "13",
+      "generation": "8",
+      "normalized_error": "0",
+      "old_vs_new_mse": "0",
+      "fence_submissions": "1"
+    }
+  ]
+}

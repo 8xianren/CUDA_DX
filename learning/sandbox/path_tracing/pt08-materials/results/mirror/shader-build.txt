@@ -1,0 +1,25 @@
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:5:23: error: modifiers must appear before type
+struct Record {float4 point,reflected,beta,L,wrong;uint4 diagnostics;};
+                      ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:5:28: error: expected member name or ';' after declaration specifiers
+struct Record {float4 point,reflected,beta,L,wrong;uint4 diagnostics;};
+               ~~~~~~~~~~~~^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:25:7: error: expected unqualified-id
+    r.point=float4(p,first.t);r.reflected=float4(s.wi,s.eventMass);r.beta=float4(s.weight,s.isDelta);
+      ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:25:33: error: no member named 'reflected' in 'Record'
+    r.point=float4(p,first.t);r.reflected=float4(s.wi,s.eventMass);r.beta=float4(s.weight,s.isDelta);
+                              ~ ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:25:70: error: no member named 'beta' in 'Record'
+    r.point=float4(p,first.t);r.reflected=float4(s.wi,s.eventMass);r.beta=float4(s.weight,s.isDelta);
+                                                                   ~ ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:30:11: error: no member named 'L' in 'Record'
+        r.L=float4(s.weight*c.Le.rgb,1);
+        ~ ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:35:11: error: no member named 'wrong' in 'Record'
+        r.wrong=float4(r.L.rgb*wrongW,pLight);
+        ~ ^
+C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials/mirror.hlsl:35:26: error: no member named 'L' in 'Record'
+        r.wrong=float4(r.L.rgb*wrongW,pLight);
+                       ~ ^
+

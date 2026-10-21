@@ -1,0 +1,6 @@
+cosine K=8 red_mean=0.247480576 SE=0 correct_reference=0.247480576
+uniform K=8 red_mean=0.247298947349 SE=0.000657246230099 correct_reference=0.247480576
+wrong_missing_pdf K=8 red_mean=0.11055959068 SE=1.91370183488e-05 correct_reference=0.247480576
+wrong_emission_order K=8 red_mean=0.1484883456 SE=0 correct_reference=0.247480576
+CPU_ONLY segments=4194304 max_sphere_residual=2.6645352591e-15 max_cosine_path_error=1.66533453694e-16 black_reflector_emission=PASS negative_controls=PASS
+THROUGHPUT PASS

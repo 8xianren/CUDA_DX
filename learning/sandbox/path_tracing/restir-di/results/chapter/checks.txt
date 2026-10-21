@@ -1,0 +1,5 @@
+CPU_only=1
+independent_runs=256
+width=12
+height=8
+comparison_failed_pixels=0

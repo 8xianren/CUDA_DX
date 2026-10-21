@@ -1,0 +1,4 @@
+{
+  "assumption": "one draw from exact unoccluded luminance target / Z; known Z; not universal variance lower bound",
+  "mean_luminance_variance": 0.04697835071593062
+}

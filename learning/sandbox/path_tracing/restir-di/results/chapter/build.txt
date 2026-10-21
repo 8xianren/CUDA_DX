@@ -1,0 +1,2 @@
+verify_chapter.cu
+tmpxft_0000ab8c_00000000-7_verify_chapter.cudafe1.cpp

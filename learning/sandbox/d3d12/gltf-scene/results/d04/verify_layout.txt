@@ -1,0 +1,22 @@
+Vertex stride=48 meshes=1
+v0 position=0,0,0 uv=0,0.75 color=1,0.501960814,0,1
+v1 position=1,0,0 uv=1,0.5 color=0,1,0.250980407,1
+v2 position=0,1,0 uv=0.25,0 color=0.125490203,0,1,0.501960814
+PASS: owned arrays checked after Importer destruction
+Vertex stride=48 meshes=1
+v0 position=0,0,0 uv=0,0.75 color=1,0.501960814,0,1
+v1 position=1,0,0 uv=1,0.5 color=0,1,0.250980407,1
+v2 position=0,1,0 uv=0.25,0 color=0.125490203,0,1,0.501960814
+PASS: owned arrays checked after Importer destruction
+Vertex stride=48 meshes=1
+v0 position=0,0,0 uv=0,0.75 color=1,0.501960814,0,1
+v1 position=1,0,0 uv=1,0.5 color=0,1,0.250980407,1
+v2 position=0,1,0 uv=0.25,0 color=0.125490203,0,1,0.501960814
+PASS: owned arrays checked after Importer destruction
+Vertex stride=48 meshes=1
+v0 position=0,0,0 uv=0,0.75 color=1,0.501960814,0,1
+v1 position=1,0,0 uv=1,0.5 color=0,1,0.250980407,1
+v2 position=0,1,0 uv=0.25,0 color=0.125490203,0,1,0.501960814
+PASS: owned arrays checked after Importer destruction
+Vertex stride=48 meshes=2
+PASS: owned arrays checked after Importer destruction

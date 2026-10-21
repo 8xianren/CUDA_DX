@@ -1,0 +1,190 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Shared libraries disabled
+-- compiling zlib from sources
+-- VRML disabled
+-- tinyusdz disabled
+-- Enabled importer formats: COLLADA OBJ PLY FBX STL GLTF
+-- Disabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH DXF CSM HMP IRRMESH IQM IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OGRE OPENGEX MS3D COB BLEND IFC XGL Q3D Q3BSP RAW SIB SMD TERRAGEN 3D USD X X3D 3MF MMD
+-- Enabled exporter formats: GLTF
+-- Disabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML COLLADA FBX STL X X3D 3MF PBRT ASSJSON STEP
+-- Treating all warnings as errors (for assimp library only)
+-- Configuring done (0.9s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  material_bindings.cpp
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  material_sampling.cpp
+  正在生成代码...
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_resources.cpp
+  path_history.cpp
+  正在生成代码...
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  path_history_test.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_history_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_history_test.exp
+  path_history_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_history_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  path_render.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_render.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/path_render.exp
+  path_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\dxr-path-tracer\build\Release\path_render.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  pbr_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\pbr_render.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  pbr_test.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/pbr_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/pbr_test.exp
+  pbr_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt08-materials\build\Release\pbr_test.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  scene_gpu.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_gpu.lib
+  scene_render.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_render.lib
+  scene_boundary_test.cpp
+  scene_boundary_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_boundary_test.exe
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+partition 2+5+6 PASS error=3.06463e-07 one submission
+camera PASS error=2.04875e-07 target difference=0.897545
+resize PASS error=3.06422e-07 target difference=0
+material PASS error=2.55004e-07 target difference=0.0534355
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0.8,0.4,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+scene PASS error=2.7162e-07 target difference=0.0547781
+light PASS error=1.34179e-07 target difference=0.792166
+seed PASS error=1.72253e-07 target difference=0.00592692
+NaN poisoned history reset PASS error=0
+pending resize rejection PASS
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+convergence spp=1 rays=24359
+convergence spp=4 rays=97286
+convergence spp=16 rays=389853
+convergence spp=64 rays=1560951
+convergence spp=256 rays=6244087
+debug_warning_error=0 fence=33/33
+GPU HISTORY PASS: partition, camera, resize, material, scene, light, seed, poison, pending resize, convergence outputs
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=344260608 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=344522752 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=345833472 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=346161152 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=346488832 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=346816512 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=347144192 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=347471872 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=347799552 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=348127232 mask=255
+instance=10 node=11 mesh=10 material=10 origin=0,0,0 BLAS=348454912 mask=255
+instance=11 node=12 mesh=11 material=11 origin=0,0,0 BLAS=348782592 mask=255
+instance=12 node=13 mesh=12 material=12 origin=0,0,0 BLAS=349110272 mask=255
+instance=13 node=14 mesh=13 material=13 origin=0,0,0 BLAS=349437952 mask=255
+instance=14 node=15 mesh=14 material=14 origin=0,0,0 BLAS=349765632 mask=255
+instance=15 node=16 mesh=15 material=14 origin=0,0,0 BLAS=350093312 mask=255
+instance=16 node=17 mesh=16 material=15 origin=0,0,0 BLAS=346157056 mask=255
+instance=17 node=18 mesh=17 material=16 origin=0,0,0 BLAS=346812416 mask=255
+instance=18 node=19 mesh=18 material=17 origin=0,0,0 BLAS=347467776 mask=255
+instance=19 node=20 mesh=19 material=18 origin=0,0,0 BLAS=348123136 mask=255
+samples=16/16
+debug_warning_error=0 fence=2/2
+PATH PASS rays=1179648 mean=0.163869,0.16234,0.163246 SE_Y=0.000272862 delta=0 transmission=0 invalid=0 nonfinite=0
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=1 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=2 dimensions=2x2 rowBytes=8 pitch=256 copyBytes=264
+image=3 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=340221952 mask=255
+instance=1 node=2 mesh=1 material=1 origin=0,0,0 BLAS=340230144 mask=255
+instance=2 node=3 mesh=2 material=2 origin=0,0,0 BLAS=340238336 mask=255
+instance=3 node=4 mesh=3 material=3 origin=0,0,0 BLAS=340246528 mask=255
+instance=4 node=5 mesh=4 material=4 origin=0,0,0 BLAS=340254720 mask=255
+instance=5 node=6 mesh=5 material=5 origin=0,0,0 BLAS=340590592 mask=255
+instance=6 node=7 mesh=6 material=6 origin=0,0,0 BLAS=340598784 mask=255
+instance=7 node=8 mesh=7 material=7 origin=0,0,0 BLAS=340606976 mask=255
+instance=8 node=9 mesh=8 material=8 origin=0,0,0 BLAS=340615168 mask=255
+instance=9 node=10 mesh=9 material=9 origin=0,0,0 BLAS=340623360 mask=255
+angle=0 mode=0 materials/textures/mixture PASS
+angle=0 mode=1 materials/textures/mixture PASS
+angle=60 mode=0 materials/textures/mixture PASS
+angle=60 mode=1 materials/textures/mixture PASS
+angle=80 mode=0 materials/textures/mixture PASS
+angle=80 mode=1 materials/textures/mixture PASS
+debug_warning_error=0 fence=50/50
+BALANCED GPU sampling PASS paths=1966080 TraceRay=3648139 max white=1.00007
+HISTORY ANALYSIS PASS [{"spp": 1, "linear_rgb_mse": 0.48423756550086267}, {"spp": 4, "linear_rgb_mse": 0.12476312688204533}, {"spp": 16, "linear_rgb_mse": 0.03174892609779636}, {"spp": 64, "linear_rgb_mse": 0.0077482796411917415}, {"spp": 256, "linear_rgb_mse": 0.002729326699417295}]

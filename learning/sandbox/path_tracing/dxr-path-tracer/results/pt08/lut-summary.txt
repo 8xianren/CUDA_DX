@@ -1,0 +1,1 @@
+LUT CPU PASS rows=129 columns=257 bytes=133144 refined=7285 max_refinement_change=0.000108143699457 offgrid=512 max_offgrid_error=0.000285060336933 direct_integrals=20 max_direct_error=1.74125330887e-06

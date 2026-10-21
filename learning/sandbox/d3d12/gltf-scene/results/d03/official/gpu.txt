@@ -1,0 +1,37 @@
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=329003008 mask=255
+10497-9728 samples=5952 max_error=0.00199401 errors=0 wrong_v_detected=3478 wrong_srgb_detected=5495
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=338317312 mask=255
+10497-9729 samples=5952 max_error=0.00199491 errors=0 wrong_v_detected=3478 wrong_srgb_detected=5495
+debug_warning_error=0 fence=3/3
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=338317312 mask=255
+33071-9728 samples=5952 max_error=0.00199401 errors=0 wrong_v_detected=578 wrong_srgb_detected=5871
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=338317312 mask=255
+33071-9729 samples=5952 max_error=0.00199491 errors=0 wrong_v_detected=578 wrong_srgb_detected=5871
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=338317312 mask=255
+33648-9728 samples=5952 max_error=0.00199401 errors=0 wrong_v_detected=3478 wrong_srgb_detected=5487
+debug_warning_error=0 fence=2/2
+adapter=NVIDIA GeForce RTX 5070
+image=0 dimensions=256x256 rowBytes=1024 pitch=1024 copyBytes=262144
+image=1 dimensions=1x1 rowBytes=4 pitch=256 copyBytes=4
+instance=0 node=1 mesh=0 material=0 origin=0,0,0 BLAS=338317312 mask=255
+33648-9729 samples=5952 max_error=0.00199491 errors=0 wrong_v_detected=3478 wrong_srgb_detected=5487
+debug_warning_error=0 fence=2/2
+PASS D.3 six sampler variants, linear RGBA, UV and sRGB negative controls

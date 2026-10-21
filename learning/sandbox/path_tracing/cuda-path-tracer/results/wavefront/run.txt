@@ -1,0 +1,15 @@
+COMPACTION 20 exact set cases + guarded overflow PASS
+K0 PASS mega/wave ms=0.127808/0.05808 error=0 CPU=0 queries=4216 launches=5 workspace=1079440
+K1 PASS mega/wave ms=0.363552/0.141376 error=0 CPU=1.58146e-07 queries=11106 launches=8 workspace=1079440
+K4-MIS PASS mega/wave ms=1.32429/0.284896 error=0 CPU=3.63667e-07 queries=22781 launches=17 workspace=1079440
+K4-RR PASS mega/wave ms=1.15235/0.284 error=0 CPU=3.65607e-07 queries=18851 launches=17 workspace=1079440
+K4-BSDF PASS mega/wave ms=0.655616/0.201312 error=0 CPU=6.66803e-08 queries=14899 launches=17 workspace=1079440
+REORDER initial reverse + blocks64/128/256 bit-exact RGB PASS
+single-K16 PASS mega/wave ms=0.071328/0.564064 error=0 CPU=0 queries=7 launches=53 workspace=400
+odd-offset PASS mega/wave ms=0.369568/0.264384 error=0 CPU=2.58148e-07 queries=509 launches=17 workspace=27024
+empty-scene PASS mega/wave ms=0.009984/0.134496 error=0 CPU=0 queries=105 launches=17 workspace=27024
+emission PASS mega/wave ms=0.012832/0.134144 error=0 CPU=0 queries=105 launches=17 workspace=27024
+SPLIT samples PASS error=7.87501e-08
+cornell PASS mega/wave ms=27.1517/16.2844 error=0 CPU=-1 queries=8974546 launches=29 workspace=452984976
+gallery PASS mega/wave ms=41.0164/9.88819 error=0 CPU=-1 queries=1725098 launches=23 workspace=150995088
+WAVEFRONT VERIFY PASS

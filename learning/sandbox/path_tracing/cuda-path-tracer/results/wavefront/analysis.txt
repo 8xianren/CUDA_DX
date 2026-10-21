@@ -1,0 +1,79 @@
+{
+  "K0": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 1.0294342041015625,
+    "mega_ms": 0.127808004618,
+    "wave_ms": 0.0580799989402,
+    "wave_kernel_launches": 5
+  },
+  "K1": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 1.0294342041015625,
+    "mega_ms": 0.363552004099,
+    "wave_ms": 0.141376003623,
+    "wave_kernel_launches": 8
+  },
+  "K4-MIS": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 1.0294342041015625,
+    "mega_ms": 1.3242880106,
+    "wave_ms": 0.284895986319,
+    "wave_kernel_launches": 17
+  },
+  "K4-RR": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 1.0294342041015625,
+    "mega_ms": 1.15235197544,
+    "wave_ms": 0.284000009298,
+    "wave_kernel_launches": 17
+  },
+  "K4-BSDF": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 1.0294342041015625,
+    "mega_ms": 0.655615985394,
+    "wave_ms": 0.20131200552,
+    "wave_kernel_launches": 17
+  },
+  "single-K16": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 0.0003814697265625,
+    "mega_ms": 0.0713279992342,
+    "wave_ms": 0.564064025879,
+    "wave_kernel_launches": 53
+  },
+  "odd-offset": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 0.0257720947265625,
+    "mega_ms": 0.369567990303,
+    "wave_ms": 0.264384001493,
+    "wave_kernel_launches": 17
+  },
+  "empty-scene": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 0.0257720947265625,
+    "mega_ms": 0.00998399965465,
+    "wave_ms": 0.134496003389,
+    "wave_kernel_launches": 17
+  },
+  "emission": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 0.0257720947265625,
+    "mega_ms": 0.0128319999203,
+    "wave_ms": 0.134143993258,
+    "wave_kernel_launches": 17
+  },
+  "cornell": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 432.00013732910156,
+    "mega_ms": 27.1517448425,
+    "wave_ms": 16.2843837738,
+    "wave_kernel_launches": 29
+  },
+  "gallery": {
+    "max_abs_rgb_difference": 0.0,
+    "workspace_mib": 144.00013732910156,
+    "mega_ms": 41.0164146423,
+    "wave_ms": 9.88819217682,
+    "wave_kernel_launches": 23
+  }
+}

@@ -1,0 +1,3 @@
+open PASS reference=0.484461 RIS=0.484398 wrong=0.484398 leakage_pixels=0
+blocked PASS reference=0.354006 RIS=0.354037 wrong=0.484398 leakage_pixels=383
+DIRECT LIGHTING CPU VERIFY PASS
