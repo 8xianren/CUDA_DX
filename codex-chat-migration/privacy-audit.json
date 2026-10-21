@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-21T10:43:41.446245+00:00",
+  "archive_path": "conversations.zip",
+  "archive_sha256": "6b1f9394a7abb158efe7769ee5ce95eb4d419b81e18c63819aa2a4e4bbe74725",
+  "scope": "four project main sessions in the frozen archive; textual structured records and metadata",
+  "project": "8xianren/CUDA_DX",
+  "session_count": 4,
+  "record_count": 8036,
+  "visible_message_count": 909,
+  "checks": {
+    "structural_system_developer_analysis_reasoning_records": 0,
+    "compacted_turn_context_world_state_inter_agent_metadata_records": 0,
+    "nested_internal_prompt_tags_or_internal_fields": 0,
+    "non_project_cwd_sessions": 0,
+    "subagent_session_metadata": 0,
+    "high_confidence_credential_matches": 0,
+    "credential_assignment_or_query_matches": 0,
+    "auth_or_config_whole_file_content_pattern_matches": 0,
+    "unmatched_tool_call_ids": 0,
+    "unmatched_tool_output_ids": 0,
+    "duplicate_tool_call_ids": 0,
+    "paired_tool_call_ids": 1657,
+    "embedded_png_data_uri_occurrences": 68
+  },
+  "credential_rules": [
+    "OpenAI API key",
+    "GitHub token",
+    "JWT",
+    "Slack token",
+    "AWS access key",
+    "private key PEM header",
+    "Bearer credential",
+    "URL user/password",
+    "credential assignment",
+    "credential URL query",
+    "authentication JSON fields"
+  ],
+  "method": [
+    "Parsed every JSONL record and checked record types, message roles, channels, phases, nested field names, session metadata and manifest hashes.",
+    "Scanned parsed string values for credential patterns, internal prompt markers and authentication/configuration file content patterns; filename mentions alone were not treated as credential leakage.",
+    "Checked tool call/return identifiers in each session and counted embedded PNG data URI occurrences.",
+    "Reviewed README.md and HANDOFF.md: both accurately state that only this migration package is published and the latest local H implementation and material reorganization are not included."
+  ],
+  "boundaries": [
+    "This is a pattern-based audit, not a guarantee that every form of private or sensitive meaning can be identified automatically.",
+    "The archive intentionally retains user-visible conversations, tool outputs and historical local paths. Private semantics, personal details and organization-specific information are not comprehensively classified by these checks.",
+    "Embedded PNG bytes were counted but were not subjected to OCR or a full visual privacy review; the count is data URI occurrences, not a uniqueness claim.",
+    "Authentication/configuration checks detect recognized content structures; the result does not claim universal detection of every possible file format.",
+    "The audit covers exactly archive_sha256 above. It does not audit a later re-export or arbitrary future exporter output."
+  ],
+  "sessions": [
+    {
+      "id": "01a00d86-ffd8-75c2-90bc-34c907b2709b",
+      "archive_path": "sessions/2026/08/17/rollout-2026-08-17T10-22-26-01a00d86-ffd8-75c2-90bc-34c907b2709b.jsonl",
+      "kind": "main",
+      "records": 3279,
+      "visible_messages": 452,
+      "project_cwd_matches": true,
+      "manifest_sha256_matches": true,
+      "paired_tool_call_ids": 692,
+      "unmatched_call_ids": 0,
+      "unmatched_output_ids": 0,
+      "embedded_png_data_uri_occurrences": 10
+    },
+    {
+      "id": "01a12026-2477-7c32-99b4-91cfb30a8a40",
+      "archive_path": "sessions/2026/10/09/rollout-2026-10-09T18-12-13-01a12026-2477-7c32-99b4-91cfb30a8a40.jsonl",
+      "kind": "main",
+      "records": 1559,
+      "visible_messages": 196,
+      "project_cwd_matches": true,
+      "manifest_sha256_matches": true,
+      "paired_tool_call_ids": 271,
+      "unmatched_call_ids": 0,
+      "unmatched_output_ids": 0,
+      "embedded_png_data_uri_occurrences": 14
+    },
+    {
+      "id": "01a15967-656e-7a83-98f8-81cf743ffa1f",
+      "archive_path": "sessions/2026/10/20/rollout-2026-10-20T21-01-51-01a15967-656e-7a83-98f8-81cf743ffa1f.jsonl",
+      "kind": "main",
+      "records": 47,
+      "visible_messages": 5,
+      "project_cwd_matches": true,
+      "manifest_sha256_matches": true,
+      "paired_tool_call_ids": 10,
+      "unmatched_call_ids": 0,
+      "unmatched_output_ids": 0,
+      "embedded_png_data_uri_occurrences": 0
+    },
+    {
+      "id": "01a15c23-eeea-7122-9ecd-9a5ece6fe3e2",
+      "archive_path": "sessions/2026/10/21/rollout-2026-10-21T09-47-01-01a15c23-eeea-7122-9ecd-9a5ece6fe3e2.jsonl",
+      "kind": "main",
+      "records": 3151,
+      "visible_messages": 256,
+      "project_cwd_matches": true,
+      "manifest_sha256_matches": true,
+      "paired_tool_call_ids": 684,
+      "unmatched_call_ids": 0,
+      "unmatched_output_ids": 0,
+      "embedded_png_data_uri_occurrences": 44
+    }
+  ],
+  "result": "passed_for_the_listed_checks",
+  "visual_review": {
+    "inline_png_occurrences": 68,
+    "unique_decodable_pngs": 66,
+    "review": "Reviewed 3 contact sheets of all 66 decodable unique images; they show course diagrams, plots, demo renders and course UI captures. No credential screen observed. This was not OCR.",
+    "historical_truncated_pngs": 1,
+    "truncated_png_bytes": 6501,
+    "external_image_paths_copied": false
+  }
+}

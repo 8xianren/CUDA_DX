@@ -1,0 +1,84 @@
+{
+  "pass": true,
+  "tool": "Codex app-server stdio",
+  "methods": [
+    "initialize",
+    "thread/list",
+    "thread/read"
+  ],
+  "isolated_temp_home": true,
+  "model_calls": 0,
+  "sessions": [
+    {
+      "id": "01a00d86-ffd8-75c2-90bc-34c907b2709b",
+      "listed": true,
+      "title_matches": true,
+      "cwd_remapped": true,
+      "turns": 92,
+      "expected_visible_messages": 452,
+      "native_visible_messages": 452,
+      "missing_messages": 0,
+      "extra_messages": 0,
+      "pass": true
+    },
+    {
+      "id": "01a12026-2477-7c32-99b4-91cfb30a8a40",
+      "listed": true,
+      "title_matches": true,
+      "cwd_remapped": true,
+      "turns": 48,
+      "expected_visible_messages": 196,
+      "native_visible_messages": 196,
+      "missing_messages": 0,
+      "extra_messages": 0,
+      "pass": true
+    },
+    {
+      "id": "01a15967-656e-7a83-98f8-81cf743ffa1f",
+      "listed": true,
+      "title_matches": true,
+      "cwd_remapped": true,
+      "turns": 1,
+      "expected_visible_messages": 5,
+      "native_visible_messages": 5,
+      "missing_messages": 0,
+      "extra_messages": 0,
+      "pass": true
+    },
+    {
+      "id": "01a15c23-eeea-7122-9ecd-9a5ece6fe3e2",
+      "listed": true,
+      "title_matches": true,
+      "cwd_remapped": true,
+      "turns": 51,
+      "expected_visible_messages": 256,
+      "native_visible_messages": 256,
+      "missing_messages": 0,
+      "extra_messages": 0,
+      "pass": true
+    }
+  ],
+  "native_version": "Codex Desktop/0.163.0-alpha.11 (Windows 10.0.26200; x86_64) dumb (migration_native_check; 1)",
+  "verified_at": "2026-10-21T10:43:18.745321+00:00",
+  "archive": {
+    "path": "conversations.zip",
+    "sha256": "6b1f9394a7abb158efe7769ee5ce95eb4d419b81e18c63819aa2a4e4bbe74725",
+    "matches_manifest": true
+  },
+  "unit_tests": {
+    "file": "tools/test_restore.py",
+    "total": 12,
+    "passed": 11,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Windows 当前账号无创建目录符号链接权限；路径穿越、Windows绝对路径、保留文件名及额外ZIP载荷拒绝案例均通过。",
+    "compressed_rollout_conflict": "通过：未进入 session_index 的标准 rollout-...-UUID.jsonl.zst 也按同 ID 跳过/报错，不解压、不覆盖。"
+  },
+  "summary": {
+    "sessions": 4,
+    "turns": 192,
+    "visible_messages": 909,
+    "missing_messages": 0,
+    "extra_messages": 0
+  }
+}
