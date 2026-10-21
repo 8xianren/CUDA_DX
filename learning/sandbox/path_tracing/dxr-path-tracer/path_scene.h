@@ -28,13 +28,15 @@ inline void SetPathCamera(PathConfig& cfg,V eye,V target){
     Store(cfg.eye,eye);Store(cfg.forward,f);Store(cfg.right,r);Store(cfg.up,u);
 }
 // 世界面积CDF。只有emissive factor非零的三角形进入分布；纹理发光仍由shader逐点读取。
-inline std::vector<PathLight> MakePathLights(const CpuScene& cpu,const std::vector<Triangle>& triangles,PathConfig& cfg){
+inline std::vector<PathLight> MakePathLights(const CpuScene& cpu,const std::vector<Triangle>& triangles,PathConfig& cfg,bool allowEnvironmentOnly=false){
     std::vector<PathLight> lights;double totalArea=0;
     for(auto& t:triangles){const auto& m=cpu.materialAssets.materials[t.material];
         if(m.emissive[0]+m.emissive[1]+m.emissive[2]<=0)continue;
         PathLight l{};Store(l.a,t.a);Store(l.b,t.b);Store(l.c,t.c);l.area=float(t.area);
         totalArea+=t.area;l.cdf=float(totalArea);l.instance=t.instance;l.primitive=t.primitive;lights.push_back(l);
     }
+    // 环境光不由有限三角形表表达。新应用明确允许空表；旧面积光课堂继续拒绝漏灯场景。
+    if(lights.empty()&&allowEnvironmentOnly){cfg.totalArea=0;cfg.lightCount=0;return lights;}
     Require(totalArea>0&&std::isfinite(totalArea)&&lights.size()<1000000,"scene must have finite triangle lights");
     cfg.totalArea=float(totalArea);cfg.lightCount=uint32_t(lights.size());
     for(auto& l:lights)l.cdf/=cfg.totalArea;lights.back().cdf=1;return lights;
@@ -48,7 +50,7 @@ inline std::vector<float> TeachingIors(const CpuScene& cpu){
 inline std::vector<uint8_t> PackPathConfig(const PathConfig& cfg,const std::vector<PathLight>& lights){
     Require(cfg.lightCount==lights.size(),"light configuration count");
     std::vector<uint8_t> bytes(sizeof(cfg)+lights.size()*sizeof(PathLight));
-    memcpy(bytes.data(),&cfg,sizeof(cfg));memcpy(bytes.data()+sizeof(cfg),lights.data(),lights.size()*sizeof(PathLight));return bytes;
+    memcpy(bytes.data(),&cfg,sizeof(cfg));if(!lights.empty())memcpy(bytes.data()+sizeof(cfg),lights.data(),lights.size()*sizeof(PathLight));return bytes;
 }
 
 struct CpuHit {const Triangle* triangle=nullptr;double distance=1000;};

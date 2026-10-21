@@ -1,0 +1,3 @@
+Python: C:\Python314\python.exe
+cuDF: not installed
+������ǰֻ�� API/��װ·��˵����δ���� cuDF ������н����

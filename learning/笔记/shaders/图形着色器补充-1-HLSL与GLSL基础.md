@@ -40,7 +40,7 @@ Pixel Shader（HLSL）/ Fragment Shader（GLSL）
 
 ## 2. HLSL 当前代码逐段阅读
 
-文件：`C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\particles\d3d12_static_particles.hlsl`
+文件：`C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\particles\p04-p05-renderer\d3d12_static_particles.hlsl`
 
 ### 2.1 `StructuredBuffer` 与 D3D12 SRV
 

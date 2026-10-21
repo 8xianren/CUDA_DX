@@ -1,0 +1,34 @@
+# 9.4：浮点、归约可复现性与混合精度
+
+[返回线路索引](../README.md) · [讲义索引](../../../笔记/cuda/README.md) · [全局学习进度](../../../进度.md)
+
+本目录保留该组小实验的一份源码；按下表课号定位。旧 exe/cubin 是本机历史产物，换工具链或机器后先重编译，不作为源码验收证据。
+
+| 文件 | 课程与职责 | 构建条件 |
+|---|---|---|
+| [fma_rounding.cu](fma_rounding.cu) | 9.4.1：FMA 与双舍入位模式 | sm_120 / C++17 |
+| [mixed_precision_dot.cu](mixed_precision_dot.cu) | 9.4.3：存储/累加精度分离 | sm_120 / C++17 |
+| [reduction_repro.cu](reduction_repro.cu) | 9.4.2：求和顺序与可复现性 | sm_120 / C++17 |
+
+## 构建与运行
+
+下面命令从**仓库根目录**执行。普通 CUDA 编译统一走 sandbox 构建器，它加载 VS2022 环境并面向 `sm_120`；可执行文件留在本课源码旁。按表中库参数编译其它同组文件。
+
+```powershell
+& learning/sandbox/build.ps1 learning/sandbox/cuda/09-04-numerics/fma_rounding.cu -NoRun
+& learning/sandbox/cuda/09-04-numerics/fma_rounding.exe
+```
+
+## 结果与验证
+
+程序主要将数值校验写到标准输出。需要保存新结果时，先建立本课 `results/`，并明确将日志重定向到该目录：
+
+```powershell
+New-Item -ItemType Directory -Force learning/sandbox/cuda/09-04-numerics/results | Out-Null
+# 在上述运行命令末尾加：
+#  > learning/sandbox/cuda/09-04-numerics/results/run.txt 2>&1
+```
+
+已有图像、文本和 Nsight 报告保留在 `results/history/`（如果本课有历史结果）；本次迁移回归写入 `results/organization-check/`。这些目录不混入源码。历史性能数字不能当作新硬件/新驱动的测量结果。课程验收以程序输出的数值比较和对应讲义为准；非零退出码应先排查，不继续宣称通过。
+
+`fma_rounding_no_fmad.exe` 是历史 `-fmad=false` 变体，位模式对照要用同一源文件重新编译两档；`reduction_repro` 的原子顺序变化是实验现象，不是要求每次得到相同误差。

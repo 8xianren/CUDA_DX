@@ -1,0 +1,671 @@
+{
+  "date": "2026-10-21",
+  "root": "learning/sandbox",
+  "purpose": "CUDA/粒子历史课程按课节归档；历史结果原样保留",
+  "mappings": [
+    {
+      "old": "learning/sandbox/cuda/architecture_features.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/architecture_features.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/architecture_features.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/architecture_features.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/asm_demo.cu",
+      "new": "learning/sandbox/cuda/08-03-04-driver/asm_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/asm_demo.cubin",
+      "new": "learning/sandbox/cuda/08-03-04-driver/asm_demo.cubin"
+    },
+    {
+      "old": "learning/sandbox/cuda/asm_demo.ptx",
+      "new": "learning/sandbox/cuda/08-03-04-driver/asm_demo.ptx"
+    },
+    {
+      "old": "learning/sandbox/cuda/async_timing.cu",
+      "new": "learning/sandbox/cuda/03-streams-profiling/async_timing.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/async_timing.exe",
+      "new": "learning/sandbox/cuda/03-streams-profiling/async_timing.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/atomic_perf.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/atomic_perf.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/atomic_perf.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/atomic_perf.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/atomics_demo.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/atomics_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/atomics_demo.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/atomics_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/bank_conflict.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/bank_conflict.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/bank_conflict.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/bank_conflict.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/block_reduce_demo.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/block_reduce_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/block_reduce_demo.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/block_reduce_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cluster_dsm.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cluster_dsm.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cluster_dsm.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cluster_dsm.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cluster_limits.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cluster_limits.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cluster_limits.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cluster_limits.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/coalescing.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/coalescing.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/coalescing.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/coalescing.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/compute_sanitizer_demo.cu",
+      "new": "learning/sandbox/cuda/09-03-debugging/compute_sanitizer_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/compute_sanitizer_demo.exe",
+      "new": "learning/sandbox/cuda/09-03-debugging/compute_sanitizer_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/constant_mem.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/constant_mem.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/constant_mem.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/constant_mem.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cp_async_pipeline.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cp_async_pipeline.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cp_async_pipeline.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/cp_async_pipeline.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cub_intro.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/cub_intro.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cub_intro.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/cub_intro.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cublas_sgemm.cu",
+      "new": "learning/sandbox/cuda/09-01-libraries/cublas_sgemm.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cublas_sgemm.exe",
+      "new": "learning/sandbox/cuda/09-01-libraries/cublas_sgemm.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cublaslt_relu.cu",
+      "new": "learning/sandbox/cuda/09-01-libraries/cublaslt_relu.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cublaslt_relu.exe",
+      "new": "learning/sandbox/cuda/09-01-libraries/cublaslt_relu.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cuda_graphs.cu",
+      "new": "learning/sandbox/cuda/05-advanced-execution/cuda_graphs.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cuda_graphs.exe",
+      "new": "learning/sandbox/cuda/05-advanced-execution/cuda_graphs.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cudf_status.py",
+      "new": "learning/sandbox/cuda/python-ecosystem/cudf_status.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/cufft_frequency.cu",
+      "new": "learning/sandbox/cuda/09-01-libraries/cufft_frequency.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/cufft_frequency.exe",
+      "new": "learning/sandbox/cuda/09-01-libraries/cufft_frequency.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/cupy_custom_kernel.py",
+      "new": "learning/sandbox/cuda/python-ecosystem/cupy_custom_kernel.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/cupy_demo.py",
+      "new": "learning/sandbox/cuda/python-ecosystem/cupy_demo.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/custom_kernel.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/custom_kernel.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/custom_kernel.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/custom_kernel.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/device_assert_demo.cu",
+      "new": "learning/sandbox/cuda/09-03-debugging/device_assert_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/device_assert_demo.exe",
+      "new": "learning/sandbox/cuda/09-03-debugging/device_assert_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/device_assert_demo_debug.exe",
+      "new": "learning/sandbox/cuda/09-03-debugging/device_assert_demo_debug.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/device_info.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/device_info.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/device_info.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/device_info.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/divergence.cu",
+      "new": "learning/sandbox/cuda/07-performance/divergence.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/divergence.exe",
+      "new": "learning/sandbox/cuda/07-performance/divergence.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/driver_api.cpp",
+      "new": "learning/sandbox/cuda/08-03-04-driver/driver_api.cpp"
+    },
+    {
+      "old": "learning/sandbox/cuda/driver_api.exe",
+      "new": "learning/sandbox/cuda/08-03-04-driver/driver_api.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/dynamic_parallelism.cu",
+      "new": "learning/sandbox/cuda/05-advanced-execution/dynamic_parallelism.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/dynamic_parallelism.exe",
+      "new": "learning/sandbox/cuda/05-advanced-execution/dynamic_parallelism.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/error_handling.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/error_handling.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/error_handling.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/error_handling.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/execution_space.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/execution_space.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/execution_space.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/execution_space.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/fancy_iterators.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/fancy_iterators.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/fancy_iterators.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/fancy_iterators.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/fma_rounding.cu",
+      "new": "learning/sandbox/cuda/09-04-numerics/fma_rounding.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/fma_rounding.exe",
+      "new": "learning/sandbox/cuda/09-04-numerics/fma_rounding.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/fma_rounding_no_fmad.exe",
+      "new": "learning/sandbox/cuda/09-04-numerics/fma_rounding_no_fmad.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/gob_swizzle.py",
+      "new": "learning/sandbox/cuda/06-memory-access/gob_swizzle.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/grid_sync.cu",
+      "new": "learning/sandbox/cuda/08-02-grid-sync/grid_sync.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/grid_sync.exe",
+      "new": "learning/sandbox/cuda/08-02-grid-sync/grid_sync.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/hello.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/hello.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/hello.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/hello.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/image_2d.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/image_2d.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/image_2d.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/image_2d.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/instr_opt.cu",
+      "new": "learning/sandbox/cuda/07-performance/instr_opt.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/instr_opt.exe",
+      "new": "learning/sandbox/cuda/07-performance/instr_opt.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/instr_opt_fast.exe",
+      "new": "learning/sandbox/cuda/07-performance/instr_opt_fast.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/memory_spaces.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/memory_spaces.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/memory_spaces.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/memory_spaces.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/mixed_precision_dot.cu",
+      "new": "learning/sandbox/cuda/09-04-numerics/mixed_precision_dot.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/mixed_precision_dot.exe",
+      "new": "learning/sandbox/cuda/09-04-numerics/mixed_precision_dot.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/multi_gpu.cu",
+      "new": "learning/sandbox/cuda/05-advanced-execution/multi_gpu.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/multi_gpu.exe",
+      "new": "learning/sandbox/cuda/05-advanced-execution/multi_gpu.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/numba_demo.py",
+      "new": "learning/sandbox/cuda/python-ecosystem/numba_demo.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/occupancy.cu",
+      "new": "learning/sandbox/cuda/07-performance/occupancy.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/occupancy.exe",
+      "new": "learning/sandbox/cuda/07-performance/occupancy.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/occupancy_sweep.cu",
+      "new": "learning/sandbox/cuda/07-performance/occupancy_sweep.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/occupancy_sweep.exe",
+      "new": "learning/sandbox/cuda/07-performance/occupancy_sweep.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/parallel_reduce.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/parallel_reduce.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/parallel_reduce.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/parallel_reduce.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/pred_demo.cu",
+      "new": "learning/sandbox/cuda/08-03-04-driver/pred_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/pred_demo.cubin",
+      "new": "learning/sandbox/cuda/08-03-04-driver/pred_demo.cubin"
+    },
+    {
+      "old": "learning/sandbox/cuda/prof_out.txt",
+      "new": "learning/sandbox/cuda/07-performance/results/history/prof_out.txt"
+    },
+    {
+      "old": "learning/sandbox/cuda/prof_target.cu",
+      "new": "learning/sandbox/cuda/07-performance/prof_target.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/prof_target.exe",
+      "new": "learning/sandbox/cuda/07-performance/prof_target.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/reduction_repro.cu",
+      "new": "learning/sandbox/cuda/09-04-numerics/reduction_repro.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/reduction_repro.exe",
+      "new": "learning/sandbox/cuda/09-04-numerics/reduction_repro.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/rep.nsys-rep",
+      "new": "learning/sandbox/cuda/03-streams-profiling/results/history/rep.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/cuda/rep.sqlite",
+      "new": "learning/sandbox/cuda/03-streams-profiling/results/history/rep.sqlite"
+    },
+    {
+      "old": "learning/sandbox/cuda/roofline.cu",
+      "new": "learning/sandbox/cuda/07-performance/roofline.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/roofline.exe",
+      "new": "learning/sandbox/cuda/07-performance/roofline.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/sanitizer_tools_demo.cu",
+      "new": "learning/sandbox/cuda/09-03-debugging/sanitizer_tools_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/sanitizer_tools_demo.exe",
+      "new": "learning/sandbox/cuda/09-03-debugging/sanitizer_tools_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/shared_histogram.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/shared_histogram.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/shared_histogram.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/shared_histogram.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/streams_nvtx.cu",
+      "new": "learning/sandbox/cuda/03-streams-profiling/streams_nvtx.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/streams_nvtx.exe",
+      "new": "learning/sandbox/cuda/03-streams-profiling/streams_nvtx.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/streams_overlap.cu",
+      "new": "learning/sandbox/cuda/03-streams-profiling/streams_overlap.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/streams_overlap.exe",
+      "new": "learning/sandbox/cuda/03-streams-profiling/streams_overlap.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/swizzle_layout.py",
+      "new": "learning/sandbox/cuda/06-memory-access/swizzle_layout.py"
+    },
+    {
+      "old": "learning/sandbox/cuda/syncthreads_demo.cu",
+      "new": "learning/sandbox/cuda/04-custom-kernels/syncthreads_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/syncthreads_demo.exe",
+      "new": "learning/sandbox/cuda/04-custom-kernels/syncthreads_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/texture_demo.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/texture_demo.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/texture_demo.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/texture_demo.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/threadfence_reduce.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/threadfence_reduce.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/threadfence_reduce.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/threadfence_reduce.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/thrust_algorithms.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/thrust_algorithms.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/thrust_algorithms.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/thrust_algorithms.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/tma_2d_tile.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/tma_2d_tile.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/tma_2d_tile.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/tma_2d_tile.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/transpose_bank.cu",
+      "new": "learning/sandbox/cuda/06-memory-access/transpose_bank.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/transpose_bank.exe",
+      "new": "learning/sandbox/cuda/06-memory-access/transpose_bank.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/unified_memory.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/unified_memory.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/unified_memory.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/unified_memory.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/vector_add.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/vector_add.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/vector_add.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/vector_add.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/vocabulary_types.cu",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/vocabulary_types.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/vocabulary_types.exe",
+      "new": "learning/sandbox/cuda/02-parallel-algorithms/vocabulary_types.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/volume_3d.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/volume_3d.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/volume_3d.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/volume_3d.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/warp_layout.cu",
+      "new": "learning/sandbox/cuda/00-01-foundations/warp_layout.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/warp_layout.exe",
+      "new": "learning/sandbox/cuda/00-01-foundations/warp_layout.exe"
+    },
+    {
+      "old": "learning/sandbox/cuda/wmma_minimal.cu",
+      "new": "learning/sandbox/cuda/08-05-blackwell/wmma_minimal.cu"
+    },
+    {
+      "old": "learning/sandbox/cuda/wmma_minimal.exe",
+      "new": "learning/sandbox/cuda/08-05-blackwell/wmma_minimal.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_memory.cu",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_memory.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_memory.exe",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_memory.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_semaphore.cu",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_semaphore.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_semaphore.exe",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_semaphore.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_texture.cu",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_texture.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_external_texture.exe",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_external_texture.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_luid.cu",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_luid.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_luid.exe",
+      "new": "learning/sandbox/particles/09-02-interop/d3d12_cuda_luid.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles.cu",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles.exe",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_a.png",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_a.png"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_b.png",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_b.png"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_double_buffered.cu",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_double_buffered.exe",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_double_buffered.png",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_double_buffered.png"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_headless.cu",
+      "new": "learning/sandbox/particles/p02-headless/d3d12_cuda_particles_headless.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_cuda_particles_headless.exe",
+      "new": "learning/sandbox/particles/p02-headless/d3d12_cuda_particles_headless.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_static_particles.cu",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_static_particles.exe",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_static_particles.hlsl",
+      "new": "learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.hlsl"
+    },
+    {
+      "old": "learning/sandbox/particles/d3d12_static_particles_validation.png",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_static_particles_validation.png"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_double.nsys-rep",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_double.sqlite",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double.sqlite"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_double_fixed256.nsys-rep",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_double_fixed256.sqlite",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.sqlite"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single.nsys-rep",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single.sqlite",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single.sqlite"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single_fixed256.nsys-rep",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single_fixed256.sqlite",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.sqlite"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single_novsync.nsys-rep",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_novsync.nsys-rep"
+    },
+    {
+      "old": "learning/sandbox/particles/p52_single_novsync.sqlite",
+      "new": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_novsync.sqlite"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_fixed_timestep.cu",
+      "new": "learning/sandbox/particles/p03-simulation/particle_fixed_timestep.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_fixed_timestep.exe",
+      "new": "learning/sandbox/particles/p03-simulation/particle_fixed_timestep.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_integrators.cu",
+      "new": "learning/sandbox/particles/p03-simulation/particle_integrators.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_integrators.exe",
+      "new": "learning/sandbox/particles/p03-simulation/particle_integrators.exe"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_layout_benchmark.cu",
+      "new": "learning/sandbox/particles/p03-simulation/particle_layout_benchmark.cu"
+    },
+    {
+      "old": "learning/sandbox/particles/particle_layout_benchmark.exe",
+      "new": "learning/sandbox/particles/p03-simulation/particle_layout_benchmark.exe"
+    }
+  ]
+}

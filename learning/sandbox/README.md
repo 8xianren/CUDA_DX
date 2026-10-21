@@ -1,8 +1,30 @@
-# sandbox 分类
+# 学习程序总入口
 
-2026-10-14：D3D12/DXR与PT.1–5已按课程子目录整理，入口分别为[d3d12目录索引](d3d12/README.md)和[路径追踪目录索引](path_tracing/README.md)。R.13共享主线的结果放在其`results/r13-04`和`results/r13-05`。`lesson-path-map.json`保存本次131个文件的新旧路径，`organize-lessons.ps1`保留可审计的迁移步骤。CUDA与粒子线路本次未迁移。
+[学习资料总入口](../README.md) · [全部程序与讲义目录](../资料导航.md) · [环境与构建](../环境与构建.md) · [当前进度](../进度.md)
 
-`build.ps1` 仍放在本目录。编译时把源文件写成子目录相对路径，可执行文件会生成在源文件旁边。
+当前综合程序是 [H 动态人物路径追踪 Demo](d3d12/dynamic-character/README.md)。按职责查看 [工程架构](d3d12/dynamic-character/ARCHITECTURE.md)；查原理和小实验时按下面线路进入。
+
+|线路|内容与入口|
+|---|---|
+|[CUDA](cuda/README.md)|基础、算法、性能、Blackwell、库、调试与 Python 探针|
+|[D3D12 / DXR](d3d12/README.md)|R 基础、C/D 资产、E 互操作、H 综合 Demo|
+|[粒子](particles/README.md)|9.2 互操作地基与 P 系列模拟/渲染|
+|[路径追踪](path_tracing/README.md)|PT.1–12、DXR/CUDA 积分器、ReSTIR 与辐射缓存|
+|[公共路径辅助](common/README.md)|旧单文件程序的稳定结果路径|
+
+2026-10-21 已完成本轮整体整理：旧 CUDA/粒子平铺文件归入 18 个课程目录，图形旧结果进入本课 `results/`，所有有源码的课程目录都有 README。共享工程仍保留一份实现。迁移清单与验证范围见[整理记录](../归档/整理记录/2026-10-21/README.md)。
+
+## 使用方式
+
+以下命令从**仓库根目录**执行。`build.ps1` 定位源文件后在其旁生成 exe；CMake 共享工程使用各自脚本。具体 shader 宏、依赖、参数和验证步骤以课程 README 为准。
+
+```powershell
+& learning/sandbox/build.ps1 learning/sandbox/cuda/00-01-foundations/hello.cu
+& learning/sandbox/build.ps1 learning/sandbox/d3d12/r01-r08-mesh/d3d12_mesh_input_layout.cu -NoRun
+& learning/sandbox/build.ps1 learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.cu -NoRun
+& learning/sandbox/build.ps1 learning/sandbox/path_tracing/pt01-radiometry/pt1_radiometry.cu
+& learning/sandbox/d3d12/dynamic-character/build.ps1
+```
 
 ## 后续课程目录约定
 
@@ -25,18 +47,7 @@ learning/sandbox/<线路>/<课节或共享主线>/
 - 新增或扩展课程时同步更新线路索引、笔记和进度。目录迁移同时修改依赖、资源/结果路径和运行命令，并验证受影响程序。保留有教学用途的旧实验，明确标记用途。
 - 本规则约束自编教学材料；不搬动NVIDIA官方教程。未整理的旧线路在涉及时逐步归档，单纯更新规则不触发全库迁移。
 
-```powershell
-.\build.ps1 cuda\hello.cu
-.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
-.\build.ps1 particles\d3d12_static_particles.cu
-.\build.ps1 path_tracing\pt01-radiometry\pt1_radiometry.cu
-```
 
-| 目录 | 内容 |
-|---|---|
-| `cuda/` | CUDA 基础、性能、库、sanitizer、Python 探针 |
-| `d3d12/` | 小型网格渲染器：窗口清除、VB/IB、材质、实例化 |
-| `particles/` | CUDA↔D3D12 粒子、External Memory/Fence、Nsight 记录 |
-| `path_tracing/` | 路径追踪验收程序（PT.1 起） |
+## 历史迁移工具
 
-新版 R.13：`d3d12/r13-01-02-camera-math/r13_camera_math.cu` 是 R.13.1–2 的 CPU 数学验证；`d3d12/r13-renderer/dxr_view_pipeline.cu`、`dxr_view.hlsl`、`dxr_view_reference.h` 是 R.13.3 起的矩阵相机 DXR 主线。先用 DXC `-T lib_6_3` 编译 HLSL，再用 build.ps1 `-NoRun` 编译宿主，运行时传入 DXIL 路径。详细命令和实测见 `../笔记/d3d12/R.13.3-矩阵相机接入DXR与帧资源.md`。
+`lesson-path-map.json` 与 `organize-lessons.ps1` 记录 2026-10-14 的首次迁移，仅供审计；不要当作日常构建步骤反复运行。本次增量映射位于 [CUDA/粒子迁移表](cuda/organization-map.json) 和[图形结果迁移表](../归档/整理记录/2026-10-21/graphics-path-map.json)。

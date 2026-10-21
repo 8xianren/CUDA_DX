@@ -2,9 +2,11 @@
 
 2026-10-21 PT.8复用更新：`material_sampling.cpp`提取通用同步`DispatchMaterialBuffer`，原`SampleHitMaterials`保留为兼容封装；`MakeTextureSamplerDesc`供D.3与PBR共享。[PBR材质表](../../path_tracing/dxr-path-tracer/README.md)独立定义，不替换D.3的32B布局。D.3十二组与D.4程序化边界回归通过，[相关日志](../../path_tracing/pt08-materials/results/pbr/)保存在PT.8课程结果目录。
 
-按C.1–C.6、D.1–D.4原有小节推进，不合并或另拆子课。本目录为后续解析/渲染接入保留共享资产；C.1仅对象关系探针，尚无通用解析器、GPU上传或渲染接入。
+当前 C.1–C.6、D.1–D.4 已完成本课范围的 CPU 场景导入、GPU 上传、材质采样与提交边界验证；H/PT 复用本目录。下面按课程顺序保留当时的实验边界，“尚未”只指对应小节，不能当作整个共享主线当前状态。[D3D12 索引](../README.md) · [当前进度](../../../进度.md)。
 
-2026-10-16 已接入 Assimp 6.0.2，并完成 glTF/GLB、OBJ、FBX CPU 导入探针测试。C.2 容器与加载流程已于 2026-10-16 授课完成；C.3 再将库解码结果转换为自有 CPU 网格，不手写格式解析器。具体格式与功能支持以固定库版本及本机样本验证为准。
+## C.1–C.2：历史起点与导入接入
+
+2026-10-16 已接入 Assimp 6.0.2，并完成 glTF/GLB、OBJ、FBX CPU 导入探针测试。C.2 容器与加载流程已于 2026-10-16 授课完成；后续 C.3 已将库解码结果转换为自有 CPU 网格，不手写格式解析器。具体格式与功能支持以固定库版本及本机样本验证为准。
 
 ## Assimp 构建与验证
 
@@ -25,7 +27,7 @@
 
 实测：两个 glTF primitive 导入为两个 aiMesh，Left/Right 均引用 mesh 0/1；共两个网格定义、四次网格引用、两个定义三角形。位置/索引/红蓝基础颜色符合已知答案。GLB 回环保持这些数据和节点局部变换，但 **6.0.2 GLB 导出器丢失相机对象（1→0）**，View 节点仍在；不声称完整场景无损。OBJ 四边形得到两个三角形。FBX 使用同一固定源码包的 test/models/FBX/box.fbx，得到一个网格、一个实例、十二个三角形，不复制第三方资产。错误 magic、截断、错误 chunk 长度、缺失外部 buffer 均返回 exit=1 与 IMPORT_ERROR。
 
-这只是 CPU 导入接入，尚未创建自有渲染场景、上传 GPU 或验证完整 PBR/纹理/动画功能。[接入记录](../../../笔记/d3d12/C.2-Assimp接入测试记录.md)。
+C.2 当时只验证 CPU 导入接入，未创建自有渲染场景或上传 GPU；后续 C/D 章节另有验证。该探针本身仍不验证完整 PBR/纹理/动画功能。[接入记录](../../../笔记/d3d12/C.2-Assimp接入测试记录.md)。
 
 |文件|职责|
 |---|---|
@@ -40,7 +42,7 @@
 & learning/sandbox/d3d12/gltf-scene/inspect_scene.ps1
 ```
 
-输入与输出从脚本目录定位，不依赖当前工作目录。无需编译器/GPU；没有Python或手写JSON词法解析。脚本只支持本课固定fixture（显式默认scene、三角形、显式材质/索引/普通accessor引用）；不是任意glTF的规范校验器。坏引用/缺失配套文件/计数不符抛错，成功输出PASS并保存日志。C.2之后再推进正式加载层，C.3解码accessor，D阶段创建GPU资源。
+输入与输出从脚本目录定位，不依赖当前工作目录。无需编译器/GPU；没有Python或手写JSON词法解析。脚本只支持本课固定fixture（显式默认scene、三角形、显式材质/索引/普通accessor引用）；不是任意glTF的规范校验器。坏引用/缺失配套文件/计数不符抛错，成功输出PASS并保存日志。正式加载层、自有网格和 GPU 资源分别由后续 C.2、C.3、D 章节实现并单独验收。
 
 2026-10-16实测PASS：定义mesh1/primitive2/material2/accessor3/bufferView2/buffer1；当前场景node4、mesh实例2、primitive实例4、camera节点1；binary60B。没有解码顶点或计算World Matrix，不声称资产通过完整Khronos validator。
 

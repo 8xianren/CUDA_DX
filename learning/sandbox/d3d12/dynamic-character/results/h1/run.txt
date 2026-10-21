@@ -1,0 +1,4 @@
+character vertices=8483 triangles=14318 weightError=1.22935e-07 bindError=5.96046e-07
+animation vertices=8546 triangles=13744 weightError=1.19209e-07 bindError=7.15256e-07
+sharedNodes=66 maxLocalDifference=0.2766 parentMismatch=0
+PASS asset structural probe (compatibility is measured, not assumed)

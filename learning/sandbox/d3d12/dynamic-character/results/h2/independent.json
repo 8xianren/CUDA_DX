@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "clip": "Walk_Loop",
+  "seconds": 0.6666666865348816,
+  "per_mesh_max_error": [
+    4.4980080260437205e-07,
+    4.603986843987329e-07
+  ],
+  "reference": "raw glTF float64 independent sampling, hierarchy and skin"
+}

@@ -26,9 +26,9 @@
   - 仓库：`Accelerated_Python_User_Guide/notebooks/Chapter_01_GPU_Computing_Basics.ipynb`
 - **0.2 CUDA 平台全貌**：驱动 / Driver API / Runtime API / 上层库 / nvcc 的分层。
   - 指南：§1.3 The CUDA platform
-- **0.3 环境搭建**：装 CUDA Toolkit（含 nvcc），验证 `nvcc --version`/`nvidia-smi`，理解 `-arch=sm_86`。
+- **0.3 环境搭建**：装 CUDA Toolkit（含 nvcc），验证 `nvcc --version`/`nvidia-smi`，理解 `-arch=sm_120`。
   - 指南：§2.7 NVCC: The NVIDIA CUDA Compiler；§5.1 Compute Capabilities
-  - 材料：`learning/README.md`（本机 Windows + RTX 3060 步骤）
+  - 材料：`learning/README.md`（本机 Windows + RTX 5070 步骤）
 - **0.4 第一个程序 Hello GPU**：`__global__`、`<<<grid,block>>>`、`cudaDeviceSynchronize`、编译运行。
   - 指南：§2.1 Intro to CUDA C++
 
@@ -131,7 +131,7 @@
 - **8.2 grid 级协作**：cooperative groups 的 grid group、`cudaLaunchCooperativeKernel`、grid.sync() 跨 block 同步（单次 kernel 内做全局规约/迭代）。指南：§4.4。
 - **8.3 编译流程与 PTX/SASS**：nvcc 各阶段、`-arch`/`-code`/虚拟架构、fatbin/JIT；读 PTX（`-ptx`）与 SASS（`cuobjdump`/`nvdisasm`）、内联 PTX asm（`asm volatile`）。指南：§2.7、§5.4。
 - **8.4 Driver API**：Runtime vs Driver API 区别；context、module 加载、`cuLaunchKernel`；何时需要 Driver API（动态加载 kernel、精细 context 控制）。指南：§3.3。
-- **8.5 架构差异与新特性巡览**：Tensor Core（WMMA/MMA、混合精度）、TMA（张量内存加速器）、thread block cluster 与分布式共享内存、async copy（`cp.async`/`memcpy_async`）；Ampere→Hopper→Blackwell 关键变化。本机 sm_86 能跑一部分（如 async copy、Tensor Core WMMA）。
+- **8.5 架构差异与新特性巡览**：Tensor Core（WMMA/MMA、混合精度）、TMA（张量内存加速器）、thread block cluster 与分布式共享内存、async copy（`cp.async`/`memcpy_async`）；Ampere→Hopper→Blackwell 关键变化。本机为 Blackwell / sm_120；具体API支持按当前Toolkit和课程实测核对。
 
 ## 阶段 9 · 生态、库与图形互操作　〔指南 Part 4〕
 
@@ -214,6 +214,6 @@ ReSTIR 和 NRC 放在无偏积分器之后：先能测偏差，再讨论复用�
 
 ## 全程参考（指南 Part 5 技术附录，遇到再查）
 
-- §5.1 Compute Capabilities（你的卡 = sm_86）｜§5.2 环境变量｜§5.3 C++ 支持
+- §5.1 Compute Capabilities（你的卡 = sm_120）｜§5.2 环境变量｜§5.3 C++ 支持
 - §5.4 C/C++ 语言扩展（`__global__`/`__device__`/`<<<>>>` 等语法权威定义）
 - §5.5 浮点计算｜§5.6 设备端可调用 API/Intrinsics｜§5.7 内存模型｜§5.8 执行模型

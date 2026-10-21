@@ -6,7 +6,7 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parent / "results"
 columns = [("ids", "Instance ID"), ("normals", "World geometric normal"),
            ("distance", "Ray distance (near = bright)")]
 font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 17)

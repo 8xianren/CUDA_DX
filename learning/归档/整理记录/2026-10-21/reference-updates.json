@@ -1,0 +1,17 @@
+{
+  "migration_entries": 184,
+  "updated_files": [
+    "CUDA_DX.md",
+    "learning/sandbox/build.ps1",
+    "learning/sandbox/README.md",
+    "learning/笔记/cuda/3.2-CUDA-Streams.md",
+    "learning/笔记/particles/P.4.2-D3D12静态SoA粒子.md",
+    "learning/笔记/particles/P.4.3-CUDA-D3D12动态粒子.md",
+    "learning/笔记/particles/P.5.1-双缓冲粒子流水线.md",
+    "learning/笔记/particles/P.5.2-Nsight时间线与性能对照.md",
+    "learning/笔记/path_tracing/PT.2-相机射线-几何求交与可见性.md",
+    "learning/笔记/shaders/图形着色器补充-1-HLSL与GLSL基础.md",
+    "learning/笔记/shaders/图形着色器补充-3-缓冲与资源绑定.md",
+    "learning/笔记/shaders/图形着色器补充-4-插值与粒子边缘.md"
+  ]
+}

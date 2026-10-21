@@ -1,0 +1,8 @@
+matched CUDA/D3D12 adapter: NVIDIA GeForce RTX 5070
+shared SoA buffer: useful=196608 bytes, allocation=196608 bytes
+rendered frames: 12
+fixed simulation substeps (dt=1/120 s): 24
+last completed shared fence value: 26
+CUDA/D3D12 intermediate CPU waits: 0
+frame-resource CPU waits: 0
+CUDA + D3D12 dynamic particles: PASS

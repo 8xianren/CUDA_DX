@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "description": "精确列出已验证存在、按仓库发布规则排除的本地生成物。只有清单命中且缺失的目标可标为待生成；其余坏链接仍失败。恢复方式见各课 README，不代表重新运行历史验收。",
+  "artifacts": [
+    {
+      "path": "learning/sandbox/d3d12/cuda-interop/results/e3/gpu-timeline.png",
+      "readme": "learning/sandbox/d3d12/cuda-interop/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/cuda-interop/results/e3/timing-comparison.png",
+      "readme": "learning/sandbox/d3d12/cuda-interop/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/gltf-scene/results/d03/official/box-front.png",
+      "readme": "learning/sandbox/d3d12/gltf-scene/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-06/comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-06/edge_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-07/history_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08a/display_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08b/gpu_display.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08c/gpu_display.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.nsys-rep",
+      "readme": "learning/sandbox/particles/p04-p05-renderer/README.md",
+      "kind": "nsight_report"
+    },
+    {
+      "path": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.nsys-rep",
+      "readme": "learning/sandbox/particles/p04-p05-renderer/README.md",
+      "kind": "nsight_report"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/execution/kernel-timeline.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/execution/timing-comparison.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/active-paths.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/cpu-gpu.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/gpu-images.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/queue-layout/address-coverage.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/wavefront/backend-images.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/wavefront/queue-capacity.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-reference.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-display/display-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-curves.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-images.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/window-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-history/history-convergence.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/denoise-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/guide-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt06-mis/results/comparison.png",
+      "readme": "learning/sandbox/path_tracing/pt06-mis/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt06-mis/results/gpu/comparison.png",
+      "readme": "learning/sandbox/path_tracing/pt06-mis/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/energy-gpu/energy-gpu.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/energy/energy-balance.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/ggx/ggx-white-furnace.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/pbr/pbr-mixture.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/radiance-cache/results/cache/bias-variance.png",
+      "readme": "learning/sandbox/path_tracing/radiance-cache/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/radiance-cache/results/overview/path-cache-probes.png",
+      "readme": "learning/sandbox/path_tracing/radiance-cache/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/direct/mean-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/direct/noisy-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/dynamic/visibility-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/gi/jacobian-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/reuse/frame16.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    },
+    {
+      "path": "learning/sandbox/path_tracing/restir-di/results/reuse/variance-curves.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image"
+    }
+  ],
+  "external_resources": [
+    {
+      "path": "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/d3d12.h",
+      "description": "本机 Windows SDK 头文件参考，新电脑安装版本或位置可能不同。"
+    },
+    {
+      "path": "C:/xf/图像图形/fundamentals-of-computer-graphics-4th.pdf",
+      "description": "本机教材参考，需在新电脑自行准备合法副本并调整位置。"
+    }
+  ]
+}

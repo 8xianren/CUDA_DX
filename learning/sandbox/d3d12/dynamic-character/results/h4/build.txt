@@ -1,0 +1,9 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/dynamic-character/CMakeLists.txt
+  h_simulation.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\dynamic-character\Release\h_simulation.lib
+  window_input.cpp
+  h_input.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\dynamic-character\Release\h_input.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/dynamic-character/CMakeLists.txt
+  input_test.cpp
+  h_input_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\dynamic-character\build\Release\h_input_test.exe

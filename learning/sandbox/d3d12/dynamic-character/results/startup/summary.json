@@ -1,0 +1,9 @@
+{
+  "pass": true,
+  "no_argument_frames": 55,
+  "cases": 7,
+  "working_directory": "C:\\windows",
+  "path": "C:\\windows\\System32",
+  "legacy_arguments": true,
+  "config_debug_errors": 0
+}

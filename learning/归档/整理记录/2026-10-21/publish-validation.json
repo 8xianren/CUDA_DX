@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "pass": true,
+  "scope": "发布前补充验证：只读复核现有画质证据并补跑低成本 CPU 检查；不代表完整课程重新验收。",
+  "build_scope": "使用原工作区本机已有 Release 构建运行控制器测试；没有重新编译，也没有在干净 checkout 中编译。天空数值审计直接运行当前 Python 脚本。",
+  "execution": {
+    "working_directory": "C:/Windows",
+    "test_output_directory": "C:\\Users\\TU\\AppData\\Local\\Temp\\cuda-dx-h-publish-bd9299e09ac74cf0965d4fae1ec2ffeb",
+    "gpu_benchmarks_rerun": false,
+    "source_modified": false
+  },
+  "controller": {
+    "command": "learning/sandbox/d3d12/dynamic-character/build/Release/h_controller_test.exe <临时输出目录>/controller",
+    "executable_sha256": "17280b82d1730f886cfcbe553d0ed83db83dec8bc31e62530ad1d350f4e477c6",
+    "exit_code": 0,
+    "stdout": "PASS controller: 3 cadences, 1920 ticks each, 6 states, jump error=1.93881e-06",
+    "result": {
+      "pass": true,
+      "fixed_steps_per_run": 1920,
+      "render_cadences": [
+        30,
+        60,
+        144
+      ],
+      "states": 6,
+      "jump_max_error": 1.93881e-06,
+      "landed_tick": 111
+    },
+    "conclusion": "30/60/144 Hz 三种渲染节奏均执行 1920 个固定步，覆盖 6 个动作状态；解析跳跃参考通过。"
+  },
+  "sky": {
+    "command": "python learning/sandbox/d3d12/dynamic-character/audit_sky.py --output <临时输出目录>/sky-numerical.json",
+    "script_sha256": "28f6368e42d83609d9748bdacb23ba9a5423a08ef7faa0166c6aa5d1545f1d0a",
+    "exit_code": 0,
+    "result": {
+      "pass": true,
+      "scope": "CPU double采样数学验证；不代替GPU着色、遮挡、材质或实际图像验收",
+      "samples": 1000000,
+      "seed": 441,
+      "albedo": 0.75,
+      "shader_sha256": "a1034a17dc4648bdae8ea5e45adba7b6b5ec627645d2f461825b28f1dafbdd89",
+      "integrator_sha256": "afe776a269182aa78bbe4f72e8d9f9d8e6aa1ae193c924406d613bde281ab3a4",
+      "parameters": {
+        "sun_direction": [
+          -0.4803341851869226,
+          0.6804734513821111,
+          -0.5533849948317471
+        ],
+        "cos_radius": 0.9999451637268066,
+        "sun_radiance": [
+          12000.0,
+          10440.0,
+          8280.0
+        ],
+        "horizon": [
+          0.44999998807907104,
+          0.699999988079071,
+          1.5
+        ],
+        "zenith": [
+          0.03999999910593033,
+          0.18000000715255737,
+          0.800000011920929
+        ],
+        "lower": [
+          0.12999999523162842,
+          0.11999999731779099,
+          0.10000000149011612
+        ],
+        "height_power": 0.45,
+        "lower_scale": 5.0,
+        "halo_power": 32.0,
+        "halo_color": [
+          0.3199999928474426,
+          0.20999999344348907,
+          0.10000000149011612
+        ]
+      },
+      "pdf": {
+        "dome_sr_inverse": 0.07957747154594767,
+        "sun_sr_inverse": 2902.366149696126,
+        "sun_solid_angle_sr": 0.00034454646602900146,
+        "dome_integral": 1.0,
+        "sun_integral": 1.0
+      },
+      "distribution": {
+        "sphere_mean": [
+          0.0005306981848307786,
+          -0.0002916525684818754,
+          -0.00011291795367791014
+        ],
+        "sphere_second_moment": [
+          0.3332598908438253,
+          0.33313251123082455,
+          0.3336075979253291
+        ],
+        "cone_mean_cosine": 0.9999726073880952,
+        "cone_expected_cosine": 0.9999725818634033,
+        "cone_mean_standard_error": 1.582986854477095e-08
+      },
+      "reference": {
+        "method": "384x1024 Gauss-Legendre天空积分 + 有限太阳球冠解析照度",
+        "dome_rgb": [
+          0.09608627492534332,
+          0.2129370429560511,
+          0.6994306679883865
+        ],
+        "sun_rgb": [
+          0.6716448896984608,
+          0.5843310540376608,
+          0.46343497389193794
+        ],
+        "total_rgb": [
+          0.7677311646238041,
+          0.7972680969937119,
+          1.1628656418803245
+        ]
+      },
+      "mis": {
+        "rgb": [
+          0.7677675436543299,
+          0.7972620375325461,
+          1.162729348162894
+        ],
+        "standard_error": [
+          4.898727066393791e-05,
+          6.617908357085514e-05,
+          0.00017665506748156063
+        ],
+        "z_score": [
+          0.7426221145355605,
+          -0.09156157563503943,
+          -0.7715245272810521
+        ]
+      },
+      "negative_control": {
+        "fault": "两份NEE每次都采样，却错误地把各自PDF乘0.5",
+        "rgb": [
+          1.449456681109028,
+          1.4004483782398247,
+          1.6786559056471992
+        ],
+        "z_score": [
+          12230.108332317344,
+          8654.505267127823,
+          3436.7898180765287
+        ]
+      },
+      "checks": {
+        "dome_pdf_integral_one": true,
+        "sun_pdf_integral_one": true,
+        "sphere_first_moment": true,
+        "sphere_second_moment": true,
+        "cone_cosine_moment": true,
+        "unit_directions": true,
+        "samples_in_cone": true,
+        "mis_matches_independent_reference": true,
+        "wrong_mixture_pdf_detected": true
+      },
+      "elapsed_seconds": 0.9138106999453157
+    },
+    "conclusion": "100 万组采样通过 PDF 归一化、方向分布和独立积分参考；MIS 三通道绝对 z 分数低于 0.78，错误混合 PDF 的负对照被检出。仅验证采样数学，不替代 GPU 图像和遮挡验证。"
+  },
+  "latest_existing_evidence": {
+    "path": "learning/sandbox/d3d12/dynamic-character/results/visual/evidence.json",
+    "source_and_runtime_hashes_checked": 44,
+    "source_and_runtime_mismatches": [],
+    "regression_log_hashes_checked": 5,
+    "regression_log_mismatches": [],
+    "conclusion": "44 项源码及运行文件哈希全部与当前本地文件一致，5 项回归日志哈希一致；这是已有证据的完整性核对，不是本轮重新运行这些验收。"
+  },
+  "historical_h7": {
+    "path": "learning/sandbox/d3d12/dynamic-character/results/h7/summary.json",
+    "classification": "历史基线：画质修正前的 H7 300 帧验收",
+    "source_files_changed_since_snapshot": [
+      "src/app/main.cpp",
+      "src/assets/demo_scene.cpp",
+      "src/assets/demo_scene.h",
+      "src/render/dxr/renderer.cpp",
+      "src/render/frame.h",
+      "src/simulation/free_camera.h",
+      "tests/performance_test.cpp"
+    ],
+    "conclusion": "7 项源码与旧快照不同，符合后续天空、展示、启动和相机修正；不得将旧 H7 的 300 帧结果描述为当前代码本轮新跑的结果。"
+  },
+  "recovery_scope": {
+    "clean_checkout_build_executed": false,
+    "reviewed": "H 构建入口、共享 CMake 目标、直接源码和 shader 依赖、配置及部署流程。",
+    "dependencies": "需完整共享 gltf-scene、PT6/7/8、cuda-path-tracer、dxr-path-tracer、cuda-interop/src、d3d12/common、r13-renderer 显示 shader；资产由 fetch_assets.ps1 恢复，Assimp 固定 URL 和 SHA256 拉取，DXIL/能量 LUT/cudart 部署由构建生成。",
+    "limitations": [
+      "下载素材受作者站点与免费包结构变化影响。",
+      "共享 PT 的若干绘图脚本固定微软雅黑字体路径，非中文 Windows 可能需替代字体；不影响 H 构建与启动。"
+    ]
+  }
+}

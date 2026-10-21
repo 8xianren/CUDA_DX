@@ -183,20 +183,20 @@ CPU vector<float4>
 
 ## 8. 代码与运行
 
-- C++/D3D12 主程序：`learning/sandbox/particles/d3d12_static_particles.cu`
-- HLSL：`learning/sandbox/particles/d3d12_static_particles.hlsl`
-- 实拍结果：`learning/sandbox/particles/d3d12_static_particles_validation.png`
+- C++/D3D12 主程序：`learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.cu`
+- HLSL：`learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.hlsl`
+- 实拍结果：`learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_static_particles_validation.png`
 
 ```powershell
 .\learning\sandbox\build.ps1 `
-  -Source .\learning\sandbox\particles\d3d12_static_particles.cu `
+  -Source .\learning\sandbox\particles\p04-p05-renderer\d3d12_static_particles.cu `
   -Libraries dxgi,d3d12,user32,d3dcompiler
 ```
 
 默认运行 180 帧后退出。持续观察：
 
 ```powershell
-.\learning\sandbox\particles\d3d12_static_particles.exe --frames 0
+.\learning\sandbox\particles\p04-p05-renderer\d3d12_static_particles.exe --frames 0
 ```
 
 RTX 5070 / sm_120 真机输出：

@@ -1,0 +1,38 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Shared libraries disabled
+-- compiling zlib from sources
+-- VRML disabled
+-- tinyusdz disabled
+-- Enabled importer formats: COLLADA OBJ PLY FBX STL GLTF
+-- Disabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH DXF CSM HMP IRRMESH IQM IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OGRE OPENGEX MS3D COB BLEND IFC XGL Q3D Q3BSP RAW SIB SMD TERRAGEN 3D USD X X3D 3MF MMD
+-- Enabled exporter formats: GLTF
+-- Disabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML COLLADA FBX STL X X3D 3MF PBRT ASSJSON STEP
+-- Treating all warnings as errors (for assimp library only)
+-- Configuring done (6.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  h_asset_probe.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\dynamic-character\build\Release\h_asset_probe.exe
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  Building Custom Rule C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/CMakeLists.txt
+  import_scope_test.cpp
+    正在创建库 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/import_scope_test.lib 和对象 C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build/Release/import_scope_test.exp
+  import_scope_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\import_scope_test.exe
+character vertices=8483 triangles=14318 weightError=1.22935e-07 bindError=5.96046e-07
+animation vertices=8546 triangles=13744 weightError=1.19209e-07 bindError=7.15256e-07
+sharedNodes=66 maxLocalDifference=0.2766 parentMismatch=0
+PASS asset structural probe (compatibility is measured, not assumed)
+{"pass": true, "selected_character": "UAL1 embedded Mannequin; exact shared skeleton and animation", "vertices": 8546, "joints": 65, "bind_position_error": 6.849792548724309e-07, "omitted_inverse_bind_negative_control_error": 1.5714189532241112, "weight_error": 1.1920928955078125e-07}
+meshes=2 instances=2
+NOTICE CPU import only: encoded images not decoded; PBR/alpha/normal-map GPU behavior not validated
+NOTICE decoded-scene checks are not full glTF validation; original extensions/alignment may not survive import
+ACCEPTED_CPU
+PASS H1 assets, independent bind equation, missing-input and static import boundaries

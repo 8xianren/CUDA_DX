@@ -1,0 +1,76 @@
+{
+  "mappings": [
+    {
+      "old": "learning/sandbox/d3d12/r11-03-window/dxr_window_output.ppm",
+      "new": "learning/sandbox/d3d12/r11-03-window/results/dxr_window_output.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r11-03-window/dxr_window_screenshot.png",
+      "new": "learning/sandbox/d3d12/r11-03-window/results/dxr_window_screenshot.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_diagnostics.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_diagnostics.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_distance.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_distance.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_distance.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_distance.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_ids.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_ids.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_ids.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_ids.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_normals.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_normals.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_square_normals.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_square_normals.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_distance.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_distance.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_distance.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_distance.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_ids.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_ids.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_ids.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_ids.ppm"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_normals.png",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_normals.png"
+    },
+    {
+      "old": "learning/sandbox/d3d12/r13-legacy-camera/dxr_camera_wide_normals.ppm",
+      "new": "learning/sandbox/d3d12/r13-legacy-camera/results/dxr_camera_wide_normals.ppm"
+    },
+    {
+      "old": "learning/sandbox/path_tracing/pt02-ray-geometry/pt2_depth.ppm",
+      "new": "learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_depth.ppm"
+    },
+    {
+      "old": "learning/sandbox/path_tracing/pt02-ray-geometry/pt2_normals.ppm",
+      "new": "learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_normals.ppm"
+    },
+    {
+      "old": "learning/sandbox/path_tracing/pt02-ray-geometry/pt2_primid.ppm",
+      "new": "learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_primid.ppm"
+    }
+  ]
+}

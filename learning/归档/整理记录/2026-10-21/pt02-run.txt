@@ -1,0 +1,51 @@
+PT.2 camera rays / sphere / triangle / AABB
+
+1) camera basis and pixel-center rays
+  camera u = +X                                    PASS
+  camera v = +Y                                    PASS
+  camera w = +Z (backward)                         PASS
+  1x1 pixel center looks down -Z                   PASS
+  2x2 pixel (0,0) direction                        PASS
+  ray direction unit length                        PASS
+  P(t)=O+tD at t=0 is origin                       PASS
+
+2) sphere: hit / miss / graze / back face
+  sphere front hit t=1                             PASS
+  tmin clips near root, far root t=3               PASS
+  sphere miss above                                PASS
+  sphere graze disc=0 t=2                          PASS
+
+3) triangle: barycentric / parallel / backface
+  triangle hit t=1 bary=(0.5,0.25,0.25)            PASS
+  triangle miss above apex                         PASS
+  triangle parallel in-plane miss                  PASS
+  triangle backface t=1 front=false                PASS
+
+4) AABB: hit / miss / parallel / inside
+  AABB front wall t=1.5 n=+Z                       PASS
+  AABB miss to the right                           PASS
+  AABB parallel outside X slab                     PASS
+  AABB origin inside, exits at t=0.5               PASS
+
+5) closest hit and self-intersection epsilon
+  closest hit prefers triangle t=1 over sphere/AABB PASS
+  without triangle, sphere t=1 still beats AABB t=1.5 PASS
+  tmin=0 re-hits same sphere near t=0              PASS
+  tmin=1e-4 skips surface, hits back t≈2         PASS
+
+6) diagnostic images 64x64
+  wrote normal/depth/prim-id PPM                   PASS
+  image contains sphere pixels                     PASS
+  image contains triangle pixels                   PASS
+  image contains AABB pixels                       PASS
+  image contains misses                            PASS
+  pixel (32,32) hits sphere                        PASS
+
+image coverage: miss=3275 sphere=272 triangle=141 aabb=408
+wrote:
+  C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt02-ray-geometry\results\pt2_normals.ppm
+  C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt02-ray-geometry\results\pt2_depth.ppm
+  C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\path_tracing\pt02-ray-geometry\results\pt2_primid.ppm
+
+29 passed, 0 failed
+PT.2 ray geometry: PASS

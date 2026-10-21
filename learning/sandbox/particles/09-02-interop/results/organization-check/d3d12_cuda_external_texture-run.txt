@@ -1,0 +1,8 @@
+matched adapter: NVIDIA GeForce RTX 5070
+texture: 17x9 RGBA32F
+logical row bytes: 272, D3D12 RowPitch: 512
+copy rows: 9, total readback bytes: 4368
+pixel(0,0) = (0.0, 0.0, 0.0, 1.0)
+pixel(16,8) = (16.0, 8.0, 24.0, 1.0)
+intermediate CPU waits: 0
+mismatches: 0

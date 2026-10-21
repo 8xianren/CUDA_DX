@@ -19,9 +19,9 @@ PT.1 已经证明半球立体角是 `2π`、投影立体角是 `π`、Lambert �
 
 诊断图（程序运行后写在源文件旁边）：
 
-- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_normals.ppm`
-- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_depth.ppm`
-- `learning/sandbox/path_tracing/pt02-ray-geometry/pt2_primid.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_normals.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_depth.ppm`
+- `learning/sandbox/path_tracing/pt02-ray-geometry/results/pt2_primid.ppm`
 
 本节不采样路径、不乘 BRDF、不建 BVH。PT.3 才引入蒙特卡洛；PT.9 才用加速结构
 替换本节的暴力最近命中。

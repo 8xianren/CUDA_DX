@@ -268,7 +268,7 @@ CPU 使用 `steady_clock + accumulator` 把不稳定的渲染帧时间转换成�
 
 ```powershell
 .\learning\sandbox\build.ps1 `
-  -Source .\learning\sandbox\particles\d3d12_cuda_particles.cu `
+  -Source .\learning\sandbox\particles\p04-p05-renderer\d3d12_cuda_particles.cu `
   -Libraries dxgi,d3d12,user32,d3dcompiler
 ```
 
@@ -289,7 +289,7 @@ Memcheck：
 
 ```powershell
 compute-sanitizer --tool memcheck --error-exitcode 1 `
-  .\learning\sandbox\particles\d3d12_cuda_particles.exe --frames 30
+  .\learning\sandbox\particles\p04-p05-renderer\d3d12_cuda_particles.exe --frames 30
 ```
 
 结果：
@@ -301,13 +301,13 @@ ERROR SUMMARY: 0 errors
 
 两张间隔实拍分别保存在：
 
-- `learning/sandbox/particles/d3d12_cuda_particles_a.png`
-- `learning/sandbox/particles/d3d12_cuda_particles_b.png`
+- `learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_a.png`
+- `learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_b.png`
 
 ## 10. 代码入口
 
-- 动态粒子完整程序：`learning/sandbox/particles/d3d12_cuda_particles.cu`
-- 复用的粒子 HLSL：`learning/sandbox/particles/d3d12_static_particles.hlsl`
+- 动态粒子完整程序：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles.cu`
+- 复用的粒子 HLSL：`learning/sandbox/particles/p04-p05-renderer/d3d12_static_particles.hlsl`
 
 ## 11. 官方资料
 

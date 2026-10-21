@@ -1,0 +1,582 @@
+{
+  "pass": true,
+  "frames": 300,
+  "states": [
+    "Fall",
+    "Idle",
+    "Jump",
+    "Land",
+    "Run",
+    "Walk"
+  ],
+  "pause_step_resume": true,
+  "debug_errors": 0,
+  "measurement_scope": "single-frame synchronous, validation off, no window/Present, 3 warmup + 12 measured",
+  "performance": {
+    "interactive-320x180": {
+      "whole_frame_ms": {
+        "median": 1.8298,
+        "p95": 2.2555
+      },
+      "renderer_wall_ms": {
+        "median": 1.5514000000000001,
+        "p95": 1.9673
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.015664,
+        "p95": 0.016736
+      },
+      "as_ms": {
+        "median": 0.206288,
+        "p95": 0.228192
+      },
+      "path_accumulate_ms": {
+        "median": 0.130096,
+        "p95": 0.14128
+      },
+      "motion_temporal_ms": {
+        "median": 0.048591999999999996,
+        "p95": 0.05296
+      },
+      "display_ms": {
+        "median": 9.6e-05,
+        "p95": 9.6e-05
+      },
+      "local_memory_bytes": {
+        "median": 288268288.0,
+        "p95": 288268288.0
+      }
+    },
+    "stationary-320x180": {
+      "whole_frame_ms": {
+        "median": 2.1347,
+        "p95": 2.5706
+      },
+      "renderer_wall_ms": {
+        "median": 1.81565,
+        "p95": 2.2024
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.01568,
+        "p95": 0.016
+      },
+      "as_ms": {
+        "median": 0.20656,
+        "p95": 0.216992
+      },
+      "path_accumulate_ms": {
+        "median": 0.470416,
+        "p95": 0.769408
+      },
+      "motion_temporal_ms": {
+        "median": 9.6e-05,
+        "p95": 0.000192
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 0.000192
+      },
+      "local_memory_bytes": {
+        "median": 278364160.0,
+        "p95": 278364160.0
+      }
+    },
+    "interactive-640x360": {
+      "whole_frame_ms": {
+        "median": 2.3731,
+        "p95": 2.9743
+      },
+      "renderer_wall_ms": {
+        "median": 2.0608500000000003,
+        "p95": 2.6846
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.016688,
+        "p95": 0.017248
+      },
+      "as_ms": {
+        "median": 0.226768,
+        "p95": 0.2288
+      },
+      "path_accumulate_ms": {
+        "median": 0.406944,
+        "p95": 0.411552
+      },
+      "motion_temporal_ms": {
+        "median": 0.13561600000000001,
+        "p95": 0.137216
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 9.6e-05
+      },
+      "local_memory_bytes": {
+        "median": 357212160.0,
+        "p95": 357212160.0
+      }
+    },
+    "stationary-640x360": {
+      "whole_frame_ms": {
+        "median": 3.0872,
+        "p95": 3.9468
+      },
+      "renderer_wall_ms": {
+        "median": 2.82295,
+        "p95": 3.6249
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.016704,
+        "p95": 0.017216
+      },
+      "as_ms": {
+        "median": 0.228928,
+        "p95": 0.229888
+      },
+      "path_accumulate_ms": {
+        "median": 1.440705,
+        "p95": 1.86938
+      },
+      "motion_temporal_ms": {
+        "median": 7.999999999999999e-05,
+        "p95": 0.000416
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 0.000384
+      },
+      "local_memory_bytes": {
+        "median": 319782912.0,
+        "p95": 319782912.0
+      }
+    }
+  },
+  "evidence": {
+    "h1/gltf-audit.json": {
+      "pass": true,
+      "selected_character": "UAL1 embedded Mannequin; exact shared skeleton and animation",
+      "vertices": 8546,
+      "joints": 65,
+      "bind_position_error": 6.849792548724309e-07,
+      "omitted_inverse_bind_negative_control_error": 1.5714189532241112,
+      "weight_error": 1.1920928955078125e-07,
+      "world_bounds_per_primitive": [
+        [
+          [
+            -0.9722270965576172,
+            0.0004614409990608692,
+            -0.164154052734375
+          ],
+          [
+            0.9722270965576172,
+            1.829177975654602,
+            0.2054443359375
+          ]
+        ],
+        [
+          [
+            -0.9503883123397827,
+            0.09957661479711533,
+            -0.12136195600032806
+          ],
+          [
+            0.9503883123397827,
+            1.6652591228485107,
+            0.116485595703125
+          ]
+        ]
+      ],
+      "clips": [
+        {
+          "name": "A_TPose",
+          "seconds": 2.5,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Crouch_Fwd_Loop",
+          "seconds": 2.0,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Crouch_Idle_Loop",
+          "seconds": 2.933333396911621,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Dance_Loop",
+          "seconds": 1.0,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Death01",
+          "seconds": 2.4000000953674316,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Driving_Loop",
+          "seconds": 1.6666666269302368,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Fixing_Kneeling",
+          "seconds": 5.199999809265137,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Hit_Chest",
+          "seconds": 0.3333333432674408,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Hit_Head",
+          "seconds": 0.4333333373069763,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Idle_Loop",
+          "seconds": 2.5,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Idle_Talking_Loop",
+          "seconds": 2.933333396911621,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Idle_Torch_Loop",
+          "seconds": 1.2666666507720947,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Interact",
+          "seconds": 2.0,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Jog_Fwd_Loop",
+          "seconds": 0.9333333373069763,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Jump_Land",
+          "seconds": 1.2666666507720947,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Jump_Loop",
+          "seconds": 2.5,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Jump_Start",
+          "seconds": 1.3333333730697632,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "PickUp_Table",
+          "seconds": 0.8333333134651184,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Aim_Down",
+          "seconds": 0.1666666716337204,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Aim_Neutral",
+          "seconds": 0.1666666716337204,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Aim_Up",
+          "seconds": 0.1666666716337204,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Idle_Loop",
+          "seconds": 1.6666666269302368,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Reload",
+          "seconds": 1.6666666269302368,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Pistol_Shoot",
+          "seconds": 0.6333333253860474,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Punch_Cross",
+          "seconds": 1.0,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Punch_Jab",
+          "seconds": 0.8666666746139526,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Push_Loop",
+          "seconds": 2.6666667461395264,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Roll",
+          "seconds": 1.4666666984558105,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sitting_Enter",
+          "seconds": 1.2999999523162842,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sitting_Exit",
+          "seconds": 1.0333333015441895,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sitting_Idle_Loop",
+          "seconds": 1.6666666269302368,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sitting_Talking_Loop",
+          "seconds": 2.933333396911621,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Spell_Simple_Enter",
+          "seconds": 0.5333333611488342,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Spell_Simple_Exit",
+          "seconds": 0.4333333373069763,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Spell_Simple_Idle_Loop",
+          "seconds": 2.0999999046325684,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Spell_Simple_Shoot",
+          "seconds": 0.5,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sprint_Loop",
+          "seconds": 0.6666666865348816,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Swim_Fwd_Loop",
+          "seconds": 1.3333333730697632,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Swim_Idle_Loop",
+          "seconds": 3.3333332538604736,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sword_Attack",
+          "seconds": 1.5333333015441895,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Sword_Idle",
+          "seconds": 1.6666666269302368,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Walk_Formal_Loop",
+          "seconds": 1.3333333730697632,
+          "interpolation": [
+            "LINEAR"
+          ]
+        },
+        {
+          "name": "Walk_Loop",
+          "seconds": 1.3333333730697632,
+          "interpolation": [
+            "LINEAR"
+          ]
+        }
+      ]
+    },
+    "h2/summary.json": {
+      "pass": true,
+      "gpu_checks": 60,
+      "gpu_max_error": 3.57628e-07,
+      "bind_error": 7.52509e-07,
+      "loop_error": 0,
+      "blend_endpoint_error": 0
+    },
+    "h2/independent.json": {
+      "pass": true,
+      "clip": "Walk_Loop",
+      "seconds": 0.6666666865348816,
+      "per_mesh_max_error": [
+        4.4980080260437205e-07,
+        4.603986843987329e-07
+      ],
+      "reference": "raw glTF float64 independent sampling, hierarchy and skin"
+    },
+    "h3/summary.json": {
+      "pass": true,
+      "fixed_steps_per_run": 1920,
+      "render_cadences": [
+        30,
+        60,
+        144
+      ],
+      "states": 6,
+      "jump_max_error": 1.93881e-06,
+      "landed_tick": 111
+    },
+    "h4/summary.json": {
+      "pass": true,
+      "real_window_message_path": true,
+      "camera_cadence_error": 3.2652e-05
+    },
+    "h5/summary.json": {
+      "pass": true,
+      "frames": 12,
+      "update_rebuild_max_error": 0,
+      "light_linearity_error": 0,
+      "all_lights_off_max": 0,
+      "debug_errors": 0
+    },
+    "h6/summary.json": {
+      "pass": true,
+      "geometry_checks": 1664,
+      "temporal_pixel_checks": 230400,
+      "position_error": 4.02072e-06,
+      "projection_pixel_error": 4.41758e-05,
+      "accepted": 117566,
+      "rejected": 112834,
+      "raw_mse": 0.0497935,
+      "temporal_mse": 0.0113394
+    }
+  },
+  "source_sha256": {
+    "src/animation/animation.cpp": "a534e229560677bb0ecf75ef9acf69e2b77c80d6f0d3af938fb414b6f6a77c62",
+    "src/animation/animation.h": "b196c1aad402336830b1ab19a7a7bc0289d74dbb709c59e1eb8e663030295547",
+    "src/animation/player.h": "7d4f748028f0b57053f618b91758c3b1f4cb4516839eeb910654e4528bbb9207",
+    "src/app/extract_frame.h": "8ad43bb709d333b06ed985b70f81801288f7f424025cc8d54848a107d22313a6",
+    "src/app/locomotion_mapping.h": "40759c81eb970a9f9fd5de5d90a9367b6bc6b8e529c103d567b3116176c3b236",
+    "src/app/main.cpp": "b60887cdd5792a22c3d829d3b4315bc828d33bf9d452671e5dbae0d1ed47efbd",
+    "src/assets/character_import.cpp": "3921181f2a9c2f69656a432c28227b3ae769a39a7211d6f493f2381d3cff894a",
+    "src/assets/character_import.h": "c78ee48d749d506f88adbdb93cc743cd96221d791feb9f9c14bd2f4ea1496e9d",
+    "src/assets/demo_scene.cpp": "4c9565952b550693a95f8797abb536ab0d7d321bd4816b55f86c2bbcc458b8f4",
+    "src/assets/demo_scene.h": "0df21f00a37c5d0b7eb06cd8d0e025b1aa4bd332a4af3b878fac6043e369bd09",
+    "src/core/math.h": "73fe7f485960499c89b44c8d840d6117f27fc01fb869fce7db614acaf54ffbd1",
+    "src/input/actions.h": "6d4f16c4d7a798a658780799ad7a40b692b5c68d5f99c979c2775dc72e2448a4",
+    "src/input/window_input.cpp": "020e472ff6663e992defa084f07e8e02e397a0e3f3681cb3044d68d4f0dc0726",
+    "src/input/window_input.h": "f032781ffea9356985d0ae43ac2476a813ed77b8ca4f01722c43ccc6c649dfb9",
+    "src/render/cuda/skin_gpu.cu": "165cf00a528230f99fdb6c83383078c0287ea2f1c7b5e1a94f3296ecb86c9aa8",
+    "src/render/cuda/skin_gpu.h": "4fcf29106cb1eec6850a5d1d8ebb8ff278585ce61a319965b6f98f1b32f7abfa",
+    "src/render/dxr/renderer.cpp": "55a8b6b7ff086ea6c3509352fbc4ce871bfbcb6baa26c6092595fa677495d513",
+    "src/render/dxr/renderer.h": "5dd254c1e98efa198bc7aa2c458a19c14f5466aaf51ca5e5a1f390ce5452c943",
+    "src/render/dxr/temporal.cpp": "ed7c26a7252189f201e7a87d1b10749ab9ea5e83908bd1f012d16cce2ead62a7",
+    "src/render/dxr/temporal.h": "bb39f6e896c348448c8d4144609a56f2f3b484be80c147e50fa6db76597aeca9",
+    "src/render/frame.h": "a6e927281e155c99218065dfaf6dd401fb0ba09751edb5f8ed6a04389e3ba0dc",
+    "src/simulation/character_controller.cpp": "e11fd206ce9e8d084d0a244e1097e3835e248e698905584d1a3940da51fcf34d",
+    "src/simulation/character_controller.h": "f71f790e4e8ad17e73c38ef63129866ab22200b53da12a91e151b8b4213f1d2c",
+    "src/simulation/free_camera.h": "fc6d13d5d273cf92d99bbac0d47504a24228f0fe87394c9b1f850bef76d758c2",
+    "shaders/motion_guides.hlsl": "a375e1b95d2994f92807a2ffa6f0c48a4679f1a8c4c6acef0291999e7939a590",
+    "shaders/temporal.hlsl": "9f8e7b1f5eb0eae316da7ca42e24d63e72bbac3572e0b71eae85a7f0228e20b1",
+    "tests/animation_test.cpp": "b04c05ff1ec79945285538e2b621a3e5e83ab10dca8a6777cd30c238d3124863",
+    "tests/asset_probe.cpp": "0c794fd067b5a2ec8d57eefb5e863626dadfff8306d252e05042f9273a9d49fc",
+    "tests/controller_test.cpp": "da3d87c44e00545955bce50e4c32ca7ce97c3eb7a030ec453e3eca973c66302f",
+    "tests/input_test.cpp": "22bbd5f25dfd626c3ad732d53fe69a858db641a8430d30b219e7be0856b8b0ef",
+    "tests/performance_test.cpp": "e6a02b70f6fb345b3d02a4a394b2389c8dd5360e80013eab0c838c4d24c57b80",
+    "tests/renderer_test.cpp": "3c76710d4d851a5c8de10de9e9622615c374841454ced9e21fd350653da053e6",
+    "tests/temporal_test.cpp": "960d0e78808d4207fe11928731aae0a8ba411dfec1d49ee8bcd33edaf0b57a36"
+  }
+}

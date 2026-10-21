@@ -1,0 +1,9 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 12
+Camera 257x257 basis=PASS coverage miss=29466 id1=4197 id2=6065 id3=26321
+CPU/GPU id_mismatch=0 invalid=0 max_t=2.04e-06 max_position=1.98e-06 max_normal=8.21e-08 bary_position=1.2e-06
+Diagnostic PPM prefix: C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\r13-legacy-camera\results\dxr_camera_square (saved)
+Fence target=1 completed=1; width=257 height=257 output_bytes=3170352
+InfoQueue: errors=0 warnings=0
+R.13 camera / geometry: PASS

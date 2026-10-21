@@ -2,6 +2,8 @@
 
 个人 CUDA / D3D12 / 路径追踪学习仓库。
 
+从[学习资料总入口](learning/README.md)进入；查找程序用[完整目录](learning/资料导航.md)，后续画质与水体计划见[优化路线](learning/规划/渲染器后续优化路线.md)。
+
 本仓库**不是** [NVIDIA accelerated-computing-hub](https://github.com/NVIDIA/accelerated-computing-hub) 的镜像。官方教程仍在本地克隆里跟踪 NVIDIA `origin`；这里只放学习材料：
 
 | 路径 | 内容 |
@@ -11,6 +13,7 @@
 | `learning/sandbox/` | 可编译的教学程序（源码；不含 exe） |
 | `AGENTS.md` | 教学约定与本机环境 |
 | `.agents/skills/cuda-tutor/` | 导师技能 |
+| [codex-chat-migration/](codex-chat-migration/README.md) | 可检索的课程聊天快照与新电脑恢复说明 |
 
 ## 本机编译
 
@@ -18,12 +21,12 @@ Windows + PowerShell。GPU：RTX 5070（Blackwell，`sm_120`）。
 
 ```powershell
 cd learning/sandbox
-.\build.ps1 cuda\hello.cu
-.\build.ps1 d3d12\r02-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
+.\build.ps1 cuda\00-01-foundations\hello.cu
+.\build.ps1 d3d12\r01-r08-mesh\d3d12_mesh_input_layout.cu -NoRun
 .\build.ps1 path_tracing\pt02-ray-geometry\pt2_ray_geometry.cu
 ```
 
-HLSL 必须和对应 exe 同目录。细节见 `learning/sandbox/README.md`。
+旧网格示例的HLSL须与exe同目录；其它程序按各课README指定shader目录。细节见[构建说明](learning/环境与构建.md)。
 
 ## 和 NVIDIA 仓库的关系
 

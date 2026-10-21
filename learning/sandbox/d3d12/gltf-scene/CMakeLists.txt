@@ -187,3 +187,9 @@ if(E_INTEROP)
   target_link_libraries(buffer_bench PRIVATE scene_import scene_gpu instance_cuda d3dcompiler)
   set_target_properties(buffer_bench PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${E_PATH}/build" CUDA_RUNTIME_LIBRARY Shared)
 endif()
+
+# H阶段独立模块工程；此处仅提供既有共享库和固定版本第三方依赖。
+option(H_CHARACTER "Build dynamic character integrated lessons" OFF)
+if(H_CHARACTER)
+  add_subdirectory(../dynamic-character dynamic-character)
+endif()

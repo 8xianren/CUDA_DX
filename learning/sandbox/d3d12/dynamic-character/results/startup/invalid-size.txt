@@ -1,0 +1,1 @@
+Config render.width must be an integer in [16, 4096]

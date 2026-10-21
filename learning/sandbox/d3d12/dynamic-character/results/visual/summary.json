@@ -1,0 +1,1 @@
+{"pass":true,"width":1280,"height":720,"reference_spp":256,"moving_spp":4,"moving_frames":12,"run_and_jump":true,"motion_start_tick":456,"motion_end_tick":504,"displacement":1.5507,"sky_linearity_error":0,"all_lights_off":0,"smooth_difference_sum":7.96287,"raw_mse":0.00138809,"temporal_mse":0.000176752,"debug_errors":0}

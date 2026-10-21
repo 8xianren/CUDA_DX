@@ -1,0 +1,3 @@
+CPU 期望和      : 50331645
+A 手写树规约    : 50331645 OK
+B cub::BlockReduce: 50331645 OK

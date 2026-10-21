@@ -1,0 +1,14 @@
+R2C spectrum (non-negative frequencies):
+  bin 0: (  0.0000,   0.0000), magnitude=  0.0000
+  bin 1: ( -0.0000,   0.0000), magnitude=  0.0000
+  bin 2: ( -0.0000,  -0.0000), magnitude=  0.0000
+  bin 3: (  0.0000,  -8.0000), magnitude=  8.0000
+  bin 4: (  0.0000,  -0.0000), magnitude=  0.0000
+  bin 5: (  0.0000,   0.0000), magnitude=  0.0000
+  bin 6: (  0.0000,   0.0000), magnitude=  0.0000
+  bin 7: ( -0.0000,   0.0000), magnitude=  0.0000
+  bin 8: ( -0.0000,   0.0000), magnitude=  0.0000
+peak bin: 3 (expected 3)
+peak magnitude: 8.0000 (expected 8.0000)
+inverse raw/input at sample 1: 16.0000 (expected N=16)
+max error after dividing inverse by N: 0.00000018

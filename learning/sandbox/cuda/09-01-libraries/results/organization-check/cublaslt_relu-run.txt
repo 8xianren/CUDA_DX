@@ -1,0 +1,6 @@
+D = ReLU(A * B), row-major
+    0.0    8.0
+   83.0   10.0
+heuristic algorithms returned: 1
+selected workspace: 0 bytes
+mismatches: 0

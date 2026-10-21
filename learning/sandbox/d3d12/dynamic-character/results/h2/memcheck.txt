@@ -1,0 +1,4 @@
+========= COMPUTE-SANITIZER
+PASS animation CUDA checks=60 worst=3.57628e-07 bind=7.52509e-07 loop=0 blend=0
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors

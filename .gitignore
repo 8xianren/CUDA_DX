@@ -8,5 +8,7 @@ __pycache__/
 *.f32
 *.meshbin
 *.qdstrm
+# Per-pixel validation buffers; keep small glTF fixture .bin files.
+pixels.bin
 .env
 .env.*

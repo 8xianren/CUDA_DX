@@ -1,0 +1,1 @@
+REJECTED [adapt] C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\dynamic-character/assets/runtime/animation.glb: unsupported animation playback

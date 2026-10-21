@@ -1,0 +1,2 @@
+block_reduce_demo.cu
+tmpxft_000126a4_00000000-7_block_reduce_demo.cudafe1.cpp

@@ -1,0 +1,10 @@
+matched adapter: NVIDIA GeForce RTX 5070
+particle stride: 48 bytes, count: 4096, shared bytes: 196608
+timeline: D3D12 upload/signal 1 -> CUDA wait/integrate/signal 2 -> D3D12 wait/readback/signal 3
+final fence value: 3
+particle[0]: pos=(0.016667, 0.030611, 0.050000), mass=1.0, vel=(1.000000, 1.836667, 3.000000), life=9.983334, color=(0.000, 0.000, 0.750, 1.000)
+particle[1]: pos=(0.026667, 0.050611, 0.040000), mass=1.0, vel=(1.000000, 1.836667, 3.000000), life=9.983334, color=(0.167, 0.100, 0.750, 1.000)
+particle[4095]: pos=(40.966667, 81.930611, -40.900002), mass=1.0, vel=(1.000000, 1.836667, 3.000000), life=9.983334, color=(0.000, 0.300, 0.750, 1.000)
+intermediate CPU waits: 0
+final CPU blocking waits: 1
+mismatches: 0

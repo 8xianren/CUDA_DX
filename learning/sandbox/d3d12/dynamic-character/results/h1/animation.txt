@@ -1,0 +1,115 @@
+assimp 6.0.2
+nodes 67 meshes 2 animations 43
+node Armature parent 
+node Head parent neck_01
+node Mannequin parent Armature
+node ball_l parent foot_l
+node ball_leaf_l parent ball_l
+node ball_leaf_r parent ball_r
+node ball_r parent foot_r
+node calf_l parent thigh_l
+node calf_r parent thigh_r
+node clavicle_l parent spine_03
+node clavicle_r parent spine_03
+node foot_l parent calf_l
+node foot_r parent calf_r
+node hand_l parent lowerarm_l
+node hand_r parent lowerarm_r
+node index_01_l parent hand_l
+node index_01_r parent hand_r
+node index_02_l parent index_01_l
+node index_02_r parent index_01_r
+node index_03_l parent index_02_l
+node index_03_r parent index_02_r
+node index_04_leaf_l parent index_03_l
+node index_04_leaf_r parent index_03_r
+node lowerarm_l parent upperarm_l
+node lowerarm_r parent upperarm_r
+node middle_01_l parent hand_l
+node middle_01_r parent hand_r
+node middle_02_l parent middle_01_l
+node middle_02_r parent middle_01_r
+node middle_03_l parent middle_02_l
+node middle_03_r parent middle_02_r
+node middle_04_leaf_l parent middle_03_l
+node middle_04_leaf_r parent middle_03_r
+node neck_01 parent spine_03
+node pelvis parent root
+node pinky_01_l parent hand_l
+node pinky_01_r parent hand_r
+node pinky_02_l parent pinky_01_l
+node pinky_02_r parent pinky_01_r
+node pinky_03_l parent pinky_02_l
+node pinky_03_r parent pinky_02_r
+node pinky_04_leaf_l parent pinky_03_l
+node pinky_04_leaf_r parent pinky_03_r
+node ring_01_l parent hand_l
+node ring_01_r parent hand_r
+node ring_02_l parent ring_01_l
+node ring_02_r parent ring_01_r
+node ring_03_l parent ring_02_l
+node ring_03_r parent ring_02_r
+node ring_04_leaf_l parent ring_03_l
+node ring_04_leaf_r parent ring_03_r
+node root parent Armature
+node spine_01 parent pelvis
+node spine_02 parent spine_01
+node spine_03 parent spine_02
+node thigh_l parent pelvis
+node thigh_r parent pelvis
+node thumb_01_l parent hand_l
+node thumb_01_r parent hand_r
+node thumb_02_l parent thumb_01_l
+node thumb_02_r parent thumb_01_r
+node thumb_03_l parent thumb_02_l
+node thumb_03_r parent thumb_02_r
+node thumb_04_leaf_l parent thumb_03_l
+node thumb_04_leaf_r parent thumb_03_r
+node upperarm_l parent clavicle_l
+node upperarm_r parent clavicle_r
+mesh 0 vertices 3389 triangles 5732 bones 65 maxInfluences 4
+mesh 1 vertices 5157 triangles 8012 bones 65 maxInfluences 4
+clip A_TPose ticksPerSecond 1000 durationTicks 2500 seconds 2.5 channels 65
+clip Crouch_Fwd_Loop ticksPerSecond 1000 durationTicks 2000 seconds 2 channels 65
+clip Crouch_Idle_Loop ticksPerSecond 1000 durationTicks 2933.333496 seconds 2.933333496 channels 65
+clip Dance_Loop ticksPerSecond 1000 durationTicks 1000 seconds 1 channels 65
+clip Death01 ticksPerSecond 1000 durationTicks 2400 seconds 2.4 channels 65
+clip Driving_Loop ticksPerSecond 1000 durationTicks 1666.666626 seconds 1.666666626 channels 65
+clip Fixing_Kneeling ticksPerSecond 1000 durationTicks 5200 seconds 5.2 channels 65
+clip Hit_Chest ticksPerSecond 1000 durationTicks 333.3333435 seconds 0.3333333435 channels 65
+clip Hit_Head ticksPerSecond 1000 durationTicks 433.3333435 seconds 0.4333333435 channels 65
+clip Idle_Loop ticksPerSecond 1000 durationTicks 2500 seconds 2.5 channels 65
+clip Idle_Talking_Loop ticksPerSecond 1000 durationTicks 2933.333496 seconds 2.933333496 channels 65
+clip Idle_Torch_Loop ticksPerSecond 1000 durationTicks 1266.666626 seconds 1.266666626 channels 65
+clip Interact ticksPerSecond 1000 durationTicks 2000 seconds 2 channels 65
+clip Jog_Fwd_Loop ticksPerSecond 1000 durationTicks 933.333313 seconds 0.933333313 channels 65
+clip Jump_Land ticksPerSecond 1000 durationTicks 1266.666626 seconds 1.266666626 channels 65
+clip Jump_Loop ticksPerSecond 1000 durationTicks 2500 seconds 2.5 channels 65
+clip Jump_Start ticksPerSecond 1000 durationTicks 1333.333374 seconds 1.333333374 channels 65
+clip PickUp_Table ticksPerSecond 1000 durationTicks 833.333313 seconds 0.833333313 channels 65
+clip Pistol_Aim_Down ticksPerSecond 1000 durationTicks 166.6666718 seconds 0.1666666718 channels 65
+clip Pistol_Aim_Neutral ticksPerSecond 1000 durationTicks 166.6666718 seconds 0.1666666718 channels 65
+clip Pistol_Aim_Up ticksPerSecond 1000 durationTicks 166.6666718 seconds 0.1666666718 channels 65
+clip Pistol_Idle_Loop ticksPerSecond 1000 durationTicks 1666.666626 seconds 1.666666626 channels 65
+clip Pistol_Reload ticksPerSecond 1000 durationTicks 1666.666626 seconds 1.666666626 channels 65
+clip Pistol_Shoot ticksPerSecond 1000 durationTicks 633.333313 seconds 0.633333313 channels 65
+clip Punch_Cross ticksPerSecond 1000 durationTicks 1000 seconds 1 channels 65
+clip Punch_Jab ticksPerSecond 1000 durationTicks 866.666687 seconds 0.866666687 channels 65
+clip Push_Loop ticksPerSecond 1000 durationTicks 2666.666748 seconds 2.666666748 channels 65
+clip Roll ticksPerSecond 1000 durationTicks 1466.666748 seconds 1.466666748 channels 65
+clip Sitting_Enter ticksPerSecond 1000 durationTicks 1300 seconds 1.3 channels 65
+clip Sitting_Exit ticksPerSecond 1000 durationTicks 1033.333252 seconds 1.033333252 channels 65
+clip Sitting_Idle_Loop ticksPerSecond 1000 durationTicks 1666.666626 seconds 1.666666626 channels 65
+clip Sitting_Talking_Loop ticksPerSecond 1000 durationTicks 2933.333496 seconds 2.933333496 channels 65
+clip Spell_Simple_Enter ticksPerSecond 1000 durationTicks 533.333374 seconds 0.533333374 channels 65
+clip Spell_Simple_Exit ticksPerSecond 1000 durationTicks 433.3333435 seconds 0.4333333435 channels 65
+clip Spell_Simple_Idle_Loop ticksPerSecond 1000 durationTicks 2100 seconds 2.1 channels 65
+clip Spell_Simple_Shoot ticksPerSecond 1000 durationTicks 500 seconds 0.5 channels 65
+clip Sprint_Loop ticksPerSecond 1000 durationTicks 666.666687 seconds 0.666666687 channels 65
+clip Swim_Fwd_Loop ticksPerSecond 1000 durationTicks 1333.333374 seconds 1.333333374 channels 65
+clip Swim_Idle_Loop ticksPerSecond 1000 durationTicks 3333.333252 seconds 3.333333252 channels 65
+clip Sword_Attack ticksPerSecond 1000 durationTicks 1533.333252 seconds 1.533333252 channels 65
+clip Sword_Idle ticksPerSecond 1000 durationTicks 1666.666626 seconds 1.666666626 channels 65
+clip Walk_Formal_Loop ticksPerSecond 1000 durationTicks 1333.333374 seconds 1.333333374 channels 65
+clip Walk_Loop ticksPerSecond 1000 durationTicks 1333.333374 seconds 1.333333374 channels 65
+SUMMARY vertices 8546 triangles 13744 weightError 1.192092896e-07 bindError 7.152557373e-07

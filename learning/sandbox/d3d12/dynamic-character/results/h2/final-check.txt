@@ -1,0 +1,32 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Shared libraries disabled
+-- compiling zlib from sources
+-- VRML disabled
+-- tinyusdz disabled
+-- Enabled importer formats: COLLADA OBJ PLY FBX STL GLTF
+-- Disabled importer formats: AMF 3DS AC ASE ASSBIN B3D BVH DXF CSM HMP IRRMESH IQM IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OGRE OPENGEX MS3D COB BLEND IFC XGL Q3D Q3BSP RAW SIB SMD TERRAGEN 3D USD X X3D 3MF MMD
+-- Enabled exporter formats: GLTF
+-- Disabled exporter formats: OBJ OPENGEX PLY 3DS ASSBIN ASSXML COLLADA FBX STL X X3D 3MF PBRT ASSJSON STEP
+-- Treating all warnings as errors (for assimp library only)
+-- Configuring done (8.8s)
+-- Generating done (0.4s)
+-- Build files have been written to: C:/xf/Cuda/accelerated-computing-hub/learning/sandbox/d3d12/gltf-scene/build
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  scene_model.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_model.lib
+  zlibstatic.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\contrib\zlib\Release\zlibstatic.lib
+  h_skin_cuda.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\dynamic-character\Release\h_skin_cuda.lib
+  h_animation.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\dynamic-character\Release\h_animation.lib
+  assimp.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\_deps\assimp-build\lib\Release\assimp-vc143-mt.lib
+  scene_import.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\Release\scene_import.lib
+  h_character_assets.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\gltf-scene\build\dynamic-character\Release\h_character_assets.lib
+  h_animation_test.vcxproj -> C:\xf\Cuda\accelerated-computing-hub\learning\sandbox\d3d12\dynamic-character\build\Release\h_animation_test.exe
+PASS animation CUDA checks=60 worst=3.57628e-07 bind=7.52509e-07 loop=0 blend=0
+largest world differences [(5.492214306679344e-07, 'thumb_03_r'), (5.258896257354095e-07, 'thumb_04_leaf_r'), (4.7058954349976645e-07, 'middle_02_r'), (4.586672116557722e-07, 'middle_04_leaf_r'), (4.574952977565161e-07, 'middle_01_r'), (4.514974654701298e-07, 'middle_03_r'), (4.1225396074651144e-07, 'thumb_02_r'), (4.0132200651576966e-07, 'pinky_01_r')]
+mesh 0 position error 4.4980080260437205e-07 normal error 4.160777378192648e-07
+mesh 1 position error 4.603986843987329e-07 normal error 4.307163200545361e-07
+{'pass': True, 'clip': 'Walk_Loop', 'seconds': 0.6666666865348816, 'per_mesh_max_error': [4.4980080260437205e-07, 4.603986843987329e-07], 'reference': 'raw glTF float64 independent sampling, hierarchy and skin'}
+========= COMPUTE-SANITIZER
+PASS animation CUDA checks=60 worst=3.57628e-07 bind=7.52509e-07 loop=0 blend=0
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors

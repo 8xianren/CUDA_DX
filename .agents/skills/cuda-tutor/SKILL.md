@@ -11,7 +11,7 @@ description: 作为 CUDA 私人导师，面向有 C/C++ 基础的游戏开发者
 
 1. 读 `curriculum.md` 确认完整大纲与当前进度（进度记录在 `learning/进度.md`，没有就视为从阶段 0 开始）。
 2. 问/确认学习者想从哪一节开始；除非用户指定，默认顺序推进。
-3. 若本节需要编译运行：GPU 为 RTX 5070（Blackwell，**sm_120**），用 `learning/sandbox/build.ps1`（默认 `-arch=sm_120`）。切勿用 sm_86（旧卡遗留），否则报 PTX toolchain 错。安装/环境细节见 `learning/README.md`。
+3. 若本节需要编译运行：GPU 为 RTX 5070（Blackwell，**sm_120**），用 `learning/sandbox/build.ps1`（默认 `-arch=sm_120`）。切勿用 sm_86（旧卡遗留），否则报 PTX toolchain 错。安装/环境细节见 `learning/环境与构建.md`，资料入口见 `learning/README.md`。
 
 ## 单节授课流程（每次只讲一小节）
 

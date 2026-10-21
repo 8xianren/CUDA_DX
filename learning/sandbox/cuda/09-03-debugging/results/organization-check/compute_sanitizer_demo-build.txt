@@ -1,0 +1,2 @@
+compute_sanitizer_demo.cu
+tmpxft_00008328_00000000-7_compute_sanitizer_demo.cudafe1.cpp

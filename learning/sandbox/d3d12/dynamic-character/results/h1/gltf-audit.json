@@ -1,0 +1,338 @@
+{
+  "pass": true,
+  "selected_character": "UAL1 embedded Mannequin; exact shared skeleton and animation",
+  "vertices": 8546,
+  "joints": 65,
+  "bind_position_error": 6.849792548724309e-07,
+  "omitted_inverse_bind_negative_control_error": 1.5714189532241112,
+  "weight_error": 1.1920928955078125e-07,
+  "world_bounds_per_primitive": [
+    [
+      [
+        -0.9722270965576172,
+        0.0004614409990608692,
+        -0.164154052734375
+      ],
+      [
+        0.9722270965576172,
+        1.829177975654602,
+        0.2054443359375
+      ]
+    ],
+    [
+      [
+        -0.9503883123397827,
+        0.09957661479711533,
+        -0.12136195600032806
+      ],
+      [
+        0.9503883123397827,
+        1.6652591228485107,
+        0.116485595703125
+      ]
+    ]
+  ],
+  "clips": [
+    {
+      "name": "A_TPose",
+      "seconds": 2.5,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Crouch_Fwd_Loop",
+      "seconds": 2.0,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Crouch_Idle_Loop",
+      "seconds": 2.933333396911621,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Dance_Loop",
+      "seconds": 1.0,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Death01",
+      "seconds": 2.4000000953674316,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Driving_Loop",
+      "seconds": 1.6666666269302368,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Fixing_Kneeling",
+      "seconds": 5.199999809265137,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Hit_Chest",
+      "seconds": 0.3333333432674408,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Hit_Head",
+      "seconds": 0.4333333373069763,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Idle_Loop",
+      "seconds": 2.5,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Idle_Talking_Loop",
+      "seconds": 2.933333396911621,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Idle_Torch_Loop",
+      "seconds": 1.2666666507720947,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Interact",
+      "seconds": 2.0,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Jog_Fwd_Loop",
+      "seconds": 0.9333333373069763,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Jump_Land",
+      "seconds": 1.2666666507720947,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Jump_Loop",
+      "seconds": 2.5,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Jump_Start",
+      "seconds": 1.3333333730697632,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "PickUp_Table",
+      "seconds": 0.8333333134651184,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Aim_Down",
+      "seconds": 0.1666666716337204,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Aim_Neutral",
+      "seconds": 0.1666666716337204,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Aim_Up",
+      "seconds": 0.1666666716337204,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Idle_Loop",
+      "seconds": 1.6666666269302368,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Reload",
+      "seconds": 1.6666666269302368,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Pistol_Shoot",
+      "seconds": 0.6333333253860474,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Punch_Cross",
+      "seconds": 1.0,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Punch_Jab",
+      "seconds": 0.8666666746139526,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Push_Loop",
+      "seconds": 2.6666667461395264,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Roll",
+      "seconds": 1.4666666984558105,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sitting_Enter",
+      "seconds": 1.2999999523162842,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sitting_Exit",
+      "seconds": 1.0333333015441895,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sitting_Idle_Loop",
+      "seconds": 1.6666666269302368,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sitting_Talking_Loop",
+      "seconds": 2.933333396911621,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Spell_Simple_Enter",
+      "seconds": 0.5333333611488342,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Spell_Simple_Exit",
+      "seconds": 0.4333333373069763,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Spell_Simple_Idle_Loop",
+      "seconds": 2.0999999046325684,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Spell_Simple_Shoot",
+      "seconds": 0.5,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sprint_Loop",
+      "seconds": 0.6666666865348816,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Swim_Fwd_Loop",
+      "seconds": 1.3333333730697632,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Swim_Idle_Loop",
+      "seconds": 3.3333332538604736,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sword_Attack",
+      "seconds": 1.5333333015441895,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Sword_Idle",
+      "seconds": 1.6666666269302368,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Walk_Formal_Loop",
+      "seconds": 1.3333333730697632,
+      "interpolation": [
+        "LINEAR"
+      ]
+    },
+    {
+      "name": "Walk_Loop",
+      "seconds": 1.3333333730697632,
+      "interpolation": [
+        "LINEAR"
+      ]
+    }
+  ]
+}

@@ -17,14 +17,14 @@ std::vector<CpuMesh> LoadCpuMeshes(const std::string& path) {
     return CopyCpuMeshes(*scene);
 }
 
-std::vector<CpuMesh> CopyCpuMeshes(const aiScene& input) {
+std::vector<CpuMesh> CopyCpuMeshes(const aiScene& input,bool preserveBindMeshForSkinning) {
     const aiScene* scene=&input;
     std::vector<CpuMesh> result;
     result.reserve(scene->mNumMeshes);
     for(unsigned k=0;k<scene->mNumMeshes;++k) {
         const aiMesh& source=*scene->mMeshes[k];
         // 骨骼和Morph需要改变顶点；不能悄悄丢弃后按静态网格报告“导入成功”。
-        if(source.HasBones()) throw std::runtime_error("unsupported skinning at mesh "+std::to_string(k));
+        if(source.HasBones()&&!preserveBindMeshForSkinning) throw std::runtime_error("unsupported skinning at mesh "+std::to_string(k));
         if(source.mNumAnimMeshes) throw std::runtime_error("unsupported morph targets at mesh "+std::to_string(k));
         if(!source.HasPositions() || source.mMaterialIndex>=scene->mNumMaterials)
             throw std::runtime_error("missing positions or invalid material index");

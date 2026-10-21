@@ -1,0 +1,141 @@
+{
+  "pass": true,
+  "performance": {
+    "interactive-320x180": {
+      "whole_frame_ms": {
+        "median": 1.8298,
+        "p95": 2.2555
+      },
+      "renderer_wall_ms": {
+        "median": 1.5514000000000001,
+        "p95": 1.9673
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.015664,
+        "p95": 0.016736
+      },
+      "as_ms": {
+        "median": 0.206288,
+        "p95": 0.228192
+      },
+      "path_accumulate_ms": {
+        "median": 0.130096,
+        "p95": 0.14128
+      },
+      "motion_temporal_ms": {
+        "median": 0.048591999999999996,
+        "p95": 0.05296
+      },
+      "display_ms": {
+        "median": 9.6e-05,
+        "p95": 9.6e-05
+      },
+      "local_memory_bytes": {
+        "median": 288268288.0,
+        "p95": 288268288.0
+      }
+    },
+    "stationary-320x180": {
+      "whole_frame_ms": {
+        "median": 2.1347,
+        "p95": 2.5706
+      },
+      "renderer_wall_ms": {
+        "median": 1.81565,
+        "p95": 2.2024
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.01568,
+        "p95": 0.016
+      },
+      "as_ms": {
+        "median": 0.20656,
+        "p95": 0.216992
+      },
+      "path_accumulate_ms": {
+        "median": 0.470416,
+        "p95": 0.769408
+      },
+      "motion_temporal_ms": {
+        "median": 9.6e-05,
+        "p95": 0.000192
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 0.000192
+      },
+      "local_memory_bytes": {
+        "median": 278364160.0,
+        "p95": 278364160.0
+      }
+    },
+    "interactive-640x360": {
+      "whole_frame_ms": {
+        "median": 2.3731,
+        "p95": 2.9743
+      },
+      "renderer_wall_ms": {
+        "median": 2.0608500000000003,
+        "p95": 2.6846
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.016688,
+        "p95": 0.017248
+      },
+      "as_ms": {
+        "median": 0.226768,
+        "p95": 0.2288
+      },
+      "path_accumulate_ms": {
+        "median": 0.406944,
+        "p95": 0.411552
+      },
+      "motion_temporal_ms": {
+        "median": 0.13561600000000001,
+        "p95": 0.137216
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 9.6e-05
+      },
+      "local_memory_bytes": {
+        "median": 357212160.0,
+        "p95": 357212160.0
+      }
+    },
+    "stationary-640x360": {
+      "whole_frame_ms": {
+        "median": 3.0872,
+        "p95": 3.9468
+      },
+      "renderer_wall_ms": {
+        "median": 2.82295,
+        "p95": 3.6249
+      },
+      "cuda_palette_skin_ms": {
+        "median": 0.016704,
+        "p95": 0.017216
+      },
+      "as_ms": {
+        "median": 0.228928,
+        "p95": 0.229888
+      },
+      "path_accumulate_ms": {
+        "median": 1.440705,
+        "p95": 1.86938
+      },
+      "motion_temporal_ms": {
+        "median": 7.999999999999999e-05,
+        "p95": 0.000416
+      },
+      "display_ms": {
+        "median": 6.4e-05,
+        "p95": 0.000384
+      },
+      "local_memory_bytes": {
+        "median": 319782912.0,
+        "p95": 319782912.0
+      }
+    }
+  }
+}

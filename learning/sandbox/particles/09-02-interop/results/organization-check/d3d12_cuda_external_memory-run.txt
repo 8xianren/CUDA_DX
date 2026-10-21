@@ -1,0 +1,7 @@
+matched adapter: NVIDIA GeForce RTX 5070
+D3D12 resource bytes: 4096
+D3D12 allocation bytes imported by CUDA: 65536
+particle[0] = (0.0, 0.0, -0.0, 1.0)
+particle[1] = (1.0, 2.0, -1.0, 1.0)
+particle[255] = (255.0, 510.0, -255.0, 1.0)
+mismatches: 0

@@ -8,9 +8,10 @@
 //   3. 最近命中：同一条射线穿过多个物体时，只保留最小合法 t
 //   4. 正反面法线、平行漏过、擦边、自相交 epsilon
 //
-// 诊断图写在本文件旁边：法线 / 深度 / primitive ID 三张 PPM。
+// 诊断图写在EXE旁的results/：法线 / 深度 / primitive ID 三张 PPM。
 
 #include <algorithm>
+#include "../../common/lesson_paths.h"
 #include <cmath>
 #include <cstdint>
 #include <cstdio>
@@ -393,12 +394,7 @@ static void record(TestStats* stats, const char* name, bool ok) {
 }
 
 static std::string sibling_path(const char* file_name) {
-  const std::string here = __FILE__;
-  const std::size_t slash = here.find_last_of("/\\");
-  if (slash == std::string::npos) {
-    return file_name;
-  }
-  return here.substr(0, slash + 1) + file_name;
+  return (lesson_paths::ResultDirectory()/file_name).string();
 }
 
 static std::uint8_t to_byte(float x) {

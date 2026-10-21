@@ -1,0 +1,5 @@
+count: 1048576, reference (half inputs, long-double sum): 22033.3528212
+FP16 accumulate      22035.1982422, abs error 1.84542, rel error 8.37558e-05
+FP32 accumulate      22033.352375, abs error 0.000446163, rel error 2.02494e-08
+FP64 accumulate      22033.3528212, abs error 0, rel error 0
+FP16 storage bytes: 2, FP32 accumulator bytes: 4

@@ -1,0 +1,7 @@
+asm_demo.cu
+asm_demo.cu
+pred_demo.cu
+driver_api.cpp
+设备: NVIDIA GeForce RTX 5070
+已从 cubin 载入 kernel: fma_kernel
+out = a*b+c，结果错误 0 个（应为0）；out[0]=7.0

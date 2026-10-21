@@ -20,16 +20,19 @@ public:
     static constexpr UINT Width=480,Height=270;
     struct Constants {UINT sourceRect[4]{0,0,160,90},destination[4]{0,0,480,270};UINT sourceStride=160;float exposureEV=0;UINT pixelByteStride=16,mode=0;};
     static_assert(sizeof(Constants)==48,"Display root constants must be 12 DWORD");
-    WindowDisplay(IDXGIFactory6* factory,ID3D12Device5* dev,ID3D12CommandQueue* queue,const std::filesystem::path& shaders,bool resizable=false,const wchar_t* title=L"GPU HDR to SDR validation"):dev_(dev){
+    WindowDisplay(IDXGIFactory6* factory,ID3D12Device5* dev,ID3D12CommandQueue* queue,const std::filesystem::path& shaders,bool resizable=false,const wchar_t* title=L"GPU HDR to SDR validation",UINT initialWidth=Width,UINT initialHeight=Height):dev_(dev){
+        // 旧课堂保留480x270默认；实际应用可使客户区与内部渲染尺寸1:1，避免先缩小再被系统放大。
+        require(initialWidth>=16&&initialWidth<=4096&&initialHeight>=16&&initialHeight<=4096,"initial display extent");
+        width_=pendingW_=initialWidth;height_=pendingH_=initialHeight;
         instance_=GetModuleHandleW(nullptr);WNDCLASSW wc{};wc.lpfnWndProc=procedure;wc.hInstance=instance_;wc.lpszClassName=L"SharedHdrDisplayLesson";
         require(RegisterClassW(&wc)!=0,"RegisterClassW");
         // 调用者选择固定客户区或可调整窗口；实际Resize只在渲染线程的Fence安全点应用。
-        DWORD style=resizable?WS_OVERLAPPEDWINDOW:WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU;RECT rect{0,0,Width,Height};
+        DWORD style=resizable?WS_OVERLAPPEDWINDOW:WS_OVERLAPPED|WS_CAPTION|WS_SYSMENU;RECT rect{0,0,LONG(width_),LONG(height_)};
         require(AdjustWindowRect(&rect,style,FALSE)!=0,"AdjustWindowRect");
         hwnd_=CreateWindowW(wc.lpszClassName,title,style,
             CW_USEDEFAULT,CW_USEDEFAULT,rect.right-rect.left,rect.bottom-rect.top,nullptr,nullptr,instance_,this);
         require(hwnd_!=nullptr,"CreateWindowW");
-        DXGI_SWAP_CHAIN_DESC1 desc{};desc.Width=Width;desc.Height=Height;desc.Format=DXGI_FORMAT_R8G8B8A8_UNORM;
+        DXGI_SWAP_CHAIN_DESC1 desc{};desc.Width=width_;desc.Height=height_;desc.Format=DXGI_FORMAT_R8G8B8A8_UNORM;
         desc.SampleDesc.Count=1;desc.BufferUsage=DXGI_USAGE_RENDER_TARGET_OUTPUT;desc.BufferCount=2;
         desc.SwapEffect=DXGI_SWAP_EFFECT_FLIP_DISCARD;desc.Scaling=DXGI_SCALING_STRETCH;desc.AlphaMode=DXGI_ALPHA_MODE_IGNORE;
         // D3D12的第一个参数是DIRECT queue而不是device；窗口模式、无指定输出限制。
@@ -60,7 +63,7 @@ public:
         check(dev->CreateGraphicsPipelineState(&p,IID_PPV_ARGS(&pso_)),"Display graphics PSO");
         // Texture的readback行pitch不是width*4：通过API获得256字节对齐的footprint。
         ShowWindow(hwnd_,SW_SHOW);UpdateWindow(hwnd_);
-        std::printf("display %ux%u RGBA8_UNORM buffers=2 rowPitch=%u bytes=%llu\n",Width,Height,footprint_.Footprint.RowPitch,(unsigned long long)readbackBytes_);
+        std::printf("display %ux%u RGBA8_UNORM buffers=2 rowPitch=%u bytes=%llu\n",width_,height_,footprint_.Footprint.RowPitch,(unsigned long long)readbackBytes_);
     }
     ~WindowDisplay(){for(auto& b:back_)b.Reset();swap_.Reset();if(hwnd_)DestroyWindow(hwnd_);UnregisterClassW(L"SharedHdrDisplayLesson",instance_);}
     WindowDisplay(const WindowDisplay&)=delete;WindowDisplay& operator=(const WindowDisplay&)=delete;
@@ -68,6 +71,8 @@ public:
         if(message.message==WM_QUIT)return false;TranslateMessage(&message);DispatchMessageW(&message);}return !GetPropW(hwnd_,L"CloseRequested");}
     bool suspended()const{return minimized_||pendingW_==0||pendingH_==0;}
     UINT width()const{return width_;}UINT height()const{return height_;}unsigned resizes()const{return resizes_;}
+    // H4平台输入适配器借用窗口句柄；窗口与交换链所有权仍归本显示对象。
+    HWND native_handle()const{return hwnd_;}
     // 仅消费本窗口收到的按键消息；不读取其它应用的键盘状态。系统自动重复产生连续移动步进。
     bool take_key(UINT key){if(key>=256)return false;bool value=keys_[key];keys_[key]=false;return value;}
     // 调用者必须先等待旧提交并清理旧录制引用。WM_SIZE仅记录意图，不能在回调里释放GPU资源。

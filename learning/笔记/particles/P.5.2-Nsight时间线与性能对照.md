@@ -51,8 +51,8 @@ RAII 的作用只是保证区间成对结束；它不替代 CUDA external semaph
 
 代码位置：
 
-- 单缓冲：`learning/sandbox/particles/d3d12_cuda_particles.cu:30`、`:699`、`:734`
-- 双缓冲：`learning/sandbox/particles/d3d12_cuda_particles_double_buffered.cu:29`、`:758`、`:808`
+- 单缓冲：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles.cu:30`、`:699`、`:734`
+- 双缓冲：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.cu:29`、`:758`、`:808`
 
 ## 3. 第一个陷阱：VSync 会掩盖真正的工作量
 
@@ -89,9 +89,9 @@ RAII 的作用只是保证区间成对结束；它不替代 CUDA external semaph
 
 ```powershell
 cd C:\xf\Cuda\accelerated-computing-hub\learning\sandbox
-.\build.ps1 particles\d3d12_cuda_particles.cu `
+.\build.ps1 particles\p04-p05-renderer\d3d12_cuda_particles.cu `
   -Libraries dxgi,d3d12,user32,d3dcompiler -NoRun
-.\build.ps1 particles\d3d12_cuda_particles_double_buffered.cu `
+.\build.ps1 particles\p04-p05-renderer\d3d12_cuda_particles_double_buffered.cu `
   -Libraries dxgi,d3d12,user32,d3dcompiler -NoRun
 ```
 
@@ -106,7 +106,7 @@ $nsys = 'C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.3.1\target-wind
   --cuda-event-trace=true `
   --stats=true --sample=none --export=sqlite --force-overwrite=true `
   -o p52_single_fixed256 `
-  .\particles\d3d12_cuda_particles.exe --frames 120 --vsync 0 --fixed-substeps 256
+  .\particles\p04-p05-renderer\d3d12_cuda_particles.exe --frames 120 --vsync 0 --fixed-substeps 256
 
 & $nsys profile `
   --trace=cuda,dx12,nvtx `
@@ -114,7 +114,7 @@ $nsys = 'C:\Program Files\NVIDIA Corporation\Nsight Systems 2026.3.1\target-wind
   --cuda-event-trace=true `
   --stats=true --sample=none --export=sqlite --force-overwrite=true `
   -o p52_double_fixed256 `
-  .\particles\d3d12_cuda_particles_double_buffered.exe --frames 120 --vsync 0 --fixed-substeps 256
+  .\particles\p04-p05-renderer\d3d12_cuda_particles_double_buffered.exe --frames 120 --vsync 0 --fixed-substeps 256
 ```
 
 每次采集会生成 `.nsys-rep`（GUI 时间线）和 `.sqlite`（可查询数据）。本机没有管理员权限时，Nsight 会提示 CPU context-switch trace 被禁用；这不影响本节的 CUDA/DX12/NVTX activity，但不能据此分析操作系统线程切换。
@@ -211,10 +211,10 @@ min(a.end, b.end) - max(a.start, b.start)
 
 ## 10. 文件
 
-- 单缓冲程序：`learning/sandbox/particles/d3d12_cuda_particles.cu`
-- 双缓冲程序：`learning/sandbox/particles/d3d12_cuda_particles_double_buffered.cu`
-- 单缓冲报告：[p52_single_fixed256.nsys-rep](../sandbox/p52_single_fixed256.nsys-rep) / `p52_single_fixed256.sqlite`
-- 双缓冲报告：[p52_double_fixed256.nsys-rep](../sandbox/p52_double_fixed256.nsys-rep) / `p52_double_fixed256.sqlite`
+- 单缓冲程序：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles.cu`
+- 双缓冲程序：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.cu`
+- 单缓冲报告：[p52_single_fixed256.nsys-rep](../../sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.nsys-rep) / `p52_single_fixed256.sqlite`
+- 双缓冲报告：[p52_double_fixed256.nsys-rep](../../sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.nsys-rep) / `p52_double_fixed256.sqlite`
 - Nsight Systems 官方文档：https://docs.nvidia.com/nsight-systems/
 - NVTX 官方说明：https://docs.nvidia.com/cuda/profiler-users-guide/index.html#nvtx
 

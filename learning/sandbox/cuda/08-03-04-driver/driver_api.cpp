@@ -1,13 +1,32 @@
 // 全程只用 Driver API（cu 前缀），手动加载 8.3 生成的 asm_demo.cubin 并启动其中的 kernel。
 // 对照：Runtime API 会自动 cuInit/建 context/从 fatbin 找 kernel；这里全部手动做。
 #include <cstdio>
+#include <filesystem>
 #include <vector>
+#define NOMINMAX
+#include <windows.h>
 #include <cuda.h>   // Driver API 头（不是 cuda_runtime.h）
 
 #define DRV(x) do{ CUresult r=(x); if(r!=CUDA_SUCCESS){ const char* s; cuGetErrorString(r,&s); \
     printf("Driver API err %s:%d -> %s\n", __FILE__, __LINE__, s); return 1; } }while(0)
 
-int main() {
+int main(int argc, char** argv) {
+    // cubin 默认与 exe 同目录，不能依赖调用者的工作目录；目录整理后，从仓库根目录
+    // 启动也必须加载本课产物。可选第一个参数指定另一份 cubin/PTX，用于 JIT 对照。
+    // GetModuleFileNameW 的缓冲区包含终止零；返回长度等于容量意味着截断，明确失败。
+    wchar_t executable[32768]{};
+    const DWORD length = GetModuleFileNameW(nullptr, executable, 32768);
+    if (length == 0 || length >= 32768) {
+        std::fprintf(stderr, "cannot locate executable directory\n");
+        return 1;
+    }
+    const auto module_path = argc > 1 ? std::filesystem::path(argv[1])
+        : std::filesystem::path(executable).parent_path() / "asm_demo.cubin";
+    if (!std::filesystem::is_regular_file(module_path)) {
+        std::fprintf(stderr, "missing module: %s; run this lesson's build.ps1 first\n",
+                     module_path.string().c_str());
+        return 1;
+    }
     // 1) 初始化 Driver API（Runtime 会替你隐式做这步）
     DRV(cuInit(0));
 
@@ -19,7 +38,7 @@ int main() {
     CUcontext ctx; DRV(cuCtxCreate(&ctx, nullptr, 0, dev));  // CUDA 13 的 _v4 签名：多了 params 指针
 
     // 3) 手动加载 module（一个 cubin/PTX/fatbin 文件）——这是 Driver API 的灵魂
-    CUmodule mod; DRV(cuModuleLoad(&mod, "asm_demo.cubin"));
+    CUmodule mod; DRV(cuModuleLoad(&mod, module_path.string().c_str()));
 
     // 4) 按“名字”从 module 里取出 kernel（注意是 C++ mangled 名）
     CUfunction fma; DRV(cuModuleGetFunction(&fma, mod, "_Z10fma_kernelPKfS0_S0_Pfi"));

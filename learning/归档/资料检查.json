@@ -1,0 +1,368 @@
+{
+  "pass": true,
+  "scope": "current_checkout_documentation",
+  "workspace_root": "C:/xf/Cuda/CUDA_DX-publish-20261021",
+  "generated_artifact_status": "pending_local_generation",
+  "checked_links": 967,
+  "local_links_present": 923,
+  "broken_links": [],
+  "pending_generated": [
+    {
+      "document": "learning/笔记/d3d12/D.3-命中材质与纹理采样验证.md",
+      "target": "../../sandbox/d3d12/gltf-scene/results/d03/official/box-front.png",
+      "path": "learning/sandbox/d3d12/gltf-scene/results/d03/official/box-front.png",
+      "readme": "learning/sandbox/d3d12/gltf-scene/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/E.3-多缓冲时间线与性能验收.md",
+      "target": "../../sandbox/d3d12/cuda-interop/results/e3/timing-comparison.png",
+      "path": "learning/sandbox/d3d12/cuda-interop/results/e3/timing-comparison.png",
+      "readme": "learning/sandbox/d3d12/cuda-interop/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/E.3-多缓冲时间线与性能验收.md",
+      "target": "../../sandbox/d3d12/cuda-interop/results/e3/gpu-timeline.png",
+      "path": "learning/sandbox/d3d12/cuda-interop/results/e3/gpu-timeline.png",
+      "readme": "learning/sandbox/d3d12/cuda-interop/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.6-像素采样与线性HDR累积.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-06/comparison.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-06/comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.6-像素采样与线性HDR累积.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-06/edge_comparison.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-06/edge_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.7-历史有效性与重置.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-07/history_comparison.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-07/history_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.8a-SDR显示变换与sRGB编码契约.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-08a/display_comparison.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08a/display_comparison.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.8b-GPU显示通道与窗口Present.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-08b/gpu_display.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08b/gpu_display.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/d3d12/R.13.8c-窗口Resize与历史生命周期.md",
+      "target": "../../sandbox/d3d12/r13-renderer/results/r13-08c/gpu_display.png",
+      "path": "learning/sandbox/d3d12/r13-renderer/results/r13-08c/gpu_display.png",
+      "readme": "learning/sandbox/d3d12/r13-renderer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/particles/P.5.2-Nsight时间线与性能对照.md",
+      "target": "../../sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.nsys-rep",
+      "path": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_single_fixed256.nsys-rep",
+      "readme": "learning/sandbox/particles/p04-p05-renderer/README.md",
+      "kind": "nsight_report",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/particles/P.5.2-Nsight时间线与性能对照.md",
+      "target": "../../sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.nsys-rep",
+      "path": "learning/sandbox/particles/p04-p05-renderer/results/history/p52_double_fixed256.nsys-rep",
+      "readme": "learning/sandbox/particles/p04-p05-renderer/README.md",
+      "kind": "nsight_report",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-GPU线性累积与历史重置.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-history/history-convergence.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-history/history-convergence.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-曝光色调映射与窗口显示.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-display/display-comparison.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-display/display-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-降噪特征与CUDA外部消费者.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/denoise-comparison.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/denoise-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-降噪特征与CUDA外部消费者.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/guide-comparison.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-interop/guide-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-降噪窗口与质量性能验收.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-final/window-comparison.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/window-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-降噪窗口与质量性能验收.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-curves.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-curves.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.10-降噪窗口与质量性能验收.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-images.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt10-final/quality-images.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-GI重连接与Jacobian推导.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/gi/jacobian-comparison.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/gi/jacobian-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-运动重投影与历史拒绝.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/dynamic/visibility-comparison.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/dynamic/visibility-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-静态时空复用与独立统计.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/reuse/variance-curves.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/reuse/variance-curves.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-静态时空复用与独立统计.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/reuse/frame16.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/reuse/frame16.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-面积灯RIS与可见性验收.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/direct/mean-comparison.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/direct/mean-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.11-面积灯RIS与可见性验收.md",
+      "target": "../../sandbox/path_tracing/restir-di/results/direct/noisy-comparison.png",
+      "path": "learning/sandbox/path_tracing/restir-di/results/direct/noisy-comparison.png",
+      "readme": "learning/sandbox/path_tracing/restir-di/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.12-方向缓存与偏差方差实测.md",
+      "target": "../../sandbox/path_tracing/radiance-cache/results/cache/bias-variance.png",
+      "path": "learning/sandbox/path_tracing/radiance-cache/results/cache/bias-variance.png",
+      "readme": "learning/sandbox/path_tracing/radiance-cache/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.12-缓存后缀与三种表示.md",
+      "target": "../../sandbox/path_tracing/radiance-cache/results/overview/path-cache-probes.png",
+      "path": "learning/sandbox/path_tracing/radiance-cache/results/overview/path-cache-probes.png",
+      "readme": "learning/sandbox/path_tracing/radiance-cache/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.6-GPU积分与正交相机.md",
+      "target": "../../sandbox/path_tracing/pt06-mis/results/gpu/comparison.png",
+      "path": "learning/sandbox/path_tracing/pt06-mis/results/gpu/comparison.png",
+      "readme": "learning/sandbox/path_tracing/pt06-mis/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.6-两种直接光估计器与MIS推导.md",
+      "target": "../../sandbox/path_tracing/pt06-mis/results/comparison.png",
+      "path": "learning/sandbox/path_tracing/pt06-mis/results/comparison.png",
+      "readme": "learning/sandbox/path_tracing/pt06-mis/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-GGX微表面推导与白炉验证.md",
+      "target": "../../sandbox/path_tracing/pt08-materials/results/ggx/ggx-white-furnace.png",
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/ggx/ggx-white-furnace.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-GPU能量表与窄高光数值稳定性.md",
+      "target": "../../sandbox/path_tracing/pt08-materials/results/energy-gpu/energy-gpu.png",
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/energy-gpu/energy-gpu.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-glTF材质与GPU混合采样.md",
+      "target": "../../sandbox/path_tracing/pt08-materials/results/pbr/pbr-mixture.png",
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/pbr/pbr-mixture.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-共享积分器与粗糙度场景验收.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-reference.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-reference.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-共享积分器与粗糙度场景验收.md",
+      "target": "../../sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-comparison.png",
+      "path": "learning/sandbox/path_tracing/dxr-path-tracer/results/pt08/gallery-comparison.png",
+      "readme": "learning/sandbox/path_tracing/dxr-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.8-漫反射与镜面能量耦合.md",
+      "target": "../../sandbox/path_tracing/pt08-materials/results/energy/energy-balance.png",
+      "path": "learning/sandbox/path_tracing/pt08-materials/results/energy/energy-balance.png",
+      "readme": "learning/sandbox/path_tracing/pt08-materials/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-CUDA路径状态与Megakernel.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/megakernel/cpu-gpu.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/cpu-gpu.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-CUDA路径状态与Megakernel.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/megakernel/active-paths.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/active-paths.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-CUDA路径状态与Megakernel.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/megakernel/gpu-images.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/megakernel/gpu-images.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-Wavefront队列与路径压缩.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/wavefront/queue-capacity.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/wavefront/queue-capacity.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-Wavefront队列与路径压缩.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/wavefront/backend-images.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/wavefront/backend-images.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-样本并行控制与Nsight时间线.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/execution/timing-comparison.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/execution/timing-comparison.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-样本并行控制与Nsight时间线.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/execution/kernel-timeline.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/execution/kernel-timeline.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    },
+    {
+      "document": "learning/笔记/path_tracing/PT.9-队列压缩与状态地址布局.md",
+      "target": "../../sandbox/path_tracing/cuda-path-tracer/results/queue-layout/address-coverage.png",
+      "path": "learning/sandbox/path_tracing/cuda-path-tracer/results/queue-layout/address-coverage.png",
+      "readme": "learning/sandbox/path_tracing/cuda-path-tracer/README.md",
+      "kind": "image",
+      "status": "pending_local_generation"
+    }
+  ],
+  "external_resources": [
+    {
+      "document": "learning/笔记/d3d12/R.13-第一部分-针孔相机与几何属性诊断.md",
+      "target": "C:/xf/图像图形/fundamentals-of-computer-graphics-4th.pdf",
+      "path": "C:/xf/图像图形/fundamentals-of-computer-graphics-4th.pdf",
+      "description": "本机教材参考，需在新电脑自行准备合法副本并调整位置。",
+      "exists": true
+    },
+    {
+      "document": "learning/笔记/d3d12/R.3-完整逐步帧流程.md",
+      "target": "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/d3d12.h",
+      "path": "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/d3d12.h",
+      "description": "本机 Windows SDK 头文件参考，新电脑安装版本或位置可能不同。",
+      "exists": true
+    }
+  ],
+  "known_generated_present": [],
+  "missing_course_readmes": [],
+  "course_count": 47,
+  "source_script_count": 422,
+  "note_count": 108
+}

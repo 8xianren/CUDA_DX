@@ -1,0 +1,6 @@
+matched CUDA/D3D12 adapter: NVIDIA GeForce RTX 5070
+uploaded static SoA buffer: 196608 bytes, 4096 particles
+rendered frames: 12
+frame-resource CPU waits: 8
+particles per frame: 4096
+D3D12 static SoA particles: PASS

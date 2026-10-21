@@ -1,0 +1,15 @@
+{
+  "assets": "../../assets/runtime",
+  "shaders": "../shaders",
+  "energy_lut": "../../../../path_tracing/dxr-path-tracer/results/pt08/energy-lut.bin",
+  "output": "../../results/h7/interactive",
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "moving_spp": 4,
+    "paused_spp": 16,
+    "max_scatters": 6,
+    "presentation": true,
+    "sky_intensity": 1.0
+  }
+}

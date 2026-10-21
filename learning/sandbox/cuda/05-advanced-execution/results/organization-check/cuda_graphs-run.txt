@@ -1,0 +1,3 @@
+每轮 50 个小 kernel × 1000 轮 = 50000 次 launch
+A 传统逐个 launch :  334.14 ms
+B CUDA Graph 重放 :   52.57 ms  (6.36x 更快)

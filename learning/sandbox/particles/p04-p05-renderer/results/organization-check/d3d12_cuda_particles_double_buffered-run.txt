@@ -1,0 +1,13 @@
+matched CUDA/D3D12 adapter: NVIDIA GeForce RTX 5070
+double-buffered SoA: 2 x 196608 useful bytes, allocation=196608 bytes each
+rendered frames: 12
+target simulation step (dt=1/120 s): 24
+executed catch-up substeps across both buffers: 46
+maximum substeps in one buffer catch-up: 4
+particle state 0: rendered=6, simulated_step=24, cuda_ready=13, d3d_done=11
+particle state 1: rendered=6, simulated_step=22, cuda_ready=12, d3d_done=12
+completed cuda-ready fence: 13
+completed d3d-done fence: 13
+CUDA/D3D12 intermediate CPU waits: 0
+frame-resource CPU waits: 2
+CUDA + D3D12 double-buffered particles: PASS

@@ -1,0 +1,162 @@
+[
+  {
+    "source": "cuda/00-01-foundations/hello.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\00-01-foundations\\results\\organization-check/hello-run.txt"
+  },
+  {
+    "source": "cuda/02-parallel-algorithms/parallel_reduce.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\02-parallel-algorithms\\results\\organization-check/parallel_reduce-run.txt"
+  },
+  {
+    "source": "cuda/03-streams-profiling/async_timing.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\03-streams-profiling\\results\\organization-check/async_timing-run.txt"
+  },
+  {
+    "source": "cuda/04-custom-kernels/block_reduce_demo.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\04-custom-kernels\\results\\organization-check/block_reduce_demo-run.txt"
+  },
+  {
+    "source": "cuda/05-advanced-execution/cuda_graphs.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\05-advanced-execution\\results\\organization-check/cuda_graphs-run.txt"
+  },
+  {
+    "source": "cuda/06-memory-access/texture_demo.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\06-memory-access\\results\\organization-check/texture_demo-run.txt"
+  },
+  {
+    "source": "cuda/07-performance/divergence.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\07-performance\\results\\organization-check/divergence-run.txt"
+  },
+  {
+    "source": "cuda/08-02-grid-sync/grid_sync.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\08-02-grid-sync\\results\\organization-check/grid_sync-run.txt"
+  },
+  {
+    "source": "cuda/08-05-blackwell/tma_2d_tile.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\08-05-blackwell\\results\\organization-check/tma_2d_tile-run.txt"
+  },
+  {
+    "source": "cuda/09-01-libraries/cublas_sgemm.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-01-libraries\\results\\organization-check/cublas_sgemm-run.txt"
+  },
+  {
+    "source": "cuda/09-01-libraries/cublaslt_relu.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-01-libraries\\results\\organization-check/cublaslt_relu-run.txt"
+  },
+  {
+    "source": "cuda/09-01-libraries/cufft_frequency.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-01-libraries\\results\\organization-check/cufft_frequency-run.txt"
+  },
+  {
+    "source": "cuda/09-03-debugging/compute_sanitizer_demo.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-03-debugging\\results\\organization-check/compute_sanitizer_demo-run.txt"
+  },
+  {
+    "source": "cuda/09-03-debugging/sanitizer_tools_demo.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-03-debugging\\results\\organization-check/sanitizer_tools_demo-run.txt"
+  },
+  {
+    "source": "cuda/09-03-debugging/device_assert_demo.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-03-debugging\\results\\organization-check/device_assert_demo-run.txt"
+  },
+  {
+    "source": "cuda/09-04-numerics/mixed_precision_dot.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\09-04-numerics\\results\\organization-check/mixed_precision_dot-run.txt"
+  },
+  {
+    "source": "particles/09-02-interop/d3d12_cuda_luid.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\09-02-interop\\results\\organization-check/d3d12_cuda_luid-run.txt"
+  },
+  {
+    "source": "particles/09-02-interop/d3d12_cuda_external_memory.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\09-02-interop\\results\\organization-check/d3d12_cuda_external_memory-run.txt"
+  },
+  {
+    "source": "particles/09-02-interop/d3d12_cuda_external_semaphore.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\09-02-interop\\results\\organization-check/d3d12_cuda_external_semaphore-run.txt"
+  },
+  {
+    "source": "particles/09-02-interop/d3d12_cuda_external_texture.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\09-02-interop\\results\\organization-check/d3d12_cuda_external_texture-run.txt"
+  },
+  {
+    "source": "particles/p02-headless/d3d12_cuda_particles_headless.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p02-headless\\results\\organization-check/d3d12_cuda_particles_headless-run.txt"
+  },
+  {
+    "source": "particles/p03-simulation/particle_integrators.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p03-simulation\\results\\organization-check/particle_integrators-run.txt"
+  },
+  {
+    "source": "particles/p03-simulation/particle_fixed_timestep.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p03-simulation\\results\\organization-check/particle_fixed_timestep-run.txt"
+  },
+  {
+    "source": "particles/p03-simulation/particle_layout_benchmark.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p03-simulation\\results\\organization-check/particle_layout_benchmark-run.txt"
+  },
+  {
+    "source": "particles/p04-p05-renderer/d3d12_static_particles.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p04-p05-renderer\\results\\organization-check/d3d12_static_particles-run.txt"
+  },
+  {
+    "source": "particles/p04-p05-renderer/d3d12_cuda_particles.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p04-p05-renderer\\results\\organization-check/d3d12_cuda_particles-run.txt"
+  },
+  {
+    "source": "particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.cu",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\particles\\p04-p05-renderer\\results\\organization-check/d3d12_cuda_particles_double_buffered-run.txt"
+  },
+  {
+    "source": "cuda/08-03-04-driver/build.ps1",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\08-03-04-driver\\results\\organization-check/special-build-run.txt"
+  },
+  {
+    "source": "cuda/05-advanced-execution/build_dynamic.ps1",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\05-advanced-execution\\results\\organization-check/special-build-run.txt"
+  },
+  {
+    "source": "cuda/06-memory-access/swizzle_layout.py",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\06-memory-access\\results\\organization-check/swizzle_layout-run.txt"
+  },
+  {
+    "source": "cuda/06-memory-access/gob_swizzle.py",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\06-memory-access\\results\\organization-check/gob_swizzle-run.txt"
+  },
+  {
+    "source": "cuda/python-ecosystem/cudf_status.py",
+    "status": "pass",
+    "log": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\cuda\\python-ecosystem\\results\\organization-check/cudf_status-run.txt"
+  }
+]

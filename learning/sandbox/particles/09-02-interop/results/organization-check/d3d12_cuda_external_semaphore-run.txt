@@ -1,0 +1,8 @@
+matched adapter: NVIDIA GeForce RTX 5070
+timeline: D3D12 signal=1 -> CUDA signal=2 -> D3D12 signal=3
+final fence value: 3
+particle[0] = (1000.0, 0.0, 0.0, 2.0)
+particle[1] = (1001.0, 20.0, 1.0, 2.0)
+particle[255] = (1255.0, 5100.0, 255.0, 2.0)
+intermediate CPU waits: 0
+mismatches: 0

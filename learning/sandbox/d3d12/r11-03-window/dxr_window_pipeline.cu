@@ -18,6 +18,7 @@
 #include <fstream>
 #include <iterator>
 #include <vector>
+#include "../../common/lesson_paths.h"
 #pragma comment(lib, "d3d12.lib")
 #pragma comment(lib, "dxgi.lib")
 #pragma comment(lib, "dxguid.lib")
@@ -376,7 +377,7 @@ int main(int argc,char** argv) {
   std::printf("Readback A=(%u,%u,%u,%u) B=(%u,%u,%u,%u) Miss=(%u,%u,%u,%u) RowPitch=%u\n",a[0],a[1],a[2],a[3],b[0],b[1],b[2],b[3],bg[0],bg[1],bg[2],bg[3],footprint.Footprint.RowPitch);
   bool pass=a[0]>180 && a[1]<50 && b[1]>160 && b[0]<30 && bg[0]<20 && bg[2]>20 && a[3]==255 && b[3]==255;
   // GPU 输出 PPM 是渲染结果证据，不将它称作桌面/窗口截图。
-  std::ofstream image("learning/sandbox/d3d12/r11-03-window/dxr_window_output.ppm",std::ios::binary);
+  std::ofstream image(lesson_paths::ResultDirectory()/"dxr_window_output.ppm",std::ios::binary);
   image<<"P6\n"<<width<<" "<<height<<"\n255\n";
   for(UINT y=0;y<height;++y) for(UINT x=0;x<width;++x) image.write((char*)pixel(x,y),3);
   require(image.good(),"write PPM failed"); image.close();

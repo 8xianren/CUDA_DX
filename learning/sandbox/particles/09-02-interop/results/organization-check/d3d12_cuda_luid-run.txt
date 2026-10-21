@@ -1,0 +1,8 @@
+DXGI hardware adapters:
+  [0] NVIDIA GeForce RTX 5070, LUID=00000000:000157b2, D3D12=yes
+  [1] Intel(R) Graphics, LUID=00000000:00016d7b, D3D12=yes
+  [2] NVIDIA GeForce RTX 5070, LUID=00000000:00020c74, D3D12=yes
+CUDA devices:
+  [0] NVIDIA GeForce RTX 5070, LUID=00000000:000157b2, nodeMask=0x1
+       MATCH -> DXGI adapter [0] NVIDIA GeForce RTX 5070
+total CUDA/DXGI LUID matches: 1

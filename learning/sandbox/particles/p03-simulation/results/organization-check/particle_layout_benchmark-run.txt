@@ -1,0 +1,9 @@
+sample[0]: position=(0.033333, 0.058500, 0.100000), velocity=(1.000000, 1.673333, 3.000000), life=9.966667
+sample[32768]: position=(0.066435, 0.127369, 0.069899), velocity=(1.010000, 1.773333, 3.080000), life=9.966667
+sample[65535]: position=(0.099202, 0.192237, 0.035132), velocity=(1.010000, 1.753333, 3.020000), life=9.966667
+particles: 65536, allocation: AoS 3.0 MiB, SoA 3.0 MiB
+AoS median: 0.020 ms / 2 iterations = 0.010080 ms/step, effective bandwidth 416.1 GB/s
+SoA median: 0.014 ms / 2 iterations = 0.006800 ms/step, effective bandwidth 616.8 GB/s
+SoA speedup over AoS: 1.482x
+sample mismatches: 0
+checks: PASS

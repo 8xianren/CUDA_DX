@@ -1,0 +1,2 @@
+hello.cu
+tmpxft_0000f730_00000000-7_hello.cudafe1.cpp

@@ -1,0 +1,1 @@
+{"pass": true, "mis_z_score": [0.7426221145355605, -0.09156157563503943, -0.7715245272810521], "negative_control_z_score": [12230.108332317344, 8654.505267127823, 3436.7898180765287], "output": "C:\\xf\\Cuda\\accelerated-computing-hub\\learning\\sandbox\\d3d12\\dynamic-character\\results\\visual\\sky-numerical.json", "seconds": 0.8202258000383154}

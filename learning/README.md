@@ -1,89 +1,43 @@
-# CUDA 学习路线图（个人版）
+# 学习资料总入口
 
-> 这是为你（游戏开发者、C/C++ 基础、CUDA 初学者）定制的学习手册。
-> 配套：AI 导师技能 `cuda-tutor`。想上课时直接说「**开始上课**」或「**继续上 X.Y 节**」。
->
-> 学习材料推送到 [CUDA_DX](https://github.com/8xianren/CUDA_DX.git)。NVIDIA 官方教程仍由本地 `origin` 跟踪，不镜像到 CUDA_DX。
+当前项目：**模块化 CUDA / D3D12 / DXR 动态人物路径追踪 Demo**。学习与复习从下面入口进入；NVIDIA官方教程目录保持原样。
 
----
+|现在想做什么|入口|
+|---|---|
+|直接运行当前Demo|[程序说明与双击启动](sandbox/d3d12/dynamic-character/README.md)|
+|知道已经学到哪里|[当前学习进度](进度.md)|
+|寻找任意课程的程序|[全部资料导航](资料导航.md)|
+|查课堂讲义|[五条线路讲义总索引](笔记/README.md)|
+|看光影、多灯、水体和画质的后续安排|[渲染器优化路线](规划/渲染器后续优化路线.md)|
+|查完整课程顺序与教学要求|[学习计划](学习计划.md)|
+|配置环境、构建或定位输出|[环境与构建](环境与构建.md)、[程序目录约定](sandbox/README.md)|
+|找历史数据、迁移记录|[归档入口](归档/README.md)|
 
-## 一、本机环境速查
+## 当前Demo
 
-| 项目 | 现状 |
-|------|------|
-| 系统 | Windows，PowerShell |
-| CPU | Intel Core Ultra 7 265K |
-| 显卡 | NVIDIA GeForce RTX 5070（**Blackwell，计算能力 `sm_120`**，12GB） |
-| 驱动 | 2026-10-21实查610.88，`nvidia-smi --version` 报CUDA UMD13.3；PT.10最终报告保存本机环境输出 |
-| 编译器 `nvcc` | CUDA Toolkit 13.3；日常用 `learning/sandbox/build.ps1` |
-| Tile 教程 | `tutorials/cuda-tile/` 本机可跑（Blackwell） |
+双击本机 `learning/sandbox/d3d12/dynamic-character/build/Release/character_demo.exe`。资源路径和质量档在EXE旁`character_demo.json`；无需先运行PowerShell。首次从源码恢复时按[工程README](sandbox/d3d12/dynamic-character/README.md)获取资产并构建。
 
----
+默认1280×720、动态4 spp，天空/太阳参与照明，WASD/QE控制相机、右键转向，Space暂停、N单步、R复位。静止256 spp展示图和真实动态4 spp图分开标注。当前是受限教学渲染器；完整范围见[架构](sandbox/d3d12/dynamic-character/ARCHITECTURE.md)和[画质修正](笔记/d3d12/H.7-画质修正与程序天空.md)。
 
-## 二、环境搭建（按需，第一次写 C++ 内核前做）
+## 文件职责
 
-1. 下载安装 **CUDA Toolkit**（建议与驱动匹配的 12.x/13.x）：
-   https://developer.nvidia.com/cuda-downloads （选 Windows → x86_64 → 11/10 → exe[local]）
-2. Toolkit 自带 MSVC 集成；也可单独装 **Visual Studio**（含 "使用 C++ 的桌面开发"）以提供 `cl.exe`。
-3. 安装后**新开 PowerShell**验证：
-
-```powershell
-nvcc --version      # 看到 release 版本号即成功
-nvidia-smi          # 看到 RTX 5070
+```text
+learning/
+├─ README.md / 资料导航.md    使用入口与完整程序目录
+├─ 进度.md / 学习计划.md      当前状态 / 完整课程定义
+├─ 规划/                     后续应用优化与计划导航
+├─ 环境与构建.md              本机环境与运行方式
+├─ 笔记/<线路>/              讲义：按课号查原理和实测
+├─ sandbox/<线路>/<课程>/    程序、shader、验证脚本
+│  └─ results/              本课图像、数值、日志和性能数据
+├─ tools/                   目录生成与本地链接检查
+└─ 归档/                    历史状态和资料迁移记录
 ```
 
-4. 日常编译用 sandbox 脚本（默认 `-arch=sm_120`）：
+成熟共享主线保留一份实现，基础实验按课程归档；不为课号复制一整套渲染器。构建缓存、下载资产和运行结果不列入源码目录计数，也不自动删除。
 
-```powershell
-cd learning\sandbox
-.\build.ps1 cuda\hello.cu
-```
+## 仓库关系
 
-> 不想本地装环境？可用云端 **NVIDIA Brev** 或 **Google Colab** 跑仓库里的 notebook（README 顶部每个 notebook 都有 Colab 徽章链接）。
+个人资料同步目标为[8xianren/CUDA_DX](https://github.com/8xianren/CUDA_DX)，原工作副本的remote为`cuda-dx`。原工作副本的`origin`继续跟踪NVIDIA官方教程；不把个人学习文件推到NVIDIA仓库。个人仓库包含最新H工程、资料重组和[聊天迁移包](../codex-chat-migration/README.md)；从个人仓库直接克隆时，`origin`指向个人仓库，以`git remote -v`为准。
 
----
-
-## 三、学习路线（六个阶段）
-
-详见 AI 导师技能里的完整大纲 `.cursor/skills/cuda-tutor/curriculum.md`。概览：
-
-- **阶段 0 · 认知与环境**：GPU 为何能算、CUDA 平台全貌、装 Toolkit、Hello GPU
-- **阶段 1 · 编程模型核心**：grid/block/thread、SIMT 与 warp、内存模型、内存管理、错误处理
-- **阶段 2 · 并行算法思维**：reduce/scan/transform、Thrust/CUB/CCCL、执行空间、词汇类型
-- **阶段 3 · 性能与异步**：streams、pinned memory、计算与传输重叠、Nsight、NVTX
-- **阶段 4 · 编写自定义内核**：kernel、原子操作、同步、共享内存、协作组
-- **阶段 5 · 进阶与生态**：CUDA Graphs、多 GPU、图形 API 互操作、Tile 模型、Python 生态
-
-**建议顺序**：0 → 1 → 2 → 3 → 4 → 5。每节按「概念 → 类比 → 代码 → 动手 → 小结」推进，一次只学一小节。
-
----
-
-## 四、本仓库材料地图
-
-后续所有课程采用“线路 → 课节或共享主线 → 结果目录”的组织方式，详见 [sandbox目录约定](sandbox/README.md#后续课程目录约定)。源码、shader和验证脚本归入所属课程目录，结果写入`results/`，目录README说明各文件职责、运行命令并链接对应讲义。讲义继续统一保存在`learning/笔记/<线路>/`。每节结束同步更新目录索引与进度。
-
-| 路径 | 内容 |
-|------|------|
-| `tutorials/cuda-cpp/notebooks/` | **核心**：现代 CUDA C++ 教程（01 算法 / 02 异步流 / 03 内核），每节含 `Sources/` 示例与 `Solutions/` 答案 |
-| `tutorials/cuda-tile/` | Tile 编程模型（需 Blackwell，仅了解） |
-| `tutorials/stdpar/` | C++ 标准并行 |
-| `tutorials/accelerated-python/`、`tutorials/nvmath-python/` | 加速 Python |
-| `Accelerated_Python_User_Guide/notebooks/` | Python GPU 计算 12 章（CuPy、Numba、cuDF…） |
-| `docs/` | Brev 云端部署文档 |
-
----
-
-## 五、关键官方文档
-
-- CUDA 编程指南（主参考）：https://docs.nvidia.com/cuda/cuda-programming-guide/index.html
-- CUDA C++ 最佳实践：https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html
-- Runtime API：https://docs.nvidia.com/cuda/cuda-runtime-api/index.html
-- CUDA C++ 视频课：https://www.youtube.com/playlist?list=PL5B692fm6--vWLhYPqLcEu6RF3hXjEyJr
-
----
-
-## 六、学习进度
-
-进度记录在 `learning/进度.md`（开始第一节后由导师自动创建/更新）。
-
-完整的后续计划（包括 D3D12 网格渲染器、glTF/GLB 解析器和 CUDA 接入）见 [`learning/学习计划.md`](学习计划.md)。教学实现若与商业引擎常见做法不同，计划第 2 节要求对照说明，避免把 demo 当成生产方案。
+构建产物、下载资产、实验图片和Nsight报告不提交；保留源码、资产恢复脚本、许可及数值验收记录。新电脑先按各课README恢复资源并构建，历史运行结果只代表记录时的环境。

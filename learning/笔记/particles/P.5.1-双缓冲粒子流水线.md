@@ -219,7 +219,7 @@ Root Signature 和 HLSL 完全不变；着色器仍然只看到 `t0/t1`，不知
 
 ```powershell
 .\learning\sandbox\build.ps1 `
-  -Source .\learning\sandbox\particles\d3d12_cuda_particles_double_buffered.cu `
+  -Source .\learning\sandbox\particles\p04-p05-renderer\d3d12_cuda_particles_double_buffered.cu `
   -Libraries dxgi,d3d12,user32,d3dcompiler
 ```
 
@@ -266,8 +266,8 @@ ERROR SUMMARY: 0 errors
 
 ## 11. 文件
 
-- 双缓冲完整程序：`learning/sandbox/particles/d3d12_cuda_particles_double_buffered.cu`
-- 实拍：`learning/sandbox/particles/d3d12_cuda_particles_double_buffered.png`
+- 双缓冲完整程序：`learning/sandbox/particles/p04-p05-renderer/d3d12_cuda_particles_double_buffered.cu`
+- 实拍：`learning/sandbox/particles/p04-p05-renderer/results/history/d3d12_cuda_particles_double_buffered.png`
 
 ## 自测题
 

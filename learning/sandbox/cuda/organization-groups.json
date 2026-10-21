@@ -1,0 +1,167 @@
+{
+  "cuda/00-01-foundations": {
+    "title": "0–1：环境与编程模型",
+    "programs": [
+      "hello",
+      "device_info",
+      "vector_add",
+      "warp_layout",
+      "image_2d",
+      "volume_3d",
+      "memory_spaces",
+      "unified_memory",
+      "error_handling"
+    ]
+  },
+  "cuda/02-parallel-algorithms": {
+    "title": "2：Thrust/CUB/CCCL 算法",
+    "programs": [
+      "parallel_reduce",
+      "thrust_algorithms",
+      "execution_space",
+      "fancy_iterators",
+      "vocabulary_types",
+      "cub_intro"
+    ]
+  },
+  "cuda/03-streams-profiling": {
+    "title": "3：异步、流与时间线",
+    "programs": [
+      "async_timing",
+      "streams_overlap",
+      "streams_nvtx"
+    ]
+  },
+  "cuda/04-custom-kernels": {
+    "title": "4：自定义内核与协作",
+    "programs": [
+      "custom_kernel",
+      "atomics_demo",
+      "atomic_perf",
+      "syncthreads_demo",
+      "shared_histogram",
+      "block_reduce_demo"
+    ]
+  },
+  "cuda/05-advanced-execution": {
+    "title": "5.1、5.2、5.4：Graph、多 GPU、动态并行",
+    "programs": [
+      "cuda_graphs",
+      "multi_gpu",
+      "dynamic_parallelism"
+    ]
+  },
+  "cuda/06-memory-access": {
+    "title": "6：访存、栅栏、共享内存与排布",
+    "programs": [
+      "coalescing",
+      "constant_mem",
+      "texture_demo",
+      "threadfence_reduce",
+      "bank_conflict",
+      "transpose_bank",
+      "gob_swizzle",
+      "swizzle_layout"
+    ]
+  },
+  "cuda/07-performance": {
+    "title": "7：性能工程与指令",
+    "programs": [
+      "occupancy",
+      "occupancy_sweep",
+      "roofline",
+      "divergence",
+      "instr_opt",
+      "prof_target"
+    ]
+  },
+  "cuda/08-02-grid-sync": {
+    "title": "8.2：全网格协作",
+    "programs": [
+      "grid_sync"
+    ]
+  },
+  "cuda/08-03-04-driver": {
+    "title": "8.3–8.4：PTX/SASS 与 Driver API",
+    "programs": [
+      "asm_demo",
+      "pred_demo",
+      "driver_api"
+    ]
+  },
+  "cuda/08-05-blackwell": {
+    "title": "8.5：架构能力、Tensor Core、TMA 与 Cluster",
+    "programs": [
+      "architecture_features",
+      "wmma_minimal",
+      "cp_async_pipeline",
+      "tma_2d_tile",
+      "cluster_dsm",
+      "cluster_limits"
+    ]
+  },
+  "cuda/09-01-libraries": {
+    "title": "9.1：cuBLAS、cuBLASLt 与 cuFFT",
+    "programs": [
+      "cublas_sgemm",
+      "cublaslt_relu",
+      "cufft_frequency"
+    ]
+  },
+  "cuda/09-03-debugging": {
+    "title": "9.3：Sanitizer 与设备断言",
+    "programs": [
+      "compute_sanitizer_demo",
+      "sanitizer_tools_demo",
+      "device_assert_demo"
+    ]
+  },
+  "cuda/09-04-numerics": {
+    "title": "9.4：浮点、归约可复现性与混合精度",
+    "programs": [
+      "fma_rounding",
+      "reduction_repro",
+      "mixed_precision_dot"
+    ]
+  },
+  "cuda/python-ecosystem": {
+    "title": "5.6、9.5：Python GPU 生态",
+    "programs": [
+      "cupy_demo",
+      "cupy_custom_kernel",
+      "numba_demo",
+      "cudf_status"
+    ]
+  },
+  "particles/09-02-interop": {
+    "title": "9.2：D3D12/CUDA 互操作地基",
+    "programs": [
+      "d3d12_cuda_luid",
+      "d3d12_cuda_external_memory",
+      "d3d12_cuda_external_semaphore",
+      "d3d12_cuda_external_texture"
+    ]
+  },
+  "particles/p02-headless": {
+    "title": "P.2：无窗口共享粒子",
+    "programs": [
+      "d3d12_cuda_particles_headless"
+    ]
+  },
+  "particles/p03-simulation": {
+    "title": "P.3.1–P.3.3：积分、固定步、数据布局",
+    "programs": [
+      "particle_integrators",
+      "particle_fixed_timestep",
+      "particle_layout_benchmark"
+    ]
+  },
+  "particles/p04-p05-renderer": {
+    "title": "P.4.2–P.5.2：静态、动态与双缓冲窗口",
+    "programs": [
+      "d3d12_static_particles",
+      "d3d12_cuda_particles",
+      "d3d12_cuda_particles_double_buffered"
+    ]
+  }
+}

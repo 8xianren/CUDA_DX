@@ -1,0 +1,4 @@
+largest world differences [(5.492214306679344e-07, 'thumb_03_r'), (5.258896257354095e-07, 'thumb_04_leaf_r'), (4.7058954349976645e-07, 'middle_02_r'), (4.586672116557722e-07, 'middle_04_leaf_r'), (4.574952977565161e-07, 'middle_01_r'), (4.514974654701298e-07, 'middle_03_r'), (4.1225396074651144e-07, 'thumb_02_r'), (4.0132200651576966e-07, 'pinky_01_r')]
+mesh 0 position error 4.4980080260437205e-07 normal error 4.160777378192648e-07
+mesh 1 position error 4.603986843987329e-07 normal error 4.307163200545361e-07
+{'pass': True, 'clip': 'Walk_Loop', 'seconds': 0.6666666865348816, 'per_mesh_max_error': [4.4980080260437205e-07, 4.603986843987329e-07], 'reference': 'raw glTF float64 independent sampling, hierarchy and skin'}

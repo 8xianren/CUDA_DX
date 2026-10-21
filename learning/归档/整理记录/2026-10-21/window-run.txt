@@ -1,0 +1,31 @@
+Debug Layer: enabled
+adapter: NVIDIA GeForce RTX 5070
+raytracing tier: 12
+Window created: 840x480; swapchain buffers=2; RTVs=2
+Hit record[0]: offset=128 identifier=32 args=(0x11,0x5a) padding=24 stride=64
+Hit record[1]: offset=192 identifier=32 args=(0x22,0xa5) padding=24 stride=64
+Hit index: instance 0 -> record 0 / HitGroupA; instance 1 -> record 1 / HitGroupB; InstanceID=7 for both
+Frame 1: DispatchRays 840x480, Present S_OK, fence=2
+Frame 2: DispatchRays 840x480, Present S_OK, fence=3
+Readback A=(195,22,13,255) B=(13,174,41,255) Miss=(10,15,31,255) RowPitch=3584
+InfoQueue: errors=0 warnings=0
+Render validation complete; frames=2; color readback=PASS
+Final Present drained: fence=4 completed=4
+Shutdown: release swapchain
+release back0
+release back1
+release swap3
+release swap1
+Shutdown: destroy window
+Shutdown: release GPU resources
+release readback/output/SBT
+release heaps
+release state/roots
+release AS/uploads
+release list
+release allocator
+release queue
+release fence
+Shutdown: release device
+InfoQueue: errors=0 warnings=0
+DXR window: PASS; frames=2; shutdown complete; exit=0

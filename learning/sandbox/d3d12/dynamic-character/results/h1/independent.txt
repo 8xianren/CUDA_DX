@@ -1,0 +1,1 @@
+{"pass": true, "selected_character": "UAL1 embedded Mannequin; exact shared skeleton and animation", "vertices": 8546, "joints": 65, "bind_position_error": 6.849792548724309e-07, "omitted_inverse_bind_negative_control_error": 1.5714189532241112, "weight_error": 1.1920928955078125e-07}

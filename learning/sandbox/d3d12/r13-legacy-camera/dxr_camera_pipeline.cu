@@ -75,6 +75,7 @@ void verify_messages(ID3D12InfoQueue* q) {
   require(errors==0 && warnings==0,"Debug Layer validation failed");
 }
 #include "dxr_camera_reference.h"
+#include "../../common/lesson_paths.h"
 int main(int argc,char** argv) {
   std::setvbuf(stdout,nullptr,_IONBF,0);
     require(argc==3,"usage: dxr_camera_pipeline.exe <dxr_camera.dxil> <wide|square>");
@@ -84,7 +85,7 @@ int main(int argc,char** argv) {
   const UINT64 kOutputBytes=UINT64(kWidth)*kHeight*sizeof(camera_reference::GpuPixel);
   const auto camera=camera_reference::camera(square);
   const std::string dxilPath=argv[1];
-  const std::string prefix=dxilPath.substr(0,dxilPath.find_last_of('.'))+"_"+mode;
+  const std::string prefix=(lesson_paths::ResultDirectory()/("dxr_camera_"+mode)).string();
   std::ifstream file(argv[1],std::ios::binary);
   require(file.good(),"DXIL file not found: compile HLSL with dxc -T lib_6_3 first");
   std::vector<char> dxil((std::istreambuf_iterator<char>(file)),std::istreambuf_iterator<char>());
