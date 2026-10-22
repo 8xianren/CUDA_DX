@@ -1,0 +1,6 @@
+{
+  "known_analytic_cases":4,
+  "adversarial_reasons":["behind_camera","degenerate","oversize","offscreen","non_finite"],
+  "projection_max_abs_error":2.62260437e-06,
+  "bounding_rectangles_equal":true
+}

@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "count": 667872,
+  "degree": 3,
+  "stride": 244,
+  "format": "GSBIN001",
+  "source_bytes": 165633787,
+  "runtime_bytes": 162960792,
+  "source_sha256": "e1bc6c22fa74db350a783385f578be0eb5465c1df0daaedb33fa10c99e10c380",
+  "runtime_sha256": "67425844a3d56ca9e6b8490aedc87311de45bc84ef1e9448cdb664ed91f32313",
+  "position_min": [
+    -89.68770599365234,
+    -146.95265197753906,
+    -226.25958251953125
+  ],
+  "position_max": [
+    99.9937973022461,
+    11.737903594970703,
+    106.19395446777344
+  ],
+  "scale_min": 1.3576476269302985e-06,
+  "scale_max": 0.9813432162191345,
+  "opacity_min": 0.0008504728735854582,
+  "opacity_max": 0.999999991907839,
+  "quaternion_input_norm_min": 0.45952790007332245,
+  "quaternion_input_norm_max": 2.084016860719731,
+  "display_center": [
+    13.470241012573238,
+    -20.757312498092652,
+    -31.34126051902771
+  ],
+  "display_uniform_scale": 43.209852609634396,
+  "load_convert_validate_seconds": 1.4247660000110045,
+  "checks": [
+    "count",
+    "exact_position",
+    "positive_exp_scale",
+    "normalized_wxyz",
+    "sigmoid_opacity",
+    "exact_sh_channel_transpose",
+    "degree",
+    "finite"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "status": "PASS_WITH_USER_APPROVED_COUNTER_WAIVER",
+  "date": "2026-10-22",
+  "checks": 32,
+  "details": [
+    {
+      "name": "G1 weight partition and convergence",
+      "pass": true
+    },
+    {
+      "name": "G2 CPU GPU repeat and skip",
+      "pass": true
+    },
+    {
+      "name": "G3 six measured step/skip variants",
+      "pass": true
+    },
+    {
+      "name": "G4 numerical/autograd contracts",
+      "pass": true
+    },
+    {
+      "name": "G4 actual overfit on sm120",
+      "pass": true
+    },
+    {
+      "name": "G5 measured inference and bake error",
+      "pass": true
+    },
+    {
+      "name": "G5 actual two-extent exports",
+      "pass": true
+    },
+    {
+      "name": "G6 projection and adversarial inputs",
+      "pass": true
+    },
+    {
+      "name": "G7 reference membership stable sort",
+      "pass": true
+    },
+    {
+      "name": "G8 CPU image and shuffle invariance",
+      "pass": true
+    },
+    {
+      "name": "g2 sanitizer_memcheck.log",
+      "pass": true
+    },
+    {
+      "name": "g2 sanitizer_synccheck.log",
+      "pass": true
+    },
+    {
+      "name": "g8 memcheck.log",
+      "pass": true
+    },
+    {
+      "name": "g8 synccheck.log",
+      "pass": true
+    },
+    {
+      "name": "g10 memcheck.log",
+      "pass": true
+    },
+    {
+      "name": "g10 synccheck.log",
+      "pass": true
+    },
+    {
+      "name": "G9 full trained scene fields",
+      "pass": true
+    },
+    {
+      "name": "G9 malformed input and download tests",
+      "pass": true
+    },
+    {
+      "name": "G9 paired camera rendered",
+      "pass": true
+    },
+    {
+      "name": "G10 validation four passes/resize/debug",
+      "pass": true
+    },
+    {
+      "name": "G10 validation independent depth/volume oracle",
+      "pass": true
+    },
+    {
+      "name": "G10 reference-asset four passes/resize/debug",
+      "pass": true
+    },
+    {
+      "name": "G10 reference-asset independent depth/volume oracle",
+      "pass": true
+    },
+    {
+      "name": "G10 repeated timing without validation",
+      "pass": true
+    },
+    {
+      "name": "G10 mesh 640 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 volume 640 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 gaussian 640 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 nerf_cached 640 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 mesh 320 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 volume 320 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 gaussian 320 timing sample count",
+      "pass": true
+    },
+    {
+      "name": "G10 nerf_cached 320 timing sample count",
+      "pass": true
+    }
+  ],
+  "hardware_counter_analysis": {
+    "G3": "WAIVED_BY_USER",
+    "G8": "WAIVED_BY_USER",
+    "reason": "ERR_NVGPUCTRPERM; user explicitly approved skip on 2026-10-22"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "compute_capability": "sm_120",
+    "cuda_toolkit": "13.3",
+    "driver": "610.88"
+  },
+  "integration": {
+    "pass": true,
+    "frames": 8,
+    "oracle_cases": 8,
+    "composite_max": 5.96046e-08,
+    "mesh_depth_max": 0,
+    "debug_messages": 0,
+    "validation_enabled": true,
+    "nerf_enabled": true,
+    "resize_generations": 2,
+    "ready_completed": 8,
+    "done_completed": 8,
+    "gaussian_count": 4096,
+    "gaussian_visible": 4096,
+    "gaussian_references": 29845,
+    "gaussian_persistent_bytes": 2711040,
+    "gaussian_scratch_bytes": 641791,
+    "ray_distance_max_error": 9.53674e-07,
+    "volume_occlusion_max_error": 0.000172138,
+    "volume_oracle_cases": 2,
+    "volume_construct_ms": 10.1988,
+    "gaussian_load_and_upload_ms": 0.5111
+  },
+  "source_sha256": {
+    "src/app/bridge.cu": "672dafb36e02586306cf218663d595d20b81724921bf11b867a5e58f2819db1f",
+    "src/app/graphics.cpp": "5037bc76f1e79feb9c4111438320fcc2f6f5725af844eebcb151669650302663",
+    "src/app/graphics.h": "3987ed2fe1ca01bc67eb239fda16dbbf76b6c2742eddb13bd0a8ec68e602cfaf",
+    "src/app/main.cpp": "4bf927c22a5042f7683bfb7d82741585d1dabf21653fa498f28512b82c1b9451",
+    "src/app/passes.cpp": "5975d25a37d4de1e3bc1362462eb2c5fa05bf41d5fb74c13a6989396620605a3",
+    "src/app/passes.h": "02b03f74dd1a95009d005a0657ccd66c706aa2f8a674af4a61001b7f5b07876e",
+    "src/app/window.cpp": "c5583cd79b1212690da85b98257635534dac6d71adec4db7e4ce94e5a05f3906",
+    "src/app/window.h": "a425fe403446114d7bcb115d81ba08403ea790f65a02e148b590dda075098d1c",
+    "src/gaussian/gaussian.cu": "3b71e07b45864dbea57e500757f2ab34eb4aa8e3b130936aeffcd362c1611b71",
+    "src/gaussian/gaussian.h": "5ca65118983a84a4f25386b238bfdeea449a111b0ef44a62ac443ebdc9a50e17",
+    "src/gaussian/gaussian_cpu.cpp": "4374b4335ae830bc316ad8c52f6cc53d75b6821af4c2a5b95df8dca05f8eaa5f",
+    "src/gaussian/projection_math.cuh": "4f24006242aa7173683c5c881cbde31987a7330cf9423d68177191caaebeb842",
+    "src/interop/shared_texture.cpp": "1659ed8b4f5bfd72d0de293722e91a2404b029d45fdd2aa5c963d4f6ecc00a93",
+    "src/interop/shared_texture.h": "151df569fed60a89569e33ff34529b5b0afdece85644f6973e1a4c61d930cbd8",
+    "src/volume/volume.cu": "07dc12fbaa80c7aefcadb66d87a394a3063c630f7853cb7a89e4ceb447534698",
+    "src/volume/volume.h": "4ed8fd929aae51bb46d4eb14eaabdb369d695847683ba36289d5171ac5de17d7",
+    "src/volume/volume_cpu.cpp": "9139bafedd030cd810cbb01e2e4c87c4e5a92c34591518286cde50eef8583c97",
+    "src/volume/volume_math.cuh": "e72034ff102981aa87698dfd12437160dc4e7896ea9cc79b8edff8017111e847",
+    "shaders/passes.hlsl": "a932d4c6663e9da080211da2d475fbd902b80de5013e8d85e2176267fefada81",
+    "python/assets/convert_ply.py": "bdd91c29b8935d28b21580f43d5150430d38e9316428a3886b00dc234453f9f5",
+    "python/assets/fetch_reference.py": "3b44eae876a242c69cbd68227be3a9d8904f263b264b7107c133a3015b683ec2",
+    "python/assets/reference_camera.py": "93821cc6f4d4b0ea16048446aab9626a755f558329ab3a5e2c9967dafd4bbeaa",
+    "python/assets/reference_preview.py": "8c2a6f9c4bb36bf0b6b461303e4268ee5337f4e6763de70b064c346616e254a4",
+    "python/nerf/benchmark.py": "3d7526360a708b4f6fb41f3ebeb2dcce4701d99804378ceb9ed541d175938b27",
+    "python/nerf/camera.py": "e23d991185e2e3525a92e2a00fb23978e834c8edd35ea71d5c08e507c4291a3d",
+    "python/nerf/fields.py": "82dc1fdefaa2034a144663d40abacde53199c351e9477cbfacf21c10d70b0d8b",
+    "python/nerf/rendering.py": "9a53d02484a6b074cac67c309bf62f9c403f9ba16c284ae082e5c11179a50b3b",
+    "python/nerf/run.ps1": "0f83aba4bd093ad015945459a681705614271247ebdb882c98d0a7c6f1e411da",
+    "python/nerf/setup.ps1": "1e59038b80f88a753fe0ffdeb4849635b43007a53f7e3d065118bf005fe07bab",
+    "python/nerf/train.py": "6ed1ec299385b18009cf2b62acf7c80708f684b62df976f9e2bbc316b827a14a",
+    "tests/assets/reference_build.ps1": "1fab3cccf4c2081b1df1ab33d88442b86cb417978bdf8625307c03ea12f49287",
+    "tests/assets/reference_render.cpp": "96203031f16cbd935f696751d785adbb5a6967c5d2c1e269c00b265a9bb79cfc",
+    "tests/assets/test_import.py": "deac5bcdc97d1cde01e2ed62b1591a3b5c5b04de13d1c7035ff3c9bd9ab471b0",
+    "tests/gaussian/build.ps1": "33694eb2310110422fabb2d4cc4394e5e5e540f4705036ce635166a3682f32b4",
+    "tests/gaussian/verify.ps1": "1bda0815badd9fad55f78d0738ac17353fb41a53c3fd544aba20fe2990c8ffff",
+    "tests/gaussian/verify_gaussian.cpp": "936b0bbf8b89915db7eb80d81da979fb2dd058fadbb508f141ff71d81002b680",
+    "tests/nerf/contracts.py": "14c148f857e18bf1cf1b6b30c897af563db30d01a4c47bf598b2660d99a8acce",
+    "tests/nerf/exports.py": "abf7bc19c3e15dc3a0961f88ac5e2e3919a8e248831f5fd57d84f084a5919e43",
+    "tests/report.py": "59150e5dcaa30e163632cef53b0bec0d77e1424bce6ee2ee145f76f50f2cc2af",
+    "tests/volume/build-volume.ps1": "f40627a023a154d27d400b7b52a7218099ffcd86601d57f92a51f6b97912515f",
+    "tests/volume/report-volume.py": "58f0ba2994985a8887daa55a01551d263ba66e852d0b952513f08a7f8386a05a",
+    "tests/volume/verify-volume.ps1": "799ce60d4acdc17cafd445e68df410489761dd06c3a3d8b10bb05268778d4793",
+    "tests/volume/volume_validate.cu": "db3120763607d4147ab6205e7711cb4ebb6876b4122027f9c80c71ad469e1044",
+    "CMakeLists.txt": "68473635bdadcbcc7755f7a497ab2cad991bca8a8fe02ab8c57a38e681d80d98",
+    "build.ps1": "f868a6ba8f3fd7bd598929519e7fbada7f7a1d659d4b9862d5908bc98e09ed1e",
+    "verify.ps1": "8433d843870bcccc39fff36ecc5ee5a8f0ded8857f4f03cbc9f2f6f3017958e3"
+  }
+}

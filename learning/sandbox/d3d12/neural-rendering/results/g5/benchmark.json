@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch": "2.14.1+cu130",
+  "resolution": [
+    128,
+    96
+  ],
+  "samples_per_ray": 64,
+  "grid_resolution": 64,
+  "grid_channels": 13,
+  "grid_bytes": 13631488,
+  "mlp_parameter_bytes": 60468,
+  "training_seconds_baseline": 5.054079600027762,
+  "training_seconds_accelerated_path": 5.054079600027762,
+  "additional_bake_seconds": 0.13473219994921237,
+  "training_speedup_claimed": false,
+  "direct_mlp": {
+    "median_gpu_ms": 9.415984153747559,
+    "min_gpu_ms": 9.049216270446777,
+    "max_gpu_ms": 9.919424057006836,
+    "median_wall_ms": 9.522550040856004,
+    "peak_allocated_bytes": 138498048,
+    "repeats": 12,
+    "warmups": 3
+  },
+  "baked_grid": {
+    "median_gpu_ms": 5.363168001174927,
+    "min_gpu_ms": 5.078944206237793,
+    "max_gpu_ms": 5.7473602294921875,
+    "median_wall_ms": 5.380299990065396,
+    "peak_allocated_bytes": 64049152,
+    "repeats": 12,
+    "warmups": 3
+  },
+  "inference_speedup": 1.7556757781379901,
+  "direct_vs_analytic": {
+    "rgb_mse": 9.01834573596716e-06,
+    "rgb_psnr_db": 50.448731191797556,
+    "rgba_max_abs": 0.04481542110443115
+  },
+  "baked_vs_analytic": {
+    "rgb_mse": 8.239911039709114e-06,
+    "rgb_psnr_db": 50.8407747703735,
+    "rgba_max_abs": 0.044088125228881836
+  },
+  "baked_vs_direct": {
+    "rgb_mse": 2.938965337762056e-07,
+    "rgb_psnr_db": 65.31805535978235,
+    "rgba_max_abs": 0.013715505599975586
+  },
+  "grid_node_max_error": 7.152557373046875e-07,
+  "cost_split": {
+    "rays": 2048,
+    "samples_per_ray": 64,
+    "ray_sampling": {
+      "median_gpu_ms": 0.4195200055837631,
+      "min_gpu_ms": 0.3656960129737854,
+      "max_gpu_ms": 0.700543999671936,
+      "median_wall_ms": 0.4362500039860606,
+      "peak_allocated_bytes": 57185792,
+      "repeats": 12,
+      "warmups": 3
+    },
+    "mlp_query": {
+      "median_gpu_ms": 1.0034559965133667,
+      "min_gpu_ms": 0.9771519899368286,
+      "max_gpu_ms": 1.3410240411758423,
+      "median_wall_ms": 1.026200014166534,
+      "peak_allocated_bytes": 139857408,
+      "repeats": 12,
+      "warmups": 3
+    },
+    "baked_query": {
+      "median_gpu_ms": 0.1260320022702217,
+      "min_gpu_ms": 0.11004800349473953,
+      "max_gpu_ms": 0.14988799393177032,
+      "median_wall_ms": 0.13985001714900136,
+      "peak_allocated_bytes": 65408512,
+      "repeats": 12,
+      "warmups": 3
+    },
+    "composite": {
+      "median_gpu_ms": 0.1773120015859604,
+      "min_gpu_ms": 0.16777600347995758,
+      "max_gpu_ms": 0.22828799486160278,
+      "median_wall_ms": 0.19190000602975488,
+      "peak_allocated_bytes": 55995904,
+      "repeats": 12,
+      "warmups": 3
+    }
+  },
+  "source_hashes": {
+    "benchmark.py": "dd97b888861d2171b06af5277763459fbb997a80daafabd624f18930787da9eb",
+    "camera.py": "e23d991185e2e3525a92e2a00fb23978e834c8edd35ea71d5c08e507c4291a3d",
+    "fields.py": "82dc1fdefaa2034a144663d40abacde53199c351e9477cbfacf21c10d70b0d8b",
+    "rendering.py": "9a53d02484a6b074cac67c309bf62f9c403f9ba16c284ae082e5c11179a50b3b",
+    "train.py": "6ed1ec299385b18009cf2b62acf7c80708f684b62df976f9e2bbc316b827a14a"
+  },
+  "checkpoint_sha256": "916b13000990e5f800c4d409fdfcd65870ea0ed14ff6cde6ef30d5d1750c2673",
+  "timing_limits": [
+    "PyTorch event interval includes host launch gaps, not pure kernel active duration",
+    "peak allocated is process torch memory including both resident representations",
+    "fixed camera/scene; no Instant-NGP or production real-time claim"
+  ],
+  "postmeasurement_metadata_edit": {
+    "file": "benchmark.py",
+    "measured_sha256": "dd97b888861d2171b06af5277763459fbb997a80daafabd624f18930787da9eb",
+    "current_sha256": "3d7526360a708b4f6fb41f3ebeb2dcce4701d99804378ceb9ed541d175938b27",
+    "description": "Consumer metadata string and corresponding comments only; algorithms, tensor values and timing code unchanged."
+  }
+}

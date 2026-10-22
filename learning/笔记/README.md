@@ -2,12 +2,12 @@
 
 [学习入口](../README.md) · [完整学习计划](../学习计划.md) · [学习进度与验收记录](../进度.md) · [程序与复现实验](../sandbox/README.md)
 
-截至本次整理，这里有 **108 篇讲义、补充课与实验记录**，按五条线路保存。各线路 README 是完整阅读索引；正文保持原路径，避免旧引用失效。本文中的篇数不包含 README，也不代表完成课节数。
+截至本次整理，这里有 **128 篇讲义、补充课与实验记录**，按五条线路保存。各线路 README 是完整阅读索引；正文保持原路径，避免旧引用失效。本文中的篇数不包含 README，也不代表完成课节数。
 
 | 线路 | 现有资料 | 阅读入口 | 程序入口 |
 |---|---|---|---|
 | CUDA | 1 篇：3.2 Streams 专题；其他已学内容的记录见进度与程序，未补造不存在的讲义 | [CUDA 索引](cuda/README.md) | [CUDA 程序](../sandbox/cuda/README.md) |
-| D3D12 / DXR | 57 篇：R.0–R.13、C.1–C.6、D.1–D.4、E.1–E.3、H.1–H.7及补充 | [D3D12 / DXR 索引](d3d12/README.md) | [D3D12 程序](../sandbox/d3d12/README.md) |
+| D3D12 / DXR | 77 篇：R.0–R.13、C/D/E、H.1–H.7、F.1–F.10、G.1–G.10及补充 | [D3D12 / DXR 索引](d3d12/README.md) | [D3D12 程序](../sandbox/d3d12/README.md) |
 | 粒子系统 | 4 篇：P.4.2、P.4.3、P.5.1、P.5.2 | [粒子索引](particles/README.md) | [粒子程序](../sandbox/particles/README.md) |
 | 路径追踪 | 41 篇：PT.1–PT.12、多小节推导、复习与验收 | [PT 索引](path_tracing/README.md) | [PT 程序](../sandbox/path_tracing/README.md) |
 | 图形着色器补充 | 5 篇：HLSL/GLSL、空间、绑定、插值、Billboard | [着色器索引](shaders/README.md) | 复用 D3D12 / 粒子课程，无独立重复工程 |

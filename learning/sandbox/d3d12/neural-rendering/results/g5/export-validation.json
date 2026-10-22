@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "checks": 42,
+  "details": [
+    {
+      "name": "640x360:expected_dimensions",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color_occluded.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color_occluded.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_color_occluded.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth_occluded.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth_occluded.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "640x360:nerf_depth_occluded.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "640x360:plain_alpha_bounded",
+      "pass": true
+    },
+    {
+      "name": "640x360:plain_premultiplied",
+      "pass": true
+    },
+    {
+      "name": "640x360:occluded_alpha_bounded",
+      "pass": true
+    },
+    {
+      "name": "640x360:occluded_premultiplied",
+      "pass": true
+    },
+    {
+      "name": "640x360:outside_foreground_identical",
+      "pass": true
+    },
+    {
+      "name": "640x360:occlusion_changes_foreground",
+      "pass": true
+    },
+    {
+      "name": "640x360:truncated_expected_depth_before_mesh",
+      "pass": true
+    },
+    {
+      "name": "640x360:empty_depth_is_far",
+      "pass": true
+    },
+    {
+      "name": "320x240:expected_dimensions",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color_occluded.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color_occluded.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_color_occluded.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth_occluded.f32_sha256",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth_occluded.f32_bytes",
+      "pass": true
+    },
+    {
+      "name": "320x240:nerf_depth_occluded.f32_finite",
+      "pass": true
+    },
+    {
+      "name": "320x240:plain_alpha_bounded",
+      "pass": true
+    },
+    {
+      "name": "320x240:plain_premultiplied",
+      "pass": true
+    },
+    {
+      "name": "320x240:occluded_alpha_bounded",
+      "pass": true
+    },
+    {
+      "name": "320x240:occluded_premultiplied",
+      "pass": true
+    },
+    {
+      "name": "320x240:outside_foreground_identical",
+      "pass": true
+    },
+    {
+      "name": "320x240:occlusion_changes_foreground",
+      "pass": true
+    },
+    {
+      "name": "320x240:truncated_expected_depth_before_mesh",
+      "pass": true
+    },
+    {
+      "name": "320x240:empty_depth_is_far",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+cuda_device=NVIDIA GeForce RTX 5070 ordinal=0 sm=120 luid_match=1
+debug_warning_error=0 fence=53/53
+G10 PASS frames=8 composite_max=4.76837e-07 depth_max=0

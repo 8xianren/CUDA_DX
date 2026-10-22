@@ -2,7 +2,7 @@
 
 [返回笔记总目录](../README.md) · [程序目录](../../sandbox/d3d12/README.md) · [学习进度](../../进度.md)
 
-本目录收录 67 篇讲义与实验记录。按本轮学习顺序阅读：**R 基础与 DXR → C 资产导入 → D 场景上传 → PT 积分器 → E CUDA 互操作 → H 动态角色整合 → F 抗锯齿与重建**。PT 内容见[路径追踪索引](../path_tracing/README.md)。当前整合程序为 [dynamic-character](../../sandbox/d3d12/dynamic-character/README.md)，模块职责见[架构文档](../../sandbox/d3d12/dynamic-character/ARCHITECTURE.md)。
+本目录收录 77 篇讲义与实验记录。按本轮学习顺序阅读：**R 基础与 DXR → C 资产导入 → D 场景上传 → PT 积分器 → E CUDA 互操作 → H 动态角色整合 → F 抗锯齿与重建 → G 体渲染/NeRF/3DGS**。PT 内容见[路径追踪索引](../path_tracing/README.md)。当前整合程序为 [dynamic-character](../../sandbox/d3d12/dynamic-character/README.md)，模块职责见[架构文档](../../sandbox/d3d12/dynamic-character/ARCHITECTURE.md)。
 
 下面是学习导航，不是新的完成声明；验收范围与未验证项以各节正文和进度记录为准。正文中的“下一节”“尚未完成”保留授课当时语境。
 
@@ -117,3 +117,18 @@ C/D 共享一份 [gltf-scene](../../sandbox/d3d12/gltf-scene/README.md) 实现�
 - [F.8 DLSS/Streamline/XeSS输入契约](F.8-DLSS_Streamline_XeSS输入契约.md)
 - [F.9 官方帧生成与显示节奏](F.9-官方帧生成与显示节奏.md)
 - [F.10 固定序列质量与性能评测](F.10-固定序列质量与性能评测.md)
+
+## G.1–G.10：体渲染、NeRF与三维高斯
+
+[共享实验室](../../sandbox/d3d12/neural-rendering/README.md) · [模块和资源契约](../../sandbox/d3d12/neural-rendering/ARCHITECTURE.md)。课程与代码/真实结果双向关联；G3/G8硬件计数器本次获批略过，其他验收完整保留。
+
+- [G.1-发射吸收体渲染方程](G.1-发射吸收体渲染方程.md)
+- [G.2-CUDA三维纹理体渲染与共享输出](G.2-CUDA三维纹理体渲染与共享输出.md)
+- [G.3-体渲染步长跳空与性能实测](G.3-体渲染步长跳空与性能实测.md)
+- [G.4-NeRF的数据与表示](G.4-NeRF的数据与表示.md)
+- [G.5-NeRF采样与实时化路径](G.5-NeRF采样与实时化路径.md)
+- [G.6-高斯数据与投影推导](G.6-高斯数据与投影推导.md)
+- [G.7-分桶前缀和与稳定排序](G.7-分桶前缀和与稳定排序.md)
+- [G.8-Tile光栅与共享内存](G.8-Tile光栅与共享内存.md)
+- [G.9-训练系统与资产格式](G.9-训练系统与资产格式.md)
+- [G.10-表示集成与跨API同步](G.10-表示集成与跨API同步.md)

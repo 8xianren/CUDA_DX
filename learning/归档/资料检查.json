@@ -3,8 +3,8 @@
   "scope": "current_checkout_documentation",
   "workspace_root": "C:/xf/Cuda/CUDA_DX-publish-20261021",
   "generated_artifact_status": "pending_local_generation",
-  "checked_links": 1082,
-  "local_links_present": 1038,
+  "checked_links": 1202,
+  "local_links_present": 1158,
   "broken_links": [],
   "pending_generated": [
     {
@@ -362,7 +362,7 @@
   ],
   "known_generated_present": [],
   "missing_course_readmes": [],
-  "course_count": 48,
-  "source_script_count": 450,
-  "note_count": 118
+  "course_count": 49,
+  "source_script_count": 495,
+  "note_count": 128
 }

@@ -1,0 +1,11 @@
+{
+  "repository": "pjramg/gaussian_splatting",
+  "revision": "6aaba1b1dd0439c0db464842f8a6600a37e0eae9",
+  "url": "https://huggingface.co/datasets/pjramg/gaussian_splatting/resolve/6aaba1b1dd0439c0db464842f8a6600a37e0eae9/FO_dataset/train/point_cloud/iteration_7000/point_cloud.ply",
+  "sha256": "9f5c643fa18cb5ed6a11441f073133ed1034e3b0656bce5b7b5db3db49161366",
+  "bytes": 183988515,
+  "training": "GraphDeco method, iteration 7000; dataset-author provenance",
+  "trained_locally": false,
+  "metadata_license": "apache-2.0",
+  "source_card": "https://huggingface.co/datasets/pjramg/gaussian_splatting/blob/6aaba1b1dd0439c0db464842f8a6600a37e0eae9/README.md"
+}

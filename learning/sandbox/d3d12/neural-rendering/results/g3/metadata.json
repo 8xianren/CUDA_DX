@@ -1,0 +1,16 @@
+{
+  "device": "NVIDIA GeForce RTX 5070",
+  "compute_capability": "12.0",
+  "driver_api_version": 13030,
+  "runtime_version": 13030,
+  "resolution": [640, 360],
+  "vertical_fov_degrees": 50,
+  "camera": [0,0,-3],
+  "field_effective_bytes": 8392704,
+  "warmup_frames": 8,
+  "measured_frames_per_variant": 40,
+  "reference_step": 0.0009765625,
+  "reference_termination": 0,
+  "error_channels": "linear premultiplied RGBA",
+  "timing": "CUDA events, render only; no readback/statistics; independent of Nsight replay"
+}

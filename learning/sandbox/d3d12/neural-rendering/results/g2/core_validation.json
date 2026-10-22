@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "width": 97, "height": 61,
+  "field_resolution": 128,
+  "cpu_gpu_rgba_rmse": 2.9041756574e-06,
+  "cpu_gpu_max_abs": 5.36441802979e-05,
+  "tolerance": 0.0005,
+  "repeat_max_abs": 0,
+  "skip_max_abs": 0,
+  "jitter_skip_max_abs": 0,
+  "front_mesh_max_alpha": 0,
+  "inside_camera_cpu_gpu": true,
+  "away_camera_transparent": true,
+  "odd_resolution_skip_equivalence": true,
+  "invalid_inputs_rejected": 3,
+  "shared_texture_resize": "validated separately by G10 integration"
+}

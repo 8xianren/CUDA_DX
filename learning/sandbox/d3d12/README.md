@@ -8,6 +8,7 @@
 |---|---|
 |[dynamic-character](dynamic-character/README.md)|H.1–H.7 综合 Demo；玩家输入、仿真、动画、CUDA 蒙皮、DXR 路径追踪按模块组织；当前使用入口|
 |[aa-reconstruction](aa-reconstruction/README.md)|F.1–F.10：MSAA/FXAA/TAA、空间缩放、官方NIS/FSR/XeSS、官方帧生成与序列评测；独立共享实验室|
+|[neural-rendering](neural-rendering/README.md)|G.1–G.10：CUDA体积分、真实NeRF训练/烘焙、CUDA3DGS、参考资产与D3D12共享纹理四视图|
 |[gltf-scene](gltf-scene/README.md)|C.1–C.6 / D.1–D.4：CPU 场景、资产导入、GPU 资源、材质与提交边界；H/PT 复用|
 |[cuda-interop](cuda-interop/README.md)|E.1–E.3：实例/动态顶点共享，External Memory/Fence、帧槽与时间线|
 |[r13-renderer](r13-renderer/README.md)|R.13.3–8：矩阵相机、命中属性、直接光、累积/历史、SDR 显示及窗口 resize|

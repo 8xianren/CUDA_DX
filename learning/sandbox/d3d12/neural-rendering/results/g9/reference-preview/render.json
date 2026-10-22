@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "capability": [12,0],
+  "resolution": [640,360],
+  "full_gaussian_count": 667872,
+  "visible_gaussian_count": 517029,
+  "references": 2079055,
+  "persistent_bytes": 287667136,
+  "scratch_bytes": 25327359,
+  "load_set_scene_ms": 255.6836,
+  "single_render_wall_ms": 3.8765,
+  "gpu_stages_ms": {"project": 1.102272034, "scan": 0.01871999912, "duplicate": 0.1244480014, "sort": 0.3961920142, "ranges": 0.02262400091, "splat": 2.061343908},
+  "alpha_gt_0_01_pixels": 230400,
+  "mean_alpha": 0.9984232167,
+  "rejected": [517029,0,74090,1,751,76001],
+  "measurement": "one warmup plus one measured preview; not a repeated performance benchmark",
+  "scene_transform": "none; original paired asset coordinates",
+  "quality_limit": "teaching rasterizer; no official-image PSNR equivalence claimed"
+}

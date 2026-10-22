@@ -1,0 +1,12 @@
+{
+  "checks_passed":7153,
+  "resolution":[128,96],
+  "gaussians":128,
+  "rgba_max_abs_error":1.788139343e-07,
+  "mesh_occlusion_max_abs_error":1.788139343e-07,
+  "shuffle_bitwise_identical":true,
+  "empty_scene_transparent":true,
+  "block_threads":256,
+  "shared_bytes_per_block":10240,
+  "large_splat_ms":0.1687615998
+}

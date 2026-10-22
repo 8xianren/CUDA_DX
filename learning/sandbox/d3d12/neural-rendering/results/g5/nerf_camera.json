@@ -1,0 +1,80 @@
+{
+  "schema": "cuda-dx-nerf-output-v1",
+  "camera": {
+    "width": 640,
+    "height": 360,
+    "eye": [
+      0.0,
+      0.0,
+      -3.0
+    ],
+    "target": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "vfov_degrees": 50.0,
+    "near": 0.1,
+    "far": 10.0,
+    "fx": 386.01124569172055,
+    "fy": 386.01124569172055,
+    "cx": 320.0,
+    "cy": 180.0,
+    "pixel_center": "x+0.5,y+0.5",
+    "image_origin": "top-left",
+    "forward": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "right": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "camera_axes": "+X right,+Y up,+Z forward",
+    "depth": "conditional expected camera +Z; far when alpha<1e-4"
+  },
+  "format": "little-endian float32; tightly packed row-major H,W,C",
+  "color": "linear RGB, premultiplied alpha, no background, no tone mapping",
+  "depth": "conditional expected positive camera-Z, far=10 if alpha<1e-4; NOT opaque depth",
+  "occlusion": {
+    "foreground_rectangle_world": [
+      -0.18,
+      0.18,
+      -0.8,
+      0.8,
+      -0.65
+    ],
+    "background_world_z": 1.5,
+    "method": "truncate integration at mesh ray intersection"
+  },
+  "samples_per_ray": 64,
+  "inference_and_occluded_wall_seconds": 0.20515989989507943,
+  "producer": "PyTorch trained coefficients -> grid_sample -> host float32 files",
+  "consumer": "G10 host float files -> cudaMemcpyAsync HtoD owned linear buffer -> cudaMemcpy2DToArrayAsync imported D3D12 shared texture; explicit staging, NOT shared PyTorch tensor",
+  "files": {
+    "nerf_color.f32": {
+      "bytes": 3686400,
+      "sha256": "ca90bf2c5775703b94dcb589882928f62ca69dea3472ee7427a299ed71a6f770"
+    },
+    "nerf_depth.f32": {
+      "bytes": 921600,
+      "sha256": "33e3b04071f497e814f6fc3772f95282d3748516c698af1a38f4fbe8924344ac"
+    },
+    "nerf_color_occluded.f32": {
+      "bytes": 3686400,
+      "sha256": "db6dc105e89383bdd120434bf777cbac78b30717dbc056e69c99822b7f74de20"
+    },
+    "nerf_depth_occluded.f32": {
+      "bytes": 921600,
+      "sha256": "847bc3a7293059eaff1300a7ce4327e0321915252950774adf61c58a2549dbbd"
+    }
+  },
+  "metadata_revision": "Consumer wording corrected to actual G10 staging path; float outputs and measured inference unchanged."
+}

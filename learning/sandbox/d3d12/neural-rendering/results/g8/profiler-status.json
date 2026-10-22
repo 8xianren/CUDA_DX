@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-22",
+  "attempted": true,
+  "status": "skipped_with_user_authorization",
+  "reason": "ERR_NVGPUCTRPERM",
+  "requested_sections": ["LaunchStats", "Occupancy", "MemoryWorkloadAnalysis", "SourceCounters"],
+  "measured_hardware_counters": false,
+  "retained_evidence": ["ncu.csv", "memcheck.log", "synccheck.log", "../g7/binning.json"],
+  "authorization": "User explicitly authorized skipping hardware-counter analysis for this round after the failed attempt."
+}

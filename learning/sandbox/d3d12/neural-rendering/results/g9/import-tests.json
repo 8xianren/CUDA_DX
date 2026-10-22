@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tests": 21,
+  "failures": 0,
+  "errors": 0,
+  "scope": "synthetic degree0/3 wire layout + malformed PLY + download integrity; no network"
+}

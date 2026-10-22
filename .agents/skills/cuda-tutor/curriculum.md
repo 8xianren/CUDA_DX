@@ -199,6 +199,8 @@ ReSTIR 和 NRC 放在无偏积分器之后：先能测偏差，再讨论复用�
 
 > 完整分节、依赖和验收标准以 `learning/学习计划.md` 的阶段 G 为准；完成情况记录在 `learning/进度.md`。默认在 D3D12 网格渲染器和 CUDA/D3D12 互操作主线之后开始。
 
+2026-10-22：G.1–G.10声明范围完成，程序在`learning/sandbox/d3d12/neural-rendering/`，十节讲义在`learning/笔记/d3d12/G.*`。G3/G8硬件计数器因ERR_NVGPUCTRPERM，经学习者本次明确授权跳过；其余真实训练/CPU-CUDA/共享纹理/resize/导入与相机验收见results。G仍是独立实验室，不声称已合入H或提供生产训练系统。
+
 - **G.1 发射-吸收体渲染方程**：射线、密度、Alpha、透射率、离散积分与前向合成。
 - **G.2 CUDA 稠密体数据 Ray Marcher**：每像素一线程、三维纹理采样、包围盒求交、共享输出纹理。
 - **G.3 体渲染质量与性能**：步长、抖动、early termination、空空间跳过、occupancy grid 与 Nsight 分析。

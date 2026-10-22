@@ -1,0 +1,122 @@
+{
+  "samples": [
+    {
+      "mode": "mesh",
+      "resolution": [
+        640,
+        360
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.0104,
+      "min_ms": 0.006336,
+      "max_ms": 0.038912,
+      "representation_bytes": 0,
+      "shared_allocation_bytes": 4915200
+    },
+    {
+      "mode": "volume",
+      "resolution": [
+        640,
+        360
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.100848,
+      "min_ms": 0.091168,
+      "max_ms": 0.113088,
+      "representation_bytes": 8392704,
+      "shared_allocation_bytes": 4915200
+    },
+    {
+      "mode": "gaussian",
+      "resolution": [
+        640,
+        360
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.935664,
+      "min_ms": 0.405792,
+      "max_ms": 1.05021,
+      "representation_bytes": 999424,
+      "shared_allocation_bytes": 4915200
+    },
+    {
+      "mode": "nerf_cached",
+      "resolution": [
+        640,
+        360
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.52464,
+      "min_ms": 0.41184,
+      "max_ms": 0.624992,
+      "representation_bytes": 4608000,
+      "shared_allocation_bytes": 4915200
+    },
+    {
+      "mode": "mesh",
+      "resolution": [
+        320,
+        240
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.00704,
+      "min_ms": 0.006048,
+      "max_ms": 0.063456,
+      "representation_bytes": 0,
+      "shared_allocation_bytes": 1638400
+    },
+    {
+      "mode": "volume",
+      "resolution": [
+        320,
+        240
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.085536,
+      "min_ms": 0.081824,
+      "max_ms": 0.109728,
+      "representation_bytes": 8392704,
+      "shared_allocation_bytes": 1638400
+    },
+    {
+      "mode": "gaussian",
+      "resolution": [
+        320,
+        240
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.619552,
+      "min_ms": 0.493952,
+      "max_ms": 0.913888,
+      "representation_bytes": 999424,
+      "shared_allocation_bytes": 1638400
+    },
+    {
+      "mode": "nerf_cached",
+      "resolution": [
+        320,
+        240
+      ],
+      "warmups": 2,
+      "measured": 10,
+      "median_cuda_event_ms": 0.182944,
+      "min_ms": 0.162624,
+      "max_ms": 0.240384,
+      "representation_bytes": 1536000,
+      "shared_allocation_bytes": 1638400
+    }
+  ],
+  "limits": [
+    "stationary matched camera, different scene representations; no cross-scene quality ranking",
+    "event interval includes host launch gaps; excludes D3D mesh/display/present",
+    "nerf_cached measures upload only; actual inference in g5/benchmark.json",
+    "representation bytes excludes runtime scratch; shared bytes is only two exported textures"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "gpu":"NVIDIA GeForce RTX 5070",
+  "cuda_runtime":13030,
+  "cuda_driver_api":13030,
+  "resolution":[640,360],
+  "gaussians":100000,
+  "visible":100000,
+  "references":987538,
+  "tiles":920,
+  "persistent_bytes":59309128,
+  "cub_scratch_bytes":12035583,
+  "warmup":3,
+  "measured_runs":10,
+  "stage_ms":{"projection":0.1379071986,"scan":0.01078400027,"duplicate":0.06734399917,"sort":0.2171392012,"ranges":0.01450880035,"splat":0.1687615998},
+  "cpu_tile_membership_and_order_equal":true,
+  "shuffle_keys_ids_equal":true
+}

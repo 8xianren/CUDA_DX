@@ -1,0 +1,15 @@
+{
+  "status": "WAIVED_BY_USER",
+  "tool": "Nsight Compute 2026.2.0",
+  "error": "ERR_NVGPUCTRPERM",
+  "attempt_log": "ncu_basic.csv",
+  "hardware_counters_collected": false,
+  "bottleneck_attribution": "not established",
+  "measured_without_hardware_counters": [
+    "CUDA event duration",
+    "per-pixel sample count",
+    "early termination ratio"
+  ],
+  "system_settings_changed": false,
+  "user_waiver": "2026-10-22: skip hardware-counter analysis this round; retain measured timing and explicitly mark omission"
+}

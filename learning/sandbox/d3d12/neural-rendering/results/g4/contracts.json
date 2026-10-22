@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "details": [
+    {
+      "name": "center_ray_forward",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "top_left_right_up_sign",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "all_rays_normalized",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "OpenGL_same_world_ray_0",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "COLMAP_same_world_ray_0",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "OpenGL_same_world_ray_12",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "COLMAP_same_world_ray_12",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "OpenGL_same_world_ray_24",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "COLMAP_same_world_ray_24",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "homogeneous_closed_form",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "weights_positive_sum_bounded",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "backprop_matches_central_difference",
+      "pass": true,
+      "error": 9.13921716083621e-13
+    },
+    {
+      "name": "parallel_outside_misses_aabb",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "mesh_truncates_volume_integral",
+      "pass": true,
+      "error": null
+    }
+  ]
+}

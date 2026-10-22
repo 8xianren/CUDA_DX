@@ -1,0 +1,85 @@
+{
+  "repository": "camenduru/gaussian-splatting",
+  "revision": "c63df2ffae19c1d288f81c1d5faf53ff6661be84",
+  "source_ply_url": "https://huggingface.co/camenduru/gaussian-splatting/resolve/c63df2ffae19c1d288f81c1d5faf53ff6661be84/train/point_cloud/iteration_7000/point_cloud.ply",
+  "source_camera_url": "https://huggingface.co/camenduru/gaussian-splatting/resolve/c63df2ffae19c1d288f81c1d5faf53ff6661be84/train/cameras.json",
+  "ply_sha256": "e1bc6c22fa74db350a783385f578be0eb5465c1df0daaedb33fa10c99e10c380",
+  "ply_bytes": 165633787,
+  "camera_git_blob_sha1": "9161764757516dcd273d1e35b96569c81b19c223",
+  "camera_sha256": "f74c0defb7919be2cdd5b8786e733be7dbb2b07b9b89ae53f13258bdd05ea03c",
+  "runtime_sha256": "67425844a3d56ca9e6b8490aedc87311de45bc84ef1e9448cdb664ed91f32313",
+  "camera_count": 301,
+  "source_camera": {
+    "id": 0,
+    "img_name": "00001",
+    "width": 1959,
+    "height": 1090,
+    "position": [
+      -3.0089893469241797,
+      -0.11086489695181866,
+      -3.7527640949141428
+    ],
+    "rotation": [
+      [
+        0.876134201218856,
+        0.06925962026449776,
+        0.47706599800804744
+      ],
+      [
+        -0.04747421839895102,
+        0.9972110940209488,
+        -0.057586739349882114
+      ],
+      [
+        -0.4797239414934443,
+        0.027805376500959853,
+        0.8769787916452908
+      ]
+    ],
+    "fy": 1164.6601287484507,
+    "fx": 1159.588073303806
+  },
+  "output_resolution": [
+    640,
+    360
+  ],
+  "camera_id": 0,
+  "world_to_camera_gs": [
+    [
+      0.8761342012188564,
+      -0.04747421839895104,
+      -0.4797239414934442,
+      0.830724470505506
+    ],
+    [
+      -0.06925962026449778,
+      -0.9972110940209488,
+      -0.027805376500959853,
+      -0.4233041833041023
+    ],
+    [
+      0.47706599800804755,
+      -0.05758673934988211,
+      0.8769787916452907,
+      4.720196679149789
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fx": 378.8342863269197,
+  "fy": 384.65839114627727,
+  "cx": 320.0,
+  "cy": 180.0,
+  "inverse_max_abs_error": 1.2212453270876722e-15,
+  "projection_max_abs_error_pixels": 5.684341886080802e-14,
+  "float32_projection_max_abs_error_pixels": 8.972942737273115e-06,
+  "convention": "JSON rotation/position are C2W with camera +Ydown; GS W2C=diag(1,-1,1,1)*inverse(C2W)",
+  "resize": "fx scales by640/1959; fy scales by360/1090; no bbox normalization of asset",
+  "color_limit": "upstream trained image RGB values; preview clamps without extra gamma, not proven physical linear radiance",
+  "trained_locally": false,
+  "source_training": "paired mirror of GraphDeco train/iteration_7000"
+}

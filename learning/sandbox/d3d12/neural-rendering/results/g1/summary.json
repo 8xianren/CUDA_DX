@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "ray_steps": 80,
+  "weight_sum": 0.99999904987124,
+  "final_transmittance": 9.5012875863891e-07,
+  "exact_center_transmittance": 9.5013033534077e-07,
+  "minimum_weight": 0,
+  "partition_error": 2.2204460492503e-16,
+  "monotonic_image_convergence": true
+}

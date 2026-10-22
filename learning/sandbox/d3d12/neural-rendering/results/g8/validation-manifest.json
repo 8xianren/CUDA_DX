@@ -1,0 +1,21 @@
+{
+  "scope": "G6-G8",
+  "date": "2026-10-22",
+  "build_arch": "sm_120",
+  "validation_command": "tests/gaussian/verify.ps1 -Build -Sanitizer",
+  "checks_passed": 7153,
+  "sanitizer_tools": {
+    "memcheck": "0 errors, full 7153 functional assertions",
+    "synccheck": "0 errors, full 7153 functional assertions"
+  },
+  "hardware_counters": "attempted then skipped with explicit user authorization after ERR_NVGPUCTRPERM",
+  "files": {
+    "src/gaussian/gaussian.cu": "3b71e07b45864dbea57e500757f2ab34eb4aa8e3b130936aeffcd362c1611b71",
+    "src/gaussian/gaussian.h": "5ca65118983a84a4f25386b238bfdeea449a111b0ef44a62ac443ebdc9a50e17",
+    "src/gaussian/gaussian_cpu.cpp": "4374b4335ae830bc316ad8c52f6cc53d75b6821af4c2a5b95df8dca05f8eaa5f",
+    "src/gaussian/projection_math.cuh": "4f24006242aa7173683c5c881cbde31987a7330cf9423d68177191caaebeb842",
+    "tests/gaussian/build.ps1": "33694eb2310110422fabb2d4cc4394e5e5e540f4705036ce635166a3682f32b4",
+    "tests/gaussian/verify.ps1": "1bda0815badd9fad55f78d0738ac17353fb41a53c3fd544aba20fe2990c8ffff",
+    "tests/gaussian/verify_gaussian.cpp": "936b0bbf8b89915db7eb80d81da979fb2dd058fadbb508f141ff71d81002b680"
+  }
+}

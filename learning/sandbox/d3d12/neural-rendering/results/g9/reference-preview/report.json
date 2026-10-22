@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "capability": [
+    12,
+    0
+  ],
+  "resolution": [
+    640,
+    360
+  ],
+  "full_gaussian_count": 667872,
+  "visible_gaussian_count": 517029,
+  "references": 2079055,
+  "persistent_bytes": 287667136,
+  "scratch_bytes": 25327359,
+  "load_set_scene_ms": 255.6836,
+  "single_render_wall_ms": 3.8765,
+  "gpu_stages_ms": {
+    "project": 1.102272034,
+    "scan": 0.01871999912,
+    "duplicate": 0.1244480014,
+    "sort": 0.3961920142,
+    "ranges": 0.02262400091,
+    "splat": 2.061343908
+  },
+  "alpha_gt_0_01_pixels": 230400,
+  "mean_alpha": 0.9984232167,
+  "rejected": [
+    517029,
+    0,
+    74090,
+    1,
+    751,
+    76001
+  ],
+  "measurement": "one warmup plus one measured preview; not a repeated performance benchmark",
+  "scene_transform": "none; original paired asset coordinates",
+  "quality_limit": "teaching rasterizer; no official-image PSNR equivalence claimed",
+  "camera_and_provenance": {
+    "repository": "camenduru/gaussian-splatting",
+    "revision": "c63df2ffae19c1d288f81c1d5faf53ff6661be84",
+    "source_ply_url": "https://huggingface.co/camenduru/gaussian-splatting/resolve/c63df2ffae19c1d288f81c1d5faf53ff6661be84/train/point_cloud/iteration_7000/point_cloud.ply",
+    "source_camera_url": "https://huggingface.co/camenduru/gaussian-splatting/resolve/c63df2ffae19c1d288f81c1d5faf53ff6661be84/train/cameras.json",
+    "ply_sha256": "e1bc6c22fa74db350a783385f578be0eb5465c1df0daaedb33fa10c99e10c380",
+    "ply_bytes": 165633787,
+    "camera_git_blob_sha1": "9161764757516dcd273d1e35b96569c81b19c223",
+    "camera_sha256": "f74c0defb7919be2cdd5b8786e733be7dbb2b07b9b89ae53f13258bdd05ea03c",
+    "runtime_sha256": "67425844a3d56ca9e6b8490aedc87311de45bc84ef1e9448cdb664ed91f32313",
+    "camera_count": 301,
+    "source_camera": {
+      "id": 0,
+      "img_name": "00001",
+      "width": 1959,
+      "height": 1090,
+      "position": [
+        -3.0089893469241797,
+        -0.11086489695181866,
+        -3.7527640949141428
+      ],
+      "rotation": [
+        [
+          0.876134201218856,
+          0.06925962026449776,
+          0.47706599800804744
+        ],
+        [
+          -0.04747421839895102,
+          0.9972110940209488,
+          -0.057586739349882114
+        ],
+        [
+          -0.4797239414934443,
+          0.027805376500959853,
+          0.8769787916452908
+        ]
+      ],
+      "fy": 1164.6601287484507,
+      "fx": 1159.588073303806
+    },
+    "output_resolution": [
+      640,
+      360
+    ],
+    "camera_id": 0,
+    "world_to_camera_gs": [
+      [
+        0.8761342012188564,
+        -0.04747421839895104,
+        -0.4797239414934442,
+        0.830724470505506
+      ],
+      [
+        -0.06925962026449778,
+        -0.9972110940209488,
+        -0.027805376500959853,
+        -0.4233041833041023
+      ],
+      [
+        0.47706599800804755,
+        -0.05758673934988211,
+        0.8769787916452907,
+        4.720196679149789
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "fx": 378.8342863269197,
+    "fy": 384.65839114627727,
+    "cx": 320.0,
+    "cy": 180.0,
+    "inverse_max_abs_error": 1.2212453270876722e-15,
+    "projection_max_abs_error_pixels": 5.684341886080802e-14,
+    "float32_projection_max_abs_error_pixels": 8.972942737273115e-06,
+    "convention": "JSON rotation/position are C2W with camera +Ydown; GS W2C=diag(1,-1,1,1)*inverse(C2W)",
+    "resize": "fx scales by640/1959; fy scales by360/1090; no bbox normalization of asset",
+    "color_limit": "upstream trained image RGB values; preview clamps without extra gamma, not proven physical linear radiance",
+    "trained_locally": false,
+    "source_training": "paired mirror of GraphDeco train/iteration_7000"
+  },
+  "float_sha256": "133f8cd31855900783c67e71b754753055344d3b52e8e462c24eafa82bd722fd",
+  "png_sha256": "970b61544a670bb3dbdfa688ae53652462c36bcaa44aaa5f250d871dc76e3622",
+  "output_color": "clamped upstream trained RGB values, black background, no extra gamma",
+  "output_rgb_mean": [
+    0.6510821580886841,
+    0.7071789503097534,
+    0.742211639881134
+  ],
+  "source_hashes": {
+    "tests\\assets\\reference_render.cpp": "96203031f16cbd935f696751d785adbb5a6967c5d2c1e269c00b265a9bb79cfc",
+    "tests\\assets\\reference_build.ps1": "1fab3cccf4c2081b1df1ab33d88442b86cb417978bdf8625307c03ea12f49287",
+    "python\\assets\\reference_camera.py": "93821cc6f4d4b0ea16048446aab9626a755f558329ab3a5e2c9967dafd4bbeaa",
+    "python\\assets\\reference_preview.py": "8c2a6f9c4bb36bf0b6b461303e4268ee5337f4e6763de70b064c346616e254a4",
+    "src\\gaussian\\gaussian.cu": "3b71e07b45864dbea57e500757f2ab34eb4aa8e3b130936aeffcd362c1611b71",
+    "src\\gaussian\\gaussian.h": "5ca65118983a84a4f25386b238bfdeea449a111b0ef44a62ac443ebdc9a50e17",
+    "src\\gaussian\\projection_math.cuh": "4f24006242aa7173683c5c881cbde31987a7330cf9423d68177191caaebeb842"
+  }
+}

@@ -6,6 +6,8 @@
 
 新增[F.1–F.10抗锯齿、重建与帧生成实验室](learning/sandbox/d3d12/aa-reconstruction/README.md)：含十节讲义、官方SDK恢复脚本、固定序列质量与GPU性能记录。H动态角色Demo仍是当前综合应用，F的功能在独立实验室验收。
 
+新增[G.1–G.10体渲染、NeRF与3DGS实验室](learning/sandbox/d3d12/neural-rendering/README.md)：十节讲义、真实训练、CPU/CUDA对照、预训练资产/相机和D3D12共享纹理验收；硬件计数器按用户明确授权跳过。
+
 本仓库**不是** [NVIDIA accelerated-computing-hub](https://github.com/NVIDIA/accelerated-computing-hub) 的镜像。官方教程仍在本地克隆里跟踪 NVIDIA `origin`；这里只放学习材料：
 
 | 路径 | 内容 |

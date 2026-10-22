@@ -1,0 +1,14 @@
+build/
+.venv/
+external/
+downloads/
+*.f32
+*.u32
+*.gsbin
+*.pt
+*.pth
+*.npz
+*.npy
+*.ply
+!results/**/*.log
+results/g9/reference-preview/converter-work/

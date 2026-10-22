@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "torch": "2.14.1+cu130",
+  "torch_cuda": "13.0",
+  "python": "3.13.7",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "capability": [
+    12,
+    0
+  ],
+  "compiled_arches": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "seed": 20261022,
+  "training_views": 12,
+  "training_resolution": [
+    32,
+    32
+  ],
+  "steps": 1800,
+  "rays_per_step": 512,
+  "samples_per_ray": 48,
+  "initial_batch_rgba_mse": 0.04340431094169617,
+  "first_gradient_l2": 0.04959513992071152,
+  "final_all_training_rgba_mse": 9.771372788236476e-06,
+  "final_all_training_rgb_mse": 8.245649041782599e-06,
+  "held_out_rgb_mse": 1.2941555723955389e-05,
+  "held_out_rgb_psnr": 48.88013513333657,
+  "training_wall_seconds": 5.054079600027762,
+  "training_peak_allocated_bytes": 108442624,
+  "parameters": 15117,
+  "checkpoint_bytes": 65124,
+  "checkpoint_sha256": "916b13000990e5f800c4d409fdfcd65870ea0ed14ff6cde6ef30d5d1750c2673",
+  "source_hashes": {
+    "benchmark.py": "dd97b888861d2171b06af5277763459fbb997a80daafabd624f18930787da9eb",
+    "camera.py": "e23d991185e2e3525a92e2a00fb23978e834c8edd35ea71d5c08e507c4291a3d",
+    "fields.py": "82dc1fdefaa2034a144663d40abacde53199c351e9477cbfacf21c10d70b0d8b",
+    "rendering.py": "9a53d02484a6b074cac67c309bf62f9c403f9ba16c284ae082e5c11179a50b3b",
+    "train.py": "6ed1ec299385b18009cf2b62acf7c80708f684b62df976f9e2bbc316b827a14a"
+  },
+  "limits": [
+    "synthetic RGBA supervision, not RGB-photo production reconstruction",
+    "small positional MLP with linear directional logits; not original NeRF architecture",
+    "training wall time includes sparse progress synchronization; dataset generation excluded"
+  ],
+  "postmeasurement_metadata_edit": {
+    "file": "benchmark.py",
+    "measured_sha256": "dd97b888861d2171b06af5277763459fbb997a80daafabd624f18930787da9eb",
+    "current_sha256": "3d7526360a708b4f6fb41f3ebeb2dcce4701d99804378ceb9ed541d175938b27",
+    "description": "Consumer metadata string and corresponding comments only; algorithms, tensor values and timing code unchanged."
+  }
+}

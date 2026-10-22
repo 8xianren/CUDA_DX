@@ -6,6 +6,7 @@
 |---|---|
 |直接运行当前Demo|[程序说明与双击启动](sandbox/d3d12/dynamic-character/README.md)|
 |复习 F.1–F.10 抗锯齿、重建、超分与帧生成|[F 共享实验室与十节讲义](sandbox/d3d12/aa-reconstruction/README.md)|
+|复习 G.1–G.10 体渲染、NeRF与3DGS|[G 共享实验室与十节讲义](sandbox/d3d12/neural-rendering/README.md)|
 |知道已经学到哪里|[当前学习进度](进度.md)|
 |寻找任意课程的程序|[全部资料导航](资料导航.md)|
 |查课堂讲义|[五条线路讲义总索引](笔记/README.md)|
