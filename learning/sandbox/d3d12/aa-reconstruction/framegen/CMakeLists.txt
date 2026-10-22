@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.24)
+project(F9FrameGeneration LANGUAGES CXX)
+add_executable(framegen_demo ../src/framegen_demo.cpp)
+target_compile_features(framegen_demo PRIVATE cxx_std_17)
+target_compile_definitions(framegen_demo PRIVATE UNICODE _UNICODE NOMINMAX WIN32_LEAN_AND_MEAN)
+target_compile_options(framegen_demo PRIVATE /utf-8 /W4 /EHsc)
+target_include_directories(framegen_demo PRIVATE "${FFX_ROOT}/Kits/FidelityFX")
+target_link_libraries(framegen_demo PRIVATE d3d12 dxgi d3dcompiler)

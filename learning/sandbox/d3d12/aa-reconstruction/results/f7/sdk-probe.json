@@ -1,0 +1,17 @@
+{
+  "scope":"initialization, quality-size query, resize lifecycle, missing DLL fallback; no image-quality claim",
+  "modes":[
+    {"sdk":"FSR","quality_index":0,"initialized":true,"recommended_width":640,"recommended_height":360,"jitter_phases":8,"provider":"3.1.5"},
+    {"sdk":"FSR","quality_index":1,"initialized":true,"recommended_width":426,"recommended_height":240,"jitter_phases":18,"provider":"3.1.5"},
+    {"sdk":"FSR","quality_index":2,"initialized":true,"recommended_width":376,"recommended_height":211,"jitter_phases":23,"provider":"3.1.5"},
+    {"sdk":"FSR","quality_index":3,"initialized":true,"recommended_width":320,"recommended_height":180,"jitter_phases":32,"provider":"3.1.5"},
+    {"sdk":"XeSS","quality_index":0,"initialized":true,"recommended_width":640,"recommended_height":360,"jitter_phases":8,"provider":"XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime)"},
+    {"sdk":"XeSS","quality_index":1,"initialized":true,"recommended_width":377,"recommended_height":212,"jitter_phases":24,"provider":"XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime)"},
+    {"sdk":"XeSS","quality_index":2,"initialized":true,"recommended_width":320,"recommended_height":180,"jitter_phases":32,"provider":"XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime)"},
+    {"sdk":"XeSS","quality_index":3,"initialized":true,"recommended_width":279,"recommended_height":157,"jitter_phases":43,"provider":"XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime)"}
+  ],
+  "resize_lifecycle_pass":true,
+  "missing_dll_returns_fallback":true,
+  "debug_warning_error":0,
+  "pass":true
+}

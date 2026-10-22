@@ -1,0 +1,23 @@
+[
+  {
+    "file": "build/deps/fidelityfx/Samples/Upscalers/FidelityFX_FSR/dx12/x64/Release/amd_fidelityfx_loader_dx12.dll",
+    "sha256": "e2d85aa05a9bd9ed8b38935fdf5199372cca6f74c12015143bb6f945ee1608aa",
+    "signature_status": "Valid",
+    "signer": "CN=Advanced Micro Devices, O=Advanced Micro Devices, S=California, C=US",
+    "version": "2.3.0.2740"
+  },
+  {
+    "file": "build/deps/fidelityfx/Samples/Upscalers/FidelityFX_FSR/dx12/x64/Release/amd_fidelityfx_upscaler_dx12.dll",
+    "sha256": "d0dcccc74a43c44ba435b7a369b456e0970d8a4464e4bd683119b374f2c9fb46",
+    "signature_status": "Valid",
+    "signer": "CN=Advanced Micro Devices, O=Advanced Micro Devices, S=California, C=US",
+    "version": "4.1.1.2740"
+  },
+  {
+    "file": "build/deps/xess/bin/libxess.dll",
+    "sha256": "251659dd84a3e84de67c886a4186e01f3eca49b00641906fe38bb6b807e5d5b7",
+    "signature_status": "Valid",
+    "signer": "CN=Intel Corporation, O=Intel Corporation, S=California, C=US",
+    "version": "2.0.2.68"
+  }
+]

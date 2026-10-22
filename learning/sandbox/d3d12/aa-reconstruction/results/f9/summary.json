@@ -1,0 +1,324 @@
+{
+  "pass": true,
+  "measurement_boundary": "Primary displayed cadence is independent PresentMon ETW DisplayedTime; DXGI present-ID polling is cross-check only (SDK proxy/VRR/polling semantics may differ). No optical sensor or end-to-end input-to-photon claim. GPU timings include D3D12 Debug layer.",
+  "warmup_real_frames_excluded": 30,
+  "modes": {
+    "off": {
+      "runtime": {
+        "adapter": "NVIDIA GeForce RTX 5070",
+        "fg_provider": "3.1.6",
+        "swapchain_provider": "3.1.7",
+        "fg_enabled": false,
+        "debug_layer_enabled": true,
+        "vsync": false,
+        "width": 1280,
+        "height": 720,
+        "measurement_window_topmost": true,
+        "real_frames": 240,
+        "real_display_callbacks": 240,
+        "generated_display_callbacks": 0,
+        "generation_dispatch_calls": 0,
+        "requested_generated_frames": 0,
+        "dxgi_last_present_count": 240,
+        "dxgi_frame_statistics_hresult": 0,
+        "dxgi_statistics_valid": true,
+        "dxgi_statistics_present_count": 240,
+        "dxgi_statistics_refresh_count": 8953128,
+        "dxgi_observed_display_changes": 238,
+        "dxgi_statistics_failed_polls": 0,
+        "max_statistics_poll_gap_ms": 11.2982,
+        "debug_errors": 0,
+        "ffx_errors": 0,
+        "callback_errors": 0,
+        "physical_scanout_measured": false,
+        "end_to_end_input_latency_measured": false
+      },
+      "metrics": {
+        "scene_prepare_gpu_ms": {
+          "count": 210,
+          "mean": 0.02406247619047619,
+          "p50": 0.023488,
+          "p95": 0.023648,
+          "min": 0.02256,
+          "max": 0.101376
+        },
+        "fg_gpu_ms": {
+          "count": 210,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "input_to_cpu_submit_ms": {
+          "count": 210,
+          "mean": 0.2899428577650381,
+          "p50": 0.235350012779,
+          "p95": 0.439300060272,
+          "min": 0.147199988365,
+          "max": 1.89800000191
+        },
+        "present_cpu_ms": {
+          "count": 210,
+          "mean": 0.4675357143084,
+          "p50": 0.4827499985695,
+          "p95": 0.895799994469,
+          "min": 0.159100055695,
+          "max": 2.31470000744
+        },
+        "real_sample_interval_ms": {
+          "count": 209,
+          "mean": 16.66610526354119,
+          "p50": 16.703999996185303,
+          "p95": 16.97000002861023,
+          "min": 16.081000089645386,
+          "max": 17.19099998474121
+        },
+        "real_sampling_fps": 60.00202111933148,
+        "os_displayed_interval_ms": {
+          "count": 203,
+          "mean": 16.68022709359606,
+          "p50": 16.677,
+          "p95": 16.7343,
+          "min": 16.5711,
+          "max": 16.8292
+        },
+        "etw_displayed_fps": 59.95122214996246,
+        "etw_present_records": 206,
+        "etw_displayed_records": 203,
+        "etw_dropped_records": 3,
+        "present_modes": [
+          "Composed: Flip",
+          "Hardware Composed: Independent Flip",
+          "Hardware: Independent Flip"
+        ],
+        "etw_frame_start_to_display_ms": {
+          "count": 203,
+          "mean": 26.112187684729065,
+          "p50": 26.1019,
+          "p95": 27.4531,
+          "min": 23.5103,
+          "max": 27.8133
+        },
+        "dxgi_observed_display_interval_ms": {
+          "count": 208,
+          "mean": 16.670673076923077,
+          "p50": 16.6810000538826,
+          "p95": 17.825999975204468,
+          "min": 15.141999959945679,
+          "max": 18.174000024795532
+        },
+        "dxgi_observed_present_id_change_rate": 59.985580389329485,
+        "dxgi_observed_display_changes": 209,
+        "etw_valid_display_measurement": true,
+        "dxgi_sync_intervals_ms": {
+          "count": 208,
+          "mean": 16.680399038470707,
+          "p50": 16.680000066757202,
+          "p95": 16.681999921798706,
+          "min": 16.67899990081787,
+          "max": 16.682000041007996
+        }
+      },
+      "images": {
+        "previous-real": {
+          "width": 1280,
+          "height": 720,
+          "ui_checked_pixels": 8400,
+          "ui_bad_pixels": 0,
+          "crosshair_checked_pixels": 500,
+          "crosshair_bad_pixels": 0,
+          "red_centroid_x": 885.5,
+          "sha256": "8122f3fde9774c431ddebbbc54086a4c92faf98b01fdf7c4010b97ce1ed54a84"
+        },
+        "current-real": {
+          "width": 1280,
+          "height": 720,
+          "ui_checked_pixels": 8400,
+          "ui_bad_pixels": 0,
+          "crosshair_checked_pixels": 500,
+          "crosshair_bad_pixels": 0,
+          "red_centroid_x": 881.5,
+          "sha256": "e75df582bfa96b0fcf099d5ec8281ec38aa8993b711280578166d4592ae11fff"
+        }
+      },
+      "run_provenance": {
+        "source_sha256": {
+          "src/framegen_demo.cpp": "05d69e0a8c603006b567f2e1da2b6aae617da9e04e1b22f397003c574ae00b78",
+          "shaders/framegen_scene.hlsl": "2ae7cea4f19b22ee0c53ea8d2fe76d555921e66cf6b927d7cdd8bca45fa30a06",
+          "framegen/CMakeLists.txt": "757bc702e7f4c3b56bd58933a8c382726fdcdf26d5a79c652660a8ef4f35520a",
+          "build_framegen.ps1": "20a2338ba6b532f83ac7c594ba581c03b82cd3d3477c390011afbd74ff907667",
+          "verify_framegen.py": "345578aed3ba92adbd7d980dc3e68e97aedd83e89d5e5561810d6f32fcbe7b32",
+          "sdk_manifest.json": "dc1da96ffd39c9a49044184c8348afa695c57ccc01d15e2e903ad9c4c78c6f7b",
+          "framegen/presentmon-manifest.json": "dafe6e04c18e4fbe387d6de439c76dc481e06ea98fd3d19d606d38b83c47820e"
+        },
+        "executable_sha256": "6cd780892e029770f0874d01da9515071e6b9c74078318a4899f9647b6f81b58",
+        "presentmon_sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af"
+      },
+      "pass": true
+    },
+    "on": {
+      "runtime": {
+        "adapter": "NVIDIA GeForce RTX 5070",
+        "fg_provider": "3.1.6",
+        "swapchain_provider": "3.1.7",
+        "fg_enabled": true,
+        "debug_layer_enabled": true,
+        "vsync": false,
+        "width": 1280,
+        "height": 720,
+        "measurement_window_topmost": true,
+        "real_frames": 240,
+        "real_display_callbacks": 240,
+        "generated_display_callbacks": 240,
+        "generation_dispatch_calls": 240,
+        "requested_generated_frames": 240,
+        "dxgi_last_present_count": 480,
+        "dxgi_frame_statistics_hresult": 0,
+        "dxgi_statistics_valid": true,
+        "dxgi_statistics_present_count": 480,
+        "dxgi_statistics_refresh_count": 8953856,
+        "dxgi_observed_display_changes": 465,
+        "dxgi_statistics_failed_polls": 0,
+        "max_statistics_poll_gap_ms": 5.6016,
+        "debug_errors": 0,
+        "ffx_errors": 0,
+        "callback_errors": 0,
+        "physical_scanout_measured": false,
+        "end_to_end_input_latency_measured": false
+      },
+      "metrics": {
+        "scene_prepare_gpu_ms": {
+          "count": 210,
+          "mean": 0.047152,
+          "p50": 0.042672,
+          "p95": 0.044736,
+          "min": 0.0416,
+          "max": 0.258784
+        },
+        "fg_gpu_ms": {
+          "count": 210,
+          "mean": 0.41572373333333335,
+          "p50": 0.401488,
+          "p95": 0.541984,
+          "min": 0.393184,
+          "max": 0.933824
+        },
+        "input_to_cpu_submit_ms": {
+          "count": 210,
+          "mean": 0.5320361920765714,
+          "p50": 0.41674995422399996,
+          "p95": 1.54519999027,
+          "min": 0.215499997139,
+          "max": 2.25429999828
+        },
+        "present_cpu_ms": {
+          "count": 210,
+          "mean": 0.6036966687156476,
+          "p50": 0.542200028896,
+          "p95": 0.854200005531,
+          "min": 0.422600030899,
+          "max": 1.03250002861
+        },
+        "real_sample_interval_ms": {
+          "count": 209,
+          "mean": 16.666660287163474,
+          "p50": 16.689000010490417,
+          "p95": 17.019999980926514,
+          "min": 16.079000115394592,
+          "max": 17.325999975204468
+        },
+        "real_sampling_fps": 60.000022966220286,
+        "os_displayed_interval_ms": {
+          "count": 367,
+          "mean": 9.481429972752043,
+          "p50": 8.3287,
+          "p95": 16.8708,
+          "min": 6.3821,
+          "max": 23.8831
+        },
+        "etw_displayed_fps": 105.46932296856313,
+        "etw_present_records": 367,
+        "etw_displayed_records": 367,
+        "etw_dropped_records": 0,
+        "present_modes": [
+          "Hardware: Independent Flip"
+        ],
+        "etw_frame_start_to_display_ms": {
+          "count": 367,
+          "mean": 9.609213896457765,
+          "p50": 8.4177,
+          "p95": 16.9911,
+          "min": 6.8388,
+          "max": 23.9313
+        },
+        "dxgi_observed_display_interval_ms": {
+          "count": 418,
+          "mean": 8.30272488046491,
+          "p50": 8.334999978542328,
+          "p95": 9.337000012397766,
+          "min": 5.6269999742507935,
+          "max": 10.824999928474426
+        },
+        "dxgi_observed_present_id_change_rate": 120.44238661368304,
+        "dxgi_observed_display_changes": 419,
+        "etw_valid_display_measurement": true,
+        "dxgi_sync_intervals_ms": {
+          "count": 418,
+          "mean": 8.300224880567578,
+          "p50": 0.0,
+          "p95": 16.680999994277954,
+          "min": 0.0,
+          "max": 16.682000041007996
+        },
+        "generated_centroid_midpoint_error_pixels": 0.23915401301519523
+      },
+      "images": {
+        "previous-real": {
+          "width": 1280,
+          "height": 720,
+          "ui_checked_pixels": 8400,
+          "ui_bad_pixels": 0,
+          "crosshair_checked_pixels": 500,
+          "crosshair_bad_pixels": 0,
+          "red_centroid_x": 885.5,
+          "sha256": "8122f3fde9774c431ddebbbc54086a4c92faf98b01fdf7c4010b97ce1ed54a84"
+        },
+        "current-real": {
+          "width": 1280,
+          "height": 720,
+          "ui_checked_pixels": 8400,
+          "ui_bad_pixels": 0,
+          "crosshair_checked_pixels": 500,
+          "crosshair_bad_pixels": 0,
+          "red_centroid_x": 881.5,
+          "sha256": "e75df582bfa96b0fcf099d5ec8281ec38aa8993b711280578166d4592ae11fff"
+        },
+        "generated": {
+          "width": 1280,
+          "height": 720,
+          "ui_checked_pixels": 8400,
+          "ui_bad_pixels": 0,
+          "crosshair_checked_pixels": 500,
+          "crosshair_bad_pixels": 0,
+          "red_centroid_x": 883.7391540130152,
+          "sha256": "01864d72e217f83d6079ab74c159ac4a70957d78346e014339febd157f29c12d"
+        }
+      },
+      "run_provenance": {
+        "source_sha256": {
+          "src/framegen_demo.cpp": "05d69e0a8c603006b567f2e1da2b6aae617da9e04e1b22f397003c574ae00b78",
+          "shaders/framegen_scene.hlsl": "2ae7cea4f19b22ee0c53ea8d2fe76d555921e66cf6b927d7cdd8bca45fa30a06",
+          "framegen/CMakeLists.txt": "757bc702e7f4c3b56bd58933a8c382726fdcdf26d5a79c652660a8ef4f35520a",
+          "build_framegen.ps1": "20a2338ba6b532f83ac7c594ba581c03b82cd3d3477c390011afbd74ff907667",
+          "verify_framegen.py": "345578aed3ba92adbd7d980dc3e68e97aedd83e89d5e5561810d6f32fcbe7b32",
+          "sdk_manifest.json": "dc1da96ffd39c9a49044184c8348afa695c57ccc01d15e2e903ad9c4c78c6f7b",
+          "framegen/presentmon-manifest.json": "dafe6e04c18e4fbe387d6de439c76dc481e06ea98fd3d19d606d38b83c47820e"
+        },
+        "executable_sha256": "6cd780892e029770f0874d01da9515071e6b9c74078318a4899f9647b6f81b58",
+        "presentmon_sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af"
+      },
+      "pass": true
+    }
+  }
+}

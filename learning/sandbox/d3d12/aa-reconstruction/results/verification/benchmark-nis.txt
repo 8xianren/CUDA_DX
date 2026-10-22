@@ -1,0 +1,3 @@
+adapter=NVIDIA GeForce RTX 5070
+debug_disabled_performance_mode
+F run passed mode=bench method=nis

@@ -14,7 +14,7 @@ from urllib.parse import unquote
 LEARNING = Path(__file__).resolve().parents[1]
 REPO = LEARNING.parent
 EXCLUDE = {'build', 'results', 'downloads', 'runtime', 'node_modules', '.git',
-           '__pycache__', '.venv', 'venv', '_deps', 'plot_packages', 'third_party'}
+           '__pycache__', '.venv', 'venv', '_deps', 'plot_packages', 'third_party', 'external'}
 LINES = [('cuda', 'CUDA'), ('particles', '粒子'), ('d3d12', 'D3D12 / DXR'),
          ('path_tracing', '路径追踪')]
 CODE = {'.cu', '.cuh', '.cpp', '.h', '.hpp', '.hlsl', '.hlsli', '.py', '.ps1'}

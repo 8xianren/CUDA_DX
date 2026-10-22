@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "required_frames": 120,
+  "complete_methods": [
+    "reference",
+    "noaa",
+    "msaa4",
+    "fxaa",
+    "taa",
+    "taa-no-reprojection",
+    "taa-no-rejection",
+    "taa-no-clamp",
+    "bilinear",
+    "bicubic",
+    "nis",
+    "fsr-native",
+    "fsr-quality",
+    "fsr-balanced",
+    "fsr-performance",
+    "xess-native",
+    "xess-quality",
+    "xess-balanced",
+    "xess-performance"
+  ],
+  "missing": []
+}

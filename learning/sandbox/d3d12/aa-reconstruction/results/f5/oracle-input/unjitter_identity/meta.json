@@ -1,0 +1,26 @@
+{
+  "name": "unjitter_identity",
+  "entry": "UnjitterCS",
+  "input_width": 16,
+  "input_height": 12,
+  "output_width": 16,
+  "output_height": 12,
+  "flags": 30,
+  "jitter_uv": [
+    0.0,
+    0.0
+  ],
+  "previous_jitter_uv": [
+    0,
+    0
+  ],
+  "history_weight": 0.9,
+  "depth_threshold": 0.02,
+  "tolerance": 0.0002,
+  "current": "results/f5/oracle-input/unjitter_identity/current.f32",
+  "history": "results/f5/oracle-input/unjitter_identity/history.f32",
+  "motion_depth": "results/f5/oracle-input/unjitter_identity/motion_depth.f32",
+  "previous_depth": "results/f5/oracle-input/unjitter_identity/previous_depth.f32",
+  "reactive": "results/f5/oracle-input/unjitter_identity/reactive.f32",
+  "output": "results/f5/oracle-input/unjitter_identity/output.f32"
+}

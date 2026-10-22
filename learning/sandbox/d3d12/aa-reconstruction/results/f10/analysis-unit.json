@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "execution": "CPU analysis mathematics only",
+  "checks": [
+    "known_HDR_MSE_0.0625",
+    "constant_error_has_zero_temporal_delta",
+    "cut_pair_excluded",
+    "depth_disocclusion_4_pixels",
+    "ROI_sample_count_12",
+    "missing_frame_rejected",
+    "official_SDK_fallback_rejected_despite_complete_frames"
+  ]
+}

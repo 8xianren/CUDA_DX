@@ -1,0 +1,41 @@
+{
+  "verified_on": "2026-10-22",
+  "download_directory": "build/deps",
+  "redistribution": "本仓库仅提交自编adapter和下载清单，不提交SDK头文件、源码、模型或DLL；第三方各组件许可分别适用。",
+  "packages": [
+    {
+      "name": "fidelityfx",
+      "version": "2.3.0",
+      "url": "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases/download/v2.3.0/FidelityFX-Samples-v2.3.0-prebuilt.zip",
+      "sha256": "f90890b9323bb2f4f2404ac4cdc9395e8495ecdac6f7aa0bcdf1ad1848422273",
+      "bytes": 127451548,
+      "hash_source": "GitHub release asset digest + local SHA256",
+      "license": "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/v2.3.0/docs/license.md",
+      "purpose": "官方签名loader/upscaler/framegeneration DLL；RTX5070使用实际provider查询结果，不能称FSR4已运行"
+    },
+    {
+      "name": "fidelityfx-source",
+      "version": "2.3.0",
+      "url": "https://codeload.github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/zip/refs/tags/v2.3.0",
+      "sha256": "e7f274930086405071c01b4e7e1de8cd3bb9fbcb987d711ebf65169464c28455",
+      "bytes": 201409912,
+      "hash_source": "local SHA256 of official tag archive; not a publisher signature",
+      "license": "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/v2.3.0/docs/license.md",
+      "purpose": "官方API头、参考实现和文档；API头MIT，二进制/其他文件应按总许可例外清单核对"
+    },
+    {
+      "name": "xess",
+      "version": "3.0.2",
+      "url": "https://github.com/intel/xess/releases/download/v3.0.2/XeSS_SDK_3.0.2.zip",
+      "sha256": "88b8a373f30e33f3558a77a93e634f11b8132fc3047ea1a8edeead32b8471990",
+      "bytes": 76839749,
+      "hash_source": "GitHub release asset digest + local SHA256",
+      "license": "https://github.com/intel/xess/blob/v3.0.2/LICENSE.txt",
+      "purpose": "官方XeSS-SR D3D12头与libxess.dll；包版本与xessGetVersion报告的SR runtime版本区分记录"
+    }
+  ],
+  "interface_only_references": [
+    {"name": "DLSS", "version": "310.9.16", "url": "https://github.com/NVIDIA/DLSS/releases/tag/v310.9.16", "scope": "API/input mapping only; not dispatched in this course"},
+    {"name": "Streamline", "version": "2.14.16", "url": "https://github.com/NVIDIA-RTX/Streamline/releases/tag/v2.14.16", "scope": "API/input mapping only; not dispatched in this course"}
+  ]
+}

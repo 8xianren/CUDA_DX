@@ -1,0 +1,240 @@
+{
+  "pass": true,
+  "scope": "F1-F10 declared teaching and SDK integration acceptance; not H demo production integration",
+  "environment": {
+    "recorded_at": "2026-10-22T10:24:56.211584+08:00",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.2",
+    "gpu": "NVIDIA GeForce RTX 5070, 610.88, 12227 MiB",
+    "scene": "640x360 output; fixed time frame/60; camera cut frame60; linear HDR; 4x-axis raster box reference",
+    "benchmark": "19 modes, 40 frames each; first8 excluded; Debug/GPU validation disabled only for benchmark; offscreen no Present",
+    "gpu_validation": "correctness runs enable D3D12 Debug and GPU-based validation; F9 has separate window/ETW evidence"
+  },
+  "checks": [
+    {
+      "path": "results/f1/summary.json",
+      "pass": true,
+      "sha256": "5ee03f9f47c1ff03e2c178bde4cbd0dadb1a759f61318c83ae5d9315bb79ecc9"
+    },
+    {
+      "path": "results/f2/summary.json",
+      "pass": true,
+      "sha256": "b5f7f77b8284132ce9dd7baf9ef29ef35537d0f1e33440d4d264cb82c91344a1"
+    },
+    {
+      "path": "results/f4/cpu-contract.json",
+      "pass": true,
+      "sha256": "c21faae676080c8ea4c91d488c2d706162366f79dffce994c0d1d0fac932b38c"
+    },
+    {
+      "path": "results/f4/gpu-summary.json",
+      "pass": true,
+      "sha256": "805c2e74cc3a392aac33ca69331533918c3aa0bdec366e837aa9430c77f6adbf"
+    },
+    {
+      "path": "results/f5/gpu-oracle.json",
+      "pass": true,
+      "sha256": "1dfd1f80da0e2d90ad1d894cc203000461f0a8851ddaadcbf45eb8cd8426ad37"
+    },
+    {
+      "path": "results/f6/summary.json",
+      "pass": true,
+      "sha256": "52ccf36905fab562852f2cc0f9a90d9e2b34284f348ad3584775403884258091"
+    },
+    {
+      "path": "results/f7/sdk-probe.json",
+      "pass": true,
+      "sha256": "82df24db31fb110eee53f8fbde732dbb8670a0352babe07e54a98595e866c21f"
+    },
+    {
+      "path": "results/f7/sdk-contracts.json",
+      "pass": true,
+      "sha256": "a58618a0cbcd6870f47806e709e99595e9ffb26d9def258510ad4342d737c352"
+    },
+    {
+      "path": "results/f9/summary.json",
+      "pass": true,
+      "sha256": "2ec4f809a6fce5222e858bcb4c3d23ac70afe5f09c02d81fb296e50418243724"
+    },
+    {
+      "path": "results/f10/analysis-unit.json",
+      "pass": true,
+      "sha256": "3d3127abcba18afe078725700e3afa0f962dccf6d9f40fb2d93d5a31690985af"
+    },
+    {
+      "path": "results/f10/quality/summary.json",
+      "pass": true,
+      "sha256": "07a524174f76d23a243a3fcb246167e1a28764e0bc0b453576127544b8e73a73"
+    },
+    {
+      "method": "reference",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "noaa",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "msaa4",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "fxaa",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "taa",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "taa-no-reprojection",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "taa-no-rejection",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "taa-no-clamp",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "bilinear",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "bicubic",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "nis",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "fsr-native",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "fsr-quality",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "fsr-balanced",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "fsr-performance",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "xess-native",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "xess-quality",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "xess-balanced",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "method": "xess-performance",
+      "pass": true,
+      "sequence_frames": 120,
+      "benchmark_frames": 40,
+      "contract_errors": []
+    },
+    {
+      "case": "missing_sdk_renders_bilinear",
+      "pass": true
+    },
+    {
+      "case": "fsr_dynamic_and_resize_dispatch",
+      "pass": true
+    }
+  ],
+  "source_sha256": {
+    "src/framegen_demo.cpp": "05d69e0a8c603006b567f2e1da2b6aae617da9e04e1b22f397003c574ae00b78",
+    "src/gpu_resources.cpp": "761df9b9fb2496c9e200f67fa3efc020d75ac19a3a0477160ec2de96af4c8089",
+    "src/gpu_resources.h": "86edccd1c5b1e900f1f7c9524955a1e6deab08503fc733da15e3e3823e87447d",
+    "src/main.cpp": "037489211002812cecfcf240e6c7edb6d7d64d5835c2c9f3700517d36db1bf87",
+    "src/post_chain.cpp": "a714160e8be55a0f5482c32d5dc7c9a142415643d2a56aec1357eb8b841cf397",
+    "src/post_chain.h": "cc3b008e79189aae5e91184e608d6bf4b26d3fbd529b3c6e7f4c3beafc696fff",
+    "src/scene.cpp": "00c3e14575414fd915ab4b6951e8debc9d39bcea57cc3c18031e8009478e6022",
+    "src/scene.h": "4ce8c85ec31c7e1d5288555845bf15577a8e37f3e9c634a9966f2eb46cd1d9fa",
+    "src/sdk_probe.cpp": "544537005c5008d05ae1bb70a62effe2bfccd6b097770b8de429456b824520c4",
+    "src/sdk_upscalers.cpp": "0e9cce6b5142a5954f343695e1fbb77bb2112083e4982d48dd071b4daa345723",
+    "src/sdk_upscalers.h": "0b7b93569c906a220b1888baf403fe43fc0828a62345b8b7c6b90a0ba1fbe8fc",
+    "src/temporal_contract.h": "080c4dd068f441612e43a07845f9369f7fa320381cfa24783cc753c937f17562",
+    "shaders/display.hlsl": "2738223c0c5c41cbce96f04c8c2856c68155f9c2773c06e82fa791999945f90a",
+    "shaders/framegen_scene.hlsl": "2ae7cea4f19b22ee0c53ea8d2fe76d555921e66cf6b927d7cdd8bca45fa30a06",
+    "shaders/nis.hlsl": "43c456e8ef208fee0c66bda5e2a467295c5eaaadcf2f64d5c8cc94c3d26cf8d9",
+    "shaders/post.hlsl": "a100651f4728aa4a848a960a520f8616dc8870981ed0f57480e038624870ecaa",
+    "shaders/reference.hlsl": "01df0eade990f58953fc4e29fa4ba433d42a666a448b8a0b4cebb2d8a641134b",
+    "shaders/scene.hlsl": "6159950fb147eab856476b1e99fbefcc86e3cf59ddb2f8530b30989bb05bb4e4",
+    "CMakeLists.txt": "a231a10e85d384030427ea0fbbe92f8394a13931bdcabae65af662ed4dd9e257",
+    "build.ps1": "adadfe88e512235ba49447a68683c58092bbf71b0ec60f9335f584e9cbc0bd4e",
+    "verify.ps1": "b3bd3c6cc92448cf7bd0715501fa1b94c4d0c87087125860f0d17a205182d6a1",
+    "audit_temporal.py": "815f61e894cde956ea85153be6358343f2bada8baea6293c0c4bfa21c2599f43",
+    "analyze_sequences.py": "f51343dd01bff4b66cdbaab8ecee610ba1b8a905b4c787094a3d3d08d45890a4",
+    "summarize_verification.py": "1f25bd14e2102d82604ab3fb9b55d9112a1be0e3b675fb16512668df3072ed1e",
+    "verify_sdk_contracts.py": "816b590745ac6ed1a0bdddd65a44c3b9fa130fee2e35b170272361c4d803f177",
+    "sdk_manifest.json": "dc1da96ffd39c9a49044184c8348afa695c57ccc01d15e2e903ad9c4c78c6f7b",
+    "nis.lock.json": "85f15873b962e7084e43c94c2c28a4df1813e35f1ecc9801aae35da9998ac007"
+  }
+}

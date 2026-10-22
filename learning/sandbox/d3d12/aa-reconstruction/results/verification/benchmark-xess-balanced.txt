@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+SDK ready XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime) input=320x180
+debug_disabled_performance_mode
+F run passed mode=bench method=xess-balanced

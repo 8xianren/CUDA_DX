@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+SDK fallback: LoadLibrary official FSR effect failed (code=126); host must use spatial fallback
+debug_warning_error=0 fence=28/28
+F run passed mode=sequence method=fsr-unavailable

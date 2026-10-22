@@ -1,0 +1,26 @@
+{
+  "name": "BicubicCS-2",
+  "entry": "BicubicCS",
+  "input_width": 16,
+  "input_height": 12,
+  "output_width": 32,
+  "output_height": 24,
+  "flags": 30,
+  "jitter_uv": [
+    0,
+    0
+  ],
+  "previous_jitter_uv": [
+    0,
+    0
+  ],
+  "history_weight": 0.9,
+  "depth_threshold": 0.02,
+  "tolerance": 0.0002,
+  "current": "results/f5/oracle-input/BicubicCS-2/current.f32",
+  "history": "results/f5/oracle-input/BicubicCS-2/history.f32",
+  "motion_depth": "results/f5/oracle-input/BicubicCS-2/motion_depth.f32",
+  "previous_depth": "results/f5/oracle-input/BicubicCS-2/previous_depth.f32",
+  "reactive": "results/f5/oracle-input/BicubicCS-2/reactive.f32",
+  "output": "results/f5/oracle-input/BicubicCS-2/output.f32"
+}

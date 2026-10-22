@@ -176,6 +176,8 @@ ReSTIR 和 NRC 放在无偏积分器之后：先能测偏差，再讨论复用�
 
 ## 图形附加路线 · 抗锯齿、时域重建与超分
 
+2026-10-22：F.1–F.10已完成声明范围的连续教学与验收，入口`learning/sandbox/d3d12/aa-reconstruction/README.md`，十节讲义位于`learning/笔记/d3d12/F.*`。实际执行NIS、FSR、XeSS与官方帧生成；DLSS/Streamline是接口对照。F实验室仍独立于H人物PT，不用F离屏GPU成本声称H的端到端FPS；当前未完成项以`learning/进度.md`为准。
+
 > 完整分节、依赖和验收标准以 `learning/学习计划.md` 的阶段 F 为准；完成情况记录在 `learning/进度.md`。这条路线建立在小型 D3D12 渲染器之上，不属于 CUDA 编程模型本身，但会复用 GPU 资源状态、队列同步、Fence 和性能分析能力。
 
 - **F.1 MSAA 与 Alpha-to-Coverage**：多采样颜色/深度资源、PSO sample count、coverage、Resolve。

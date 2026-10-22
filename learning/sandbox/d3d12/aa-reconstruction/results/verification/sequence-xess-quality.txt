@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+SDK ready XeSS-SR 2.0.2.0 (official cross-vendor D3D12 runtime) input=377x212
+debug_warning_error=0 fence=364/364
+F run passed mode=sequence method=xess-quality

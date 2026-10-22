@@ -1,0 +1,11 @@
+{
+  "name": "PresentMon Console",
+  "version": "2.6.0",
+  "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.6.0/PresentMon-2.6.0-x64.exe",
+  "sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af",
+  "license": "MIT",
+  "license_url": "https://raw.githubusercontent.com/GameTechDev/PresentMon/v2.6.0/LICENSE.txt",
+  "purpose": "独立 ETW 采集 SDK 内部真实 Present、OS 显示事件与丢帧，绝不把 UI 回调时间当成实际 Present 节奏。",
+  "installed_path": "build/deps/PresentMon-2.6.0-x64.exe",
+  "binary_committed": false
+}

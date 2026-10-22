@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/NVIDIAGameWorks/NVIDIAImageScaling",
+  "commit": "35e13ba316c98eeecf16f37eae70ce88019911f6",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "NIS/NIS_Config.h",
+      "sha256": "f33c5dd82bb63f3c1cc7cefd86690053de0bd3fe0e730463a5e63e90e7778754",
+      "bytes": 27335
+    },
+    {
+      "path": "NIS/NIS_Scaler.h",
+      "sha256": "2d3bd5b45d6a0c4169fe36dfe349e7ff5a099dff6fb6876f8a3286489f74d3bf",
+      "bytes": 37643
+    },
+    {
+      "path": "NIS/NIS_Main.hlsl",
+      "sha256": "46402103801007b402aeeb8481d60b1bda37799bf68b543b32daea65f255f301",
+      "bytes": 3333
+    }
+  ]
+}

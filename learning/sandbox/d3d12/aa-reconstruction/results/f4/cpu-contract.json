@@ -1,0 +1,154 @@
+{
+  "pass": true,
+  "execution": "CPU only",
+  "checks": [
+    {
+      "name": "halton_first_sample",
+      "pass": true,
+      "value": [
+        0.0,
+        -0.16666666666666669
+      ]
+    },
+    {
+      "name": "halton_8_x_strata",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "halton_5_base_2",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "static_motion_zero",
+      "pass": true,
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "camera_pan_previous_minus_current",
+      "pass": true,
+      "value": [
+        0.0625,
+        0.0
+      ]
+    },
+    {
+      "name": "object_rotation_motion",
+      "pass": true,
+      "value": [
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "name": "jitter_excluded_reprojection",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "jitter_included_no_double_correction",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "linear_previous_depth_camera_dolly",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "ycocg_roundtrip",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bilinear_constant_1",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bilinear_constant_1.5",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bilinear_constant_2",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bicubic_constant_1",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bicubic_constant_1.5",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bicubic_constant_2",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bilinear_identity",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "bicubic_identity",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "unjitter_linear_signal_-0.375",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "unjitter_linear_signal_0.375",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "camera_cut",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "name": "no_clamp_ghost",
+      "pass": true,
+      "value": 0.9
+    },
+    {
+      "name": "clamp_rejects_color",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "name": "disocclusion_depth_reject",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "name": "no_depth_ghost",
+      "pass": true,
+      "value": 0.9
+    },
+    {
+      "name": "reactive_one_uses_current",
+      "pass": true,
+      "value": null
+    },
+    {
+      "name": "out_of_bounds_reject_before_sample",
+      "pass": true,
+      "value": null
+    }
+  ],
+  "gpu_status": "see independently produced gpu-oracle.json; CPU result is not a GPU validation"
+}

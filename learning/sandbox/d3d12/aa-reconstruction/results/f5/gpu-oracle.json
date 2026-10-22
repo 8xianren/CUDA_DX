@@ -1,0 +1,150 @@
+{
+  "pass": true,
+  "execution": "GPU readback vs independent CPU oracle",
+  "checks": [
+    {
+      "name": "BicubicCS-1",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "BicubicCS-1.5",
+      "pass": true,
+      "max_absolute_error": 3.377596535791838e-07,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "BicubicCS-2",
+      "pass": true,
+      "max_absolute_error": 2.384185791015625e-07,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "BilinearCS-1",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "BilinearCS-1.5",
+      "pass": true,
+      "max_absolute_error": 0.00010851522286742243,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "BilinearCS-2",
+      "pass": true,
+      "max_absolute_error": 2.9802322387695312e-08,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "disocclusion",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "expected_previous_depth",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "jitter_excluded",
+      "pass": true,
+      "max_absolute_error": 3.2782554670873765e-08,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "jitter_included",
+      "pass": true,
+      "max_absolute_error": 3.166496786999318e-08,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 3.998900766077895e-09
+    },
+    {
+      "name": "no_depth",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "no_reproject",
+      "pass": true,
+      "max_absolute_error": 4.768371586472142e-08,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "out_of_bounds",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "reactive",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "reproject",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "reset",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 0.0
+    },
+    {
+      "name": "rgb_clamp",
+      "pass": true,
+      "max_absolute_error": 2.384185793236071e-08,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 3.1738664407754413e-07
+    },
+    {
+      "name": "unjitter_boundary",
+      "pass": true,
+      "max_absolute_error": 2.9802322387695312e-08,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "unjitter_identity",
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "unjitter_negative",
+      "pass": true,
+      "max_absolute_error": 2.9802322387695312e-08,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "unjitter_positive",
+      "pass": true,
+      "max_absolute_error": 2.9802322387695312e-08,
+      "tolerance": 0.0002
+    },
+    {
+      "name": "ycocg_clamp",
+      "pass": true,
+      "max_absolute_error": 5.960464477539063e-08,
+      "tolerance": 0.0002,
+      "diagnostic_max_absolute_error": 3.4724046305001366e-07
+    }
+  ]
+}

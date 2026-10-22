@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+oracle_gpu_cases=22
+debug_warning_error=0 fence=157/157
+F run passed mode=oracle method=taa

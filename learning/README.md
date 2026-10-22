@@ -5,6 +5,7 @@
 |现在想做什么|入口|
 |---|---|
 |直接运行当前Demo|[程序说明与双击启动](sandbox/d3d12/dynamic-character/README.md)|
+|复习 F.1–F.10 抗锯齿、重建、超分与帧生成|[F 共享实验室与十节讲义](sandbox/d3d12/aa-reconstruction/README.md)|
 |知道已经学到哪里|[当前学习进度](进度.md)|
 |寻找任意课程的程序|[全部资料导航](资料导航.md)|
 |查课堂讲义|[五条线路讲义总索引](笔记/README.md)|
@@ -20,6 +21,8 @@
 默认1280×720、动态4 spp，天空/太阳参与照明，WASD/QE控制相机、右键转向，Space暂停、N单步、R复位。静止256 spp展示图和真实动态4 spp图分开标注。当前是受限教学渲染器；完整范围见[架构](sandbox/d3d12/dynamic-character/ARCHITECTURE.md)和[画质修正](笔记/d3d12/H.7-画质修正与程序天空.md)。
 
 ## 文件职责
+
+2026-10-22新增F共享实验室：独立验证MSAA、FXAA、TAA、NIS、官方FSR/XeSS和官方帧生成，结果按课号存放。它复用既有D3D12基础资源模块；接入H人物路径追踪器属于后续应用工作，不能把F离屏实验的GPU时间直接当作H的FPS。
 
 ```text
 learning/

@@ -1,0 +1,7 @@
+/build/
+/external/
+__pycache__/
+*.f32
+*.rgba
+/results/f9/development/
+/results/f9/topmost-probe/

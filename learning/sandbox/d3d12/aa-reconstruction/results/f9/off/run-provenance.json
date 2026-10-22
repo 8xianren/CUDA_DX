@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "src/framegen_demo.cpp": "05d69e0a8c603006b567f2e1da2b6aae617da9e04e1b22f397003c574ae00b78",
+    "shaders/framegen_scene.hlsl": "2ae7cea4f19b22ee0c53ea8d2fe76d555921e66cf6b927d7cdd8bca45fa30a06",
+    "framegen/CMakeLists.txt": "757bc702e7f4c3b56bd58933a8c382726fdcdf26d5a79c652660a8ef4f35520a",
+    "build_framegen.ps1": "20a2338ba6b532f83ac7c594ba581c03b82cd3d3477c390011afbd74ff907667",
+    "verify_framegen.py": "345578aed3ba92adbd7d980dc3e68e97aedd83e89d5e5561810d6f32fcbe7b32",
+    "sdk_manifest.json": "dc1da96ffd39c9a49044184c8348afa695c57ccc01d15e2e903ad9c4c78c6f7b",
+    "framegen/presentmon-manifest.json": "dafe6e04c18e4fbe387d6de439c76dc481e06ea98fd3d19d606d38b83c47820e"
+  },
+  "executable_sha256": "6cd780892e029770f0874d01da9515071e6b9c74078318a4899f9647b6f81b58",
+  "presentmon_sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af"
+}

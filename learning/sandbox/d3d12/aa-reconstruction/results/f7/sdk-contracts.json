@@ -1,0 +1,132 @@
+{
+  "scope": "independent CPU convention checks; not GPU SDK correctness",
+  "checks": [
+    {
+      "name": "current_to_previous_render_pixels",
+      "size": [
+        640,
+        360
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        640,
+        360
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        640,
+        360
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "current_to_previous_render_pixels",
+      "size": [
+        426,
+        240
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        426,
+        240
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        426,
+        240
+      ],
+      "error": 5.551115123125783e-17,
+      "pass": true
+    },
+    {
+      "name": "current_to_previous_render_pixels",
+      "size": [
+        320,
+        180
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        320,
+        180
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        320,
+        180
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "current_to_previous_render_pixels",
+      "size": [
+        800,
+        450
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        800,
+        450
+      ],
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "jitter_projection_to_screen",
+      "size": [
+        800,
+        450
+      ],
+      "error": 5.551115123125783e-17,
+      "pass": true
+    },
+    {
+      "name": "xess_exposure_is_inverse_preexposure",
+      "pre_exposure": 0.25,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "xess_exposure_is_inverse_preexposure",
+      "pre_exposure": 1.0,
+      "error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "xess_exposure_is_inverse_preexposure",
+      "pre_exposure": 4.0,
+      "error": 0.0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

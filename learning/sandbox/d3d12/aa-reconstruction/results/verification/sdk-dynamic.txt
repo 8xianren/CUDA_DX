@@ -1,0 +1,4 @@
+adapter=NVIDIA GeForce RTX 5070
+SDK ready 3.1.5 input=426x240
+debug_warning_error=0 fence=55/55
+F run passed mode=sequence method=fsr-dynamic

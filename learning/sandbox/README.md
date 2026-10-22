@@ -7,7 +7,7 @@
 |线路|内容与入口|
 |---|---|
 |[CUDA](cuda/README.md)|基础、算法、性能、Blackwell、库、调试与 Python 探针|
-|[D3D12 / DXR](d3d12/README.md)|R 基础、C/D 资产、E 互操作、H 综合 Demo|
+|[D3D12 / DXR](d3d12/README.md)|R 基础、C/D 资产、E 互操作、F 重建实验室、H 综合 Demo|
 |[粒子](particles/README.md)|9.2 互操作地基与 P 系列模拟/渲染|
 |[路径追踪](path_tracing/README.md)|PT.1–12、DXR/CUDA 积分器、ReSTIR 与辐射缓存|
 |[公共路径辅助](common/README.md)|旧单文件程序的稳定结果路径|
@@ -15,6 +15,8 @@
 2026-10-21 已完成本轮整体整理：旧 CUDA/粒子平铺文件归入 18 个课程目录，图形旧结果进入本课 `results/`，所有有源码的课程目录都有 README。共享工程仍保留一份实现。迁移清单与验证范围见[整理记录](../归档/整理记录/2026-10-21/README.md)。
 
 ## 使用方式
+
+F.1–F.10连续课程使用[aa-reconstruction](d3d12/aa-reconstruction/README.md)，按职责拆分场景、资源、后处理、SDK适配及独立帧生成窗口。质量序列与关闭调试后的GPU成本分开采集，原始浮点图像保留本机、数值汇总和SVG比较图随源码保存。
 
 以下命令从**仓库根目录**执行。`build.ps1` 定位源文件后在其旁生成 exe；CMake 共享工程使用各自脚本。具体 shader 宏、依赖、参数和验证步骤以课程 README 为准。
 

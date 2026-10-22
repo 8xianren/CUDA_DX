@@ -1,0 +1,26 @@
+{
+  "name": "unjitter_negative",
+  "entry": "UnjitterCS",
+  "input_width": 16,
+  "input_height": 12,
+  "output_width": 16,
+  "output_height": 12,
+  "flags": 30,
+  "jitter_uv": [
+    -0.0234375,
+    0.020833333333333332
+  ],
+  "previous_jitter_uv": [
+    0,
+    0
+  ],
+  "history_weight": 0.9,
+  "depth_threshold": 0.02,
+  "tolerance": 0.0002,
+  "current": "results/f5/oracle-input/unjitter_negative/current.f32",
+  "history": "results/f5/oracle-input/unjitter_negative/history.f32",
+  "motion_depth": "results/f5/oracle-input/unjitter_negative/motion_depth.f32",
+  "previous_depth": "results/f5/oracle-input/unjitter_negative/previous_depth.f32",
+  "reactive": "results/f5/oracle-input/unjitter_negative/reactive.f32",
+  "output": "results/f5/oracle-input/unjitter_negative/output.f32"
+}

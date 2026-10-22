@@ -2,7 +2,7 @@
 
 [返回笔记总目录](../README.md) · [程序目录](../../sandbox/d3d12/README.md) · [学习进度](../../进度.md)
 
-本目录收录 57 篇讲义与实验记录。按依赖阅读：**R 基础与 DXR → C 资产导入 → D 场景上传 → PT 积分器 → E CUDA 互操作 → H 动态角色整合**。PT 内容见[路径追踪索引](../path_tracing/README.md)。当前整合程序为 [dynamic-character](../../sandbox/d3d12/dynamic-character/README.md)，模块职责见[架构文档](../../sandbox/d3d12/dynamic-character/ARCHITECTURE.md)。
+本目录收录 67 篇讲义与实验记录。按本轮学习顺序阅读：**R 基础与 DXR → C 资产导入 → D 场景上传 → PT 积分器 → E CUDA 互操作 → H 动态角色整合 → F 抗锯齿与重建**。PT 内容见[路径追踪索引](../path_tracing/README.md)。当前整合程序为 [dynamic-character](../../sandbox/d3d12/dynamic-character/README.md)，模块职责见[架构文档](../../sandbox/d3d12/dynamic-character/ARCHITECTURE.md)。
 
 下面是学习导航，不是新的完成声明；验收范围与未验证项以各节正文和进度记录为准。正文中的“下一节”“尚未完成”保留授课当时语境。
 
@@ -102,3 +102,18 @@ C/D 共享一份 [gltf-scene](../../sandbox/d3d12/gltf-scene/README.md) 实现�
 - [H.6 变形重投影与有界时域滤波](H.6-变形重投影与有界时域滤波.md)
 - [H.7 整合验收与性能边界](H.7-整合验收与性能边界.md)
 - [H.7 画质修正与程序天空](H.7-画质修正与程序天空.md) — H.7 后续视觉修正：720p、平滑法线、程序天空/太阳与新质量验收。原 H.7 的小尺寸性能数字属于原测试配置，不能当作新版默认画质的帧时间。
+
+## F.1–F.10：抗锯齿、重建、超分与帧生成
+
+程序入口：[aa-reconstruction](../../sandbox/d3d12/aa-reconstruction/README.md)；[模块与所有权](../../sandbox/d3d12/aa-reconstruction/ARCHITECTURE.md)。这是独立可控光栅实验室，复用C/D低层资源，不把实验成本冒充H的FPS。真实SDK接入为NIS、FSR、XeSS与FidelityFX帧生成；DLSS/Streamline学习接口契约，未宣称执行。
+
+- [F.1 MSAA与Alpha-to-Coverage](F.1-MSAA与AlphaToCoverage.md)
+- [F.2 离屏HDR与后处理资源流](F.2-离屏HDR与后处理资源流.md)
+- [F.3 FXAA边缘方向搜索](F.3-FXAA边缘方向搜索.md)
+- [F.4 时域重建输入契约](F.4-时域重建输入契约.md)
+- [F.5 历史重投影与拒绝](F.5-历史重投影与拒绝.md)
+- [F.6 动态分辨率与空间超分](F.6-动态分辨率与空间超分.md)
+- [F.7 FidelityFX官方超分接入](F.7-FidelityFX官方超分接入.md)
+- [F.8 DLSS/Streamline/XeSS输入契约](F.8-DLSS_Streamline_XeSS输入契约.md)
+- [F.9 官方帧生成与显示节奏](F.9-官方帧生成与显示节奏.md)
+- [F.10 固定序列质量与性能评测](F.10-固定序列质量与性能评测.md)
